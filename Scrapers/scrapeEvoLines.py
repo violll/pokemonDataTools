@@ -13,7 +13,8 @@ class scrapeEvoLines():
         self.soup = self.getSoup()
         self.evoLinesSoup = self.getEvoLinesSoup()
         self.evoLines = self.buildTree()
-        for line in self.evoLines.keys(): self.evoLines[line].hshow()
+        # for line in self.evoLines.keys(): self.evoLines[line].hshow()
+        for line in self.evoLines: line.hshow()
 
     # returns the entire bs4 soup of the website
     def getSoup(self):
@@ -36,7 +37,10 @@ class scrapeEvoLines():
     
     # returns dict of trees for each evolutionary line
     def buildTree(self):
-        res = {}
+        # TODO unown
+        # TODO check for rowspan s.t. slowpoke is correct
+        # res = {}
+        res = set()
 
         for table in self.evoLinesSoup:
             # splitLine is the constant data between split evolution lines
@@ -49,7 +53,8 @@ class scrapeEvoLines():
                     continue
                                 
                 line = self.buildLine(row, splitLine)
-                res[find(line, lambda node: node.is_root).name] = line
+                # res[find(line, lambda node: node.is_root).name] = line
+                res.add(line)
                                 
                 # if the row is an evolutionary line and splitLine has not been assigned, assign it
                 if splitLine == []:
