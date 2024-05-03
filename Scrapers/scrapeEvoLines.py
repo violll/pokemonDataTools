@@ -1,7 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
 import bigtree
-from bigtree import Node, tree_to_dot, list_to_tree
+from bigtree import Node, tree_to_dot, list_to_tree, find
+
+# bs4 filtering criteria
+def notTableRowHeader(tr):
+    return tr.name == "tr" and len(tr.findAll("th")) == 0
 
 class scrapeEvoLines():
     def __init__(self) -> None:
@@ -38,18 +42,24 @@ class scrapeEvoLines():
         res = {}
 
         for table in self.evoLinesSoup:
-            rows = table.findAll("tr")
-            for i in range(0, len(rows), 2):
-                
-                header = rows[i].text
+            # gets each family in a row
+            # TODO not sure how this interacts with split lines 
+            rows = [row for row in table.findNext() if notTableRowHeader(row)]
 
-                ## HIS CURRENTLY ONLY WORKS FOR FAMILIES WITHOUT MULTIPLE LINES 
-                res[header] = self.buildLine(rows[i+1])
+            for row in rows:
+                ## CURRENTLY ONLY WORKS FOR FAMILIES WITHOUT SPLIT LINES 
+                line = self.buildLine(row)
+                res[find(line, lambda node: node.is_root).name] = line
+                # print(find(line, lambda node: node.is_root).name)
+                line.hshow()
+                for x in res.keys(): res[x].hshow()
+                continue
+                # break
                 
             return res
     
     def buildLine(self, data):
-        ## THIS CURRENTLY ONLY WORKS FOR FAMILIES WITHOUT MULTIPLE LINES
+        ## THIS CURRENTLY ONLY WORKS FOR FAMILIES WITHOUT SPLIT LINES
         # each td is each cell in the row 
         allCells = data.findAll("td")
         # keep only the cells that don't have images (every third cell contains an image)
