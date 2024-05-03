@@ -1,14 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
-import bigtree
 from bigtree import Node, tree_to_dot, list_to_tree, find
 
 # bs4 filtering criteria
 def isEvoLine(tr):
     return len(tr.findAll("th")) == 0
-
-# def isSplitLine(tr):
-#     return
 
 class scrapeEvoLines():
     def __init__(self) -> None:
@@ -28,20 +24,24 @@ class scrapeEvoLines():
     # each element in the list corresponds to one region 
     #  (note: regional variants are grouped with the original line)
     def getEvoLinesSoup(self):
-        tables = self.soup.findAll("table") #[:11]
+        tables = self.soup.findAll("table")[:self.countTables()]
         return tables
+    
+    def countTables(self):
+        # finds table of contents containing headers of each relevant table
+        contents = self.soup.find("div", attrs={"class": "toc", "role": "navigation"}).find("ul")
+        # navigates to the sublist of relevant headers and counts them
+        nTables = len(contents.find("ul").findAll("li"))
+        return nTables
     
     # returns dict of trees for each evolutionary line
     def buildTree(self):
         res = {}
 
         for table in self.evoLinesSoup:
-            # gets each family in a row
-            # not sure how this interacts with split lines 
-            # TODO CHECK AGAINST THE WEBSITE SOURCE
-
             # splitLine is the constant data between split evolution lines
             splitLine = []
+            # gets each family in a row
             for row in table.findAll("tr"):
                 # if the row is not an evolutionary line, reset splitLine and skip it
                 if not isEvoLine(row):
