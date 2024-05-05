@@ -6,6 +6,9 @@ from bigtree import Node, tree_to_dot, list_to_tree, find
 def isEvoLine(tr):
     return len(tr.findAll("th")) == 0
 
+def isSplitLine(tr):
+    return tr.findAll("td", rowspan=True)
+
 class scrapeEvoLines():
     def __init__(self) -> None:
         # The url from which the evo lines are scraped
@@ -46,20 +49,25 @@ class scrapeEvoLines():
             # splitLine is the constant data between split evolution lines
             splitLine = []
             # gets each family in a row
-            for row in table.findAll("tr"):
-                # if the row is not an evolutionary line, reset splitLine and skip it
+            rows = table.findAll("tr")
+            i = 0
+            while i < len(rows):
+                row = rows[i]
+                # if the row is not an evolutionary line, reset splitLine and skip
                 if not isEvoLine(row):
                     splitLine = []
+                    i += 1
                     continue
-                                
-                line = self.buildLine(row, splitLine)
-                # res[find(line, lambda node: node.is_root).name] = line
-                res.add(line)
-                                
-                # if the row is an evolutionary line and splitLine has not been assigned, assign it
-                if splitLine == []:
+
+                # if the row is part of a split line, set splitLine
+                if isSplitLine(row):
                     splitLine = row.findAll("td", rowspan=True)
                 
+                line = self.buildLine(row, splitLine)
+                res.add(line)
+
+                i += 1
+                                
         return res
     
     def buildLine(self, data, splitLine):
