@@ -15,8 +15,11 @@ class scrapeEvoLines():
         self.url = "https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_evolution_family"
         self.soup = self.getSoup()
         self.evoLinesSoup = self.getEvoLinesSoup()
-        self.evoLines = self.buildTree()
-        # for line in self.evoLines.keys(): self.evoLines[line].hshow()
+
+
+        self.evoLines = set()
+        self.buildTree()
+
         for line in self.evoLines: line.hshow()
 
     # returns the entire bs4 soup of the website
@@ -42,47 +45,81 @@ class scrapeEvoLines():
     def buildTree(self):
         # TODO unown
         # TODO check for rowspan s.t. slowpoke is correct
-        # res = {}
-        res = set()
+        # res = set()
 
         for table in self.evoLinesSoup:
             # splitLine is the constant data between split evolution lines
-            splitLine = []
-            # gets each family in a row
+            tempTree = []
+            # separates table into rows
             rows = table.findAll("tr")
             i = 0
             while i < len(rows):
                 row = rows[i]
-                # if the row is not an evolutionary line, reset splitLine and skip
+                # if the row is not an evolutionary line, reset tempTree and skip
                 if not isEvoLine(row):
-                    splitLine = []
+                    if tempTree != []:
+                        self.buildLine(tempTree)
+                    tempTree = []
                     i += 1
                     continue
 
-                # if the row is part of a split line, set splitLine
+                # condition: split evolution line
+                # if the row is the first in the split line
                 if isSplitLine(row):
-                    splitLine = row.findAll("td", rowspan=True)
-                
-                line = self.buildLine(row, splitLine)
-                res.add(line)
+                    if tempTree != []:
+                        self.buildLine(tempTree)
+                    tempTree = [self.buildTempTree(row, True)]
+                    tempTree.append(self.buildTempTree(row, False))
+                # if the row is not the first in the split line
+                elif tempTree != []:
+                    tempTree.append(tempTree[0] + "/" + self.buildTempTree(row, False, 2))
+                # condition: non-split evolution line
+                else:
+                    self.buildLine(self.buildTempTree(row, False))
+                    # line = self.buildLine(row, tempTree)
+                    # self.evoLines.add(line)
 
                 i += 1
-                                
-        return res
+
+        return self.evoLines
     
-    def buildLine(self, data, splitLine):
-        # each td is each cell in the row 
-        dataCells = data.findAll("td")
-        allCells = splitLine + dataCells
+
+    # first: get splitline data
+    # make string list of splitline data
+    # make string list of each subsequent line that's part of the split evolution
+    # once you hit the end of the line, compile all
+
+    def buildLine(self, data):
+        if type(data) != list: data = [data]
+        tree = list_to_tree(data)
+        self.evoLines.add(tree)
+        tree.hshow()
+        return 
+    
+    def buildTempTree(self, data, isFirstEntry, j=1):
+        if isFirstEntry: allCells = data.findAll("td", rowspan=True)
+        else: allCells = data.findAll("td")
 
         # keep only the cells that don't have images (every third cell contains an image)
-        relevantCells = [allCells[i] for i in range(1, len(allCells)) if (i-1) % 3 == 0]
+        relevantCells = [allCells[i] for i in range(1, len(allCells)) if (i-j) % 3 == 0]
         # keep only the relevant text
         evoText = [cell.text.strip() for cell in relevantCells]
-        # write the node
-        line = list_to_tree(["/".join(evoText)])
 
-        return line
+        return "/".join(evoText)
+
+    # def buildLine(self, data, splitLine):
+    #     # each td is each cell in the row 
+    #     dataCells = data.findAll("td")
+    #     allCells = splitLine + dataCells
+
+    #     # keep only the cells that don't have images (every third cell contains an image)
+    #     relevantCells = [allCells[i] for i in range(1, len(allCells)) if (i-1) % 3 == 0]
+    #     # keep only the relevant text
+    #     evoText = [cell.text.strip() for cell in relevantCells]
+    #     # write the node
+    #     line = list_to_tree(["/".join(evoText)])
+
+    #     return line
 
 if __name__ == "__main__":
     scrapeEvoLines()
