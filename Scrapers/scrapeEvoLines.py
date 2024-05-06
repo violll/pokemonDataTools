@@ -43,10 +43,6 @@ class scrapeEvoLines():
     
     # returns dict of trees for each evolutionary line
     def buildTree(self):
-        # TODO unown
-        # TODO check for rowspan s.t. slowpoke is correct
-        # res = set()
-
         for table in self.evoLinesSoup:
             # splitLine is the constant data between split evolution lines
             tempTree = []
@@ -76,18 +72,10 @@ class scrapeEvoLines():
                 # condition: non-split evolution line
                 else:
                     self.buildLine(self.buildTempTree(row, False))
-                    # line = self.buildLine(row, tempTree)
-                    # self.evoLines.add(line)
 
                 i += 1
 
         return self.evoLines
-    
-
-    # first: get splitline data
-    # make string list of splitline data
-    # make string list of each subsequent line that's part of the split evolution
-    # once you hit the end of the line, compile all
 
     def buildLine(self, data):
         if type(data) != list: data = [data]
@@ -106,20 +94,6 @@ class scrapeEvoLines():
         evoText = [cell.text.strip() for cell in relevantCells]
 
         return "/".join(evoText)
-
-    # def buildLine(self, data, splitLine):
-    #     # each td is each cell in the row 
-    #     dataCells = data.findAll("td")
-    #     allCells = splitLine + dataCells
-
-    #     # keep only the cells that don't have images (every third cell contains an image)
-    #     relevantCells = [allCells[i] for i in range(1, len(allCells)) if (i-1) % 3 == 0]
-    #     # keep only the relevant text
-    #     evoText = [cell.text.strip() for cell in relevantCells]
-    #     # write the node
-    #     line = list_to_tree(["/".join(evoText)])
-
-    #     return line
 
 if __name__ == "__main__":
     scrapeEvoLines()
