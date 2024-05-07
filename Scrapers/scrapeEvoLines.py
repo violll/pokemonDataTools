@@ -16,11 +16,13 @@ class scrapeEvoLines():
         self.soup = self.getSoup()
         self.evoLinesSoup = self.getEvoLinesSoup()
 
+        self.edgeCases = {
+            "Gimmighoul": "Gimmmighoul/Gholdengo"}
 
         self.evoLines = set()
         self.buildTree()
 
-        for line in self.evoLines: line.hshow()
+        # for line in self.evoLines: line.hshow()
 
     # returns the entire bs4 soup of the website
     def getSoup(self):
@@ -79,16 +81,26 @@ class scrapeEvoLines():
 
     def buildLine(self, data):
         if type(data) != list: data = [data]
-        tree = list_to_tree(data)
+
+        # if line is incorrectly formatted, handle edgecase via checkEdgeCases
+        try: tree = list_to_tree(data)
+        except: tree = list_to_tree([self.checkEdgeCases(data)])
+
         self.evoLines.add(tree)
         tree.hshow()
+        return 
+    
+    def checkEdgeCases(self, data):
+        for family in self.edgeCases.keys():
+            if [line for line in data if family in line]:
+                return self.edgeCases[family]
         return 
     
     def buildTempTree(self, data, isFirstEntry, j=1):
         if isFirstEntry: allCells = data.findAll("td", rowspan=True)
         else: allCells = data.findAll("td")
 
-        # keep only the cells that don't have images (every third cell contains an image)
+        # keep only cells without images (every third cell contains image)
         relevantCells = [allCells[i] for i in range(1, len(allCells)) if (i-j) % 3 == 0]
         # keep only the relevant text
         evoText = [cell.text.strip() for cell in relevantCells]
