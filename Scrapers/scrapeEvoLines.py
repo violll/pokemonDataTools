@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from bigtree import Node, tree_to_dot, list_to_tree, find
+from bigtree import list_to_tree
 
 # bs4 filtering criteria
 def isEvoLine(tr):
@@ -19,10 +19,10 @@ class scrapeEvoLines():
         self.edgeCases = {
             "Gimmighoul": "Gimmmighoul/Gholdengo"}
 
-        self.evoLines = set()
+        self.evoLines = {}
         self.buildTree()
 
-        # for line in self.evoLines: line.hshow()
+        # for line in self.evoLines: self.evoLines[line].hshow()
 
     # returns the entire bs4 soup of the website
     def getSoup(self):
@@ -86,8 +86,8 @@ class scrapeEvoLines():
         try: tree = list_to_tree(data)
         except: tree = list_to_tree([self.checkEdgeCases(data)])
 
-        self.evoLines.add(tree)
-        tree.hshow()
+        self.evoLines[tree.root.name] = tree
+        # tree.hshow()
         return 
     
     def checkEdgeCases(self, data):
