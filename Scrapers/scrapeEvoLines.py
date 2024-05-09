@@ -20,9 +20,11 @@ class scrapeEvoLines():
             "Gimmighoul": "Gimmmighoul/Gholdengo"}
 
         self.evoLines = {}
+        self.allMons = set()
+
         self.buildTree()
 
-        # for line in self.evoLines: self.evoLines[line].hshow()
+        for line in self.evoLines: self.evoLines[line].hshow()
 
     # returns the entire bs4 soup of the website
     def getSoup(self):
@@ -79,16 +81,22 @@ class scrapeEvoLines():
 
         return self.evoLines
 
-    def buildLine(self, data):
+    def buildLine(self, lst):
+        
         # convert line list to format that can be converted into tree        
-        if type(data[0]) == list: data = ["/".join(line) for line in data]
-        else: data = ["/".join(data)]
+        if type(lst[0]) == list: 
+            data = ["/".join(line) for line in lst]
+            monsToAdd = sum(lst, [])
+        else: 
+            data = ["/".join(lst)]
+            monsToAdd = lst
         
         # if line is incorrectly formatted, handle edgecase via checkEdgeCases
         try: tree = list_to_tree(data)
         except: tree = list_to_tree([self.checkEdgeCases(data)])
 
         self.evoLines[tree.root.name] = tree
+        self.allMons.update(set(monsToAdd))
         # tree.hshow()
         return 
     
