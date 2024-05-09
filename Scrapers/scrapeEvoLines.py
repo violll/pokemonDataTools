@@ -18,7 +18,8 @@ class scrapeEvoLines():
 
         self.edgeCases = {
             "Gimmighoul": ["Gimmighoul", "Gholdengo"],
-            "Unown": ["Unown"]
+            "Unown": ["Unown"],
+            "Rockruff": ["Rockruff", "Lycanroc"]
             }
 
         self.evoLines = {}
@@ -68,7 +69,7 @@ class scrapeEvoLines():
                 row = rows[i]
                 # if the row is not an evolutionary line, reset tempTree and skip
                 if not isEvoLine(row):
-                    family = row.find("th").text.replace("family", "").strip()                    
+                    family = row.find("th").text.replace("family", "").replace("*", "").strip()                    
                     
                     # if family name is in edgecases, add it here
                     if family in self.edgeCases.keys():
