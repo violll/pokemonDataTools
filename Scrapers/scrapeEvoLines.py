@@ -70,7 +70,7 @@ class scrapeEvoLines():
                     tempTree.append(self.buildTempTree(row, False))
                 # if the row is not the first in the split line
                 elif tempTree != []:
-                    tempTree.append(tempTree[0] + "/" + self.buildTempTree(row, False, 2))
+                    tempTree.append(tempTree[0] + self.buildTempTree(row, False, 2))
                 # condition: non-split evolution line
                 else:
                     self.buildLine(self.buildTempTree(row, False))
@@ -80,8 +80,10 @@ class scrapeEvoLines():
         return self.evoLines
 
     def buildLine(self, data):
-        if type(data) != list: data = [data]
-
+        # convert line list to format that can be converted into tree        
+        if type(data[0]) == list: data = ["/".join(line) for line in data]
+        else: data = ["/".join(data)]
+        
         # if line is incorrectly formatted, handle edgecase via checkEdgeCases
         try: tree = list_to_tree(data)
         except: tree = list_to_tree([self.checkEdgeCases(data)])
@@ -105,7 +107,7 @@ class scrapeEvoLines():
         # keep only the relevant text
         evoText = [cell.text.strip() for cell in relevantCells]
 
-        return "/".join(evoText)
+        return evoText
 
 if __name__ == "__main__":
     scrapeEvoLines()
