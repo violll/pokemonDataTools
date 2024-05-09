@@ -94,9 +94,10 @@ class scrapeEvoLines():
         # if line is incorrectly formatted, handle edgecase via checkEdgeCases
         try: tree = list_to_tree(data)
         except: tree = list_to_tree([self.checkEdgeCases(data)])
-
-        self.evoLines[tree.root.name] = tree
-        self.allMons.update(set(monsToAdd))
+        
+        if tree.root.name not in self.allMons:
+            self.evoLines[tree.root.name] = tree
+            self.allMons.update(set(monsToAdd))
         # tree.hshow()
         return 
     
