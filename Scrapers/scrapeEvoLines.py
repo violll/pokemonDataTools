@@ -17,7 +17,9 @@ class scrapeEvoLines():
         self.evoLinesSoup = self.getEvoLinesSoup()
 
         self.edgeCases = {
-            "Gimmighoul": "Gimmmighoul/Gholdengo"}
+            "Gimmighoul": ["Gimmighoul", "Gholdengo"],
+            "Unown": ["Unown"]
+            }
 
         self.evoLines = {}
         self.allMons = set()
@@ -45,6 +47,15 @@ class scrapeEvoLines():
         nTables = len(contents.find("ul").findAll("li"))
         return nTables
     
+    # counts the number of rows between evolution line headers
+    def countRows(self, row):
+        i = 0
+        while True:
+            rowToCheck = row.findNext("tr")
+            if isEvoLine(rowToCheck): i += 1
+            else: return i
+            row = rowToCheck
+    
     # returns dict of trees for each evolutionary line
     def buildTree(self):
         for table in self.evoLinesSoup:
@@ -57,9 +68,19 @@ class scrapeEvoLines():
                 row = rows[i]
                 # if the row is not an evolutionary line, reset tempTree and skip
                 if not isEvoLine(row):
+                    family = row.find("th").text.replace("family", "").strip()                    
+                    
+                    # if family name is in edgecases, add it here
+                    if family in self.edgeCases.keys():
+                        self.buildLine(self.edgeCases[family])
+                        i += self.countRows(row) + 1
+                        continue
+
+                    # if tempTree is full, add the line and clear it 
                     if tempTree != []:
                         self.buildLine(tempTree)
-                    tempTree = []
+                        tempTree = []
+                    
                     i += 1
                     continue
 
@@ -91,20 +112,14 @@ class scrapeEvoLines():
             data = ["/".join(lst)]
             monsToAdd = lst
         
-        # if line is incorrectly formatted, handle edgecase via checkEdgeCases
-        try: tree = list_to_tree(data)
-        except: tree = list_to_tree([self.checkEdgeCases(data)])
-        
+        # convert into tree
+        tree = list_to_tree(data)
+
+        # if pokemon has not already been added to an evolutionary line, add it
         if tree.root.name not in self.allMons:
             self.evoLines[tree.root.name] = tree
             self.allMons.update(set(monsToAdd))
         # tree.hshow()
-        return 
-    
-    def checkEdgeCases(self, data):
-        for family in self.edgeCases.keys():
-            if [line for line in data if family in line]:
-                return self.edgeCases[family]
         return 
     
     def buildTempTree(self, data, isFirstEntry, j=1):
