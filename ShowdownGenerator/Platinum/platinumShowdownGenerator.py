@@ -1,29 +1,40 @@
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 import pandas as pd
+import io
 
 f = open("ShowdownGenerator/Platinum/Full Pokemon Platinum Trainer Data.txt", "r")
-txt = f.readlines()
+txt = f.read().split("\n\n")
 
 def formatTrainer(txt):
-    desiredTrainer = input("What is the trainer name and number?\n> ")
-    for i in range(len(txt)):
-        if desiredTrainer in txt[i]:
-            res = ""
-            trainer = " ".join(txt[i].split(" ")[1:]).strip()
-            count = 0
-            while count < 2:
-                i += 1
-                pokemon = txt[i].strip()
-                if "=" in pokemon:
-                    count += 1
-                elif "Pokemon" in pokemon: 
-                    pass
-                elif "Item" in pokemon: res += pokemon + "\n"
-                elif pokemon != "": 
-                    res += formatPokemon(pokemon, trainer) + "\n"
-            print(res)
-            return None
+    possibleTrainers = []
+
+    while possibleTrainers == []:
+        desiredTrainer = input("What is the trainer name?\n> ")
+        
+        # search for multiple versions of the same trainer
+        for i in range(len(txt)):
+            if desiredTrainer in txt[i]: possibleTrainers.append(i)
+
+        if possibleTrainers == []: print("Please type a valid trainer name!")
+
+    # user selects the appropriate trainer
+    if len(possibleTrainers) > 1: 
+        for i in possibleTrainers: print(txt[i])
+        trainer = txt[int(input("Which version is correct?\n> "))].split("\n")[1:]
+    else: 
+        trainer = txt[possibleTrainers[0]].split("\n")[1:]
+
+    # checks if trainer has items and writes showdown import for each pokemon
+    res = ""
+    isMon = False
+    for line in trainer:
+        if "Item" in line: print("WARNING: {} has {}".format(desiredTrainer, line.replace("Items", "items")))
+        if isMon: res += formatPokemon(line, desiredTrainer)
+        if "=" in line: isMon = True
+    
+    print(res)
+    return res
         
 def formatPokemon(pokemon, trainer):
     res = ""
@@ -68,10 +79,10 @@ def getMoves(name, level):
         table = soup.find("table", {"class": "sortable"})
 
         try: 
-            df = pd.read_html(str(table), displayed_only=False)[0].loc[:, ["PtHGSS", "Move"]]
+            df = pd.read_html(io.StringIO(str(table)), displayed_only=False)[0].loc[:, ["PtHGSS", "Move"]]
             col = "PtHGSS"
         except:
-            df = pd.read_html(str(table), displayed_only=False)[0].loc[:, ["Level", "Move"]]
+            df = pd.read_html(io.StringIO(str(table)), displayed_only=False)[0].loc[:, ["Level", "Move"]]
             col = "Level"
 
         for i in range(df.shape[0]):
@@ -81,7 +92,7 @@ def getMoves(name, level):
             else: df.loc[i, col] = int(str(val)[:len(str(val))//2])
 
         df = df[df.loc[:,col] != -1]
-        df.to_pickle("PokemonData/{}.pkl".format(name))
+        df.to_pickle("ShowdownGenerator/Platinum/PokemonData/{}.pkl".format(name))
 
     moves = "".join(list(df[df.loc[:,col] <= int(level)].loc[:, "Move"].tail(4).transform(lambda x: "- " + x + "\n")))
     return moves
