@@ -95,7 +95,7 @@ class PlatinumShowdown:
 
             pGender = detailedTrainer % 256
 
-            threshold = genderRatio[0] * 256 - 1
+            threshold = genderRatio[1] * 256 - 1
 
             if pGender >= threshold: return "(M)"
             else: return "(F)"
