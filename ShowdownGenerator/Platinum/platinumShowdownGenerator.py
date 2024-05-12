@@ -28,26 +28,33 @@ class PlatinumShowdown:
         # user selects the appropriate trainer
         if len(possibleTrainers) > 1: 
             for i in possibleTrainers: print(self.txt[i])
-            trainer = self.txt[int(input("Which version is correct?\n> "))].split("\n")[1:]
+            trainerI = input("Which version is correct?\n> ")
+            trainer = self.txt[int(trainerI)].split("\n")[1:]
         else: 
             trainer = self.txt[possibleTrainers[0]].split("\n")[1:]
+            trainerI = trainer[0].split(":")[0]
 
         # checks if trainer has items and writes showdown import for each pokemon
         res = ""
         isMon = False
+        pokemonI = 0
         for line in trainer:
             if "Item" in line: print("WARNING: {} has {}".format(desiredTrainer, line.replace("Items", "items")))
-            if isMon: res += self.formatPokemon(line, desiredTrainer)
+            if isMon: 
+                res += self.formatPokemon(line, desiredTrainer, trainerI, pokemonI)
+                pokemonI += 1
             if "=" in line: isMon = True
         
         print(res)
         return res
             
-    def formatPokemon(self, pokemon, trainer):
+    def formatPokemon(self, pokemon, trainer, trainerI, pokemonI):
         res = ""
         attributes = pokemon.split(" ")
         name = attributes[0]
         level = attributes[2]
+        gender = self.getGender(trainer, name, trainerI, pokemonI)
+
         attributeDict = dict()
         attributeStr = pokemon[pokemon.find("(")+1:-1].split(",")
         for attr in attributeStr:
@@ -61,7 +68,7 @@ class PlatinumShowdown:
         else:
             attributeDict["IVs"] = [attributeDict["IVs"] for _ in range(6)]
 
-        res += "{} ({}) ({})\n".format(trainer, name, input("What gender is {}'s {}?\n> ".format(trainer, name)))
+        res += "{} ({}) {}\n".format(trainer, name, gender)
         res += "IVs: {} HP / {} Atk / {} Def / {} SpA / {} SpD / {} Spe\n".format(attributeDict["IVs"][0], attributeDict["IVs"][1], attributeDict["IVs"][2], attributeDict["IVs"][3], attributeDict["IVs"][4], attributeDict["IVs"][5])
         res += "Ability: {}\n".format(attributeDict["Ability"])
         res += "Level: {}\n".format(level)
@@ -72,6 +79,24 @@ class PlatinumShowdown:
             for move in attributeDict["Moves"].split("/"):
                 res += "- {}\n".format(move)
         return res
+    
+    def getGender(self, trainer, pokemon, trainerI, pokemonI):
+        genderRatio = self.getGenderRatio(pokemon)
+
+        if len(genderRatio) == 1: return ""
+        elif genderRatio[0] == 1: return "(M)"
+        elif genderRatio[1] == 1: return "(F)"
+        else:
+            detailedTDocs = json.load(open("ShowdownGenerator/Platinum/platinumTrainers.json"))
+            detailedTrainer = [t["pokemon"][pokemonI]["personality"] for t in detailedTDocs["trainers"] if t["trainer_name"] == trainer and t["rom_id"] == int(trainerI)][0]
+
+            pGender = detailedTrainer % 256
+
+            threshold = genderRatio[0] * 256 - 1
+
+            if pGender >= threshold: return "(M)"
+            else: return "(F)"
+
     
     def getGenderRatio(self, pName):
         try: 
