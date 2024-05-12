@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 import pandas as pd
 import io
+import json
 
 class PlatinumShowdown:
     def __init__(self) -> None:
@@ -71,6 +72,49 @@ class PlatinumShowdown:
             for move in attributeDict["Moves"].split("/"):
                 res += "- {}\n".format(move)
         return res
+    
+    def getGenderRatio(self, pName):
+        try: 
+            f = open("ShowdownGenerator/Platinum/PokemonData/genderRatios.json")
+            genderData = json.load(f)
+        except:
+            # must make the file
+            genderData = {}
+
+        if pName in genderData.keys():
+            ratios = genderData[pName]
+        else:
+            # get the gender ratio from bulbapedia
+            req = Request("https://bulbapedia.bulbagarden.net/wiki/{}_(Pok%C3%A9mon)".format(pName))
+            req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0")
+            html = urlopen(req).read().decode("utf-8")
+            soup = BeautifulSoup(html, "html.parser")
+
+            # navigate the soup to get the gender ratio
+            genderRatio = soup.find(string="Gender ratio")  \
+                        .parent                             \
+                        .parent                             \
+                        .parent                             \
+                        .parent                             \
+                        .find("table")                      \
+                        .find("a")                          \
+                        .text
+            
+            # check if genderless
+            if "unknown" in genderRatio: 
+                ratios = [None]
+            else:
+                # ratio is always [male%, female%]
+                ratios = [float(i[:-1])/100 for i in genderRatio.replace(" female", "").replace(" male", "").split(", ")]
+
+            # update the JSON
+            genderData[pName] = ratios
+
+            # save update
+            with open("ShowdownGenerator/Platinum/PokemonData/genderRatios.json", "w") as f:
+                json.dump(genderData, f)
+
+        return ratios
 
     def getMoves(self, name, level):
         try:
