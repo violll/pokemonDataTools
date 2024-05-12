@@ -28,11 +28,14 @@ class PlatinumShowdown:
         # user selects the appropriate trainer
         if len(possibleTrainers) > 1: 
             for i in possibleTrainers: print(self.txt[i])
-            trainerI = input("Which version is correct?\n> ")
+            trainerI = int(input("Which version is correct?\n> "))
             trainer = self.txt[int(trainerI)].split("\n")[1:]
         else: 
             trainer = self.txt[possibleTrainers[0]].split("\n")[1:]
             trainerI = trainer[0].split(":")[0]
+        
+        # updates trainer name to verify search accuracy
+        desiredTrainer = trainer[0].split(": ")[-1]
 
         # checks if trainer has items and writes showdown import for each pokemon
         res = ""
