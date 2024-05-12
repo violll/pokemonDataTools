@@ -131,6 +131,10 @@ class PlatinumShowdown:
             # check if genderless
             if "unknown" in genderRatio: 
                 ratios = [None]
+            elif "," not in genderRatio:
+                # check if 100% M or F
+                if "female" in genderRatio: ratios = [0, 1]
+                else: ratios = [1, 0]
             else:
                 # ratio is always [male%, female%]
                 ratios = [float(i[:-1])/100 for i in genderRatio.replace(" female", "").replace(" male", "").split(", ")]
