@@ -1,10 +1,22 @@
 import pandas as pd
 
 def getShowdownData():
-    df = pd.read_excel("ShowdownGenerator/Black&White/Pokémon Black Trainer info (Lillipup).xlsx", sheet_name=0, index_col=list(range(0,6)))
-    df = df.loc[:, :"Spe"]
-
     trainerName = input("What is the name of the trainer?\n> ")
+
+    sheetName = "Snivy"
+
+    # if trainer is a rival, ask what the starter is
+    if "Cheren" in trainerName or "Bianca" in trainerName:
+        userStarter = input("What was your starter pokemon?\n> ")
+        if userStarter == "Oshawott": 
+            sheetName = "Oshawott"
+        elif userStarter == "Tepig": 
+            sheetName = "Tepig"
+        else: sheetName = "Snivy"
+
+    df = pd.read_excel("ShowdownGenerator/Black&White/Pokémon Black Trainer info (Lillipup).xlsx", sheet_name=sheetName, index_col=list(range(0,5)))
+    df = df.loc[:, :"IVs"]
+
     trainerDf = df.loc[df.index.get_level_values(1).str.contains(trainerName)]
     potentialTrainerNums = {x[0] for x in trainerDf.index}
 
