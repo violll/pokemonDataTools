@@ -30,10 +30,8 @@ def getShowdownData():
         mon = trainerDf.loc[row]
         mon.index = [x.strip() for x in mon.index]
 
-        # print(mon, mon.index)
-
         # line 1
-        if mon.Item != "None": print("{} @ {}".format(mon.Pokemon, mon.Item))
+        if type(mon.Item) != float: print("{} @ {}".format(mon.Pokemon, mon.Item))
         else: print(mon.Pokemon)
 
         # line 2
