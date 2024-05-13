@@ -37,7 +37,7 @@ def getShowdownData():
         print("Level: {}".format(mon.Level))
 
         # line 3
-        print("{} Nature".format(mon.Nature))
+        if type(mon.Nature) != float: print("{} Nature".format(mon.Nature))
 
         # line 4
         print("Ability: {}".format(mon.Ability))
