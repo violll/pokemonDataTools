@@ -28,8 +28,10 @@ def getShowdownData():
     
     for mon in trainerDf.itertuples(index=False):
         # line 1
-        if type(mon.Item) != float: print("{} @ {}".format(mon.Pokemon, mon.Item))
-        else: print(mon.Pokemon)
+        print(mon.Pokemon, end=" ")
+        if mon.Gender != "--": print("({}) ".format(mon.Gender.replace("Male", "M").replace("Female", "F")), end=" ")
+        if type(mon.Item) != float: print("@ {}".format(mon.Pokemon, mon.Item))
+        else: print()
 
         # line 2
         print("Level: {}".format(mon.Level))
