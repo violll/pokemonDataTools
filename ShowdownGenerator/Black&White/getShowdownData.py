@@ -21,10 +21,14 @@ def getShowdownData():
     potentialTrainerNums = {x[0] for x in trainerDf.index}
 
     if len(potentialTrainerNums) > 1:
+        trainerNum = -1
         print(trainerDf)
 
-        trainerNum = input("what is the number of the battle?\n> ")
-        trainerDf = trainerDf.xs(int(trainerNum), axis="index", level="Battle")
+        while trainerNum not in potentialTrainerNums:
+            trainerNum = int(input("what is the number of the battle?\n> "))
+
+            try: trainerDf = trainerDf.xs(int(trainerNum), axis="index", level="Battle")
+            except: print("Type a valid battle number!")
     
     for mon in trainerDf.itertuples(index=False):
         # line 1
