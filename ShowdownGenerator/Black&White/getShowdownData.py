@@ -25,9 +25,9 @@ def getShowdownData():
             try: trainerDf = trainerDf.xs(int(trainerNum), axis="index", level="Battle")
             except: print("Type a valid battle number!")
     
-    for mon in trainerDf.itertuples(index=False):
+    for mon in trainerDf.itertuples():
         # line 1
-        print(mon.Pokemon, end=" ")
+        print("{} ({})".format(mon[0][0], mon.Pokemon), end=" ")
         if mon.Gender != "--": print("({}) ".format(mon.Gender.replace("Male", "M").replace("Female", "F")), end=" ")
         if type(mon.Item) != float: print("@ {}".format(mon.Pokemon, mon.Item))
         else: print()
