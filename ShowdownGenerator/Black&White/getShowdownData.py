@@ -25,11 +25,8 @@ def getShowdownData():
 
         trainerNum = input("what is the number of the battle?\n> ")
         trainerDf = trainerDf.xs(int(trainerNum), axis="index", level="Battle")
-
-    for row in trainerDf.index: 
-        mon = trainerDf.loc[row]
-        mon.index = [x.strip() for x in mon.index]
-
+    
+    for mon in trainerDf.itertuples(index=False):
         # line 1
         if type(mon.Item) != float: print("{} @ {}".format(mon.Pokemon, mon.Item))
         else: print(mon.Pokemon)
@@ -47,11 +44,12 @@ def getShowdownData():
         print("IVs: {} HP / {} Atk / {} Def / {} SpA / {} SpD / {} Spe".format(*[mon.IVs for _ in range(6)]))
 
         # moves
-        for i in range(1,5): 
-            move = mon["Move {}".format(i)]
-            if move != "--": print("- {}".format(move))
+        for i in range(6,10): 
+            move = mon[i]
+            if move != "--" and type(move) != float: print("- {}".format(move))
         
         print("\n")
+
     return None
 
 
