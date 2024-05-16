@@ -54,7 +54,7 @@ def getShowdownData():
         print("IVs: {} HP / {} Atk / {} Def / {} SpA / {} SpD / {} Spe".format(*[mon.IVs for _ in range(6)]))
 
         # moves
-        for i in range(6,10): 
+        for i in range(7,11): 
             move = mon[i]
             if move != "--" and type(move) != float: print("- {}".format(move))
         
