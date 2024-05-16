@@ -1,8 +1,7 @@
 import pandas as pd
 
 def getShowdownData():
-    trainerName = input("What is the name of the trainer?\n> ")
-
+    trainerName = input("What is the name of the trainer?\n> ").replace("Iris", "Drayden")
     sheetName = "Snivy"
 
     # if trainer is a rival, ask what the starter is
