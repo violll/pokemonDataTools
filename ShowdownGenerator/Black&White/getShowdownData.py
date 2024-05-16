@@ -1,7 +1,13 @@
 import pandas as pd
 
 def getShowdownData():
-    trainerName = input("What is the name of the trainer?\n> ").replace("Iris", "Drayden")
+    iris = False
+
+    trainerName = input("What is the name of the trainer?\n> ")
+    if "Iris" in trainerName: 
+        trainerName = trainerName.replace("Iris", "Drayden")
+        iris = True
+
     sheetName = "Snivy"
 
     # if trainer is a rival, ask what the starter is
@@ -26,8 +32,12 @@ def getShowdownData():
     
     for mon in trainerDf.itertuples():
         # line 1
-        print("{} ({})".format(mon[0][1], mon.Pokemon), end=" ")
-        if mon.Gender != "--": print("({}) ".format(mon.Gender.replace("Male", "M").replace("Female", "F")), end=" ")
+        if iris: print("{} ({}) ({})".format(mon[0][1].replace("Drayden", "Iris"), mon.Pokemon, "F"), end=" ")
+        else: 
+            print("{} ({})".format(mon[0][1], mon.Pokemon), end=" ")
+        
+            if mon.Gender != "--": print("({}) ".format(mon.Gender.replace("Male", "M").replace("Female", "F")), end=" ")
+        
         if type(mon.Item) != float: print("@ {}".format(mon.Pokemon, mon.Item))
         else: print()
 
