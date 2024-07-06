@@ -13,7 +13,7 @@ class Pokemon:
 
     def showdownExport(self):
         res = " ".join("{} ({}) {} {}".format(self.trainer, self.name, self.gender, self.item).split()) + "\n"
-        res += " / ".join(self.IVs) + "\n"
+        res += "IVs: " + " / ".join(self.IVs) + "\n"
         res += "Ability: {}".format(self.ability) + "\n"
         res += "Level: {}".format(self.level) + "\n"
         if self.nature != "": res += "{} Nature".format(self.nature) + "\n"
