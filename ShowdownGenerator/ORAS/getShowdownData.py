@@ -12,7 +12,10 @@ import showdownPokemon, showdownTrainer
 class ORAShowdown:
     def __init__(self) -> None:
         self.txt = self.readTrainerData()
+        self.trainer = showdownTrainer.Trainer()
         self.formatTrainer()
+        
+        self.trainer.export()
 
     def readTrainerData(self):
         f = open("ShowdownGenerator/ORAS/ORASTrainers.txt", "r", encoding = 'utf-8')
@@ -42,15 +45,12 @@ class ORAShowdown:
         # updates trainer name to verify search accuracy
         desiredTrainer = trainer[0].split("- ")[-1]
         pokemonList = trainer[3:]
-        Trainer = showdownTrainer.Trainer(desiredTrainer)
+        self.trainer.name = desiredTrainer
 
         # checks if trainer has items and writes showdown import for each pokemon
-        pokemonI = 0
         for line in pokemonList:
-            Trainer.pokemon.append(self.formatPokemon(line, desiredTrainer, trainerI, pokemonI))
-            pokemonI += 1
+            self.trainer.pokemon.append(self.formatPokemon(line, desiredTrainer, trainerI))
         
-        for mon in Trainer.pokemon: print(mon)
         return None
     
     def parseMon(self, pokemon, keyword, end=""):
@@ -67,7 +67,7 @@ class ORAShowdown:
 
         return pokemon[start:stop]
             
-    def formatPokemon(self, pokemon, trainer, trainerI, pokemonI):
+    def formatPokemon(self, pokemon, trainer, trainerI):
         ResTest = showdownPokemon.Pokemon()
         
         ResTest.name = pokemon.split()[0]
