@@ -44,40 +44,53 @@ class ORAShowdown:
         pokemonList = trainer[3:]
         Trainer = showdownTrainer.Trainer(desiredTrainer)
 
-        # CHECKED THROUGH HERE
-
         # checks if trainer has items and writes showdown import for each pokemon
         pokemonI = 0
         for line in pokemonList:
-            # print(line)
             Trainer.pokemon.append(self.formatPokemon(line, desiredTrainer, trainerI, pokemonI))
             pokemonI += 1
         
         for mon in Trainer.pokemon: print(mon)
         return None
+    
+    def parseMon(self, pokemon, keyword, end):
+        start = pokemon.find(keyword) + len(keyword)
+        stop = len(pokemon[:start]) + pokemon[start:].find(end)
+        return pokemon[start:stop]
             
     def formatPokemon(self, pokemon, trainer, trainerI, pokemonI):
         ResTest = showdownPokemon.Pokemon()
         
         ResTest.name = pokemon.split()[0]
         # ResTest.gender TODO -- missing from doc
+
+        # item
         if "@" in pokemon: 
-            start = pokemon.find("@") + 1
-            stop = len(pokemon[:start]) + pokemon[start:].find("(")
-            ResTest.item = pokemon[start, stop] 
+            start = pokemon.find("@")
+            # TODO this is kind of hacky, adjust if needed
+            if "(" in pokemon[start:]:
+                stop = len(pokemon[:start]) + pokemon[start:].find("(")
+            else:
+                stop = len(pokemon[:start]) + pokemon[start:].find("IVs")
+            ResTest.item = pokemon[start:stop] 
+
         # ivs
         IVs = int(pokemon[pokemon.find("IVs: All ") + len("IVs: All "):])
         ResTest.IVs = ["{} {}".format(IVs, stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
+        
         # ability
         if "Ability" in pokemon:
             abilityStart = pokemon.find("Ability: ") + len("Ability: ")
             abilityStop = len(pokemon[:abilityStart]) + pokemon[abilityStart:].find(")")
             ResTest.ability = pokemon[abilityStart:abilityStop]
+        
         # level
         levelStart = pokemon.find("Lv. ") + len("Lv. ")
         levelStop = len(pokemon[:levelStart]) + pokemon[levelStart:].find(")")
         ResTest.level = int(pokemon[levelStart:levelStop])
+        
         # TODO nature -- missing from doc
+
         # moves
         if "Moves" in pokemon:
             movesStart = pokemon.find("Moves: ") + len("Moves: ")
