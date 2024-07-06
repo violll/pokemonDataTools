@@ -83,43 +83,18 @@ class ORAShowdown:
             movesStart = pokemon.find("Moves: ") + len("Moves: ")
             movesStop = len(pokemon[:movesStart]) + pokemon[movesStart:].find(")")
             ResTest.moves = [move for move in pokemon[movesStart:movesStop].split(" / ")]
+        else:
+            ResTest.moves = self.getMoves(ResTest)
+        
         ResTest.trainer = trainer
-        # print("TESTING", ResTest.moves)
+
 
         return ResTest
 
 
         # # TODO check this
-        # res = ""
-        # attributes = pokemon.split(" ")
-        # name = attributes[0]
-        # level = attributes[2]
-        # gender = "" #self.getGender(trainer, name, trainerI, pokemonI)
+        # gender = self.getGender(trainer, name, trainerI, pokemonI)
 
-        # attributeDict = dict()
-        # attributeStr = pokemon[pokemon.find("(")+1:-1].split(",")
-        # for attr in attributeStr:
-        #     key, val = attr.split(": ")
-        #     attributeDict[key.strip()] = val.strip()
-
-        # # if IVs are different for each stat
-        # if "/" in attributeDict["IVs"]:
-        #     attributeDict["IVs"] = attributeDict["IVs"].split("/")
-        #     print(attributeDict["IVs"])
-        # else:
-        #     attributeDict["IVs"] = [attributeDict["IVs"] for _ in range(6)]
-
-        # res += "{} ({}) {}\n".format(trainer, name, gender)
-        # res += "IVs: {} HP / {} Atk / {} Def / {} SpA / {} SpD / {} Spe\n".format(attributeDict["IVs"][0], attributeDict["IVs"][1], attributeDict["IVs"][2], attributeDict["IVs"][3], attributeDict["IVs"][4], attributeDict["IVs"][5])
-        # res += "Ability: {}\n".format(attributeDict["Ability"])
-        # res += "Level: {}\n".format(level)
-        # res += "{} Nature\n".format(attributeDict["Nature"])
-        # if attributeDict["Moves"] == "Default":
-        #     res += self.getMoves(name, level)
-        # else: 
-        #     for move in attributeDict["Moves"].split("/"):
-        #         res += "- {}\n".format(move)
-        # return res
     
     def getGender(self, trainer, pokemon, trainerI, pokemonI):
         genderRatio = self.getGenderRatio(pokemon)
@@ -186,12 +161,15 @@ class ORAShowdown:
 
         return ratios
 
-    def getMoves(self, name, level):
+    def getMoves(self, mon):
+        name = mon.name
+        level = mon.level
+
         try:
-            df = pd.read_pickle("ShowdownGenerator/Platinum/PokemonData/{}.pkl".format(name))
+            df = pd.read_pickle("ShowdownGenerator/ORAS/PokemonData/{}.pkl".format(name))
             col = list(df)[0]
         except:
-            req = Request("https://bulbapedia.bulbagarden.net/wiki/{}_(Pok%C3%A9mon)/Generation_IV_learnset".format(name))
+            req = Request("https://bulbapedia.bulbagarden.net/wiki/{}_(Pok%C3%A9mon)/Generation_VI_learnset".format(name))
             req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0")
             html = urlopen(req).read().decode("utf-8")
             soup = BeautifulSoup(html, "html.parser")
@@ -199,8 +177,8 @@ class ORAShowdown:
             table = soup.find("table", {"class": "sortable"})
 
             try: 
-                df = pd.read_html(io.StringIO(str(table)), displayed_only=False)[0].loc[:, ["PtHGSS", "Move"]]
-                col = "PtHGSS"
+                df = pd.read_html(io.StringIO(str(table)), displayed_only=False)[0].loc[:, ["ORAS", "Move"]]
+                col = "ORAS"
             except:
                 df = pd.read_html(io.StringIO(str(table)), displayed_only=False)[0].loc[:, ["Level", "Move"]]
                 col = "Level"
@@ -212,9 +190,9 @@ class ORAShowdown:
                 else: df.loc[i, col] = int(str(val)[:len(str(val))//2])
 
             df = df[df.loc[:,col] != -1]
-            df.to_pickle("ShowdownGenerator/Platinum/PokemonData/{}.pkl".format(name))
+            df.to_pickle("ShowdownGenerator/ORAS/PokemonData/{}.pkl".format(name))
 
-        moves = "".join(list(df[df.loc[:,col] <= int(level)].loc[:, "Move"].tail(4).transform(lambda x: "- " + x + "\n")))
+        moves = list(df[df.loc[:,col] <= int(level)].loc[:, "Move"].tail(4))        
         return moves
 
 if __name__ == "__main__":
