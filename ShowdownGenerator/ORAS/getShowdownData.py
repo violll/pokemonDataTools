@@ -49,8 +49,8 @@ class ORAShowdown:
         self.trainer.pokemon = [showdownPokemon.Pokemon() for _ in range(len(pokemonList))]
 
         # TODO gender -- missing from doc
-        # for pokemon in self.trainer.pokemon:
-        #     pokemon.gender = self.getGender(trainer, "", 0, 0)
+        # for _ in self.trainer.pokemon:
+        self.getGender(desiredTrainer)
 
         # checks if trainer has items and writes showdown import for each pokemon
         for i in range(len(pokemonList)):
@@ -104,42 +104,77 @@ class ORAShowdown:
         return ResTest
 
     
-    def getGender(self, trainer, pokemon, trainerI, pokemonI):
-        # first thing is to get the class
-        classes = {}
-        req = Request("https://bulbapedia.bulbagarden.net/wiki/{}_(Trainer_class)".format(trainer))
+    def getGender(self, trainer):
+        # checks for rival case: gender determined by rival's gender
+        rivals = {
+            "Pokémon Trainer Brendan": "(M)",
+            "Pokémon Trainer May": "(F)"
+        }
+        if rivals.get(trainer, False): 
+            for i in range(len(self.trainer.pokemon)):
+                self.trainer.pokemon[i].gender = rivals[trainer]
+            return
+
+        # get the trainer class
+        trainerClass = input("What is the name of the trainer class?\n> ")
+        trainerName = trainer.replace(trainerClass, "").strip()
+        trainerClass = trainerClass.replace(" ", "_").replace("é", "%C3%A9")
+
+        # navigate the soup of the trainer class to get the trainer name
+        req = Request("https://bulbapedia.bulbagarden.net/wiki/{}_(Trainer_class)".format(trainerClass))
         req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0")
         html = urlopen(req).read().decode("utf-8")
         soup = BeautifulSoup(html, "html.parser")
-        # checks for rival case: gender determined by rival's gender
-        # rivals = {
-        #     "Pokémon Trainer Brendan": "(M)",
-        #     "Pokémon Trainer May": "(F)"
-        # }
-        # if rivals.get(trainer, False): return rivals[trainer]
 
-        # chech the pokemon's gender ratio
-        # genderRatio = self.getGenderRatio(pokemon)
-        # print(genderRatio)
+        # get the trainer route link
+        trainerLink = soup.find("span", {"id": "Pokémon_Omega_Ruby_and_Alpha_Sapphire"}) \
+                             .parent                                                        \
+                             .findNext("table")                                             \
+                             .find("a", string=trainerName)['href'].replace("\\", "/")  
+        
+        # use the link in the trainer name to make soup of relevant route
+        req = Request("https://bulbapedia.bulbagarden.net{}".format(trainerLink))
+        req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0")
+        html = urlopen(req).read().decode("utf-8")
+        soup = BeautifulSoup(html, "html.parser")
 
-        # if len(genderRatio) == 1: return ""
-        # elif genderRatio[0] == 1: return "(M)"
-        # elif genderRatio[1] == 1: return "(F)"
-        # elif genderRatio[0] == genderRatio[1]: 
-            # get the gender of the trainer
-            # pass
-        # else:
-            # detailedTDocs = json.load(open("ShowdownGenerator/Platinum/platinumTrainers.json"))
-            # detailedTrainer = [t["pokemon"][pokemonI]["personality"] for t in detailedTDocs["trainers"] if t["trainer_name"] == trainer and t["rom_id"] == int(trainerI)][0]
+        # navigate soup of route to get trainer name & pokemon data
+        possibleTrainers = soup.find("span", {"class": "mw-headline", "id": "Pokémon_Omega_Ruby_and_Alpha_Sapphire"})   \
+                   .parent                                                                                  \
+                   .findNext("table")                                                                       \
+                   .findAllNext("b")
 
-            # pGender = detailedTrainer % 256
+        for pTrainer in possibleTrainers:
+            if trainerName in pTrainer.get_text(): break # should I ask if it's for a rematch???
 
-            # threshold = genderRatio[1] * 256 - 1
+        trainerRows = pTrainer.findParent("table")  \
+                              .findParent("td")     \
 
-            # if pGender >= threshold: return "(M)"
-            # else: return "(F)"
-            # return
-        pass
+        placeholder = trainerRows.findParent()   
+
+        trainerRows = trainerRows.findNextSibling()    \
+                                 .findAll("tr")        
+        
+        for i in range(len(self.trainer.pokemon)):
+            nameGender = trainerRows[0].findAll("td")[1]
+            name = nameGender.find("a").get_text()
+            
+            try: gender = nameGender.find("span", recursive = False).get_text()
+            except: gender = ""
+
+            self.trainer.pokemon[i].name = name
+
+            if gender == "♂": self.trainer.pokemon[i].gender = "(M)"
+            elif gender == "♀": self.trainer.pokemon[i].gender = "(F)"
+
+            item = trainerRows[1].get_text()
+
+            if "No item" not in item: self.trainer.pokemon[i].item = "@ " + item
+
+            # get next relevant row
+            placeholder = placeholder.findNextSibling("tr")
+            trainerRows = placeholder.findAll("tr")
+
     
     def getGenderRatio(self, pName):
         try: 
