@@ -13,6 +13,7 @@ class ORAShowdown:
     def __init__(self) -> None:
         self.txt = self.readTrainerData()
         self.trainer = showdownTrainer.Trainer()
+        self.df = pd.read_excel("ShowdownGenerator/ORAS/ORASMandatoryTrainers.xlsx", sheet_name = "Stats", index_col = [0, 1, 2], usecols=[i for i in range(6)], nrows = 176).sort_index()
         self.formatTrainer()
 
         self.trainer.export()
@@ -48,13 +49,12 @@ class ORAShowdown:
         self.trainer.name = desiredTrainer
         self.trainer.pokemon = [showdownPokemon.Pokemon() for _ in range(len(pokemonList))]
 
-        # TODO gender -- missing from doc
-        # for _ in self.trainer.pokemon:
+        # updates gender for each pokemon
         self.getGender(desiredTrainer)
 
         # checks if trainer has items and writes showdown import for each pokemon
         for i in range(len(pokemonList)):
-            self.trainer.pokemon[i] = self.formatPokemon(self.trainer.pokemon[i], pokemonList[i], desiredTrainer, trainerI)
+            self.trainer.pokemon[i] = self.formatPokemon(self.trainer.pokemon[i], pokemonList[i], desiredTrainer)
         
         return None
     
@@ -72,26 +72,28 @@ class ORAShowdown:
 
         return pokemon[start:stop]
             
-    def formatPokemon(self, ResTest, pokemon, trainer, trainerI):        
+    def formatPokemon(self, ResTest, pokemon, trainer):        
         ResTest.name = pokemon.split()[0]
+
+        # level
+        ResTest.level = int(self.parseMon(pokemon, "Lv. ", ")"))
 
         # item
         if "@" in pokemon: 
             ResTest.item = "@ " + self.parseMon(pokemon, "@", ["(", "@", "IVs"]) 
 
-        # ivs -- TODO wrong in txt, some included in ss
-        ResTest.IVs = ["{} {}".format(int(self.parseMon(pokemon, "IVs: All ")), stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
-        
+        # ivs -- only added if present in self.df
+        try: 
+            monDF = self.df.loc[(trainer, ResTest.name, ResTest.level)]
+            ResTest.ability, ResTest.nature = monDF.iat[0, 0], monDF.iat[0, 1]
+            ResTest.IVs = ["{} {}".format(monDF.iat[0, 2], stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
+        except: pass
+
         # ability -- if it's missing, can't assume the pokemon has only one ability...
         # some missing are present in ss
         if "Ability" in pokemon:
             ResTest.ability = self.parseMon(pokemon, "Ability: ", [")"])
-        
-        # level
-        ResTest.level = int(self.parseMon(pokemon, "Lv. ", ")"))
-        
-        # TODO nature -- missing from doc -- some are present in ss
-
+                
         # moves
         if "Moves" in pokemon:
             ResTest.moves = [move for move in self.parseMon(pokemon, "Moves: ", ")").split(" / ")]
@@ -100,9 +102,7 @@ class ORAShowdown:
         
         ResTest.trainer = trainer
 
-
         return ResTest
-
     
     def getGender(self, trainer):
         # checks for rival case: gender determined by rival's gender
@@ -174,7 +174,6 @@ class ORAShowdown:
             # get next relevant row
             placeholder = placeholder.findNextSibling("tr")
             trainerRows = placeholder.findAll("tr")
-
     
     def getGenderRatio(self, pName):
         try: 

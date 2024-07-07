@@ -3,7 +3,7 @@ class Pokemon:
         self.name = ""
         self.gender = ""    # "(M)", "(F)", or ""
         self.item = ""      # "@ Sitrus Berry" or ""
-        self.IVs = []       # [0 HP, 0 Atk...]
+        self.IVs = ["0 {}".format(stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]       # [0 HP, 0 Atk...]
         self.ability = ""
         self.level = -1
         self.nature = ""
