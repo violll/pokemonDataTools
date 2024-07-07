@@ -14,7 +14,7 @@ class ORAShowdown:
         self.txt = self.readTrainerData()
         self.trainer = showdownTrainer.Trainer()
         self.formatTrainer()
-        
+
         self.trainer.export()
 
     def readTrainerData(self):
@@ -46,10 +46,15 @@ class ORAShowdown:
         desiredTrainer = trainer[0].split("- ")[-1]
         pokemonList = trainer[3:]
         self.trainer.name = desiredTrainer
+        self.trainer.pokemon = [showdownPokemon.Pokemon() for _ in range(len(pokemonList))]
+
+        # TODO gender -- missing from doc
+        # for pokemon in self.trainer.pokemon:
+        #     pokemon.gender = self.getGender(trainer, "", 0, 0)
 
         # checks if trainer has items and writes showdown import for each pokemon
-        for line in pokemonList:
-            self.trainer.pokemon.append(self.formatPokemon(line, desiredTrainer, trainerI))
+        for i in range(len(pokemonList)):
+            self.trainer.pokemon[i] = self.formatPokemon(self.trainer.pokemon[i], pokemonList[i], desiredTrainer, trainerI)
         
         return None
     
@@ -67,27 +72,25 @@ class ORAShowdown:
 
         return pokemon[start:stop]
             
-    def formatPokemon(self, pokemon, trainer, trainerI):
-        ResTest = showdownPokemon.Pokemon()
-        
+    def formatPokemon(self, ResTest, pokemon, trainer, trainerI):        
         ResTest.name = pokemon.split()[0]
-        # ResTest.gender TODO -- missing from doc
 
         # item
         if "@" in pokemon: 
             ResTest.item = "@ " + self.parseMon(pokemon, "@", ["(", "@", "IVs"]) 
 
-        # ivs
+        # ivs -- TODO wrong in txt, some included in ss
         ResTest.IVs = ["{} {}".format(int(self.parseMon(pokemon, "IVs: All ")), stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
         
         # ability -- if it's missing, can't assume the pokemon has only one ability...
+        # some missing are present in ss
         if "Ability" in pokemon:
             ResTest.ability = self.parseMon(pokemon, "Ability: ", [")"])
         
         # level
         ResTest.level = int(self.parseMon(pokemon, "Lv. ", ")"))
         
-        # TODO nature -- missing from doc
+        # TODO nature -- missing from doc -- some are present in ss
 
         # moves
         if "Moves" in pokemon:
@@ -100,28 +103,43 @@ class ORAShowdown:
 
         return ResTest
 
-
-        # # TODO check this
-        # gender = self.getGender(trainer, name, trainerI, pokemonI)
-
     
     def getGender(self, trainer, pokemon, trainerI, pokemonI):
-        genderRatio = self.getGenderRatio(pokemon)
+        # first thing is to get the class
+        classes = {}
+        req = Request("https://bulbapedia.bulbagarden.net/wiki/{}_(Trainer_class)".format(trainer))
+        req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0")
+        html = urlopen(req).read().decode("utf-8")
+        soup = BeautifulSoup(html, "html.parser")
+        # checks for rival case: gender determined by rival's gender
+        # rivals = {
+        #     "Pokémon Trainer Brendan": "(M)",
+        #     "Pokémon Trainer May": "(F)"
+        # }
+        # if rivals.get(trainer, False): return rivals[trainer]
 
-        if len(genderRatio) == 1: return ""
-        elif genderRatio[0] == 1: return "(M)"
-        elif genderRatio[1] == 1: return "(F)"
-        else:
-            detailedTDocs = json.load(open("ShowdownGenerator/Platinum/platinumTrainers.json"))
-            detailedTrainer = [t["pokemon"][pokemonI]["personality"] for t in detailedTDocs["trainers"] if t["trainer_name"] == trainer and t["rom_id"] == int(trainerI)][0]
+        # chech the pokemon's gender ratio
+        # genderRatio = self.getGenderRatio(pokemon)
+        # print(genderRatio)
 
-            pGender = detailedTrainer % 256
+        # if len(genderRatio) == 1: return ""
+        # elif genderRatio[0] == 1: return "(M)"
+        # elif genderRatio[1] == 1: return "(F)"
+        # elif genderRatio[0] == genderRatio[1]: 
+            # get the gender of the trainer
+            # pass
+        # else:
+            # detailedTDocs = json.load(open("ShowdownGenerator/Platinum/platinumTrainers.json"))
+            # detailedTrainer = [t["pokemon"][pokemonI]["personality"] for t in detailedTDocs["trainers"] if t["trainer_name"] == trainer and t["rom_id"] == int(trainerI)][0]
 
-            threshold = genderRatio[1] * 256 - 1
+            # pGender = detailedTrainer % 256
 
-            if pGender >= threshold: return "(M)"
-            else: return "(F)"
+            # threshold = genderRatio[1] * 256 - 1
 
+            # if pGender >= threshold: return "(M)"
+            # else: return "(F)"
+            # return
+        pass
     
     def getGenderRatio(self, pName):
         try: 
