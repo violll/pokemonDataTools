@@ -25,7 +25,9 @@ class ShowdownWrapper():
 
     def initParser(self):
         parser = argparse.ArgumentParser()
-        parser.add_argument("gameVersion", choices = self.gameVersions.keys(), help = "the game you are playing")
+        parser.add_argument("gameVersion",                          \
+                            choices = self.gameVersions.keys(),     \
+                            help = "the game you are playing")
 
         return parser
 
