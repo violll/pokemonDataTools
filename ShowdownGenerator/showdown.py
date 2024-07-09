@@ -2,18 +2,6 @@ import argparse
 import sys
 import os
 
-# from bs4 import BeautifulSoup
-# from urllib.request import Request, urlopen
-# import pandas as pd
-# import sys
-# import os
-# import io
-# import json
-
-import BlackWhite
-import ORAS
-import Platinum
-
 sys.path.insert(0, os.path.abspath('BlackWhite'))
 sys.path.insert(0, os.path.abspath('ORAS'))
 sys.path.insert(0, os.path.abspath('Platinum'))
