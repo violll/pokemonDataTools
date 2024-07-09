@@ -64,6 +64,9 @@ class PlatinumShowdown:
             key, val = attr.split(": ")
             attributeDict[key.strip()] = val.strip()
 
+        if "@" in pokemon: item = (pokemon[pokemon.find("@"):pokemon.find("(")].strip())
+        else: item = ""
+
         # if IVs are different for each stat
         if "/" in attributeDict["IVs"]:
             attributeDict["IVs"] = attributeDict["IVs"].split("/")
@@ -71,7 +74,7 @@ class PlatinumShowdown:
         else:
             attributeDict["IVs"] = [attributeDict["IVs"] for _ in range(6)]
 
-        res += "{} ({}) {}\n".format(trainer, name, gender)
+        res += " ".join("{} ({}) {} {}".format(trainer, name, gender, item).split()) + "\n"
         res += "IVs: {} HP / {} Atk / {} Def / {} SpA / {} SpD / {} Spe\n".format(attributeDict["IVs"][0], attributeDict["IVs"][1], attributeDict["IVs"][2], attributeDict["IVs"][3], attributeDict["IVs"][4], attributeDict["IVs"][5])
         res += "Ability: {}\n".format(attributeDict["Ability"])
         res += "Level: {}\n".format(level)
