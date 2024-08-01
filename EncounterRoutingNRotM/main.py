@@ -48,10 +48,45 @@ class NRotMEncounterRouting():
         return res
 
     def getEncounterTable(self):
+        # initial df without manipulation
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value").fillna(0)
         
         return df
+                
+    def assignOneToOne(self):
+        workingdf = self.encounterTable.copy(deep=True)
+
+        encounters = {}
+        res = []
+
+        options = workingdf.sum(axis=1) == 1
+        
+        while options.any():
+            onlyOneOption = workingdf[options]
+            onlyOneOptions = onlyOneOption.replace(0, pd.NaT).dropna(axis=1, how="all")
+
+            print(onlyOneOptions)
+
+            for route in onlyOneOptions.iterrows():
+                encounter = route[1][route[1] == 1]
+                if encounter.index[0] not in encounters.keys():
+                    encounters[encounter.index[0]] = encounter.name
+            
+            workingdf = workingdf.filter(items=set(workingdf.columns).difference(set(onlyOneOptions.columns)), axis=1).filter(items=set(workingdf.index).difference(set(onlyOneOptions.index)), axis=0)
+            print(workingdf.columns,workingdf.index)
+
+            res.append(workingdf)
+
+            options = workingdf.sum(axis=1) == 1
+        
+        
+
+
+        print(encounters)
+        # would want to highlight the route after removing the column so you know there's another encounter to get beforehand?
+
+        return workingdf
 
     def exportTable(self):
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
