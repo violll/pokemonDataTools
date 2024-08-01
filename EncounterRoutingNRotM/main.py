@@ -9,6 +9,7 @@ class NRotMEncounterRouting():
     def __init__(self) -> None:
         self.wb = openpyxl.load_workbook(filename = "EncounterRoutingNRotM/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
         self.ws = self.wb["Team & Encounters"]
+        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
 
         # SPECIFIC TO THIS SHEET
         self.relevantCol = "J"
@@ -59,7 +60,8 @@ class NRotMEncounterRouting():
     def getEncounterTable(self):
         # initial df without manipulation
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
-                         .pivot(index="Route", columns="Encounter", values="Value").fillna(0)
+                         .pivot(index="Route", columns="Encounter", values="Value").fillna(0)       \
+                         .reindex(self.routeOrder)
         
         return self.consolidateTrees(df)
 
