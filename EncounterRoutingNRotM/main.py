@@ -1,4 +1,5 @@
 import openpyxl
+import openpyxl.comments
 import openpyxl.formatting
 import openpyxl.styles
 import pandas as pd
@@ -176,7 +177,11 @@ class NRotMEncounterRouting():
                 # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
                 # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
 
-            # add comments to last sheet
+            # add comments to last sheet to show what pokemon need to be encountered first
+            for col in worksheet.iter_cols(min_row = 2, max_col = 1):
+                for cell in col: 
+                    message = ", ".join(self.notes[cell.value])
+                    if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
             
         return 
 
