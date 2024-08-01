@@ -58,16 +58,16 @@ class NRotMEncounterRouting():
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value").fillna(0)
         
-        return df
+        return self.consolidateTrees(df)
 
-    def consolidateTrees(self):
+    def consolidateTrees(self, df):
         # TEMP replace with evo lines when I have wifi again
-        tempEvoLines = [["Abombasnow", "Snover"],
-                        ["Asumarill", "Marill", "Azurill"],
+        tempEvoLines = [["Abomasnow", "Snover"],
+                        ["Azumarill", "Marill", "Azurill"],
                         ["Beautifly", "Cascoon", "Silcoon", "Wurmple"],
                         ["Buizel", "Floatzel"],
                         ["Burmy", "Wormadam", "Mothim"],
-                        ["Cheribi", "Cherrim"],
+                        ["Cherubi", "Cherrim"],
                         ["Chimecho", "Chingling"],
                         ["Combee", "Vespiquen"],
                         ["Cranidos", "Rampardos"],
@@ -103,6 +103,16 @@ class NRotMEncounterRouting():
                         ["Tropius"],
                         ["Unown"],
                         ["Yanma", "Yanmega"]]
+        
+        res = []
+
+        for evoline in tempEvoLines:
+            evoline = [mon for mon in evoline if mon in df.columns]
+            test = pd.DataFrame(df[evoline].agg("max", axis="columns"))
+            test.columns = ["/".join(evoline)]
+            res.append(test)
+            
+        return pd.concat(res, axis=1)
 
     def assignOneToOne(self):
         workingdf = self.encounterTables[-1].copy(deep=True)
