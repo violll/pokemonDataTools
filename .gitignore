@@ -166,3 +166,4 @@ ShowdownGenerator/ORAS/PokemonData/*
 # Ignored files
 EncounterRoutingNRotM/test.xlsx
 EncounterRoutingNRotM/~$test.xlsx
+EncounterRoutingNRotM/encounters.xlsx

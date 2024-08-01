@@ -12,8 +12,15 @@ class NRotMEncounterRouting():
         self.relevantCol = "J"
         self.encounters = self.ws["J5:J64"]
 
+        self.assignedEncounters = {}
+
         self.encounterData = self.getEncounterData()
         self.encounterTable = self.getEncounterTable()
+
+        self.encounterTables = [self.encounterTable]
+
+        self.assignOneToOne()
+        self.exportTable()
 
     def getEncounterData(self):
         res = []
@@ -55,10 +62,7 @@ class NRotMEncounterRouting():
         return df
                 
     def assignOneToOne(self):
-        workingdf = self.encounterTable.copy(deep=True)
-
-        encounters = {}
-        res = []
+        workingdf = self.encounterTables[-1].copy(deep=True)
 
         options = workingdf.sum(axis=1) == 1
         
@@ -70,23 +74,22 @@ class NRotMEncounterRouting():
 
             for route in onlyOneOptions.iterrows():
                 encounter = route[1][route[1] == 1]
-                if encounter.index[0] not in encounters.keys():
-                    encounters[encounter.index[0]] = encounter.name
+                if encounter.index[0] not in self.assignedEncounters.keys():
+                    self.assignedEncounters[encounter.index[0]] = encounter.name
             
-            workingdf = workingdf.filter(items=set(workingdf.columns).difference(set(onlyOneOptions.columns)), axis=1).filter(items=set(workingdf.index).difference(set(onlyOneOptions.index)), axis=0)
+            workingdf = workingdf.filter(items=set(workingdf.columns).difference(set(onlyOneOptions.columns)), axis=1) \
+                                 .filter(items=set(workingdf.index).difference(set(onlyOneOptions.index)), axis=0)
+            
             print(workingdf.columns,workingdf.index)
 
-            res.append(workingdf)
+            self.encounterTables.append(workingdf)
 
             options = workingdf.sum(axis=1) == 1
-        
-        
 
-
-        print(encounters)
+        print(self.assignedEncounters)
         # would want to highlight the route after removing the column so you know there's another encounter to get beforehand?
 
-        return workingdf
+        return 
 
     def exportTable(self):
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
@@ -94,14 +97,15 @@ class NRotMEncounterRouting():
         greenFont = openpyxl.styles.Font(color="006100")
 
         with pd.ExcelWriter("EncounterRoutingNRotM/encounters.xlsx") as writer:
-            self.encounterTable.to_excel(writer, sheet_name="EncounterTable", freeze_panes=(1, 1))
+            for i in range(len(self.encounterTables)):
+                self.encounterTables[i].to_excel(writer, sheet_name="EncounterTable{}".format(str(i)), freeze_panes=(1, 1))
 
-            worksheet = writer.sheets["EncounterTable"]
+                worksheet = writer.sheets["EncounterTable{}".format(str(i))]
 
-            # fills the background color
-            worksheet.conditional_formatting.add("B2:BN56", openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
-            # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
-            # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
+                # fills the background color
+                worksheet.conditional_formatting.add("B2:BN56", openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
+                # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
+                # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
 
         return 
 
