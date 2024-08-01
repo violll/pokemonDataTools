@@ -126,7 +126,8 @@ class NRotMEncounterRouting():
 
             # melt to pd.DataFrame (index: routes, column: encounter)
             onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
-            print(onlyOneMelted)
+
+            self.printProgress(onlyOneMelted)
 
             # drop duplicates and update the dictionary
             self.assignedEncounters.update(onlyOneMelted.drop_duplicates().to_dict()["Encounter"])
@@ -140,10 +141,17 @@ class NRotMEncounterRouting():
 
             onlyOneBool = workingdf.sum(axis=1) == 1
 
-        print(self.assignedEncounters)
+        self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
+
         # would want to highlight the route after removing the column so you know there's another encounter to get beforehand?
 
         return 
+    
+    def printProgress(self, df, pattern="="):
+        print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)])
+        print("Final Updated Encounters")
+        print(df)
+        print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)], "\n")
 
     def exportTable(self):
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
