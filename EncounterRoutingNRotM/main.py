@@ -3,16 +3,15 @@ import openpyxl.comments
 import openpyxl.formatting
 import openpyxl.styles
 import pandas as pd
-import copy as cp
+import json
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
+        # SPECIFIC TO THIS SHEET
         self.wb = openpyxl.load_workbook(filename = "EncounterRoutingNRotM/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
         self.ws = self.wb["Team & Encounters"]
-        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
-
-        # SPECIFIC TO THIS SHEET
         self.relevantCol = "J"
+        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
 
         self.encounterData = self.getEncounterData()
         self.encounterTable = self.getEncounterTable()
@@ -23,6 +22,7 @@ class NRotMEncounterRouting():
         self.encounterTables = [self.encounterTable]
 
         self.assignOneToOne()
+        self.checkDuplicates()
         self.exportTable()
 
     def getEncounterData(self):
@@ -61,9 +61,8 @@ class NRotMEncounterRouting():
         # initial df without manipulation
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value").fillna(0)       \
-                         .reindex(self.routeOrder)
         
-        return self.consolidateTrees(df)
+        return self.consolidateTrees(df.reindex([route for route in self.routeOrder if route in list(df.index)]))
 
     def consolidateTrees(self, df):
         # TEMP replace with evo lines when I have wifi again
@@ -157,6 +156,34 @@ class NRotMEncounterRouting():
 
         return 
     
+    def checkDuplicates(self):
+        workingdf = self.encounterTables[-1].copy(deep=True)
+        relevantdf = workingdf[workingdf.duplicated(keep=False)]
+        groups = relevantdf.groupby(by=list(relevantdf.columns), sort=False).groups
+        
+        # collect eligible group data and ask the player which group to assign
+        groupsData = {}
+        i = 0
+        for group in groups:
+            encounters = [relevantdf.columns[i] for i in range(len(relevantdf.columns)) if group[i] == 1]
+            groupData = {}
+            # if there are more routes than encounters, each encounter can be assigned
+            if len(groups[group].values) >= sum(group):
+                groupData["Encounters"] = encounters
+                groupData["nEncounters"] = len(encounters)
+                groupData["Routes"] = list(groups[group].values)
+                groupsData[i] = groupData
+                i += 1
+        
+        print(groupsData)
+        groupToAssign = groupsData.get(int(input(json.dumps(groupsData, indent=4) + "\n" + "Which group would you like to assign?\n> ")))
+        if groupToAssign:
+            # update self.assignedEncounters, self.notes, and workingdf
+            # should be able to do make this into its own method with assignOneToOne
+            print("assigning!")
+
+        return
+
     def printProgress(self, df, pattern="="):
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)])
         print("Final Updated Encounters")
