@@ -50,25 +50,25 @@ class NRotMEncounterRouting():
     def getEncounterTable(self):
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value").fillna(0)
+        
+        return df
 
+    def exportTable(self):
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
         greenFill = openpyxl.styles.PatternFill(bgColor='c6efce', fill_type='solid')
         greenFont = openpyxl.styles.Font(color="006100")
 
-        with pd.ExcelWriter("EncounterRoutingNRotM/test.xlsx") as writer:
-            df.to_excel(writer, sheet_name="EncounterTable", freeze_panes=(1, 1))
+        with pd.ExcelWriter("EncounterRoutingNRotM/encounters.xlsx") as writer:
+            self.encounterTable.to_excel(writer, sheet_name="EncounterTable", freeze_panes=(1, 1))
 
-            workbook = writer.book
             worksheet = writer.sheets["EncounterTable"]
-
-            (max_row, max_col) = df.shape
 
             # fills the background color
             worksheet.conditional_formatting.add("B2:BN56", openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
             # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
             # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
 
-        return df
+        return 
 
 if __name__ == "__main__":
     NRotMEncounterRouting()

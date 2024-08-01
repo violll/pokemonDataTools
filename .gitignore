@@ -161,3 +161,6 @@ cython_debug/
 
 # Ignored content folder contents
 ShowdownGenerator/Platinum/PokemonData/*
+ShowdownGenerator/ORAS/PokemonData/*
+
+EncounterRoutingNRotM/test.xlsx
