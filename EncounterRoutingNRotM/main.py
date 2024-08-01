@@ -10,7 +10,6 @@ class NRotMEncounterRouting():
 
         # SPECIFIC TO THIS SHEET
         self.relevantCol = "J"
-        self.encounters = self.ws["J5:J64"]
 
         self.assignedEncounters = {}
 
