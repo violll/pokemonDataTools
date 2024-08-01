@@ -143,8 +143,7 @@ class NRotMEncounterRouting():
                     self.notes[route].append(mon)     
             
             # remove the filtered items from the working dataframe
-            workingdf = workingdf.filter(items=set(workingdf.columns).difference(set(onlyOneOptions.columns)), axis=1) \
-                                 .filter(items=set(workingdf.index).difference(set(onlyOneOptions.index)), axis=0)
+            workingdf = workingdf.loc[~workingdf.index.isin(list(onlyOneOptions.index)), ~workingdf.columns.isin(onlyOneOptions.columns)]
             
             # add the updated dataframe as a slice to the results table
             self.encounterTables.append(workingdf)
@@ -177,6 +176,8 @@ class NRotMEncounterRouting():
                 # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
                 # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
 
+            # add comments to last sheet
+            
         return 
 
 if __name__ == "__main__":
