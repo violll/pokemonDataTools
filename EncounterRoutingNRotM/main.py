@@ -19,7 +19,7 @@ class NRotMEncounterRouting():
 
         self.encounterTables = [self.encounterTable]
 
-        self.assignOneToOne()
+        # self.assignOneToOne()
         self.exportTable()
 
     def getEncounterData(self):
@@ -60,7 +60,51 @@ class NRotMEncounterRouting():
                          .pivot(index="Route", columns="Encounter", values="Value").fillna(0)
         
         return df
-                
+
+    def consolidateTrees(self):
+        # TEMP replace with evo lines when I have wifi again
+        tempEvoLines = [["Abombasnow", "Snover"],
+                        ["Asumarill", "Marill", "Azurill"],
+                        ["Beautifly", "Cascoon", "Silcoon", "Wurmple"],
+                        ["Buizel", "Floatzel"],
+                        ["Burmy", "Wormadam", "Mothim"],
+                        ["Cheribi", "Cherrim"],
+                        ["Chimecho", "Chingling"],
+                        ["Combee", "Vespiquen"],
+                        ["Cranidos", "Rampardos"],
+                        ["Carnivine"],
+                        ["Drifloon", "Drifblim"],
+                        ["Dusclops", "Duskull", "Dusknoir"],
+                        ["Eevee"],
+                        ["Feebas", "Milotic"],
+                        ["Finneon", "Lumineon"],
+                        ["Goldeen", "Seaking"],
+                        ["Golduck", "Psyduck"],
+                        ["Heracross"],
+                        ["Houndour", "Houndoom"],
+                        ["Ralts", "Kirlia", "Gallade", "Gardevoir"],
+                        ["Kricketune", "Kricketot"],
+                        ["Machop", "Machoke", "Machamp"],
+                        ["Magikarp", "Gyarados"],
+                        ["Magby", "Magmar", "Magmortar"],
+                        ["Mantyke", "Mantine"],
+                        ["Medicham", "Meditite"],
+                        ["Mr-Mime"],
+                        ["Nosepass", "Probopass"],
+                        ["Octillery", "Remoraid"],
+                        ["Pelipper", "Wingull"],
+                        ["Ponyta", "Rapidash"],
+                        ["Riolu", "Lucario"],
+                        ["Scyther", "Scizor"],
+                        ["Shellos", "Gastrodon"],
+                        ["Sneasel", "Weavile"],
+                        ["Sudowoodo", "Bonsly"],
+                        ["Swablu", "Altaria"],
+                        ["Tangela", "Tangrowth"],
+                        ["Tropius"],
+                        ["Unown"],
+                        ["Yanma", "Yanmega"]]
+
     def assignOneToOne(self):
         workingdf = self.encounterTables[-1].copy(deep=True)
 
