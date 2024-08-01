@@ -18,7 +18,7 @@ class NRotMEncounterRouting():
 
         self.encounterTables = [self.encounterTable]
 
-        # self.assignOneToOne()
+        self.assignOneToOne()
         self.exportTable()
 
     def getEncounterData(self):
@@ -117,27 +117,28 @@ class NRotMEncounterRouting():
     def assignOneToOne(self):
         workingdf = self.encounterTables[-1].copy(deep=True)
 
-        options = workingdf.sum(axis=1) == 1
+        onlyOneBool = workingdf.sum(axis=1) == 1
         
-        while options.any():
-            onlyOneOption = workingdf[options]
-            onlyOneOptions = onlyOneOption.replace(0, pd.NaT).dropna(axis=1, how="all")
+        while onlyOneBool.any():
+            # get routes with only one eligible encounter (pd.DataFrame)
+            onlyOneOption = workingdf[onlyOneBool]
+            onlyOneOptions = onlyOneOption.replace(0, pd.NA).dropna(axis=1, how="all")
 
-            print(onlyOneOptions)
+            # melt to pd.DataFrame (index: routes, column: encounter)
+            onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
+            print(onlyOneMelted)
 
-            for route in onlyOneOptions.iterrows():
-                encounter = route[1][route[1] == 1]
-                if encounter.index[0] not in self.assignedEncounters.keys():
-                    self.assignedEncounters[encounter.index[0]] = encounter.name
+            # drop duplicates and update the dictionary
+            self.assignedEncounters.update(onlyOneMelted.drop_duplicates().to_dict()["Encounter"])
             
+            # remove the filtered items from the working dataframe
             workingdf = workingdf.filter(items=set(workingdf.columns).difference(set(onlyOneOptions.columns)), axis=1) \
                                  .filter(items=set(workingdf.index).difference(set(onlyOneOptions.index)), axis=0)
             
-            print(workingdf.columns,workingdf.index)
-
+            # add the updated dataframe as a slice to the results table
             self.encounterTables.append(workingdf)
 
-            options = workingdf.sum(axis=1) == 1
+            onlyOneBool = workingdf.sum(axis=1) == 1
 
         print(self.assignedEncounters)
         # would want to highlight the route after removing the column so you know there's another encounter to get beforehand?
