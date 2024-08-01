@@ -2,6 +2,7 @@ import openpyxl
 import openpyxl.formatting
 import openpyxl.styles
 import pandas as pd
+import copy as cp
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
@@ -11,10 +12,11 @@ class NRotMEncounterRouting():
         # SPECIFIC TO THIS SHEET
         self.relevantCol = "J"
 
-        self.assignedEncounters = {}
-
         self.encounterData = self.getEncounterData()
         self.encounterTable = self.getEncounterTable()
+
+        self.assignedEncounters = {}
+        self.notes = {route: [] for route in list(self.encounterTable.index)}
 
         self.encounterTables = [self.encounterTable]
 
@@ -121,16 +123,24 @@ class NRotMEncounterRouting():
         
         while onlyOneBool.any():
             # get routes with only one eligible encounter (pd.DataFrame)
-            onlyOneOption = workingdf[onlyOneBool]
-            onlyOneOptions = onlyOneOption.replace(0, pd.NA).dropna(axis=1, how="all")
+            # filter out the irrelevant encounters 
+            onlyOneOptions = workingdf[onlyOneBool].replace(0, pd.NA) \
+                                                   .dropna(axis=1, how="all")
 
             # melt to pd.DataFrame (index: routes, column: encounter)
             onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
 
             self.printProgress(onlyOneMelted)
 
-            # drop duplicates and update the dictionary
+            # drop duplicates and update the encounter dict
             self.assignedEncounters.update(onlyOneMelted.drop_duplicates().to_dict()["Encounter"])
+
+            # make note of routes with encounters that have been assigned
+            for mon in onlyOneOptions.columns:
+                monRoutes = list(workingdf[mon][workingdf[mon] != 0].index)
+                monRoutes = [route for route in workingdf[mon][workingdf[mon] != 0].index if route not in list(onlyOneOptions.index)]
+                for route in monRoutes:
+                    self.notes[route].append(mon)     
             
             # remove the filtered items from the working dataframe
             workingdf = workingdf.filter(items=set(workingdf.columns).difference(set(onlyOneOptions.columns)), axis=1) \
@@ -139,11 +149,9 @@ class NRotMEncounterRouting():
             # add the updated dataframe as a slice to the results table
             self.encounterTables.append(workingdf)
 
-            onlyOneBool = workingdf.sum(axis=1) == 1
+            onlyOneBool = workingdf.sum(axis=1) == 1 
 
         self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
-
-        # would want to highlight the route after removing the column so you know there's another encounter to get beforehand?
 
         return 
     
