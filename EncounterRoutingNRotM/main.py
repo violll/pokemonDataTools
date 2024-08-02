@@ -29,6 +29,7 @@ class NRotMEncounterRouting():
 
         self.assignOneToOne()
         self.checkDuplicates()
+        self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
         # self.exportTable()
 
     def getEncounterData(self):
@@ -138,8 +139,6 @@ class NRotMEncounterRouting():
             # melt to pd.DataFrame (index: routes, column: encounter)
             onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
 
-            self.printProgress(onlyOneMelted)
-
             # do I need to drop duplicates? I can only get the encounter on one route but it doesn't matter which one
             onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
             groupData = GroupData(routes = onlyOneDict["index"], 
@@ -150,8 +149,6 @@ class NRotMEncounterRouting():
             workingdf = self.update(groupData, workingdf)
 
             onlyOneBool = workingdf.sum(axis=1) == 1 
-
-        self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
 
         return 
     
@@ -174,12 +171,10 @@ class NRotMEncounterRouting():
                 groupsData[i] = groupData
                 i += 1
         
-        # print(groupsData)
-        # groupToAssign = groupsData.get(int(input("Which group would you like to assign?\n> ")))
-        groupToAssign = groupsData.get(0)
-        if groupToAssign:
-            # update self.assignedEncounters, self.notes, and workingdf
-            # should be able to do make this into its own method with assignOneToOne
+        # check if user would like to update any group
+        print(groupsData)
+        groupData = groupsData.get(int(input("Which group would you like to assign?\n> ")))
+        if groupData: 
             self.update(groupData, workingdf)
 
         return
@@ -200,6 +195,9 @@ class NRotMEncounterRouting():
 
         # add the updated dataframe as a slice to the results table
         self.encounterTables.append(df)
+        
+        # print encounters added
+        self.printProgress(pd.DataFrame.from_dict(groupData.assignMe, orient="index", columns=["Encounter"]))
 
         # return df because assignOneToOne needs the workingdf updated to continue making passes
         # alternatively could make it loop outside of the method?
@@ -208,7 +206,7 @@ class NRotMEncounterRouting():
 
     def printProgress(self, df, pattern="="):
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)])
-        print("Final Updated Encounters")
+        print("Update:") if pattern == "=" else print("Final Encounters:")
         print(df)
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)], "\n")
 
