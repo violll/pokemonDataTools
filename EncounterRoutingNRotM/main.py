@@ -20,7 +20,7 @@ class NRotMEncounterRouting():
 
         self.assignOneToOne()
         self.checkDuplicates()
-        self.exportTable()
+        # self.exportTable()
 
     def getEncounterData(self):
         res = []
@@ -169,6 +169,7 @@ class NRotMEncounterRouting():
                 groupData["Encounters"] = encounters
                 groupData["nEncounters"] = len(encounters)
                 groupData["Routes"] = list(groups[group].values)
+                groupData["AssignMe"] = {route: " or ".join(encounters) for route in groupData["Routes"]}
                 groupsData[i] = groupData
                 i += 1
         
