@@ -1,6 +1,7 @@
 import openpyxl
 import pandas as pd
 import json
+import numpy as np
 
 class GroupData():
     def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
@@ -30,7 +31,7 @@ class NRotMEncounterRouting():
         self.assignOneToOne()
         self.checkDuplicates()
         self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
-        # self.exportTable()
+        self.exportTable()
 
     def getEncounterData(self):
         res = []
@@ -67,9 +68,11 @@ class NRotMEncounterRouting():
     def getEncounterTable(self):
         # initial df without manipulation
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
-                         .pivot(index="Route", columns="Encounter", values="Value").fillna(0)       \
-        
-        return self.consolidateTrees(df.reindex([route for route in self.routeOrder if route in list(df.index)]))
+                         .pivot(index="Route", columns="Encounter", values="Value") 
+
+        df = self.consolidateTrees(df.reindex([route for route in self.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
+
+        return df
 
     def consolidateTrees(self, df):
         # TEMP replace with evo lines when I have wifi again
@@ -164,7 +167,7 @@ class NRotMEncounterRouting():
             encounters = [relevantdf.columns[i] for i in range(len(relevantdf.columns)) if group[i] == 1]
             groupData = GroupData()
             # if there are more routes than encounters, each encounter can be assigned
-            if len(groups[group].values) >= sum(group):
+            if len(groups[group].values) >= np.nansum(group):
                 groupData.encounters = encounters
                 groupData.routes = list(groups[group].values)
                 groupData.assignMe = {route: " or ".join(encounters) for route in groupData.routes}
@@ -191,7 +194,8 @@ class NRotMEncounterRouting():
                 self.notes[route].append(mon) 
 
         # remove filtered items from df
-        df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)]
+        df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
+               .dropna(axis=0, how="all")
 
         # add the updated dataframe as a slice to the results table
         self.encounterTables.append(df)
