@@ -131,6 +131,14 @@ class NRotMEncounterRouting():
 
             self.printProgress(onlyOneMelted)
 
+            # do I need to drop duplicates? I can only get the encounter on one route but it doesn't matter which one
+            groupData = onlyOneMelted.drop_duplicates().to_dict("split")
+            groupData["Routes"] = groupData.pop("index")
+            groupData["Encounters"] = list(map(lambda x: x[0], groupData.pop("data")))
+            groupData["AssignMe"] = {groupData['Routes'][i]: groupData['Encounters'][i] for i in range(len(groupData["Routes"]))}
+            groupData.pop("columns")
+            print(json.dumps(groupData, indent=4))
+            
             # drop duplicates and update the encounter dict
             self.assignedEncounters.update(onlyOneMelted.drop_duplicates().to_dict()["Encounter"])
 
@@ -181,6 +189,32 @@ class NRotMEncounterRouting():
             print("assigning!")
 
         return
+
+    def update(self, encounters, df):
+        # update the assigned encounter dict
+        self.assignedEncounters.update(encounters)
+
+        # make note of routes with encounters that have been assigned
+        '''
+        for mon in [mons assigned]:
+            monRoutes = list(workingdf[mon][workingdf[mon] != 0].index)
+            monRoutes = [route for route in workingdf[mon][workingdf[mon] != 0].index if route not in [routes assigned]]
+            for route in monRoutes:
+                self.notes[route].append(mon) 
+        '''
+
+        # remove filtered items from df
+        '''
+        workingdf = workingdf.loc[~workingdf.index.isin(list(routes assigned)), ~workingdf.columns.isin(mons assigned)]
+        '''
+
+        # add the updated dataframe as a slice to the results table
+        self.encounterTables.append(df)
+
+        # return df because assignOneToOne needs the workingdf updated to continue making passes
+        # alternatively could make it loop outside of the method?
+        return df
+
 
     def printProgress(self, df, pattern="="):
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)])
