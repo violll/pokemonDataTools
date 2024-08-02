@@ -144,24 +144,10 @@ class NRotMEncounterRouting():
             onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
             groupData = GroupData(routes = onlyOneDict["index"], 
                                   encounters = list(map(lambda x: x[0], onlyOneDict["data"])),
-                                  assignMe = {onlyOneDict['index'][i]: onlyOneDict['data'][i] for i in range(len(onlyOneDict["index"]))}
+                                  assignMe = {onlyOneDict['index'][i]: onlyOneDict['data'][i][0] for i in range(len(onlyOneDict["index"]))}
                                   )
-
-            # drop duplicates and update the encounter dict
-            self.assignedEncounters.update(onlyOneMelted.drop_duplicates().to_dict()["Encounter"])
-
-            # make note of routes with encounters that have been assigned
-            for mon in onlyOneOptions.columns:
-                monRoutes = list(workingdf[mon][workingdf[mon] != 0].index)
-                monRoutes = [route for route in workingdf[mon][workingdf[mon] != 0].index if route not in list(onlyOneOptions.index)]
-                for route in monRoutes:
-                    self.notes[route].append(mon)     
-            
-            # remove the filtered items from the working dataframe
-            workingdf = workingdf.loc[~workingdf.index.isin(list(onlyOneOptions.index)), ~workingdf.columns.isin(onlyOneOptions.columns)]
-            
-            # add the updated dataframe as a slice to the results table
-            self.encounterTables.append(workingdf)
+                        
+            workingdf = self.update(groupData, workingdf)
 
             onlyOneBool = workingdf.sum(axis=1) == 1 
 
@@ -188,32 +174,29 @@ class NRotMEncounterRouting():
                 groupsData[i] = groupData
                 i += 1
         
-        print(groupsData)
-        groupToAssign = groupsData.get(int(input("Which group would you like to assign?\n> ")))
+        # print(groupsData)
+        # groupToAssign = groupsData.get(int(input("Which group would you like to assign?\n> ")))
+        groupToAssign = groupsData.get(0)
         if groupToAssign:
             # update self.assignedEncounters, self.notes, and workingdf
             # should be able to do make this into its own method with assignOneToOne
-            print("assigning!")
+            self.update(groupData, workingdf)
 
         return
 
-    def update(self, encounters, df):
+    def update(self, groupData, df):
         # update the assigned encounter dict
-        self.assignedEncounters.update(encounters)
+        self.assignedEncounters.update(groupData.assignMe)
 
         # make note of routes with encounters that have been assigned
-        '''
-        for mon in [mons assigned]:
-            monRoutes = list(workingdf[mon][workingdf[mon] != 0].index)
-            monRoutes = [route for route in workingdf[mon][workingdf[mon] != 0].index if route not in [routes assigned]]
+        for mon in groupData.encounters:
+            monRoutes = list(df[mon][df[mon] != 0].index)
+            monRoutes = [route for route in df[mon][df[mon] != 0].index if route not in groupData.routes]
             for route in monRoutes:
                 self.notes[route].append(mon) 
-        '''
 
         # remove filtered items from df
-        '''
-        workingdf = workingdf.loc[~workingdf.index.isin(list(routes assigned)), ~workingdf.columns.isin(mons assigned)]
-        '''
+        df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)]
 
         # add the updated dataframe as a slice to the results table
         self.encounterTables.append(df)
