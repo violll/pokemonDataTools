@@ -2,6 +2,15 @@ import openpyxl
 import pandas as pd
 import json
 
+class GroupData():
+    def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
+        self.routes = routes
+        self.encounters = encounters
+        self.assignMe = assignMe
+    
+    def __repr__(self) -> str:
+        return json.dumps(self.assignMe, indent=4)
+
 class NRotMEncounterRouting():
     def __init__(self) -> None:
         # SPECIFIC TO THIS SHEET
@@ -132,13 +141,12 @@ class NRotMEncounterRouting():
             self.printProgress(onlyOneMelted)
 
             # do I need to drop duplicates? I can only get the encounter on one route but it doesn't matter which one
-            groupData = onlyOneMelted.drop_duplicates().to_dict("split")
-            groupData["Routes"] = groupData.pop("index")
-            groupData["Encounters"] = list(map(lambda x: x[0], groupData.pop("data")))
-            groupData["AssignMe"] = {groupData['Routes'][i]: groupData['Encounters'][i] for i in range(len(groupData["Routes"]))}
-            groupData.pop("columns")
-            print(json.dumps(groupData, indent=4))
-            
+            onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
+            groupData = GroupData(routes = onlyOneDict["index"], 
+                                  encounters = list(map(lambda x: x[0], onlyOneDict["data"])),
+                                  assignMe = {onlyOneDict['index'][i]: onlyOneDict['data'][i] for i in range(len(onlyOneDict["index"]))}
+                                  )
+
             # drop duplicates and update the encounter dict
             self.assignedEncounters.update(onlyOneMelted.drop_duplicates().to_dict()["Encounter"])
 
@@ -171,18 +179,17 @@ class NRotMEncounterRouting():
         i = 0
         for group in groups:
             encounters = [relevantdf.columns[i] for i in range(len(relevantdf.columns)) if group[i] == 1]
-            groupData = {}
+            groupData = GroupData()
             # if there are more routes than encounters, each encounter can be assigned
             if len(groups[group].values) >= sum(group):
-                groupData["Encounters"] = encounters
-                groupData["nEncounters"] = len(encounters)
-                groupData["Routes"] = list(groups[group].values)
-                groupData["AssignMe"] = {route: " or ".join(encounters) for route in groupData["Routes"]}
+                groupData.encounters = encounters
+                groupData.routes = list(groups[group].values)
+                groupData.assignMe = {route: " or ".join(encounters) for route in groupData.routes}
                 groupsData[i] = groupData
                 i += 1
         
         print(groupsData)
-        groupToAssign = groupsData.get(int(input(json.dumps(groupsData, indent=4) + "\n" + "Which group would you like to assign?\n> ")))
+        groupToAssign = groupsData.get(int(input("Which group would you like to assign?\n> ")))
         if groupToAssign:
             # update self.assignedEncounters, self.notes, and workingdf
             # should be able to do make this into its own method with assignOneToOne
