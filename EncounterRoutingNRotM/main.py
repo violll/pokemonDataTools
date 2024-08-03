@@ -31,10 +31,15 @@ class NRotMEncounterRouting():
         self.route()
 
     def route(self):
-        self.assignOneToOne()
-        self.checkDuplicates()
+        methods = {self.assignOneToOne: True, 
+                   self.checkDuplicates: True}
+        
+        while True in methods.values():
+            for method in methods.keys():
+                methods[method] = method()
+
         self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
-        # self.exportTable()
+        self.exportTable()
 
     def getEncounterData(self):
         res = []
@@ -80,6 +85,7 @@ class NRotMEncounterRouting():
     def consolidateTrees(self, df):
         # TEMP replace with evo lines when I have wifi again
         tempEvoLines = [["Abomasnow", "Snover"],
+                        ["Abra", "Kadabra", "Alakazam"],
                         ["Azumarill", "Marill", "Azurill"],
                         ["Beautifly", "Cascoon", "Silcoon", "Wurmple"],
                         ["Buizel", "Floatzel"],
@@ -132,11 +138,13 @@ class NRotMEncounterRouting():
         return pd.concat(res, axis=1)
 
     def assignOneToOne(self):
+        assigned = False
         workingdf = self.encounterTables[-1].copy(deep=True)
 
         onlyOneBool = workingdf.sum(axis=1) == 1
         
         while onlyOneBool.any():
+            assigned = True
             # get routes with only one eligible encounter (pd.DataFrame)
             # filter out the irrelevant encounters 
             onlyOneOptions = workingdf[onlyOneBool].replace(0, pd.NA) \
@@ -156,7 +164,7 @@ class NRotMEncounterRouting():
 
             onlyOneBool = workingdf.sum(axis=1) == 1 
 
-        return 
+        return assigned
     
     def checkDuplicates(self):
         workingdf = self.encounterTables[-1].copy(deep=True)
@@ -178,11 +186,14 @@ class NRotMEncounterRouting():
                 i += 1
         
         # check if user would like to update any group
-        print(groupsData)
-        groupData = groupsData.get(int(input("Which group would you like to assign?\n> ")))
-        if groupData: self.update(groupData, workingdf)
-
-        return
+        if groupsData != {}:
+            print(groupsData)
+            groupData = groupsData.get(int(input("Which group would you like to assign?\n> ")))
+            if groupData: 
+                self.update(groupData, workingdf)
+                return True
+        
+        return False
 
     def update(self, groupData, df):
         # update the assigned encounter dict
