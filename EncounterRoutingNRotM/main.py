@@ -177,8 +177,7 @@ class NRotMEncounterRouting():
         # check if user would like to update any group
         print(groupsData)
         groupData = groupsData.get(int(input("Which group would you like to assign?\n> ")))
-        if groupData: 
-            self.update(groupData, workingdf)
+        if groupData: self.update(groupData, workingdf)
 
         return
 
@@ -188,8 +187,8 @@ class NRotMEncounterRouting():
 
         # make note of routes with encounters that have been assigned
         for mon in groupData.encounters:
-            monRoutes = list(df[mon][df[mon] != 0].index)
-            monRoutes = [route for route in df[mon][df[mon] != 0].index if route not in groupData.routes]
+            monRoutes = list(df[mon][df[mon] == 1].index)
+            monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
             for route in monRoutes:
                 self.notes[route].append(mon) 
 
