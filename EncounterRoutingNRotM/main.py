@@ -28,10 +28,13 @@ class NRotMEncounterRouting():
 
         self.encounterTables = [self.encounterTable]
 
+        self.route()
+
+    def route(self):
         self.assignOneToOne()
         self.checkDuplicates()
         self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
-        self.exportTable()
+        # self.exportTable()
 
     def getEncounterData(self):
         res = []
@@ -187,7 +190,6 @@ class NRotMEncounterRouting():
 
         # make note of routes with encounters that have been assigned
         for mon in groupData.encounters:
-            monRoutes = list(df[mon][df[mon] == 1].index)
             monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
             for route in monRoutes:
                 self.notes[route].append(mon) 
@@ -208,10 +210,12 @@ class NRotMEncounterRouting():
 
 
     def printProgress(self, df, pattern="="):
-        print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)])
-        print("Update:") if pattern == "=" else print("Final Encounters:")
-        print(df)
-        print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)], "\n")
+        print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)],
+              "Update {}:".format(len(self.encounterTables) - 1) if pattern == "=" else "Final Encounters:",
+              df,
+              pattern*(50//len(pattern)) + pattern[:50%len(pattern)], "\n",
+              sep="\n"
+              )
 
     def exportTable(self):
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
