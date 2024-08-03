@@ -2,6 +2,7 @@ import openpyxl
 import pandas as pd
 import json
 import numpy as np
+import argparse
 
 class GroupData():
     def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
@@ -20,15 +21,48 @@ class NRotMEncounterRouting():
         self.relevantCol = "J"
         self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
 
+        # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
         self.encounterTable = self.getEncounterTable()
 
-        self.assignedEncounters = {}
-        self.notes = {route: [] for route in list(self.encounterTable.index)}
-
+        # initialize slice history of encounter assignment
         self.encounterTables = [self.encounterTable]
 
+        # user can include an optional argument to check for a json file of encounters
+        self.parser = self.initParser()
+        self.args = self.parser.parse_args()
+
+        # notes for encounter order on final spreadsheet TODO add pass number for ease of use
+        self.notes = {route: [] for route in list(self.encounterTable.index)}
+
+        # initialize assigned encounters
+        self.assignedEncounters = {}
+        
+        # update assigned encounters if file is given as an argument
+        if self.args.encounters != None: 
+            while True:
+                try: 
+                    assignMe = json.loads(open("EncounterRoutingNRotM/" + self.args.encounters + ".json").read())
+                    routes = list(assignMe.keys())
+                    encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
+                    assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
+
+                    groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
+                    self.update(groupData=groupData, df=self.encounterTable)                 
+                    break
+                
+                except:
+                    self.args.encounters = input("Type a valid filename!\n> ")
+
         self.route()
+
+    def initParser(self):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--encounters", "-e",
+                            required = False,
+                            help = "the json file of the user's in-game found encounters")
+        
+        return parser
 
     def route(self):
         methods = {self.assignOneToOne: True, 
@@ -38,6 +72,7 @@ class NRotMEncounterRouting():
             for method in methods.keys():
                 methods[method] = method()
 
+        # ask user about unique encounters before finishing?
         self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
         self.exportTable()
 
@@ -218,7 +253,6 @@ class NRotMEncounterRouting():
         # return df because assignOneToOne needs the workingdf updated to continue making passes
         # alternatively could make it loop outside of the method?
         return df
-
 
     def printProgress(self, df, pattern="="):
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)],
