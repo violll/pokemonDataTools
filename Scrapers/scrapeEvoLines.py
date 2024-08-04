@@ -17,9 +17,9 @@ class scrapeEvoLines():
         self.evoLinesSoup = self.getEvoLinesSoup()
 
         self.edgeCases = {
-            "Gimmighoul": ["Gimmighoul", "Gholdengo"],
+            "Gimmighoul line": ["Gimmighoul", "Gholdengo"],
             "Unown": ["Unown"],
-            "Rockruff": ["Rockruff", "Lycanroc"]
+            "Rockruff line": ["Rockruff", "Lycanroc"]
             }
 
         self.evoLines = {}
@@ -27,7 +27,7 @@ class scrapeEvoLines():
 
         self.buildTree()
 
-        for line in self.evoLines: self.evoLines[line].hshow()
+        # for line in self.evoLines: self.evoLines[line].hshow()
 
     # returns the entire bs4 soup of the website
     def getSoup(self):
