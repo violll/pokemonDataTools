@@ -4,6 +4,16 @@ import json
 import numpy as np
 import argparse
 
+import os
+
+# adds the path absolutely so the code can be run from anywhere
+from pathlib import Path
+import sys
+path = str(Path(Path(__file__).parent.absolute()).parent.absolute())
+sys.path.insert(0, path)
+
+from Scrapers import scrapeEvoLines
+
 class GroupData():
     def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
         self.routes = routes
@@ -16,7 +26,13 @@ class GroupData():
 class NRotMEncounterRouting():
     def __init__(self) -> None:
         # SPECIFIC TO THIS SHEET
-        self.wb = openpyxl.load_workbook(filename = "EncounterRoutingNRotM/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
+        try: 
+            ss = os.path.abspath("NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
+            self.wb = openpyxl.load_workbook(filename = ss)
+        except: 
+            ss = os.path.abspath("EncounterRoutingNRotM/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
+            self.wb = openpyxl.load_workbook(filename = ss)
+
         self.ws = self.wb["Team & Encounters"]
         self.relevantCol = "J"
         self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
@@ -54,7 +70,7 @@ class NRotMEncounterRouting():
                 except:
                     self.args.encounters = input("Type a valid filename!\n> ")
 
-        self.route()
+        # self.route()
 
     def initParser(self):
         parser = argparse.ArgumentParser()
@@ -119,6 +135,7 @@ class NRotMEncounterRouting():
 
     def consolidateTrees(self, df):
         # TEMP replace with evo lines when I have wifi again
+        lines = scrapeEvoLines.scrapeEvoLines()
         tempEvoLines = [["Abomasnow", "Snover"],
                         ["Abra", "Kadabra", "Alakazam"],
                         ["Azumarill", "Marill", "Azurill"],
