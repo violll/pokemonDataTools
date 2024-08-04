@@ -26,12 +26,10 @@ class GroupData():
 class NRotMEncounterRouting():
     def __init__(self) -> None:
         # SPECIFIC TO THIS SHEET
-        try: 
-            ss = os.path.abspath("NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
-            self.wb = openpyxl.load_workbook(filename = ss)
-        except: 
-            ss = os.path.abspath("EncounterRoutingNRotM/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
-            self.wb = openpyxl.load_workbook(filename = ss)
+        # get the absolute path of the file so that it can be accessed regardless of where the code runs
+        ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
+        self.wb = openpyxl.load_workbook(filename = ss)
+
 
         self.ws = self.wb["Team & Encounters"]
         self.relevantCol = "J"
