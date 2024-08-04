@@ -51,6 +51,7 @@ class NRotMEncounterRouting():
 
         # initialize assigned encounters
         self.assignedEncounters = {}
+        self.assignedEncountersSlice = []
         
         # update assigned encounters if file is given as an argument
         if self.args.encounters != None: 
@@ -267,7 +268,12 @@ class NRotMEncounterRouting():
         self.encounterTables.append(df)
         
         # print encounters added
-        self.printProgress(pd.DataFrame.from_dict(groupData.assignMe, orient="index", columns=["Encounter"]))
+        newEncounters = pd.DataFrame.from_dict(groupData.assignMe, orient="index", columns=["Encounter"])
+        newEncounters["Pass"] = len(self.encounterTables) - 1
+        newEncounters.index.name = "Route"
+        newEncounters.set_index(["Pass", newEncounters.index], inplace = True)
+        self.assignedEncountersSlice.append(newEncounters)
+        self.printProgress(newEncounters)
 
         # return df because assignOneToOne needs the workingdf updated to continue making passes
         # alternatively could make it loop outside of the method?
@@ -303,7 +309,7 @@ class NRotMEncounterRouting():
                         routeData = self.notes[cell.value]
                         message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in range(1,i+1) if routeData.get(p)])
                         if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
-            
+            pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
         return 
 
 if __name__ == "__main__":
