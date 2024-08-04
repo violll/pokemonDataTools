@@ -68,7 +68,7 @@ class NRotMEncounterRouting():
                 except:
                     self.args.encounters = input("Type a valid filename!\n> ")
 
-        # self.route()
+        self.route()
 
     def initParser(self):
         parser = argparse.ArgumentParser()
@@ -297,12 +297,12 @@ class NRotMEncounterRouting():
                 # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
                 # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
 
-            # add comments to last sheet to show what pokemon need to be encountered first
-            for col in worksheet.iter_cols(min_row = 2, max_col = 1):
-                for cell in col: 
-                    routeData = self.notes[cell.value]
-                    message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in routeData.keys()])
-                    if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
+                # add comments to each sheet to show what pokemon need to be encountered to create that instance of encounter routing
+                for col in worksheet.iter_cols(min_row = 2, max_col = 1):
+                    for cell in col: 
+                        routeData = self.notes[cell.value]
+                        message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in range(1,i+1) if routeData.get(p)])
+                        if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
             
         return 
 
