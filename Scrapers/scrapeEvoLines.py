@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from bigtree import list_to_tree
+from bigtree import list_to_tree, copy_nodes_from_tree_to_tree, Node
 
 # bs4 filtering criteria
 def isEvoLine(tr):
@@ -22,12 +22,10 @@ class scrapeEvoLines():
             "Rockruff line": ["Rockruff", "Lycanroc"]
             }
 
-        self.evoLines = {}
+        self.evoLines = Node("Pokemon")
         self.allMons = set()
 
         self.buildTree()
-
-        # for line in self.evoLines: self.evoLines[line].hshow()
 
     # returns the entire bs4 soup of the website
     def getSoup(self):
@@ -118,7 +116,11 @@ class scrapeEvoLines():
 
         # if pokemon has not already been added to an evolutionary line, add it
         if tree.root.name not in self.allMons:
-            self.evoLines[tree.root.name] = tree
+            link = tree.root.name
+            copy_nodes_from_tree_to_tree(from_tree = tree,
+                                         to_tree = self.evoLines,
+                                         from_paths = [link],
+                                         to_paths = ["{}/{}".format(self.evoLines.root.name, link)])
             self.allMons.update(set(monsToAdd))
         # tree.hshow()
         return 
