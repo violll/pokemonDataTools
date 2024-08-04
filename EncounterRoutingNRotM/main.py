@@ -32,8 +32,8 @@ class NRotMEncounterRouting():
         self.parser = self.initParser()
         self.args = self.parser.parse_args()
 
-        # notes for encounter order on final spreadsheet TODO add pass number for ease of use
-        self.notes = {route: [] for route in list(self.encounterTable.index)}
+        # notes for encounter order on final spreadsheet
+        self.notes = {route: {} for route in list(self.encounterTable.index)}
 
         # initialize assigned encounters
         self.assignedEncounters = {}
@@ -238,7 +238,11 @@ class NRotMEncounterRouting():
         for mon in groupData.encounters:
             monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
             for route in monRoutes:
-                self.notes[route].append(mon) 
+                # TODO add this as self.notes[route][pass] so that it's easier to parse later
+                passN = len(self.encounterTables)
+                currNotes = self.notes[route].get(passN)
+                if currNotes: currNotes.append(mon)
+                else: self.notes[route][passN] = [mon]
 
         # remove filtered items from df
         df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
@@ -281,7 +285,8 @@ class NRotMEncounterRouting():
             # add comments to last sheet to show what pokemon need to be encountered first
             for col in worksheet.iter_cols(min_row = 2, max_col = 1):
                 for cell in col: 
-                    message = ", ".join(self.notes[cell.value])
+                    routeData = self.notes[cell.value]
+                    message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in routeData.keys()])
                     if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
             
         return 
