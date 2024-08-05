@@ -298,16 +298,23 @@ class NRotMEncounterRouting():
 
                 worksheet = writer.sheets["EncounterTable{}".format(str(i))]
 
+                sheetData = list(worksheet.columns)
+                # the range of the table body ignoring header row and column
+                cRange = "{}:{}".format(sheetData[1][1].coordinate, sheetData[-1][-1].coordinate)
+
                 # fills the background color
-                worksheet.conditional_formatting.add("B2:BN56", openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
+                worksheet.conditional_formatting.add(cRange, openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
                 # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
                 # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
             
             # write the historical pass table as the final worksheet
             pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
             worksheet = writer.sheets["EncounterList"]
-            # cRange = worksheet["C"]
-            worksheet.conditional_formatting.add("C1:C31", openpyxl.formatting.rule.Rule(type="duplicateValues", dxf=yellowdxf))
+            # the range of the relevant column
+            cRange = "{}:{}".format(worksheet["C"][0].coordinate, worksheet["C"][-1].coordinate)
+            worksheet.conditional_formatting.add(cRange, openpyxl.formatting.rule.Rule(type="duplicateValues", dxf=yellowdxf))
+
+
             # TODO BESTFIT does not work properly, so I'll have to use the max() function for cell widths if I want to autofit column widths
             # worksheet.column_dimensions["B"].width += 4
             
