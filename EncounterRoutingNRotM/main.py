@@ -194,7 +194,9 @@ class NRotMEncounterRouting():
             onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
 
             # do I need to drop duplicates? I can only get the encounter on one route but it doesn't matter which one
-            onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
+            onlyOneDict = onlyOneMelted.to_dict("split")
+
+            # onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
             groupData = GroupData(routes = onlyOneDict["index"], 
                                   encounters = list(map(lambda x: x[0], onlyOneDict["data"])),
                                   assignMe = {onlyOneDict['index'][i]: onlyOneDict['data'][i][0] for i in range(len(onlyOneDict["index"]))}
@@ -248,8 +250,8 @@ class NRotMEncounterRouting():
                 # TODO add this as self.notes[route][pass] so that it's easier to parse later
                 passN = len(self.encounterTables)
                 currNotes = self.notes[route].get(passN)
-                if currNotes: currNotes.append(mon)
-                else: self.notes[route][passN] = [mon]
+                if currNotes: currNotes.add(mon)
+                else: self.notes[route][passN] = set([mon])
 
         # remove filtered items from df
         df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
@@ -284,6 +286,7 @@ class NRotMEncounterRouting():
         greenFont = openpyxl.styles.Font(color="006100")
 
         with pd.ExcelWriter("EncounterRoutingNRotM/encounters.xlsx") as writer:
+            # write each pass' slice as a worksheet
             for i in range(len(self.encounterTables)):
                 self.encounterTables[i].to_excel(writer, sheet_name="EncounterTable{}".format(str(i)), freeze_panes=(1, 1))
 
@@ -294,13 +297,23 @@ class NRotMEncounterRouting():
                 # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
                 # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
 
-                # add comments to each sheet to show what pokemon need to be encountered to create that instance of encounter routing
-                for col in worksheet.iter_cols(min_row = 2, max_col = 1):
+            # write the historical pass table as the final worksheet
+            pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
+            
+            # add comments to each sheet to show what pokemon need to be encountered to create that instance of encounter routing
+            for sheet in writer.sheets: 
+                worksheet = writer.sheets[sheet]
+
+                if not sheet.isalpha(): i = i = int("".join([char for char in sheet if char.isnumeric()]))
+
+                if "List" in sheet: minC, maxC = 2, 2
+                else: minC, maxC = 1, 1
+
+                for col in worksheet.iter_cols(min_row = 2, min_col = minC, max_col = maxC):
                     for cell in col: 
                         routeData = self.notes[cell.value]
                         message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in range(1,i+1) if routeData.get(p)])
                         if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
-            pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
         return 
 
 if __name__ == "__main__":
