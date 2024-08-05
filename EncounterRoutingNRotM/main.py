@@ -1,7 +1,4 @@
 import openpyxl
-import openpyxl.formatting
-import openpyxl.styles
-import openpyxl.styles.differential
 import pandas as pd
 import json
 import numpy as np
