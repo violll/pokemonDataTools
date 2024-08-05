@@ -1,4 +1,7 @@
 import openpyxl
+import openpyxl.formatting
+import openpyxl.styles
+import openpyxl.styles.differential
 import pandas as pd
 import json
 import numpy as np
@@ -284,6 +287,9 @@ class NRotMEncounterRouting():
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
         greenFill = openpyxl.styles.PatternFill(bgColor='c6efce', fill_type='solid')
         greenFont = openpyxl.styles.Font(color="006100")
+        yellowFill = openpyxl.styles.PatternFill(bgColor="FFEB9C", fill_type="solid")
+        yellowFont = openpyxl.styles.Font(color="9C5700")
+        yellowdxf = openpyxl.styles.differential.DifferentialStyle(font=yellowFont, fill=yellowFill)
 
         with pd.ExcelWriter("EncounterRoutingNRotM/encounters.xlsx") as writer:
             # write each pass' slice as a worksheet
@@ -296,9 +302,14 @@ class NRotMEncounterRouting():
                 worksheet.conditional_formatting.add("B2:BN56", openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
                 # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
                 # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
-
+            
             # write the historical pass table as the final worksheet
             pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
+            worksheet = writer.sheets["EncounterList"]
+            # cRange = worksheet["C"]
+            worksheet.conditional_formatting.add("C1:C31", openpyxl.formatting.rule.Rule(type="duplicateValues", dxf=yellowdxf))
+            # TODO BESTFIT does not work properly, so I'll have to use the max() function for cell widths if I want to autofit column widths
+            # worksheet.column_dimensions["B"].width += 4
             
             # add comments to each sheet to show what pokemon need to be encountered to create that instance of encounter routing
             for sheet in writer.sheets: 
