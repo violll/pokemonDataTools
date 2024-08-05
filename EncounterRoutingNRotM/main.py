@@ -4,7 +4,7 @@ import json
 import numpy as np
 import argparse
 
-import os
+import bigtree
 
 # adds the path absolutely so the code can be run from anywhere
 from pathlib import Path
@@ -30,6 +30,7 @@ class NRotMEncounterRouting():
         ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
         self.wb = openpyxl.load_workbook(filename = ss)
 
+        self.region = ["Johtonian", "Kantonian"]
 
         self.ws = self.wb["Team & Encounters"]
         self.relevantCol = "J"
@@ -133,58 +134,50 @@ class NRotMEncounterRouting():
         return df
 
     def consolidateTrees(self, df):
-        # TEMP replace with evo lines when I have wifi again
         lines = scrapeEvoLines.scrapeEvoLines()
-        tempEvoLines = [["Abomasnow", "Snover"],
-                        ["Abra", "Kadabra", "Alakazam"],
-                        ["Azumarill", "Marill", "Azurill"],
-                        ["Beautifly", "Cascoon", "Silcoon", "Wurmple"],
-                        ["Buizel", "Floatzel"],
-                        ["Burmy", "Wormadam", "Mothim"],
-                        ["Cherubi", "Cherrim"],
-                        ["Chimecho", "Chingling"],
-                        ["Combee", "Vespiquen"],
-                        ["Cranidos", "Rampardos"],
-                        ["Carnivine"],
-                        ["Drifloon", "Drifblim"],
-                        ["Dusclops", "Duskull", "Dusknoir"],
-                        ["Eevee"],
-                        ["Feebas", "Milotic"],
-                        ["Finneon", "Lumineon"],
-                        ["Goldeen", "Seaking"],
-                        ["Golduck", "Psyduck"],
-                        ["Heracross"],
-                        ["Houndour", "Houndoom"],
-                        ["Ralts", "Kirlia", "Gallade", "Gardevoir"],
-                        ["Kricketune", "Kricketot"],
-                        ["Machop", "Machoke", "Machamp"],
-                        ["Magikarp", "Gyarados"],
-                        ["Magby", "Magmar", "Magmortar"],
-                        ["Mantyke", "Mantine"],
-                        ["Medicham", "Meditite"],
-                        ["Mr-Mime"],
-                        ["Nosepass", "Probopass"],
-                        ["Octillery", "Remoraid"],
-                        ["Pelipper", "Wingull"],
-                        ["Ponyta", "Rapidash"],
-                        ["Riolu", "Lucario"],
-                        ["Scyther", "Scizor"],
-                        ["Shellos", "Gastrodon"],
-                        ["Sneasel", "Weavile"],
-                        ["Sudowoodo", "Bonsly"],
-                        ["Swablu", "Altaria"],
-                        ["Tangela", "Tangrowth"],
-                        ["Tropius"],
-                        ["Unown"],
-                        ["Yanma", "Yanmega"]]
-        
+        consolidated = set()
         res = []
 
-        for evoline in tempEvoLines:
-            evoline = [mon for mon in evoline if mon in df.columns]
-            test = pd.DataFrame(df[evoline].agg("max", axis="columns"))
-            test.columns = ["/".join(evoline)]
-            res.append(test)
+        for mon in df.columns:
+            if mon not in consolidated:
+                tree = bigtree.findall(lines.evoLines, lambda node: mon in node.name)
+                
+                # if regional variant, find the relevant one
+                if len(tree) > 1: 
+                    temp = []
+                    for t in tree:
+                        regionalVariants = [t for region in self.region if region in t.name]
+                        temp.extend(regionalVariants)
+                    
+                    tree = temp
+                
+                tree = tree[0]
+                
+                # access entire evolutionary line
+                # TODO prune this s.t. it prunes at depth=1 -- using depth and parent????
+                # print(mon, tree.depth, tree.root.children)
+                while tree.depth > 2: tree = tree.parent
+                print(mon + ":")
+                tree = bigtree.prune_tree(lines.evoLines, prune_path=tree.path_name)
+                tree.hshow()
+                # get list of mons in line
+                fullLine = [mon.name for mon in bigtree.levelorder_iter(tree)]
+                
+                evoline = []
+                for i in range(len(fullLine)):
+                    pMon = fullLine[i]
+
+                    # remove region data TODO wouldn't this be easier to move to the tree???? as a value?????
+                    for region in self.region:
+                        pMon = pMon.replace("({})".format(region), "").strip()
+
+                    if pMon in df.columns:
+                        evoline.append(pMon)
+
+                test = pd.DataFrame(df[evoline].agg("max", axis="columns"))
+                test.columns = ["/".join(evoline)]
+                res.append(test)
+                consolidated.update(evoline)
             
         return pd.concat(res, axis=1)
 
