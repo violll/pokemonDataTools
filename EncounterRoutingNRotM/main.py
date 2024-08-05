@@ -154,12 +154,8 @@ class NRotMEncounterRouting():
                 tree = tree[0]
                 
                 # access entire evolutionary line
-                # TODO prune this s.t. it prunes at depth=1 -- using depth and parent????
-                # print(mon, tree.depth, tree.root.children)
                 while tree.depth > 2: tree = tree.parent
-                print(mon + ":")
                 tree = bigtree.prune_tree(lines.evoLines, prune_path=tree.path_name)
-                tree.hshow()
                 # get list of mons in line
                 fullLine = [mon.name for mon in bigtree.levelorder_iter(tree)]
                 
@@ -230,14 +226,16 @@ class NRotMEncounterRouting():
                 i += 1
         
         # check if user would like to update any group
-        if groupsData != {}:
+        if len(groupsData.keys()) == 1:
+            self.update(groupData[0], workingdf)
+            return True
+        elif groupsData != {}:
             print(groupsData)
             groupData = groupsData.get(int(input("Which group would you like to assign?\n> ")))
             if groupData: 
                 self.update(groupData, workingdf)
                 return True
-        
-        return False
+        else: return False
 
     def update(self, groupData, df):
         # update the assigned encounter dict
