@@ -51,26 +51,11 @@ class Game():
 
         return None
 
-# Game()
-
 class NRotMEncounterRouting():
     def __init__(self) -> None:
-        # SPECIFIC TO THIS SHEET
-        # get the absolute path of the file so that it can be accessed regardless of where the code runs
-        ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
-        self.wb = openpyxl.load_workbook(filename = ss)
-
-        self.ws = self.wb["Team & Encounters"]
-        self.encounterCol = "J"
-        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
-
         self.region = ["Johtonian", "Kantonian"]
 
-        # init pokeapi calls
-        self.pokeapi = pokeapi.PokeapiAccess()
-        self.gameName = self.wb["Tracker"]["A1"].value
-        self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
-        self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+        self.gameData = Game()
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -131,9 +116,9 @@ class NRotMEncounterRouting():
     def getEncounterData(self):
         res = []
 
-        dvList = self.ws.data_validations.dataValidation
+        dvList = self.gameData.ws.data_validations.dataValidation
         for dv in dvList: 
-            cells = [str(c) for c in list(dv.sqref.ranges) if self.encounterCol in str(c)]   # a list of CellRange elements
+            cells = [str(c) for c in list(dv.sqref.ranges) if self.gameData.encounterCol in str(c)]   # a list of CellRange elements
             
             if cells == []: continue 
 
@@ -141,8 +126,8 @@ class NRotMEncounterRouting():
 
             cells = self.expandColon(cells)
             for c in cells: 
-                loc = c.replace(self.encounterCol, chr(ord(self.encounterCol)-1))
-                route = self.ws[loc].value
+                loc = c.replace(self.gameData.encounterCol, chr(ord(self.gameData.encounterCol)-1))
+                route = self.gameData.ws[loc].value
                 # print("{} are available at {}".format(", ".join(encounters), route))
                 res.extend([route, enc, 1] for enc in encounters)
 
@@ -153,9 +138,9 @@ class NRotMEncounterRouting():
         for cell in cells:
             if ":" not in cell: res.append(cell)
             else:
-                start, stop = map(int, cell.replace(self.encounterCol, "").split(":"))
+                start, stop = map(int, cell.replace(self.gameData.encounterCol, "").split(":"))
                 while start <= stop:
-                    res.append(self.encounterCol + str(start))
+                    res.append(self.gameData.encounterCol + str(start))
                     start += 1
 
         return res
@@ -165,7 +150,7 @@ class NRotMEncounterRouting():
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value") 
 
-        df = self.consolidateTrees(df.reindex([route for route in self.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
+        df = self.consolidateTrees(df.reindex([route for route in self.gameData.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
 
         return df
 
