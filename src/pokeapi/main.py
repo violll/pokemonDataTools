@@ -19,14 +19,27 @@ class PokeapiAccess():
     def __init__(self) -> None:
         # initialize the session
         self.session = requests_cache.CachedSession()
-        self.placeholder = "{id or name}"
+        self.placeholder = "{id or name}"   # placeholder to substitute data for api calls in the BASE_ global variables
+
+        self.versions = self.getVersions()  # list of valid game versions to call
+
+    def getVersions(self):
+        versionsResponse = self.get(BASE_VERSIONS + "?limit=none").json()
+        res = [entry["name"] for entry in versionsResponse["results"]]
+        while versionsResponse["next"]:
+            versionsResponse = self.get(versionsResponse["next"]).json()
+            res.extend([entry["name"] for entry in versionsResponse["results"]])
+        return res
     
-    def get(self, url, modifier):
+    def get(self, url, modifier=""):
         response = self.session.get(url.replace(self.placeholder, modifier))
         return response
     
     def pprint(self, data):
         print(json.dumps(data, indent=4))
+
+    
+
 
 if __name__ == "__main__":
     PokeapiAccess()
