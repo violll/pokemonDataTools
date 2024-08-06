@@ -24,7 +24,8 @@ class PokeapiAccess():
 
         self.versions = self.getVersions()  # list of valid game versions to call
 
-        self.getPokedexFromRegion("sword")
+        dex = self.getPokedexFromRegion("platinum")
+        evoLines = self.getEvoLinesFromPokedex(dex)
 
     def getVersions(self):
         versionsResponse = self.get(BASE_VERSIONS + "?limit=none").json()
@@ -72,6 +73,30 @@ class PokeapiAccess():
                 res.extend(pokedex)
             
         return res
+    
+    def getEvoLinesFromPokedex(self, pokedex):
+        visited = set()
+        evoLines = []
+        for mon in pokedex:
+            if mon["pokemon_species"]["name"] not in visited:
+                evoLineChain = self.get(self.get(mon["pokemon_species"]["url"]) 
+                                    .json()["evolution_chain"]["url"]).json()["chain"]
+                evoLine = self.recurseEvoLines(evoLineChain)
+                visited.update(evoLine)
+                evoLines.append(evoLine)
+                
+        return evoLines
+
+    def recurseEvoLines(self, evoLineChain):
+        monName = evoLineChain["species"]["name"]
+        if evoLineChain["evolves_to"] == []:
+            return [monName]
+        else:
+            res = []
+            for evo in evoLineChain["evolves_to"]:
+                if monName not in res: res.append(monName)
+                res.extend(self.recurseEvoLines(evo))
+            return res
 
 
 if __name__ == "__main__":
