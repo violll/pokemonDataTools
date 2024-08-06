@@ -1,5 +1,6 @@
 import requests_cache
 import json
+import re
 
 # adds the path absolutely so the code can be run from anywhere
 from pathlib import Path
@@ -23,6 +24,8 @@ class PokeapiAccess():
 
         self.versions = self.getVersions()  # list of valid game versions to call
 
+        self.getPokedexFromRegion("sword")
+
     def getVersions(self):
         versionsResponse = self.get(BASE_VERSIONS + "?limit=none").json()
         res = [entry["name"] for entry in versionsResponse["results"]]
@@ -38,7 +41,37 @@ class PokeapiAccess():
     def pprint(self, data):
         print(json.dumps(data, indent=4))
 
-    
+    # ensure version name is formatted correctly by checking against self.versions
+    def verifyVersion(self, version):
+        pattern = re.compile("^" + version.replace(" ", ".*"), flags=re.I|re.M)
+        versionName = re.search(pattern, "\n".join(self.versions))
+
+        try:
+            versionName = versionName.group()
+        except:
+            print("invalid version name! select from the following: \n{}".format(self.versions))
+            return self.verifyVersion(input("> "))
+        
+        return versionName
+
+    # get regional pokedex from game name 
+    # IMPORTANT this does not identify regional variants at present
+    def getPokedexFromRegion(self, version) -> list[dict]:
+        version = self.verifyVersion(version)
+        # get the pokedex via versionGroup
+        versionGroup = self.get(BASE_VERSIONS, version).json()["version_group"]
+        pokedex = self.get(versionGroup["url"]).json()["pokedexes"]
+
+        if len(pokedex) == 1:
+            res = self.get(pokedex[0]["url"]).json()["pokemon_entries"]
+        
+        else:
+            res = []
+            for dex in pokedex:
+                pokedex = self.get(dex["url"]).json()["pokemon_entries"]
+                res.extend(pokedex)
+            
+        return res
 
 
 if __name__ == "__main__":
