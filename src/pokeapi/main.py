@@ -24,9 +24,6 @@ class PokeapiAccess():
 
         self.versions = self.getVersions()  # list of valid game versions to call
 
-        dex = self.getPokedexFromRegion("platinum")
-        evoLines = self.getEvoLinesFromPokedex(dex)
-
     def getVersions(self):
         versionsResponse = self.get(BASE_VERSIONS + "?limit=none").json()
         res = [entry["name"] for entry in versionsResponse["results"]]
