@@ -13,6 +13,8 @@ path = str(Path(Path(__file__).parent.absolute()).parent.absolute())
 sys.path.insert(0, path)
 
 from Scrapers import scrapeEvoLines
+from src.pokeapi import main as pokeapi
+
 
 class GroupData():
     def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
@@ -23,6 +25,34 @@ class GroupData():
     def __repr__(self) -> str:
         return json.dumps(self.assignMe, indent=4)
 
+class Game():
+    def __init__(self) -> None:
+        # open relevant spreadsheet
+        ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
+        self.wb = openpyxl.load_workbook(filename = ss)
+
+        self.ws = self.wb["Team & Encounters"]
+        
+        self.routeCol = self.getCol("Location")
+        self.encounterCol = self.getCol("Encounter")
+        self.routeOrder = [route.value for route in self.ws[self.routeCol] if route.value not in [None, "Location"]]
+
+        # init pokeapi calls
+        self.pokeapi = pokeapi.PokeapiAccess()
+        self.gameName = self.wb["Tracker"]["A1"].value
+        self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
+        self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+    
+    def getCol(self, value):
+        ws = self.wb["Team & Encounters"]
+        for row in ws.iter_rows():
+            for col in row: 
+                if col.value == value: return col.column_letter
+
+        return None
+
+# Game()
+
 class NRotMEncounterRouting():
     def __init__(self) -> None:
         # SPECIFIC TO THIS SHEET
@@ -30,11 +60,17 @@ class NRotMEncounterRouting():
         ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
         self.wb = openpyxl.load_workbook(filename = ss)
 
+        self.ws = self.wb["Team & Encounters"]
+        self.encounterCol = "J"
+        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
+
         self.region = ["Johtonian", "Kantonian"]
 
-        self.ws = self.wb["Team & Encounters"]
-        self.relevantCol = "J"
-        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
+        # init pokeapi calls
+        self.pokeapi = pokeapi.PokeapiAccess()
+        self.gameName = self.wb["Tracker"]["A1"].value
+        self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
+        self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -97,7 +133,7 @@ class NRotMEncounterRouting():
 
         dvList = self.ws.data_validations.dataValidation
         for dv in dvList: 
-            cells = [str(c) for c in list(dv.sqref.ranges) if self.relevantCol in str(c)]   # a list of CellRange elements
+            cells = [str(c) for c in list(dv.sqref.ranges) if self.encounterCol in str(c)]   # a list of CellRange elements
             
             if cells == []: continue 
 
@@ -105,7 +141,7 @@ class NRotMEncounterRouting():
 
             cells = self.expandColon(cells)
             for c in cells: 
-                loc = c.replace(self.relevantCol, chr(ord(self.relevantCol)-1))
+                loc = c.replace(self.encounterCol, chr(ord(self.encounterCol)-1))
                 route = self.ws[loc].value
                 # print("{} are available at {}".format(", ".join(encounters), route))
                 res.extend([route, enc, 1] for enc in encounters)
@@ -117,9 +153,9 @@ class NRotMEncounterRouting():
         for cell in cells:
             if ":" not in cell: res.append(cell)
             else:
-                start, stop = map(int, cell.replace(self.relevantCol, "").split(":"))
+                start, stop = map(int, cell.replace(self.encounterCol, "").split(":"))
                 while start <= stop:
-                    res.append(self.relevantCol + str(start))
+                    res.append(self.encounterCol + str(start))
                     start += 1
 
         return res
