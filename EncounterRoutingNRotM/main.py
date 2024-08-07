@@ -250,7 +250,7 @@ class NRotMEncounterRouting():
         
         # check if user would like to update any group
         if len(groupsData.keys()) == 1:
-            self.update(groupData[0], workingdf)
+            self.update(groupsData[0], workingdf)
             return True
         elif groupsData != {}:
             print(groupsData)
