@@ -6,6 +6,8 @@ import argparse
 
 import bigtree
 
+import re
+
 # adds the path absolutely so the code can be run from anywhere
 from pathlib import Path
 import sys
@@ -27,7 +29,7 @@ class GroupData():
 
 class Game():
     def __init__(self) -> None:
-        # open relevant spreadsheet
+        # open NRotM spreadsheet
         ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
         self.wb = openpyxl.load_workbook(filename = ss)
 
@@ -150,9 +152,19 @@ class NRotMEncounterRouting():
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value") 
 
-        df = self.consolidateTrees(df.reindex([route for route in self.gameData.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
+        return self.consolidateEvoLines(df.reindex([route for route in self.gameData.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
+    
+    def consolidateEvoLines(self, df):
+        res = []
 
-        return df
+        for line in self.gameData.evoLines:
+            relevantLine = [re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M).group() for mon in line if re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M)]
+            if len(relevantLine) != 0:
+                dfFiltered = pd.DataFrame(df[relevantLine].agg("max", axis="columns"))
+                dfFiltered.columns = ["/".join(relevantLine)]
+                res.append(dfFiltered)
+        
+        return pd.concat(res, axis=1)
 
     def consolidateTrees(self, df):
         lines = scrapeEvoLines.scrapeEvoLines()
