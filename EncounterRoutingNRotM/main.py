@@ -3,9 +3,6 @@ import pandas as pd
 import json
 import numpy as np
 import argparse
-
-import bigtree
-
 import re
 
 # adds the path absolutely so the code can be run from anywhere
@@ -14,7 +11,6 @@ import sys
 path = str(Path(Path(__file__).parent.absolute()).parent.absolute())
 sys.path.insert(0, path)
 
-from Scrapers import scrapeEvoLines
 from src.pokeapi import main as pokeapi
 
 
@@ -130,7 +126,6 @@ class NRotMEncounterRouting():
             for c in cells: 
                 loc = c.replace(self.gameData.encounterCol, chr(ord(self.gameData.encounterCol)-1))
                 route = self.gameData.ws[loc].value
-                # print("{} are available at {}".format(", ".join(encounters), route))
                 res.extend([route, enc, 1] for enc in encounters)
 
         return res
@@ -236,7 +231,6 @@ class NRotMEncounterRouting():
         for mon in groupData.encounters:
             monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
             for route in monRoutes:
-                # TODO add this as self.notes[route][pass] so that it's easier to parse later
                 passN = len(self.encounterTables)
                 currNotes = self.notes[route].get(passN)
                 if currNotes: currNotes.add(mon)
@@ -290,8 +284,6 @@ class NRotMEncounterRouting():
 
                 # fills the background color
                 worksheet.conditional_formatting.add(cRange, openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
-                # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
-                # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
             
             # write the historical pass table as the final worksheet
             pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
@@ -299,10 +291,6 @@ class NRotMEncounterRouting():
             # the range of the relevant column
             cRange = "{}:{}".format(worksheet["C"][0].coordinate, worksheet["C"][-1].coordinate)
             worksheet.conditional_formatting.add(cRange, openpyxl.formatting.rule.Rule(type="duplicateValues", dxf=yellowdxf))
-
-
-            # TODO BESTFIT does not work properly, so I'll have to use the max() function for cell widths if I want to autofit column widths
-            # worksheet.column_dimensions["B"].width += 4
             
             # add comments to each sheet to show what pokemon need to be encountered to create that instance of encounter routing
             for sheet in writer.sheets: 
