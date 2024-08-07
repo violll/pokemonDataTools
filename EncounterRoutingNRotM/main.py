@@ -166,50 +166,6 @@ class NRotMEncounterRouting():
         
         return pd.concat(res, axis=1)
 
-    def consolidateTrees(self, df):
-        lines = scrapeEvoLines.scrapeEvoLines()
-        consolidated = set()
-        res = []
-
-        for mon in df.columns:
-            if mon not in consolidated:
-                tree = bigtree.findall(lines.evoLines, lambda node: mon in node.name)
-                
-                # if regional variant, find the relevant one
-                if len(tree) > 1: 
-                    temp = []
-                    for t in tree:
-                        regionalVariants = [t for region in self.region if region in t.name]
-                        temp.extend(regionalVariants)
-                    
-                    tree = temp
-                
-                tree = tree[0]
-                
-                # access entire evolutionary line
-                while tree.depth > 2: tree = tree.parent
-                tree = bigtree.prune_tree(lines.evoLines, prune_path=tree.path_name)
-                # get list of mons in line
-                fullLine = [mon.name for mon in bigtree.levelorder_iter(tree)]
-                
-                evoline = []
-                for i in range(len(fullLine)):
-                    pMon = fullLine[i]
-
-                    # remove region data TODO wouldn't this be easier to move to the tree???? as a value?????
-                    for region in self.region:
-                        pMon = pMon.replace("({})".format(region), "").strip()
-
-                    if pMon in df.columns:
-                        evoline.append(pMon)
-
-                test = pd.DataFrame(df[evoline].agg("max", axis="columns"))
-                test.columns = ["/".join(evoline)]
-                res.append(test)
-                consolidated.update(evoline)
-            
-        return pd.concat(res, axis=1)
-
     def assignOneToOne(self):
         assigned = False
         workingdf = self.encounterTables[-1].copy(deep=True)
