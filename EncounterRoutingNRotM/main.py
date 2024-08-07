@@ -3,8 +3,7 @@ import pandas as pd
 import json
 import numpy as np
 import argparse
-
-import os
+import re
 
 # adds the path absolutely so the code can be run from anywhere
 from pathlib import Path
@@ -12,7 +11,8 @@ import sys
 path = str(Path(Path(__file__).parent.absolute()).parent.absolute())
 sys.path.insert(0, path)
 
-from Scrapers import scrapeEvoLines
+from src.pokeapi import main as pokeapi
+
 
 class GroupData():
     def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
@@ -23,19 +23,37 @@ class GroupData():
     def __repr__(self) -> str:
         return json.dumps(self.assignMe, indent=4)
 
-class NRotMEncounterRouting():
+class Game():
     def __init__(self) -> None:
-        # SPECIFIC TO THIS SHEET
-        try: 
-            ss = os.path.abspath("NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
-            self.wb = openpyxl.load_workbook(filename = ss)
-        except: 
-            ss = os.path.abspath("EncounterRoutingNRotM/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx")
-            self.wb = openpyxl.load_workbook(filename = ss)
+        # open NRotM spreadsheet
+        ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
+        self.wb = openpyxl.load_workbook(filename = ss)
 
         self.ws = self.wb["Team & Encounters"]
-        self.relevantCol = "J"
-        self.routeOrder = [route.value for route in self.ws["I"] if route.value not in [None, "Location"]]
+        
+        self.routeCol = self.getCol("Location")
+        self.encounterCol = self.getCol("Encounter")
+        self.routeOrder = [route.value for route in self.ws[self.routeCol] if route.value not in [None, "Location"]]
+
+        # init pokeapi calls
+        self.pokeapi = pokeapi.PokeapiAccess()
+        self.gameName = self.wb["Tracker"]["A1"].value
+        self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
+        self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+    
+    def getCol(self, value):
+        ws = self.wb["Team & Encounters"]
+        for row in ws.iter_rows():
+            for col in row: 
+                if col.value == value: return col.column_letter
+
+        return None
+
+class NRotMEncounterRouting():
+    def __init__(self) -> None:
+        self.region = ["Johtonian", "Kantonian"]
+
+        self.gameData = Game()
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -53,6 +71,7 @@ class NRotMEncounterRouting():
 
         # initialize assigned encounters
         self.assignedEncounters = {}
+        self.assignedEncountersSlice = []
         
         # update assigned encounters if file is given as an argument
         if self.args.encounters != None: 
@@ -70,7 +89,7 @@ class NRotMEncounterRouting():
                 except:
                     self.args.encounters = input("Type a valid filename!\n> ")
 
-        # self.route()
+        self.route()
 
     def initParser(self):
         parser = argparse.ArgumentParser()
@@ -95,9 +114,9 @@ class NRotMEncounterRouting():
     def getEncounterData(self):
         res = []
 
-        dvList = self.ws.data_validations.dataValidation
+        dvList = self.gameData.ws.data_validations.dataValidation
         for dv in dvList: 
-            cells = [str(c) for c in list(dv.sqref.ranges) if self.relevantCol in str(c)]   # a list of CellRange elements
+            cells = [str(c) for c in list(dv.sqref.ranges) if self.gameData.encounterCol in str(c)]   # a list of CellRange elements
             
             if cells == []: continue 
 
@@ -105,9 +124,8 @@ class NRotMEncounterRouting():
 
             cells = self.expandColon(cells)
             for c in cells: 
-                loc = c.replace(self.relevantCol, chr(ord(self.relevantCol)-1))
-                route = self.ws[loc].value
-                # print("{} are available at {}".format(", ".join(encounters), route))
+                loc = c.replace(self.gameData.encounterCol, chr(ord(self.gameData.encounterCol)-1))
+                route = self.gameData.ws[loc].value
                 res.extend([route, enc, 1] for enc in encounters)
 
         return res
@@ -117,9 +135,9 @@ class NRotMEncounterRouting():
         for cell in cells:
             if ":" not in cell: res.append(cell)
             else:
-                start, stop = map(int, cell.replace(self.relevantCol, "").split(":"))
+                start, stop = map(int, cell.replace(self.gameData.encounterCol, "").split(":"))
                 while start <= stop:
-                    res.append(self.relevantCol + str(start))
+                    res.append(self.gameData.encounterCol + str(start))
                     start += 1
 
         return res
@@ -129,64 +147,18 @@ class NRotMEncounterRouting():
         df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
                          .pivot(index="Route", columns="Encounter", values="Value") 
 
-        df = self.consolidateTrees(df.reindex([route for route in self.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
-
-        return df
-
-    def consolidateTrees(self, df):
-        # TEMP replace with evo lines when I have wifi again
-        lines = scrapeEvoLines.scrapeEvoLines()
-        tempEvoLines = [["Abomasnow", "Snover"],
-                        ["Abra", "Kadabra", "Alakazam"],
-                        ["Azumarill", "Marill", "Azurill"],
-                        ["Beautifly", "Cascoon", "Silcoon", "Wurmple"],
-                        ["Buizel", "Floatzel"],
-                        ["Burmy", "Wormadam", "Mothim"],
-                        ["Cherubi", "Cherrim"],
-                        ["Chimecho", "Chingling"],
-                        ["Combee", "Vespiquen"],
-                        ["Cranidos", "Rampardos"],
-                        ["Carnivine"],
-                        ["Drifloon", "Drifblim"],
-                        ["Dusclops", "Duskull", "Dusknoir"],
-                        ["Eevee"],
-                        ["Feebas", "Milotic"],
-                        ["Finneon", "Lumineon"],
-                        ["Goldeen", "Seaking"],
-                        ["Golduck", "Psyduck"],
-                        ["Heracross"],
-                        ["Houndour", "Houndoom"],
-                        ["Ralts", "Kirlia", "Gallade", "Gardevoir"],
-                        ["Kricketune", "Kricketot"],
-                        ["Machop", "Machoke", "Machamp"],
-                        ["Magikarp", "Gyarados"],
-                        ["Magby", "Magmar", "Magmortar"],
-                        ["Mantyke", "Mantine"],
-                        ["Medicham", "Meditite"],
-                        ["Mr-Mime"],
-                        ["Nosepass", "Probopass"],
-                        ["Octillery", "Remoraid"],
-                        ["Pelipper", "Wingull"],
-                        ["Ponyta", "Rapidash"],
-                        ["Riolu", "Lucario"],
-                        ["Scyther", "Scizor"],
-                        ["Shellos", "Gastrodon"],
-                        ["Sneasel", "Weavile"],
-                        ["Sudowoodo", "Bonsly"],
-                        ["Swablu", "Altaria"],
-                        ["Tangela", "Tangrowth"],
-                        ["Tropius"],
-                        ["Unown"],
-                        ["Yanma", "Yanmega"]]
-        
+        return self.consolidateEvoLines(df.reindex([route for route in self.gameData.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
+    
+    def consolidateEvoLines(self, df):
         res = []
 
-        for evoline in tempEvoLines:
-            evoline = [mon for mon in evoline if mon in df.columns]
-            test = pd.DataFrame(df[evoline].agg("max", axis="columns"))
-            test.columns = ["/".join(evoline)]
-            res.append(test)
-            
+        for line in self.gameData.evoLines:
+            relevantLine = [re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M).group() for mon in line if re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M)]
+            if len(relevantLine) != 0:
+                dfFiltered = pd.DataFrame(df[relevantLine].agg("max", axis="columns"))
+                dfFiltered.columns = ["/".join(relevantLine)]
+                res.append(dfFiltered)
+        
         return pd.concat(res, axis=1)
 
     def assignOneToOne(self):
@@ -206,7 +178,9 @@ class NRotMEncounterRouting():
             onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
 
             # do I need to drop duplicates? I can only get the encounter on one route but it doesn't matter which one
-            onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
+            onlyOneDict = onlyOneMelted.to_dict("split")
+
+            # onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
             groupData = GroupData(routes = onlyOneDict["index"], 
                                   encounters = list(map(lambda x: x[0], onlyOneDict["data"])),
                                   assignMe = {onlyOneDict['index'][i]: onlyOneDict['data'][i][0] for i in range(len(onlyOneDict["index"]))}
@@ -238,14 +212,16 @@ class NRotMEncounterRouting():
                 i += 1
         
         # check if user would like to update any group
-        if groupsData != {}:
+        if len(groupsData.keys()) == 1:
+            self.update(groupsData[0], workingdf)
+            return True
+        elif groupsData != {}:
             print(groupsData)
             groupData = groupsData.get(int(input("Which group would you like to assign?\n> ")))
             if groupData: 
                 self.update(groupData, workingdf)
                 return True
-        
-        return False
+        else: return False
 
     def update(self, groupData, df):
         # update the assigned encounter dict
@@ -255,11 +231,10 @@ class NRotMEncounterRouting():
         for mon in groupData.encounters:
             monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
             for route in monRoutes:
-                # TODO add this as self.notes[route][pass] so that it's easier to parse later
                 passN = len(self.encounterTables)
                 currNotes = self.notes[route].get(passN)
-                if currNotes: currNotes.append(mon)
-                else: self.notes[route][passN] = [mon]
+                if currNotes: currNotes.add(mon)
+                else: self.notes[route][passN] = set([mon])
 
         # remove filtered items from df
         df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
@@ -269,7 +244,12 @@ class NRotMEncounterRouting():
         self.encounterTables.append(df)
         
         # print encounters added
-        self.printProgress(pd.DataFrame.from_dict(groupData.assignMe, orient="index", columns=["Encounter"]))
+        newEncounters = pd.DataFrame.from_dict(groupData.assignMe, orient="index", columns=["Encounter"])
+        newEncounters["Pass"] = len(self.encounterTables) - 1
+        newEncounters.index.name = "Route"
+        newEncounters.set_index(["Pass", newEncounters.index], inplace = True)
+        self.assignedEncountersSlice.append(newEncounters)
+        self.printProgress(newEncounters)
 
         # return df because assignOneToOne needs the workingdf updated to continue making passes
         # alternatively could make it loop outside of the method?
@@ -287,25 +267,45 @@ class NRotMEncounterRouting():
         # REMOVE HASHES FROM COLORS TO MAKE THEM USABLE
         greenFill = openpyxl.styles.PatternFill(bgColor='c6efce', fill_type='solid')
         greenFont = openpyxl.styles.Font(color="006100")
+        yellowFill = openpyxl.styles.PatternFill(bgColor="FFEB9C", fill_type="solid")
+        yellowFont = openpyxl.styles.Font(color="9C5700")
+        yellowdxf = openpyxl.styles.differential.DifferentialStyle(font=yellowFont, fill=yellowFill)
 
         with pd.ExcelWriter("EncounterRoutingNRotM/encounters.xlsx") as writer:
+            # write each pass' slice as a worksheet
             for i in range(len(self.encounterTables)):
                 self.encounterTables[i].to_excel(writer, sheet_name="EncounterTable{}".format(str(i)), freeze_panes=(1, 1))
 
                 worksheet = writer.sheets["EncounterTable{}".format(str(i))]
 
-                # fills the background color
-                worksheet.conditional_formatting.add("B2:BN56", openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
-                # worksheet.alignment = openpyxl.styles.alignment.Alignment(horizontal="center") TODO align all rows
-                # worksheet.column_dimensions["A"].bestFit = True TODO autofit the column lenghths https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
+                sheetData = list(worksheet.columns)
+                # the range of the table body ignoring header row and column
+                cRange = "{}:{}".format(sheetData[1][1].coordinate, sheetData[-1][-1].coordinate)
 
-            # add comments to last sheet to show what pokemon need to be encountered first
-            for col in worksheet.iter_cols(min_row = 2, max_col = 1):
-                for cell in col: 
-                    routeData = self.notes[cell.value]
-                    message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in routeData.keys()])
-                    if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
+                # fills the background color
+                worksheet.conditional_formatting.add(cRange, openpyxl.formatting.rule.CellIsRule(operator='equal', formula=[1], stopIfTrue=False, fill=greenFill, font=greenFont))
             
+            # write the historical pass table as the final worksheet
+            pd.concat(self.assignedEncountersSlice).to_excel(writer, sheet_name = "EncounterList")
+            worksheet = writer.sheets["EncounterList"]
+            # the range of the relevant column
+            cRange = "{}:{}".format(worksheet["C"][0].coordinate, worksheet["C"][-1].coordinate)
+            worksheet.conditional_formatting.add(cRange, openpyxl.formatting.rule.Rule(type="duplicateValues", dxf=yellowdxf))
+            
+            # add comments to each sheet to show what pokemon need to be encountered to create that instance of encounter routing
+            for sheet in writer.sheets: 
+                worksheet = writer.sheets[sheet]
+
+                if not sheet.isalpha(): i = i = int("".join([char for char in sheet if char.isnumeric()]))
+
+                if "List" in sheet: minC, maxC = 2, 2
+                else: minC, maxC = 1, 1
+
+                for col in worksheet.iter_cols(min_row = 2, min_col = minC, max_col = maxC):
+                    for cell in col: 
+                        routeData = self.notes[cell.value]
+                        message = "\n".join(["{}: {}".format(p, ", ".join(routeData[p])) for p in range(1,i+1) if routeData.get(p)])
+                        if message != "": cell.comment = openpyxl.comments.Comment(message, "openpyxl")
         return 
 
 if __name__ == "__main__":
