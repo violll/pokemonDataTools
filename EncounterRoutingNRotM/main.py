@@ -74,22 +74,23 @@ class NRotMEncounterRouting():
         self.assignedEncountersSlice = []
         
         # update assigned encounters if file is given as an argument
-        if self.args.encounters != None: 
-            while True:
-                try: 
-                    assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
-                    routes = list(assignMe.keys())
-                    encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
-                    assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
-
-                    groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
-                    self.update(groupData=groupData, df=self.encounterTable)                 
-                    break
-                
-                except:
-                    self.args.encounters = input("Type a valid filename!\n> ")
+        if self.args.encounters != None: self.importEncountersJSON()
 
         self.route()
+
+    def importEncountersJSON(self):
+        try: 
+            assignMe = json.loads(open("EncounterRoutingNRotM/" + self.args.encounters + ".json").read())
+            routes = list(assignMe.keys())
+            encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
+            assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
+
+            groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
+            self.update(groupData=groupData, df=self.encounterTable)                 
+        
+        except:
+            self.args.encounters = input("Type a valid filename!\n> ")
+            self.importEncountersJSON()
 
     def initParser(self):
         parser = argparse.ArgumentParser()
