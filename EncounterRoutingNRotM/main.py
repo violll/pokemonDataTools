@@ -86,7 +86,7 @@ class NRotMEncounterRouting():
             assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
 
             groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
-            self.update(groupData=groupData, df=self.encounterTable)                 
+            self.update(groupData=groupData, df=self.encounterTable, isJSON=True)                 
         
         except:
             self.args.encounters = input("Type a valid filename!\n> ")
@@ -177,11 +177,7 @@ class NRotMEncounterRouting():
 
             # melt to pd.DataFrame (index: routes, column: encounter)
             onlyOneMelted = pd.melt(onlyOneOptions, ignore_index=False, var_name="Encounter").dropna()[["Encounter"]]
-
-            # do I need to drop duplicates? I can only get the encounter on one route but it doesn't matter which one
             onlyOneDict = onlyOneMelted.to_dict("split")
-
-            # onlyOneDict = onlyOneMelted.drop_duplicates().to_dict("split")
             groupData = GroupData(routes = onlyOneDict["index"], 
                                   encounters = list(map(lambda x: x[0], onlyOneDict["data"])),
                                   assignMe = {onlyOneDict['index'][i]: onlyOneDict['data'][i][0] for i in range(len(onlyOneDict["index"]))}
@@ -224,18 +220,19 @@ class NRotMEncounterRouting():
                 return True
         else: return False
 
-    def update(self, groupData, df):
+    def update(self, groupData, df, isJSON=False):
         # update the assigned encounter dict
         self.assignedEncounters.update(groupData.assignMe)
 
         # make note of routes with encounters that have been assigned
-        for mon in groupData.encounters:
-            monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
-            for route in monRoutes:
-                passN = len(self.encounterTables)
-                currNotes = self.notes[route].get(passN)
-                if currNotes: currNotes.add(mon)
-                else: self.notes[route][passN] = set([mon])
+        if not isJSON:
+            for mon in groupData.encounters:
+                monRoutes = [route for route in df[mon][df[mon] == 1].index if route not in groupData.routes]
+                for route in monRoutes:
+                    passN = len(self.encounterTables)
+                    currNotes = self.notes[route].get(passN)
+                    if currNotes: currNotes.add(mon)
+                    else: self.notes[route][passN] = set([mon])
 
         # remove filtered items from df
         df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
@@ -243,6 +240,7 @@ class NRotMEncounterRouting():
 
         # add the updated dataframe as a slice to the results table
         self.encounterTables.append(df)
+        if isJSON: self.encounterTables.pop(0)
         
         # print encounters added
         newEncounters = pd.DataFrame.from_dict(groupData.assignMe, orient="index", columns=["Encounter"])
