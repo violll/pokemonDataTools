@@ -6,10 +6,10 @@ import argparse
 import re
 
 # adds the path absolutely so the code can be run from anywhere
-from pathlib import Path
+import helper
+
 import sys
-path = str(Path(Path(__file__).parent.absolute()).parent.absolute())
-sys.path.insert(0, path)
+sys.path.insert(0, helper.getAbsPath(__file__, 2))
 
 from src.pokeapi import main as pokeapi
 
@@ -26,7 +26,7 @@ class GroupData():
 class Game():
     def __init__(self) -> None:
         # open NRotM spreadsheet
-        ss = str(Path(__file__).parent.absolute()) + "/NRotM August 2024 - Platinum Healless Typeban v1.0.xlsx"
+        ss = helper.getAbsPath(__file__, 1) + "/NRotMAugust2024.xlsx"
         self.wb = openpyxl.load_workbook(filename = ss)
 
         self.ws = self.wb["Team & Encounters"]
@@ -77,7 +77,7 @@ class NRotMEncounterRouting():
         if self.args.encounters != None: 
             while True:
                 try: 
-                    assignMe = json.loads(open("EncounterRoutingNRotM/" + self.args.encounters + ".json").read())
+                    assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
                     routes = list(assignMe.keys())
                     encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
                     assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
@@ -271,7 +271,7 @@ class NRotMEncounterRouting():
         yellowFont = openpyxl.styles.Font(color="9C5700")
         yellowdxf = openpyxl.styles.differential.DifferentialStyle(font=yellowFont, fill=yellowFill)
 
-        with pd.ExcelWriter("EncounterRoutingNRotM/encounters.xlsx") as writer:
+        with pd.ExcelWriter(helper.getAbsPath(__file__, 1) + "/encounters.xlsx") as writer:
             # write each pass' slice as a worksheet
             for i in range(len(self.encounterTables)):
                 self.encounterTables[i].to_excel(writer, sheet_name="EncounterTable{}".format(str(i)), freeze_panes=(1, 1))
