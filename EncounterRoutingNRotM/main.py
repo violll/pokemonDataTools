@@ -79,13 +79,13 @@ class NRotMEncounterRouting():
         if self.args.route: self.route()
 
     def importEncountersJSON(self):
+        print(self.args.encounters)
         try: 
             assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
-            print("assignme")
                             
         except:
             self.args.encounters = input("Type a valid filename!\n> ")
-            self.importEncountersJSON()
+            return self.importEncountersJSON()
         
         routes = list(assignMe.keys())
         encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
