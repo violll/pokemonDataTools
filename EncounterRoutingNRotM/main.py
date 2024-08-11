@@ -40,6 +40,11 @@ class Game():
         self.gameName = self.wb["Tracker"]["A1"].value
         self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
         self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+
+        # game specific information
+        if self.gameName == "Platinum":
+            self.honeyMons = ["Aipom", "Heracross", "Wurmple", "Burmy", "Combee", "Cherubi", "Munchlax"]
+
     
     def getCol(self, value):
         ws = self.wb["Team & Encounters"]
@@ -203,7 +208,7 @@ class NRotMEncounterRouting():
         workingdf = self.encounterTables[-1].copy(deep=True)
         relevantdf = workingdf[workingdf.duplicated(keep=False)]
         groups = relevantdf.groupby(by=list(relevantdf.columns), sort=False).groups
-        
+
         # collect eligible group data and ask the player which group to assign
         groupsData = {}
         i = 0
