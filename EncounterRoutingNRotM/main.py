@@ -65,6 +65,7 @@ class NRotMEncounterRouting():
         # user can include an optional argument to check for a json file of encounters
         self.parser = self.initParser()
         self.args = self.parser.parse_args()
+        print(self.args)
 
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.encounterTable.index)}
@@ -99,7 +100,15 @@ class NRotMEncounterRouting():
         parser.add_argument("--encounters", "-e",
                             required = False,
                             help = "the json file of the user's in-game found encounters")
-        
+        group = parser.add_mutually_exclusive_group(required = True)
+        group.add_argument("--test", "-t",
+                            required = False,
+                            help = "select to test manual encounter routing",
+                            action = "store_true")
+        group.add_argument("--route", "-r",
+                            required = False,
+                            help = "select to use the routing algorithm",
+                            action = "store_true")
         return parser
 
     def route(self):
