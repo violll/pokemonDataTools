@@ -81,16 +81,18 @@ class NRotMEncounterRouting():
     def importEncountersJSON(self):
         try: 
             assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
-            routes = list(assignMe.keys())
-            encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
-            assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
-
-            groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
-            self.update(groupData=groupData, df=self.encounterTable, isJSON=True)                 
-        
+            print("assignme")
+                            
         except:
             self.args.encounters = input("Type a valid filename!\n> ")
             self.importEncountersJSON()
+        
+        routes = list(assignMe.keys())
+        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
+        assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
+
+        groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
+        self.update(groupData=groupData, df=self.encounterTable, isJSON=True) 
 
     def initParser(self):
         parser = argparse.ArgumentParser()
@@ -237,6 +239,9 @@ class NRotMEncounterRouting():
         # remove filtered items from df
         df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
                .dropna(axis=0, how="all")
+        
+        # remove encounters that are no longer accessible
+        self.checkAvailableEncounters(df)
 
         # add the updated dataframe as a slice to the results table
         self.encounterTables.append(df)
@@ -253,6 +258,11 @@ class NRotMEncounterRouting():
         # return df because assignOneToOne needs the workingdf updated to continue making passes
         # alternatively could make it loop outside of the method?
         return df
+    
+    def checkAvailableEncounters(self, df):
+        lostEncounters = df.loc[:, df.sum(axis=0) == 0]
+        df.dropna(axis=1, how="all", inplace=True)
+        if len(lostEncounters.columns) != 0: print("WARNING: {} ARE LOST".format(", ".join(lostEncounters.columns)))
 
     def printProgress(self, df, pattern="="):
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)],
