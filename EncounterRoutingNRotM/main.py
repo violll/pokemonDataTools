@@ -74,7 +74,6 @@ class NRotMEncounterRouting():
         # update honey table encounters
         self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
 
-
         # user can include an optional argument to check for a json file of encounters
         self.parser = self.initParser()
         self.args = self.parser.parse_args()
@@ -92,7 +91,6 @@ class NRotMEncounterRouting():
         if self.args.route: self.route()
 
     def importEncountersJSON(self):
-        print(self.args.encounters)
         try: 
             assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
                             
@@ -249,7 +247,9 @@ class NRotMEncounterRouting():
     def update(self, groupData, df, isJSON=False):
         # if honey location, get all remaining honey encounters and update
         if groupData.flags["Honey"]: 
-            remainingHoneyRoutes = [index for index, row in df.iterrows() if sum(row[self.gameData.honeyMons]) == len(row[self.gameData.honeyMons]) and sum(row[self.gameData.honeyMons]) == row.sum()]
+            # update honey table encounters
+            self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in df]
+            remainingHoneyRoutes = [index for index, row in df.iterrows() if sum(row[self.gameData.honeyMons]) == len(row[self.gameData.honeyMons]) and sum(row[self.gameData.honeyMons]) == row.sum() and index not in groupData.routes]
             flagGroupData = GroupData(remainingHoneyRoutes, self.gameData.honeyMons)
             flagGroupData.assignMe = {route: " or ".join(flagGroupData.encounters) for route in flagGroupData.routes}
             self.update(flagGroupData, df) #TODO NEED TO NOT UPDATE THE DF
