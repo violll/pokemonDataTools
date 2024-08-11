@@ -65,7 +65,6 @@ class NRotMEncounterRouting():
         # user can include an optional argument to check for a json file of encounters
         self.parser = self.initParser()
         self.args = self.parser.parse_args()
-        print(self.args)
 
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.encounterTable.index)}
@@ -77,7 +76,7 @@ class NRotMEncounterRouting():
         # update assigned encounters if file is given as an argument
         if self.args.encounters != None: self.importEncountersJSON()
 
-        self.route()
+        if self.args.route: self.route()
 
     def importEncountersJSON(self):
         try: 
