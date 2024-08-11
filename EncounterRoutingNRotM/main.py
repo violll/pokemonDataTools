@@ -80,7 +80,7 @@ class NRotMEncounterRouting():
 
     def importEncountersJSON(self):
         try: 
-            assignMe = json.loads(open("EncounterRoutingNRotM/" + self.args.encounters + ".json").read())
+            assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
             routes = list(assignMe.keys())
             encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
             assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
