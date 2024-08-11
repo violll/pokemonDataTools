@@ -19,6 +19,10 @@ class GroupData():
         self.routes = routes
         self.encounters = encounters
         self.assignMe = assignMe
+
+        self.flags = {
+            "Honey": False
+        }
     
     def __repr__(self) -> str:
         return json.dumps(self.assignMe, indent=4)
@@ -66,6 +70,10 @@ class NRotMEncounterRouting():
 
         # initialize slice history of encounter assignment
         self.encounterTables = [self.encounterTable]
+
+        # update honey table encounters
+        self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
+
 
         # user can include an optional argument to check for a json file of encounters
         self.parser = self.initParser()
@@ -214,12 +222,15 @@ class NRotMEncounterRouting():
         i = 0
         for group in groups:
             encounters = [relevantdf.columns[i] for i in range(len(relevantdf.columns)) if group[i] == 1]
+            flagHoney = True if set(encounters).issuperset(set([mon for mon in self.gameData.honeyMons if mon in workingdf.columns])) else False
+
             groupData = GroupData()
             # if there are more routes than encounters, each encounter can be assigned
             if len(groups[group].values) >= np.nansum(group):
                 groupData.encounters = encounters
                 groupData.routes = list(groups[group].values)
                 groupData.assignMe = {route: " or ".join(encounters) for route in groupData.routes}
+                groupData.flags["Honey"] = flagHoney
                 groupsData[i] = groupData
                 i += 1
         
@@ -236,6 +247,13 @@ class NRotMEncounterRouting():
         else: return False
 
     def update(self, groupData, df, isJSON=False):
+        # if honey location, get all remaining honey encounters and update
+        if groupData.flags["Honey"]: 
+            remainingHoneyRoutes = [index for index, row in df.iterrows() if sum(row[self.gameData.honeyMons]) == len(row[self.gameData.honeyMons]) and sum(row[self.gameData.honeyMons]) == row.sum()]
+            flagGroupData = GroupData(remainingHoneyRoutes, self.gameData.honeyMons)
+            flagGroupData.assignMe = {route: " or ".join(flagGroupData.encounters) for route in flagGroupData.routes}
+            self.update(flagGroupData, df) #TODO NEED TO NOT UPDATE THE DF
+
         # update the assigned encounter dict
         self.assignedEncounters.update(groupData.assignMe)
 
