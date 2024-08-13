@@ -98,9 +98,11 @@ class NRotMEncounterRouting():
             self.args.encounters = input("Type a valid filename!\n> ")
             return self.importEncountersJSON()
         
-        routes = list(assignMe.keys())
-        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
+        routes = list(route for route in assignMe.keys() if assignMe[route] != "")
+        failedRoutes = list(route for route in assignMe.keys() if assignMe[route] == "" )
+        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if encounter != "" and list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
         assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
+        routes = routes + failedRoutes
 
         groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
         self.update(groupData=groupData, df=self.encounterTable, isJSON=True) 
@@ -252,7 +254,7 @@ class NRotMEncounterRouting():
             remainingHoneyRoutes = [index for index, row in df.iterrows() if sum(row[self.gameData.honeyMons]) == len(row[self.gameData.honeyMons]) and sum(row[self.gameData.honeyMons]) == row.sum() and index not in groupData.routes]
             flagGroupData = GroupData(remainingHoneyRoutes, self.gameData.honeyMons)
             flagGroupData.assignMe = {route: " or ".join(flagGroupData.encounters) for route in flagGroupData.routes}
-            self.update(flagGroupData, df) #TODO NEED TO NOT UPDATE THE DF
+            self.update(flagGroupData, df)
 
         # update the assigned encounter dict
         self.assignedEncounters.update(groupData.assignMe)
