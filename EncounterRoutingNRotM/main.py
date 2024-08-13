@@ -97,10 +97,11 @@ class NRotMEncounterRouting():
         except:
             self.args.encounters = input("Type a valid filename!\n> ")
             return self.importEncountersJSON()
-        
+                
         routes = list(route for route in assignMe.keys() if assignMe[route] != "")
         failedRoutes = list(route for route in assignMe.keys() if assignMe[route] == "" )
-        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if encounter != "" and list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
+        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] for encounter in assignMe.values() if encounter != "" and list(self.encounterTable.filter(like=encounter, axis=1).columns) != []]
+                
         assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
         routes = routes + failedRoutes
 
