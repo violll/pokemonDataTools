@@ -19,6 +19,10 @@ class GroupData():
         self.routes = routes
         self.encounters = encounters
         self.assignMe = assignMe
+
+        self.flags = {
+            "Honey": False
+        }
     
     def __repr__(self) -> str:
         return json.dumps(self.assignMe, indent=4)
@@ -40,6 +44,11 @@ class Game():
         self.gameName = self.wb["Tracker"]["A1"].value
         self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
         self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+
+        # game specific information
+        if self.gameName == "Platinum":
+            self.honeyMons = ["Aipom", "Heracross", "Wurmple", "Burmy", "Combee", "Cherubi", "Munchlax"]
+
     
     def getCol(self, value):
         ws = self.wb["Team & Encounters"]
@@ -62,6 +71,9 @@ class NRotMEncounterRouting():
         # initialize slice history of encounter assignment
         self.encounterTables = [self.encounterTable]
 
+        # update honey table encounters
+        self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
+
         # user can include an optional argument to check for a json file of encounters
         self.parser = self.initParser()
         self.args = self.parser.parse_args()
@@ -76,28 +88,40 @@ class NRotMEncounterRouting():
         # update assigned encounters if file is given as an argument
         if self.args.encounters != None: self.importEncountersJSON()
 
-        self.route()
+        if self.args.route: self.route()
 
     def importEncountersJSON(self):
         try: 
-            assignMe = json.loads(open("EncounterRoutingNRotM/" + self.args.encounters + ".json").read())
-            routes = list(assignMe.keys())
-            encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] if list(self.encounterTable.filter(like=encounter, axis=1).columns) != [] else encounter for encounter in assignMe.values()]
-            assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
-
-            groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
-            self.update(groupData=groupData, df=self.encounterTable, isJSON=True)                 
-        
+            assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
+                            
         except:
             self.args.encounters = input("Type a valid filename!\n> ")
-            self.importEncountersJSON()
+            return self.importEncountersJSON()
+                
+        routes = list(route for route in assignMe.keys() if assignMe[route] != "")
+        failedRoutes = list(route for route in assignMe.keys() if assignMe[route] == "" )
+        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] for encounter in assignMe.values() if encounter != "" and list(self.encounterTable.filter(like=encounter, axis=1).columns) != []]
+                
+        assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
+        routes = routes + failedRoutes
+
+        groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
+        self.update(groupData=groupData, df=self.encounterTable, isJSON=True) 
 
     def initParser(self):
         parser = argparse.ArgumentParser()
         parser.add_argument("--encounters", "-e",
                             required = False,
                             help = "the json file of the user's in-game found encounters")
-        
+        group = parser.add_mutually_exclusive_group(required = True)
+        group.add_argument("--test", "-t",
+                            required = False,
+                            help = "select to test manual encounter routing",
+                            action = "store_true")
+        group.add_argument("--route", "-r",
+                            required = False,
+                            help = "select to use the routing algorithm",
+                            action = "store_true")
         return parser
 
     def route(self):
@@ -193,18 +217,21 @@ class NRotMEncounterRouting():
         workingdf = self.encounterTables[-1].copy(deep=True)
         relevantdf = workingdf[workingdf.duplicated(keep=False)]
         groups = relevantdf.groupby(by=list(relevantdf.columns), sort=False).groups
-        
+
         # collect eligible group data and ask the player which group to assign
         groupsData = {}
         i = 0
         for group in groups:
             encounters = [relevantdf.columns[i] for i in range(len(relevantdf.columns)) if group[i] == 1]
+            flagHoney = True if set(encounters).issuperset(set([mon for mon in self.gameData.honeyMons if mon in workingdf.columns])) else False
+
             groupData = GroupData()
             # if there are more routes than encounters, each encounter can be assigned
             if len(groups[group].values) >= np.nansum(group):
                 groupData.encounters = encounters
                 groupData.routes = list(groups[group].values)
                 groupData.assignMe = {route: " or ".join(encounters) for route in groupData.routes}
+                groupData.flags["Honey"] = flagHoney
                 groupsData[i] = groupData
                 i += 1
         
@@ -221,6 +248,15 @@ class NRotMEncounterRouting():
         else: return False
 
     def update(self, groupData, df, isJSON=False):
+        # if honey location, get all remaining honey encounters and update
+        if groupData.flags["Honey"]: 
+            # update honey table encounters
+            self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in df]
+            remainingHoneyRoutes = [index for index, row in df.iterrows() if sum(row[self.gameData.honeyMons]) == len(row[self.gameData.honeyMons]) and sum(row[self.gameData.honeyMons]) == row.sum() and index not in groupData.routes]
+            flagGroupData = GroupData(remainingHoneyRoutes, self.gameData.honeyMons)
+            flagGroupData.assignMe = {route: " or ".join(flagGroupData.encounters) for route in flagGroupData.routes}
+            self.update(flagGroupData, df)
+
         # update the assigned encounter dict
         self.assignedEncounters.update(groupData.assignMe)
 
@@ -237,6 +273,9 @@ class NRotMEncounterRouting():
         # remove filtered items from df
         df = df.loc[~df.index.isin(groupData.routes), ~df.columns.isin(groupData.encounters)] \
                .dropna(axis=0, how="all")
+        
+        # remove encounters that are no longer accessible
+        self.checkAvailableEncounters(df)
 
         # add the updated dataframe as a slice to the results table
         self.encounterTables.append(df)
@@ -253,6 +292,11 @@ class NRotMEncounterRouting():
         # return df because assignOneToOne needs the workingdf updated to continue making passes
         # alternatively could make it loop outside of the method?
         return df
+    
+    def checkAvailableEncounters(self, df):
+        lostEncounters = df.loc[:, df.sum(axis=0) == 0]
+        df.dropna(axis=1, how="all", inplace=True)
+        if len(lostEncounters.columns) != 0: print("WARNING: {} ARE LOST".format(", ".join(lostEncounters.columns)))
 
     def printProgress(self, df, pattern="="):
         print(pattern*(50//len(pattern)) + pattern[:50%len(pattern)],
