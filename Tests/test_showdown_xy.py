@@ -48,7 +48,8 @@ inputs_to_test = {
         "pokemonAbilities": ["Swift Swim", "Shield Dust"],
         "pokemonLvls": ["10", "12"],
         "pokemonMoves": [["Quick Attack", "Bubble", "Water Sport"],
-                         ["Harden", "Infestation", "Tackle"]]
+                         ["Harden", "Infestation", "Tackle"]],
+        "pokemonNatures": ["Naive", "Calm"]
     },
     1: {
         "trainer_num": "1",
@@ -61,7 +62,8 @@ inputs_to_test = {
         "pokemonIVs": [[f"0 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(3)],
         "pokemonAbilities": ["" for _ in range(3)],
         "pokemonLvls": ["27" for _ in range(3)],
-        "pokemonMoves": [[] for _ in range(3)]
+        "pokemonMoves": [[] for _ in range(3)],
+        "pokemonNatures": ["", "", ""]
     },
     2: {
         "trainer_num": "188",
@@ -72,7 +74,8 @@ inputs_to_test = {
         "pokemonIVs": [[f"20 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]],
         "pokemonAbilities": ["Steadfast"],
         "pokemonLvls": ["32"],
-        "pokemonMoves": [["Power-Up Punch"]]
+        "pokemonMoves": [["Power-Up Punch"]],
+        "pokemonNatures": [""]
     }
 }
 

@@ -108,10 +108,14 @@ class XYShowdown:
             elif "Ability" in pokemon_data:
                 pokemon.ability = re.search(r"(?<=Ability: )[a-zA-Z ']+", pokemon_data).group(0).strip()
         
-            # level
+            # level - don't need to check the sheet for this
             pokemon.level = re.search(r"(?<=\(Lv. )[0-9]+", pokemon_data).group(0).strip()
             
             # nature TODO, only present in the sheet
+            if sheet:
+                nature = df_pokemon_data.Nature
+                if not nature.isna().values[0]:
+                    pokemon.nature = nature.values[0]
 
             # moves
             if "Moves" in pokemon_data:
