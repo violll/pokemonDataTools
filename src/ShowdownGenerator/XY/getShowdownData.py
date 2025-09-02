@@ -118,7 +118,9 @@ class XYShowdown:
                     pokemon.nature = nature.values[0]
 
             # moves
-            if "Moves" in pokemon_data:
+            if sheet:
+                pokemon.moves = df_pokemon_data.loc[:,["Move 1", "Move 2", "Move 3", "Move 4"]].dropna(axis=1).values[0].tolist()
+            elif "Moves" in pokemon_data:
                 pokemon.moves = re.search(r"(?<=Moves: )[a-zA-Z0-9' /-]+(?=\))", pokemon_data).group(0).strip().split(" / ")
 
         pass
