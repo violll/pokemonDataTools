@@ -45,7 +45,7 @@ inputs_to_test = {
         "pokemonNames": ["Surskit", "Vivillon"],
         "pokemonItems": ["" for _ in range(2)],
         "pokemonIVs": [[f"22 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(2)],
-        "pokemonAbilities": ["" for _ in range(2)],
+        "pokemonAbilities": ["Swift Swim", "Shield Dust"],
         "pokemonLvls": ["10", "12"],
         "pokemonMoves": [["Quick Attack", "Bubble", "Water Sport"],
                          ["Harden", "Infestation", "Tackle"]]

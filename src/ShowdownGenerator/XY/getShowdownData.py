@@ -101,7 +101,11 @@ class XYShowdown:
             pokemon.ivs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
             
             # ability
-            if "Ability" in pokemon_data:
+            if sheet:
+                ability = df_pokemon_data.Ability
+                if not ability.isna().values[0]:
+                    pokemon.ability = ability.values[0]
+            elif "Ability" in pokemon_data:
                 pokemon.ability = re.search(r"(?<=Ability: )[a-zA-Z ']+", pokemon_data).group(0).strip()
         
             # level
