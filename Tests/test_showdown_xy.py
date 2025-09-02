@@ -62,7 +62,9 @@ inputs_to_test = {
         "pokemonIVs": [[f"0 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(3)],
         "pokemonAbilities": ["" for _ in range(3)],
         "pokemonLvls": ["27" for _ in range(3)],
-        "pokemonMoves": [[] for _ in range(3)],
+        "pokemonMoves": [["Sonic Boom", "Detect", "Supersonic", "Uproar"],
+                         ["Protect", "Poison Tail", "Iron Defense", "Bug Bite"],
+                         ["Bug Bite", "Hidden Power", "Confusion", "Gust"]],
         "pokemonNatures": ["", "", ""]
     },
     2: {

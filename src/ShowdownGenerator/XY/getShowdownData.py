@@ -2,9 +2,13 @@ import sys
 import os
 import re
 import pandas as pd
+import json
 
 sys.path.insert(0, os.path.abspath('src/ShowdownGenerator'))
 import showdownPokemon, showdownTrainer
+
+sys.path.insert(0, os.path.abspath('src/utils'))
+from scrape_learnsets import scrape_learnsets
 
 def get_trainer_input(text):
     return input(text)
@@ -64,6 +68,21 @@ class XYShowdown:
 
         return pokemonList
     
+    def getLevelUpMoveset(self, pokemon):
+        path = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\XY\learnsets.json"
+        # check to see if json file exists
+        if not os.path.exists(path):
+            # scrape all the necessary data
+            scrape_learnsets("x-y", path)
+        
+        # load the four most recent moves from there
+        with open(path, "r") as f:
+            learnsets = json.load(f)
+            pokemon_learnset = pd.DataFrame.from_dict({pokemon.name: learnsets[pokemon.name.lower().replace("’", "")]})
+            pokemon_learnset.index = pokemon_learnset.index.astype(int)
+            learnset_capped = pokemon_learnset[pokemon_learnset.index <= int(pokemon.level)]
+            return learnset_capped.iloc[-4:, :].values.squeeze().tolist()
+    
     def main(self):
         # select the trainer and extract relevant information
         pokemon_list = self.parseTrainer()
@@ -111,7 +130,7 @@ class XYShowdown:
             # level - don't need to check the sheet for this
             pokemon.level = re.search(r"(?<=\(Lv. )[0-9]+", pokemon_data).group(0).strip()
             
-            # nature TODO, only present in the sheet
+            # nature - only present in sheet
             if sheet:
                 nature = df_pokemon_data.Nature
                 if not nature.isna().values[0]:
@@ -119,11 +138,17 @@ class XYShowdown:
 
             # moves
             if sheet:
-                pokemon.moves = df_pokemon_data.loc[:,["Move 1", "Move 2", "Move 3", "Move 4"]].dropna(axis=1).values[0].tolist()
-            elif "Moves" in pokemon_data:
+                moves = df_pokemon_data.loc[:,["Move 1", "Move 2", "Move 3", "Move 4"]].dropna(axis=1).values[0].tolist()
+                if moves != []: 
+                    pokemon.moves = moves
+                    continue
+            
+            # moves in sheet are unspecified or trainer is not in sheet
+            if "Moves" in pokemon_data:
                 pokemon.moves = re.search(r"(?<=Moves: )[a-zA-Z0-9' /-]+(?=\))", pokemon_data).group(0).strip().split(" / ")
-
-        pass
+            else:
+                # if moves are unspecified, they are the levelup learnset
+                pokemon.moves = self.getLevelUpMoveset(pokemon)
 
 if __name__ == "__main__":
     XYShowdown()
