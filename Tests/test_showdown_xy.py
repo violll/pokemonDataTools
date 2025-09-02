@@ -28,7 +28,7 @@ def make_test_case(x):
             self.showdown.main()
             
             self.assertEqual([mon.name for mon in self.showdown.trainer.pokemon], x["pokemonNames"])
-
+            self.assertEqual([mon.item for mon in self.showdown.trainer.pokemon], x["pokemonItems"])
 
 
     return MyTestCase
@@ -39,7 +39,9 @@ inputs_to_test = {
         "trainer_name": "Viola",
         "pokemonList": ["Surskit (Lv. 10)  (Moves: Quick Attack / Bubble / Water Sport) IVs: All 18",
                         "Vivillon (Lv. 12)  (Moves: Harden / Infestation / Tackle) IVs: All 18"],
-        "pokemonNames": ["Surskit", "Vivillon"]
+        "pokemonNames": ["Surskit", "Vivillon"],
+        "pokemonItems": ["" for _ in range(2)],
+        "pokemonLvls": ["10", "12"]
     },
     1: {
         "trainer_num": "1",
@@ -47,7 +49,17 @@ inputs_to_test = {
         "pokemonList": ["Yanma (Lv. 27)  IVs: All 0",
                         "Whirlipede (Lv. 27)  IVs: All 0",
                         "Mothim (Lv. 27)  IVs: All 0"],
-        "pokemonNames": ["Yanma", "Whirlipede", "Mothim"]
+        "pokemonNames": ["Yanma", "Whirlipede", "Mothim"],
+        "pokemonItems": ["" for _ in range(3)],
+        "pokemonLvls": ["27" for _ in range(3)]
+    },
+    2: {
+        "trainer_num": "188",
+        "trainer_name": "Successor Korrina",
+        "pokemonList": ["Lucario (Lv. 32) @Lucarionite (Ability: Steadfast) (Moves: Power-Up Punch) IVs: All 22"],
+        "pokemonNames": ["Lucario"],
+        "pokemonItems": ["Lucarionite"],
+        "pokemonLvls": ["32"]
     }
 }
 
@@ -55,6 +67,9 @@ class ViolaTest(make_test_case(inputs_to_test[0])):
     pass
 
 class YoungsterAidanTest(make_test_case(inputs_to_test[1])):
+    pass
+
+class SuccessorKorrinaTest(make_test_case(inputs_to_test[2])):
     pass
 
 if __name__ == "__main__":
