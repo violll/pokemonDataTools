@@ -15,7 +15,6 @@ class XYShowdown:
     def __init__(self, mode = "default") -> None:
         self.mode = mode
         self.txt, self.df = self.readTrainerData()
-        print(self.df)
         self.trainer = showdownTrainer.Trainer()
         
         if self.mode == "default":
@@ -50,16 +49,18 @@ class XYShowdown:
         if len(possibleTrainers) > 1: 
             if self.mode == "default":
                 for i in possibleTrainers: print(self.txt[i] + "\n")
-            trainerI = int(get_trainer_n_input("Which version is correct?\n> ")) - 1
-            trainer = self.txt[int(trainerI)].split("\n")[1:]
+            trainerI = int(get_trainer_n_input("Which version is correct?\n> "))
+            trainer = self.txt[int(trainerI - 1)].split("\n")[1:]
         else: 
             trainer = self.txt[possibleTrainers[0]].split("\n")[1:]
             trainerI = trainer[0].split("-")[0]
         
         # updates trainer name to verify search accuracy
+        print(trainerI)
         desiredTrainer = trainer[0].split("- ")[-1]
         pokemonList = trainer[3:]
         self.trainer.name = desiredTrainer
+        self.trainer.number = str(int(trainerI))
         self.trainer.pokemon = [showdownPokemon.Pokemon() for _ in range(len(pokemonList))]
 
         return pokemonList
@@ -79,6 +80,9 @@ class XYShowdown:
             pokemon.name = re.match(r".+(?=\(Lv)", pokemon_data).group(0).strip()
 
             # gender TODO skipping for now
+
+            # check the sheet before checking the text as the sheet is more accurate (I think)
+
 
             # item
             if "@" in pokemon_data:
@@ -101,9 +105,6 @@ class XYShowdown:
             # moves
             if "Moves" in pokemon_data:
                 pokemon.moves = re.search(r"(?<=Moves: )[a-zA-Z0-9' /-]+(?=\))", pokemon_data).group(0).strip().split(" / ")
-
-
-            # check the sheet afterwards to overwrite anything / fill in the blanks
 
         pass
 
