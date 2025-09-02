@@ -1,0 +1,5493 @@
+Pokemon X Trainer Dump
+
+======
+1 - Youngster Aidan
+======
+Pokemon: 3
+Yanma (Lv. 27)  IVs: All 0
+Whirlipede (Lv. 27)  IVs: All 0
+Mothim (Lv. 27)  IVs: All 0
+
+======
+2 - Youngster [~ 2]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+3 - Lass Lise
+======
+Pokemon: 2
+Weedle (Lv. 2)  IVs: All 0
+Bunnelby (Lv. 4)  IVs: All 0
+
+======
+4 - Lass [~ 4]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+5 - Lass [~ 5]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+6 - Leader Viola
+======
+Pokemon: 2
+Surskit (Lv. 10)  (Moves: Quick Attack / Bubble / Water Sport) IVs: All 18
+Vivillon (Lv. 12)  (Moves: Harden / Infestation / Tackle) IVs: All 18
+
+======
+7 - Youngster [~ 7]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+8 - Lass [~ 8]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+9 - Youngster [~ 9]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+10 - Lass [~ 10]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+11 - Youngster [~ 11]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+12 - Lass [~ 12]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+13 - Lass [~ 13]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+14 - Youngster [~ 14]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+15 - Youngster [~ 15]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+16 - Youngster [~ 16]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+17 - Lass [~ 17]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+18 - Lass [~ 18]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+19 - Lass [~ 19]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+20 - Sky Trainer Howe
+======
+Pokemon: 2
+Drifloon (Lv. 15)  (Moves: Ominous Wind / Gust) IVs: All 10
+Pidgeotto (Lv. 18)  (Moves: Quick Attack / Gust) IVs: All 10
+
+======
+21 - Leader Korrina
+======
+Pokemon: 3
+Mienfoo (Lv. 29)  (Moves: Power-Up Punch / Fake Out / Double Slap) IVs: All 18
+Machoke (Lv. 28)  (Moves: Power-Up Punch / Rock Tomb / Leer) IVs: All 18
+Hawlucha (Lv. 32)  (Moves: Flying Press / Hone Claws / Power-Up Punch) IVs: All 18
+
+======
+22 - Leader Ramos
+======
+Pokemon: 3
+Jumpluff (Lv. 30)  (Moves: Grass Knot / Acrobatics / Leech Seed) IVs: All 18
+Weepinbell (Lv. 31)  (Moves: Grass Knot / Acid / Poison Powder / Gastro Acid) IVs: All 18
+Gogoat (Lv. 34)  (Moves: Grass Knot / Bulldoze / Take Down) IVs: All 18
+
+======
+23 - Leader Clemont
+======
+Pokemon: 3
+Emolga (Lv. 35)  (Moves: Volt Switch / Quick Attack / Aerial Ace) IVs: All 18
+Magneton (Lv. 35)  (Moves: Thunderbolt / Electric Terrain / Mirror Shot) IVs: All 18
+Heliolisk (Lv. 37)  (Moves: Thunderbolt / Quick Attack / Grass Knot) IVs: All 18
+
+======
+24 - Leader Valerie
+======
+Pokemon: 3
+Mawile (Lv. 38)  (Moves: Feint Attack / Crunch / Iron Defense) IVs: All 18
+Mr. Mime (Lv. 39)  (Moves: Light Screen / Reflect / Psychic / Dazzling Gleam) IVs: All 18
+Sylveon (Lv. 42)  (Moves: Dazzling Gleam / Quick Attack / Swift / Charm) IVs: All 18
+
+======
+25 - Leader Olympia
+======
+Pokemon: 3
+Sigilyph (Lv. 44)  (Moves: Psychic / Air Slash / Light Screen / Reflect) IVs: All 18
+Slowking (Lv. 45)  (Moves: Psychic / Calm Mind / Power Gem / Yawn) IVs: All 18
+Meowstic (Lv. 48)  (Moves: Psychic / Calm Mind / Fake Out / Shadow Ball) IVs: All 30
+
+======
+26 - Leader Wulfric
+======
+Pokemon: 3
+Abomasnow (Lv. 56)  (Moves: Ice Beam / Ice Shard / Energy Ball) IVs: All 18
+Cryogonal (Lv. 55)  (Moves: Ice Beam / Confuse Ray / Flash Cannon / Hail) IVs: All 18
+Avalugg (Lv. 59)  (Moves: Avalanche / Crunch / Curse / Gyro Ball) IVs: All 18
+
+======
+27 - Ace Trainer Emil
+======
+Pokemon: 2
+Absol (Lv. 26)  IVs: All 10
+Pinsir (Lv. 25)  IVs: All 10
+
+======
+28 - Ace Trainer Mathis
+======
+Pokemon: 1
+Lanturn (Lv. 36)  IVs: All 10
+
+======
+29 - Ace Trainer Maxim
+======
+Pokemon: 1
+Electrode (Lv. 36)  IVs: All 10
+
+======
+30 - Ace Trainer Rico
+======
+Pokemon: 1
+Ampharos (Lv. 36)  IVs: All 10
+
+======
+31 - Ace Trainer Theo
+======
+Pokemon: 2
+Beartic (Lv. 54)  IVs: All 10
+Vanilluxe (Lv. 55)  IVs: All 10
+
+======
+32 - Ace Trainer Viktor
+======
+Pokemon: 2
+Delibird (Lv. 54)  IVs: All 10
+Mamoswine (Lv. 55)  IVs: All 10
+
+======
+33 - Ace Trainer [~ 33]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+34 - Ace Trainer ●
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+35 - Youngster [~ 35]
+======
+Pokemon: 2
+Rattata (Lv. 5)  IVs: All 0
+Rattata (Lv. 5)  IVs: All 0
+
+======
+36 - Youngster Joey
+======
+Pokemon: 2
+Scatterbug (Lv. 3)  IVs: All 0
+Fletchling (Lv. 3)  IVs: All 0
+
+======
+37 - Youngster Austin
+======
+Pokemon: 1
+Zigzagoon (Lv. 5)  IVs: All 0
+
+======
+38 - Youngster [~ 38]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+39 - Youngster David
+======
+Pokemon: 1
+Ledyba (Lv. 10)  IVs: All 1
+
+======
+40 - Youngster Zachary
+======
+Pokemon: 1
+Spewpa (Lv. 10)  (Moves: Harden / Tackle) IVs: All 1
+
+======
+41 - Youngster Keita
+======
+Pokemon: 1
+Pansage (Lv. 12)  IVs: All 0
+
+======
+42 - Youngster Anthony
+======
+Pokemon: 2
+Carvanha (Lv. 10)  IVs: All 0
+Pancham (Lv. 10)  IVs: All 0
+
+======
+43 - Youngster Jacob
+======
+Pokemon: 2
+Croagunk (Lv. 11)  IVs: All 0
+Beedrill (Lv. 13)  IVs: All 0
+
+======
+44 - Youngster Tyler
+======
+Pokemon: 2
+Venipede (Lv. 12)  IVs: All 0
+Scraggy (Lv. 12)  IVs: All 0
+
+======
+45 - Lass Anna
+======
+Pokemon: 1
+Pikachu (Lv. 5)  IVs: All 0
+
+======
+46 - Lass Elin
+======
+Pokemon: 2
+Goldeen (Lv. 6)  IVs: All 0
+Marill (Lv. 6)  IVs: All 0
+
+======
+47 - Lass Elsa
+======
+Pokemon: 1
+Flabébé (Lv. 8)  IVs: All 0
+
+======
+48 - Lass Charlotte
+======
+Pokemon: 2
+Kakuna (Lv. 7)  (Moves: Harden / Poison Sting) IVs: All 1
+Combee (Lv. 9)  (Moves: Gust) IVs: All 1
+
+======
+49 - Schoolboy Brighton
+======
+Pokemon: 3
+Pansage (Lv. 3)  IVs: All 2
+Pansear (Lv. 3)  IVs: All 2
+Panpour (Lv. 3)  IVs: All 2
+
+======
+50 - Schoolboy Rabbie
+======
+Pokemon: 2
+Pidgey (Lv. 7)  (Moves: Gust / Tackle / Sand Attack) IVs: All 2
+Metapod (Lv. 5)  (Moves: Harden / Tackle) IVs: All 2
+
+======
+51 - Schoolboy Javier
+======
+Pokemon: 1
+Farfetch’d (Lv. 10)  IVs: All 2
+
+======
+52 - Schoolgirl Bridget
+======
+Pokemon: 1
+Bidoof (Lv. 6)  (Ability: Unaware) IVs: All 2
+
+======
+53 - Schoolgirl Mackenzie
+======
+Pokemon: 1
+Bunnelby (Lv. 8)  IVs: All 2
+
+======
+54 - Schoolgirl Emily
+======
+Pokemon: 2
+Skitty (Lv. 8)  IVs: All 2
+Ralts (Lv. 8)  IVs: All 2
+
+======
+55 - Preschooler Oliver
+======
+Pokemon: 2
+Caterpie (Lv. 2)  IVs: All 0
+Azurill (Lv. 4)  IVs: All 0
+
+======
+56 - Preschooler Adrian
+======
+Pokemon: 1
+Magikarp (Lv. 9)  IVs: All 0
+
+======
+57 - Preschooler Ella
+======
+Pokemon: 1
+Pichu (Lv. 5)  IVs: All 0
+
+======
+58 - Preschooler Mia
+======
+Pokemon: 1
+Budew (Lv. 9)  IVs: All 0
+
+======
+59 - Rising Star Loïc
+======
+Pokemon: 1
+Riolu (Lv. 9)  IVs: All 5
+
+======
+60 - Rising Star Hamish
+======
+Pokemon: 1
+Kadabra (Lv. 13)  (Moves: Kinesis / Confusion) IVs: All 5
+
+======
+61 - Rising Star Louise
+======
+Pokemon: 2
+Psyduck (Lv. 6)  (Ability: Damp) IVs: All 5
+Litleo (Lv. 7)  IVs: All 5
+
+======
+62 - Rising Star Nysa
+======
+Pokemon: 2
+Bibarel (Lv. 12)  IVs: All 5
+Oddish (Lv. 10)  IVs: All 5
+
+======
+63 - Rising Star Manon
+======
+Pokemon: 2
+Solrock (Lv. 22)  (Moves: Psywave / Rock Throw / Fire Spin) IVs: All 5
+Lunatone (Lv. 22)  (Moves: Psywave / Rock Throw / Hypnosis) IVs: All 5
+
+======
+64 - Rising Star Didier
+======
+Pokemon: 2
+Dwebble (Lv. 21)  (Moves: Rock Blast / Feint Attack) IVs: All 5
+Relicanth (Lv. 23)  (Moves: Yawn / Rock Tomb / Water Gun) IVs: All 5
+
+======
+65 - Ace Trainer Adelbert
+======
+Pokemon: 1
+Lucario (Lv. 31)  IVs: All 10
+
+======
+66 - Ace Trainer Hilde
+======
+Pokemon: 2
+Sharpedo (Lv. 29)  IVs: All 10
+Gardevoir (Lv. 30)  IVs: All 10
+
+======
+67 - Poké Fan Gabe
+======
+Pokemon: 2
+Pichu (Lv. 7)  IVs: All 0
+Pikachu (Lv. 9)  IVs: All 0
+
+======
+68 - Poké Fan Agnes
+======
+Pokemon: 3
+Burmy (Lv. 7)  (Moves: Tackle / Protect) IVs: All 0
+Burmy (Lv. 7)  (Moves: Tackle) IVs: All 0
+Burmy (Lv. 7)  (Moves: Tackle) IVs: All 0
+
+======
+69 - Poké Fan Family Jan & Erin
+======
+Pokemon: 2
+Furfrou (Lv. 14)  (Moves: Headbutt / Growl) IVs: All 0
+Furfrou (Lv. 14)  (Moves: Headbutt / Tail Whip) IVs: All 0
+
+======
+70 - Gardener Wheaton
+======
+Pokemon: 1
+Corphish (Lv. 10)  (Moves: Bubble / Vice Grip / Mud Sport) IVs: All 0
+
+======
+71 - Gardener Fabian
+======
+Pokemon: 1
+Corphish (Lv. 10)  (Moves: Bubble / Vice Grip / Mud Sport) IVs: All 0
+
+======
+72 - Gardener Grover
+======
+Pokemon: 1
+Corphish (Lv. 10)  (Moves: Bubble / Vice Grip / Mud Sport) IVs: All 0
+
+======
+73 - Gardener ●
+======
+Pokemon: 1
+Corphish (Lv. 10)  (Moves: Bubble / Vice Grip / Mud Sport) IVs: All 0
+
+======
+74 - Gardener Ashton
+======
+Pokemon: 1
+Corphish (Lv. 10)  (Moves: Bubble / Vice Grip / Mud Sport) IVs: All 0
+
+======
+75 - Gardener Barclay
+======
+Pokemon: 1
+Corphish (Lv. 10)  (Moves: Bubble / Vice Grip / Mud Sport) IVs: All 0
+
+======
+76 - Leader Grant
+======
+Pokemon: 2
+Amaura (Lv. 25)  (Moves: Aurora Beam / Rock Tomb / Thunder Wave / Take Down) IVs: All 18
+Tyrunt (Lv. 25)  (Moves: Rock Tomb / Bite / Stomp) IVs: All 18
+
+======
+77 - Tourist Takemi
+======
+Pokemon: 1
+Volbeat (Lv. 14)  IVs: All 0
+
+======
+78 - Tourist Mari
+======
+Pokemon: 1
+Illumise (Lv. 14)  IVs: All 0
+
+======
+79 - Tourist Eriko
+======
+Pokemon: 3
+Zigzagoon (Lv. 11)  IVs: All 0
+Gulpin (Lv. 11)  IVs: All 0
+Ralts (Lv. 11)  IVs: All 0
+
+======
+80 - Tourist Hiroko
+======
+Pokemon: 3
+Pikachu (Lv. 11)  IVs: All 0
+Psyduck (Lv. 11)  IVs: All 0
+Pidgey (Lv. 11)  IVs: All 0
+
+======
+81 - Tourist Fumiko
+======
+Pokemon: 3
+Skiploom (Lv. 19)  IVs: All 0
+Dunsparce (Lv. 19)  IVs: All 0
+Azumarill (Lv. 19)  IVs: All 0
+
+======
+82 - Tourist Tomoko
+======
+Pokemon: 3
+Drifloon (Lv. 19)  IVs: All 0
+Pachirisu (Lv. 19)  IVs: All 0
+Hippopotas (Lv. 19)  IVs: All 0
+
+======
+83 - Roller Skater Shun
+======
+Pokemon: 3
+Pancham (Lv. 27)  IVs: All 1
+Throh (Lv. 27)  IVs: All 1
+Machoke (Lv. 27)  IVs: All 1
+
+======
+84 - Roller Skater Rolanda
+======
+Pokemon: 2
+Sawk (Lv. 27)  IVs: All 1
+Hariyama (Lv. 29)  IVs: All 1
+
+======
+85 - Backpacker Heike
+======
+Pokemon: 1
+Sentret (Lv. 12)  IVs: All 0
+
+======
+86 - Backpacker Jerome
+======
+Pokemon: 1
+Fletchling (Lv. 14)  IVs: All 0
+
+======
+87 - Backpacker Roderick
+======
+Pokemon: 1
+Bunnelby (Lv. 14)  IVs: All 0
+
+======
+88 - Twins Faith & Joy
+======
+Pokemon: 2
+Minun (Lv. 11)  IVs: All 0
+Plusle (Lv. 11)  IVs: All 0
+
+======
+89 - Beauty Brigitte
+======
+Pokemon: 2
+Espurr (Lv. 12)  IVs: All 0
+Butterfree (Lv. 12)  IVs: All 0
+
+======
+90 - Artist Pierre
+======
+Pokemon: 1
+Smeargle (Lv. 16)  (Moves: Thunder Shock / Powder Snow / Rock Throw / Rock Smash) IVs: All 12
+
+======
+91 - Artist Georgia
+======
+Pokemon: 1
+Smeargle (Lv. 16)  (Moves: Ember / Water Gun / Vine Whip / Brick Break) IVs: All 12
+
+======
+92 - Artist Family Mona & Paolo
+======
+Pokemon: 2
+Smeargle (Lv. 16)  (Moves: Helping Hand / Pursuit / Confusion / Twister) IVs: All 12
+Smeargle (Lv. 16)  (Moves: Helping Hand / Metal Claw / Gust / Clear Smog) IVs: All 12
+
+======
+93 - Furisode Girl Arianwen
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+94 - Pokémon Breeder Boden
+======
+Pokemon: 2
+Whismur (Lv. 14)  IVs: All 10
+Swirlix (Lv. 14)  IVs: All 10
+
+======
+95 - Pokémon Breeder Mercy
+======
+Pokemon: 4
+Ducklett (Lv. 12)  IVs: All 10
+Litleo (Lv. 12)  IVs: All 10
+Oddish (Lv. 12)  IVs: All 10
+Pikachu (Lv. 12)  IVs: All 10
+
+======
+96 - Fisherman Wharton
+======
+Pokemon: 3
+Tentacool (Lv. 19)  IVs: All 0
+Tentacool (Lv. 19)  IVs: All 0
+Tentacool (Lv. 19)  IVs: All 0
+
+======
+97 - Fisherman Shad
+======
+Pokemon: 2
+Shellder (Lv. 20)  IVs: All 0
+Staryu (Lv. 20)  IVs: All 0
+
+======
+98 - Fisherman Ewan
+======
+Pokemon: 2
+Clauncher (Lv. 27)  (Moves: Bubble Beam / Flail / Vice Grip) IVs: All 0
+Carvanha (Lv. 29)  (Moves: Aqua Jet / Crunch / Ice Fang) IVs: All 0
+
+======
+99 - Swimmer  Genevieve
+======
+Pokemon: 2
+Wingull (Lv. 19)  (Moves: Water Pulse / Supersonic / Wing Attack) IVs: All 0
+Psyduck (Lv. 21)  (Moves: Water Pulse / Confusion) IVs: All 0
+
+======
+100 - Swimmer  Marissa
+======
+Pokemon: 1
+Masquerain (Lv. 22)  (Moves: Gust / Quick Attack / Bubble) IVs: All 0
+
+======
+101 - Swimmer  Ramses
+======
+Pokemon: 1
+Tentacool (Lv. 30)  IVs: All 0
+
+======
+102 - Swimmer  Estaban
+======
+Pokemon: 2
+Skrelp (Lv. 28)  IVs: All 0
+Horsea (Lv. 28)  IVs: All 0
+
+======
+103 - Swimmers Kai & Lani
+======
+Pokemon: 2
+Luvdisc (Lv. 30)  IVs: All 0
+Gyarados (Lv. 30)  IVs: All 0
+
+======
+104 - Black Belt Cadoc
+======
+Pokemon: 1
+Machop (Lv. 20)  (Moves: Karate Chop / Foresight) IVs: All 7
+
+======
+105 - Hiker Bernard
+======
+Pokemon: 3
+Rhyhorn (Lv. 21)  (Moves: Rock Tomb / Stomp) IVs: All 1
+Nosepass (Lv. 21)  (Moves: Thunder Wave / Rock Throw / Tackle) IVs: All 1
+Onix (Lv. 21)  (Moves: Rock Throw / Tackle / Bind) IVs: All 1
+
+======
+106 - Hiker Craig
+======
+Pokemon: 1
+Roggenrola (Lv. 24)  (Moves: Smack Down / Mud-Slap / Headbutt) IVs: All 1
+
+======
+107 - Team Flare Grunt
+======
+Pokemon: 2
+Houndour (Lv. 18)  (Ability: Early Bird) IVs: All 0
+Zubat (Lv. 18)  (Ability: Inner Focus) IVs: All 0
+
+======
+108 - Team Flare Grunt
+======
+Pokemon: 1
+Scraggy (Lv. 20)  IVs: All 0
+
+======
+109 - Team Flare Grunt
+======
+Pokemon: 2
+Houndour (Lv. 21)  (Ability: Early Bird) IVs: All 0
+Golbat (Lv. 23)  (Ability: Inner Focus) IVs: All 0
+
+======
+110 - Team Flare Grunt
+======
+Pokemon: 2
+Gulpin (Lv. 18)  IVs: All 0
+Electrike (Lv. 18)  IVs: All 0
+
+======
+111 - Team Flare Grunt
+======
+Pokemon: 1
+Croagunk (Lv. 20)  IVs: All 0
+
+======
+112 - Team Flare Grunt
+======
+Pokemon: 1
+Gulpin (Lv. 24)  IVs: All 0
+
+======
+113 - Psychic Sayid
+======
+Pokemon: 2
+Meditite (Lv. 19)  IVs: All 0
+Kirlia (Lv. 21)  IVs: All 0
+
+======
+114 - Brains & Brawn Frank & Sly
+======
+Pokemon: 2
+Mr. Mime (Lv. 26)  IVs: All 0
+Machoke (Lv. 28)  IVs: All 2
+
+======
+115 - Psychic Emanuel
+======
+Pokemon: 2
+Solosis (Lv. 24)  IVs: All 0
+Sigilyph (Lv. 24)  IVs: All 0
+
+======
+116 - Battle Girl Gerardine
+======
+Pokemon: 1
+Mienfoo (Lv. 28)  (Moves: Force Palm / Swift / Double Slap / Fake Out) IVs: All 7
+
+======
+117 - Sky Trainer Colm
+======
+Pokemon: 2
+Mantyke (Lv. 28)  (Moves: Water Pulse / Wing Attack / Headbutt / Confuse Ray) IVs: All 10
+Jumpluff (Lv. 29)  (Moves: Bullet Seed / Fairy Wind / Stun Spore / Infestation) IVs: All 10
+
+======
+118 - Sky Trainer Orion
+======
+Pokemon: 1
+Ledian (Lv. 21)  (Moves: Mach Punch / Supersonic / Silver Wind) IVs: All 10
+
+======
+119 - Sky Trainer Aveza
+======
+Pokemon: 2
+Skiploom (Lv. 19)  (Moves: Fairy Wind / Stun Spore / Bullet Seed) IVs: All 10
+Swoobat (Lv. 22)  (Moves: Heart Stamp / Assurance / Air Cutter) IVs: All 10
+
+======
+120 - Sky Trainer Yvette
+======
+Pokemon: 3
+Emolga (Lv. 23)  (Moves: Spark / Light Screen / Acrobatics / Double Team) IVs: All 10
+Wingull (Lv. 23)  (Moves: Water Pulse / Air Cutter / Quick Attack / Attract) IVs: All 10
+Staravia (Lv. 24)  (Moves: Aerial Ace / Quick Attack / Retaliate / Facade) IVs: All 10
+
+======
+121 - Pokémon Ranger Brooke
+======
+Pokemon: 2
+Roselia (Lv. 30)  IVs: All 10
+Wormadam (Lv. 30)  IVs: All 10
+
+======
+122 - Pokémon Ranger Twiggy
+======
+Pokemon: 2
+Gloom (Lv. 29)  IVs: All 10
+Exeggutor (Lv. 31)  IVs: All 10
+
+======
+123 - Pokémon Ranger Chaise
+======
+Pokemon: 1
+Simisage (Lv. 32)  IVs: All 10
+
+======
+124 - Pokémon Ranger Maurice
+======
+Pokemon: 3
+Ferroseed (Lv. 29)  IVs: All 10
+Carnivine (Lv. 29)  IVs: All 10
+Lombre (Lv. 29)  IVs: All 10
+
+======
+125 - Hex Maniac [~ 125]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+126 - Fairy Tale Girl [~ 126]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+127 - Fairy Tale Girl [~ 127]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+128 - Hex Maniac [~ 128]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+129 - Team Flare Grunt
+======
+Pokemon: 2
+Electrike (Lv. 23)  IVs: All 0
+Croagunk (Lv. 21)  IVs: All 0
+
+======
+130 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Espurr (Lv. 18)  (Ability: Keen Eye) IVs: All 18
+Absol (Lv. 18)  (Ability: Super Luck) IVs: All 18
+Braixen (Lv. 20)  (Ability: Blaze) IVs: All 18
+
+======
+131 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Espurr (Lv. 18)  (Ability: Keen Eye) IVs: All 18
+Absol (Lv. 18)  (Ability: Super Luck) IVs: All 18
+Frogadier (Lv. 20)  (Ability: Torrent) IVs: All 18
+
+======
+132 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Espurr (Lv. 18)  (Ability: Keen Eye) IVs: All 18
+Absol (Lv. 18)  (Ability: Super Luck) IVs: All 18
+Quilladin (Lv. 20)  (Ability: Overgrow) IVs: All 18
+
+======
+133 - Lady [~ 133]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+134 - Battle Girl [~ 134]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+135 - Poké Fan [~ 135]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+136 - Scientist [~ 136]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+137 - Pokémon Trainer Shauna
+======
+Pokemon: 1
+Froakie (Lv. 5)  (Ability: Torrent) IVs: All 15
+
+======
+138 - Pokémon Trainer Shauna
+======
+Pokemon: 1
+Chespin (Lv. 5)  (Ability: Overgrow) IVs: All 15
+
+======
+139 - Pokémon Trainer Shauna
+======
+Pokemon: 1
+Fennekin (Lv. 5)  (Ability: Blaze) IVs: All 15
+
+======
+140 - Honeymooners Yuu & Ami
+======
+Pokemon: 2
+Vespiquen (Lv. 26)  IVs: All 0
+Combee (Lv. 26)  IVs: All 0
+
+======
+141 - Tourist Haruto
+======
+Pokemon: 1
+Nidorino (Lv. 26)  IVs: All 0
+
+======
+142 - Tourist Monami
+======
+Pokemon: 1
+Nidorina (Lv. 26)  IVs: All 0
+
+======
+143 - Psychic Franz
+======
+Pokemon: 2
+Chimecho (Lv. 24)  IVs: All 0
+Golett (Lv. 24)  IVs: All 0
+
+======
+144 - Backpacker Lane
+======
+Pokemon: 1
+Linoone (Lv. 26)  IVs: All 0
+
+======
+145 - Hiker Dunstan
+======
+Pokemon: 3
+Sandile (Lv. 22)  IVs: All 0
+Dwebble (Lv. 23)  IVs: All 0
+Diggersby (Lv. 24)  IVs: All 0
+
+======
+146 - Roller Skater Kate
+======
+Pokemon: 2
+Meditite (Lv. 28)  IVs: All 1
+Mienfoo (Lv. 28)  IVs: All 1
+
+======
+147 - Roller Skater Dash
+======
+Pokemon: 1
+Heracross (Lv. 30)  IVs: All 1
+
+======
+148 - Backpacker Joren
+======
+Pokemon: 1
+Linoone (Lv. 28)  IVs: All 0
+
+======
+149 - Fisherman Murray
+======
+Pokemon: 6
+Magikarp (Lv. 24)  IVs: All 0
+Magikarp (Lv. 24)  IVs: All 0
+Magikarp (Lv. 24)  IVs: All 0
+Magikarp (Lv. 24)  IVs: All 0
+Magikarp (Lv. 24)  IVs: All 0
+Magikarp (Lv. 24)  IVs: All 0
+
+======
+150 - Pokémon Breeder Foster
+======
+Pokemon: 2
+Zangoose (Lv. 27)  IVs: All 10
+Tauros (Lv. 29)  IVs: All 10
+
+======
+151 - Pokémon Breeder Amala
+======
+Pokemon: 2
+Seviper (Lv. 27)  IVs: All 10
+Miltank (Lv. 29)  IVs: All 10
+
+======
+152 - Swimmer  Alessandro
+======
+Pokemon: 2
+Qwilfish (Lv. 29)  IVs: All 0
+Binacle (Lv. 27)  IVs: All 0
+
+======
+153 - Ace Trainer Monique
+======
+Pokemon: 3
+Doduo (Lv. 24)  IVs: All 10
+Granbull (Lv. 24)  IVs: All 10
+Helioptile (Lv. 25)  IVs: All 10
+
+======
+154 - Ace Trainer [~ 154]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+155 - Ace Trainer [~ 155]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+156 - Fairy Tale Girl Imogen
+======
+Pokemon: 2
+Floette (Lv. 33)  IVs: All 0
+Slurpuff (Lv. 35)  IVs: All 0
+
+======
+157 - Hex Maniac Anina
+======
+Pokemon: 2
+Litwick (Lv. 34)  IVs: All 0
+Haunter (Lv. 34)  IVs: All 0
+
+======
+158 - Pokémon Ranger Melina
+======
+Pokemon: 2
+Arbok (Lv. 35)  IVs: All 10
+Pyroar (Lv. 37)  IVs: All 10
+
+======
+159 - Pokémon Ranger Alannah
+======
+Pokemon: 3
+Poliwhirl (Lv. 36)  IVs: All 10
+Loudred (Lv. 37)  IVs: All 10
+Fraxure (Lv. 38)  IVs: All 10
+
+======
+160 - Pokémon Ranger Reed
+======
+Pokemon: 3
+Poliwhirl (Lv. 35)  IVs: All 10
+Loudred (Lv. 34)  IVs: All 10
+Fraxure (Lv. 36)  IVs: All 10
+
+======
+161 - Pokémon Ranger Nash
+======
+Pokemon: 1
+Goomy (Lv. 38)  IVs: All 10
+
+======
+162 - Battle Girl Hedvig
+======
+Pokemon: 2
+Throh (Lv. 25)  (Moves: Vital Throw / Revenge / Bulldoze) IVs: All 7
+Hawlucha (Lv. 26)  (Moves: Aerial Ace / Karate Chop / Rock Tomb) IVs: All 7
+
+======
+163 - Black Belt Igor
+======
+Pokemon: 1
+Sawk (Lv. 28)  (Moves: Retaliate / Double Kick / Bulldoze) IVs: All 7
+
+======
+164 - Roller Skater Winnie
+======
+Pokemon: 2
+Bunnelby (Lv. 9)  IVs: All 0
+Skiddo (Lv. 11)  IVs: All 0
+
+======
+165 - Roller Skater Florin
+======
+Pokemon: 1
+Doduo (Lv. 12)  IVs: All 0
+
+======
+166 - Roller Skater Rinka
+======
+Pokemon: 1
+Zigzagoon (Lv. 7)  IVs: All 0
+
+======
+167 - Psychic Inver
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+168 - Ace Trainer Shannon
+======
+Pokemon: 3
+Cryogonal (Lv. 52)  IVs: All 10
+Piloswine (Lv. 53)  IVs: All 10
+Jynx (Lv. 54)  IVs: All 10
+
+======
+169 - Ace Trainer Imelda
+======
+Pokemon: 2
+Sneasel (Lv. 54)  IVs: All 10
+Cloyster (Lv. 55)  IVs: All 10
+
+======
+170 - Psychic Paschal
+======
+Pokemon: 1
+Exeggutor (Lv. 46)  IVs: All 1
+
+======
+171 - Psychic Harry
+======
+Pokemon: 1
+Medicham (Lv. 46)  IVs: All 1
+
+======
+172 - Psychic Arthur
+======
+Pokemon: 1
+Reuniclus (Lv. 46)  IVs: All 1
+
+======
+173 - Psychic Johannes
+======
+Pokemon: 1
+Grumpig (Lv. 46)  IVs: All 1
+
+======
+174 - Team Flare Admin
+======
+Pokemon: 1
+Houndoom (Lv. 36)  IVs: All 2
+
+======
+175 - Team Flare Aliana
+======
+Pokemon: 1
+Mightyena (Lv. 38)  IVs: All 12
+
+======
+176 - Team Flare Grunt
+======
+Pokemon: 1
+Mightyena (Lv. 34)  IVs: All 0
+
+======
+177 - Team Flare Grunt
+======
+Pokemon: 2
+Scraggy (Lv. 32)  IVs: All 0
+Golbat (Lv. 32)  IVs: All 0
+
+======
+178 - Team Flare Grunt
+======
+Pokemon: 2
+Golbat (Lv. 32)  IVs: All 0
+Mightyena (Lv. 32)  IVs: All 0
+
+======
+179 - Team Flare Grunt
+======
+Pokemon: 1
+Swalot (Lv. 34)  IVs: All 0
+
+======
+180 - Team Flare Grunt
+======
+Pokemon: 2
+Liepard (Lv. 31)  IVs: All 0
+Swalot (Lv. 33)  IVs: All 0
+
+======
+181 - Team Flare Grunt
+======
+Pokemon: 3
+Croagunk (Lv. 31)  IVs: All 0
+Scraggy (Lv. 31)  IVs: All 0
+Liepard (Lv. 31)  IVs: All 0
+
+======
+182 - Team Flare Grunt
+======
+Pokemon: 2
+Croagunk (Lv. 31)  IVs: All 0
+Golbat (Lv. 33)  IVs: All 0
+
+======
+183 - Team Flare Grunt
+======
+Pokemon: 2
+Scraggy (Lv. 32)  IVs: All 0
+Croagunk (Lv. 32)  IVs: All 0
+
+======
+184 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 31)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 31)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Braixen (Lv. 33)  (Ability: Blaze) (Moves: Psybeam / Fire Spin) IVs: All 18
+
+======
+185 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 31)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 31)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Frogadier (Lv. 33)  (Ability: Torrent) (Moves: Water Pulse / Quick Attack) IVs: All 18
+
+======
+186 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 31)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 31)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Quilladin (Lv. 33)  (Ability: Overgrow) (Moves: Needle Arm / Bite) IVs: All 18
+
+======
+187 - Elite Four Wikstrom
+======
+Pokemon: 4
+Klefki (Lv. 63)  (Ability: Prankster) (Moves: Dazzling Gleam / Flash Cannon / Torment / Spikes) IVs: All 18
+Scizor (Lv. 63)  (Ability: Technician) (Moves: Bullet Punch / X-Scissor / Iron Head / Night Slash) IVs: All 18
+Probopass (Lv. 63)  (Ability: Sturdy) (Moves: Earth Power / Power Gem / Discharge / Flash Cannon) IVs: All 18
+Aegislash (Lv. 65)  (Ability: Stance Change) (Moves: King’s Shield / Sacred Sword / Shadow Claw / Iron Head) IVs: All 18
+
+======
+188 - Successor Korrina
+======
+Pokemon: 1
+Lucario (Lv. 32) @Lucarionite (Ability: Steadfast) (Moves: Power-Up Punch) IVs: All 22
+
+======
+189 - Baron Moray
+======
+Pokemon: 1
+Fletchling (Lv. 15)  IVs: All 0
+
+======
+190 - Viscount Ardmore
+======
+Pokemon: 1
+Espurr (Lv. 20)  IVs: All 0
+
+======
+191 - Earl Glen
+======
+Pokemon: 2
+Dedenne (Lv. 25)  IVs: All 0
+Staravia (Lv. 25)  IVs: All 0
+
+======
+192 - Marquis Arran
+======
+Pokemon: 2
+Accelgor (Lv. 35)  IVs: All 0
+Aerodactyl (Lv. 35)  IVs: All 0
+
+======
+193 - Duke Turner
+======
+Pokemon: 3
+Scolipede (Lv. 45)  IVs: All 0
+Jumpluff (Lv. 45)  IVs: All 0
+Raichu (Lv. 45)  IVs: All 0
+
+======
+194 - Baron Evran
+======
+Pokemon: 1
+Budew (Lv. 15)  IVs: All 0
+
+======
+195 - Baron Marseille
+======
+Pokemon: 1
+Clauncher (Lv. 15)  IVs: All 0
+
+======
+196 - Baron Lyon
+======
+Pokemon: 1
+Ralts (Lv. 15)  IVs: All 0
+
+======
+197 - Baron Orvault
+======
+Pokemon: 1
+Psyduck (Lv. 15)  IVs: All 0
+
+======
+198 - Baron Herisson
+======
+Pokemon: 1
+Horsea (Lv. 15)  IVs: All 0
+
+======
+199 - Viscount Gourdon
+======
+Pokemon: 1
+Oddish (Lv. 20)  IVs: All 0
+
+======
+200 - Viscount Braine
+======
+Pokemon: 1
+Skrelp (Lv. 20)  IVs: All 0
+
+======
+201 - Viscount Herault
+======
+Pokemon: 1
+Litleo (Lv. 20)  IVs: All 0
+
+======
+202 - Earl Royan
+======
+Pokemon: 2
+Haunter (Lv. 25)  IVs: All 0
+Vanillish (Lv. 25)  IVs: All 0
+
+======
+203 - Marquis Caen
+======
+Pokemon: 2
+Sigilyph (Lv. 35)  IVs: All 0
+Glaceon (Lv. 35)  IVs: All 0
+
+======
+204 - Duke Lormont
+======
+Pokemon: 3
+Roserade (Lv. 45)  IVs: All 0
+Alakazam (Lv. 45)  IVs: All 0
+Magnezone (Lv. 45)  IVs: All 0
+
+======
+205 - Baron Denis
+======
+Pokemon: 1
+Riolu (Lv. 15)  IVs: All 0
+
+======
+206 - Viscount Cullinan
+======
+Pokemon: 1
+Pancham (Lv. 20)  IVs: All 0
+
+======
+207 - Viscount Tolkowsky
+======
+Pokemon: 1
+Axew (Lv. 20)  IVs: All 0
+
+======
+208 - Viscount Orloff
+======
+Pokemon: 1
+Mienfoo (Lv. 20)  IVs: All 0
+
+======
+209 - Earl Lesotho
+======
+Pokemon: 2
+Machoke (Lv. 25)  IVs: All 0
+Fraxure (Lv. 25)  IVs: All 0
+
+======
+210 - Earl Gruosi
+======
+Pokemon: 2
+Weepinbell (Lv. 25)  IVs: All 0
+Gurdurr (Lv. 25)  IVs: All 0
+
+======
+211 - Earl Nassak
+======
+Pokemon: 2
+Zangoose (Lv. 25)  IVs: All 0
+Pupitar (Lv. 25)  IVs: All 0
+
+======
+212 - Earl Sancy
+======
+Pokemon: 2
+Dragonair (Lv. 25)  IVs: All 0
+Krokorok (Lv. 25)  IVs: All 0
+
+======
+213 - Earl Nizam
+======
+Pokemon: 2
+Carnivine (Lv. 25)  IVs: All 0
+Rhydon (Lv. 25)  IVs: All 0
+
+======
+214 - Marquis Grisognono
+======
+Pokemon: 2
+Yanmega (Lv. 35)  IVs: All 0
+Pangoro (Lv. 35)  IVs: All 0
+
+======
+215 - Duke Hennessy
+======
+Pokemon: 3
+Staraptor (Lv. 50)  (Ability: Intimidate) IVs: All 0
+Nidoking (Lv. 50)  (Ability: Poison Point) IVs: All 0
+Haxorus (Lv. 50)  (Ability: Mold Breaker) IVs: All 0
+
+======
+216 - Baroness Maryline
+======
+Pokemon: 1
+Ledyba (Lv. 15)  IVs: All 0
+
+======
+217 - Baroness Estelle
+======
+Pokemon: 1
+Hoppip (Lv. 15)  IVs: All 0
+
+======
+218 - Baroness Maelys
+======
+Pokemon: 1
+Spoink (Lv. 15)  IVs: All 0
+
+======
+219 - Baroness Cadette
+======
+Pokemon: 1
+Burmy (Lv. 15)  IVs: All 0
+
+======
+220 - Baroness Francine
+======
+Pokemon: 1
+Flabébé (Lv. 15)  IVs: All 0
+
+======
+221 - Viscountess Danielle
+======
+Pokemon: 1
+Kecleon (Lv. 20)  IVs: All 0
+
+======
+222 - Viscountess Anne-Laure
+======
+Pokemon: 1
+Eevee (Lv. 20)  IVs: All 0
+
+======
+223 - Viscountess Beatrice
+======
+Pokemon: 1
+Tentacool (Lv. 20)  IVs: All 0
+
+======
+224 - Countess Anita
+======
+Pokemon: 2
+Ledian (Lv. 25)  IVs: All 0
+Mr. Mime (Lv. 25)  IVs: All 0
+
+======
+225 - Marchioness Alyssa
+======
+Pokemon: 2
+Altaria (Lv. 35)  IVs: All 0
+Sylveon (Lv. 35)  IVs: All 0
+
+======
+226 - Duchess Robin
+======
+Pokemon: 3
+Bellossom (Lv. 45)  IVs: All 0
+Goodra (Lv. 45)  IVs: All 0
+Florges (Lv. 45)  IVs: All 0
+
+======
+227 - Baroness Renée
+======
+Pokemon: 1
+Scatterbug (Lv. 15)  IVs: All 0
+
+======
+228 - Viscountess Ayla
+======
+Pokemon: 1
+Swirlix (Lv. 20)  IVs: All 0
+
+======
+229 - Viscountess Mathilde
+======
+Pokemon: 1
+Venipede (Lv. 20)  IVs: All 0
+
+======
+230 - Viscountess Regine
+======
+Pokemon: 1
+Dwebble (Lv. 20)  IVs: All 0
+
+======
+231 - Countess Mira
+======
+Pokemon: 2
+Sandslash (Lv. 25)  IVs: All 0
+Skarmory (Lv. 25)  IVs: All 0
+
+======
+232 - Countess Eliane
+======
+Pokemon: 2
+Lairon (Lv. 25)  IVs: All 0
+Sudowoodo (Lv. 25)  IVs: All 0
+
+======
+233 - Countess Patricia
+======
+Pokemon: 2
+Torkoal (Lv. 25)  IVs: All 0
+Doublade (Lv. 25)  IVs: All 0
+
+======
+234 - Countess Edith
+======
+Pokemon: 2
+Whirlipede (Lv. 25)  IVs: All 0
+Graveler (Lv. 25)  IVs: All 0
+
+======
+235 - Countess Adele
+======
+Pokemon: 2
+Shelgon (Lv. 25)  IVs: All 0
+Magcargo (Lv. 25)  IVs: All 0
+
+======
+236 - Marchioness Amandine
+======
+Pokemon: 2
+Leafeon (Lv. 35)  IVs: All 0
+Avalugg (Lv. 35)  IVs: All 0
+
+======
+237 - Duchess Odele
+======
+Pokemon: 3
+Golem (Lv. 45)  IVs: All 0
+Poliwrath (Lv. 45)  IVs: All 0
+Aggron (Lv. 45)  IVs: All 0
+
+======
+238 - Baroness Camille
+======
+Pokemon: 1
+Bidoof (Lv. 15)  (Ability: Simple) IVs: All 0
+
+======
+239 - Viscountess Julia
+======
+Pokemon: 1
+Skiddo (Lv. 20)  IVs: All 0
+
+======
+240 - Countess Ida
+======
+Pokemon: 2
+Marill (Lv. 25)  IVs: All 0
+Loudred (Lv. 25)  IVs: All 0
+
+======
+241 - Marchioness Amelie
+======
+Pokemon: 2
+Wailord (Lv. 35)  IVs: All 0
+Kangaskhan (Lv. 35)  IVs: All 0
+
+======
+242 - Duchess Elise
+======
+Pokemon: 3
+Azumarill (Lv. 45)  IVs: All 0
+Exploud (Lv. 45)  IVs: All 0
+Nidoqueen (Lv. 45)  IVs: All 0
+
+======
+243 - Furisode Girl Katherine
+======
+Pokemon: 1
+Slurpuff (Lv. 40)  IVs: All 0
+
+======
+244 - Marchioness Fiona
+======
+Pokemon: 2
+Audino (Lv. 35)  IVs: All 0
+Audino (Lv. 35)  IVs: All 0
+
+======
+245 - Furisode Girl Kali
+======
+Pokemon: 2
+Dedenne (Lv. 38)  IVs: All 1
+Azumarill (Lv. 38)  IVs: All 1
+
+======
+246 - Marchioness Keira
+======
+Pokemon: 2
+Audino (Lv. 35)  IVs: All 0
+Audino (Lv. 35)  IVs: All 0
+
+======
+247 - Duchess Sabine
+======
+Pokemon: 3
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+
+======
+248 - Furisode Girl Blossom
+======
+Pokemon: 3
+Klefki (Lv. 37)  IVs: All 1
+Kirlia (Lv. 37)  IVs: All 1
+Granbull (Lv. 37)  IVs: All 1
+
+======
+249 - Marchioness Yolande
+======
+Pokemon: 2
+Audino (Lv. 35)  IVs: All 0
+Audino (Lv. 35)  IVs: All 0
+
+======
+250 - Furisode Girl Linnea
+======
+Pokemon: 1
+Aromatisse (Lv. 40)  IVs: All 1
+
+======
+251 - Marchioness Meriel
+======
+Pokemon: 2
+Audino (Lv. 35)  IVs: All 0
+Audino (Lv. 35)  IVs: All 0
+
+======
+252 - Duchess Rosalie
+======
+Pokemon: 3
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+
+======
+253 - Duchess Ione
+======
+Pokemon: 3
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+
+======
+254 - Marchioness Viola
+======
+Pokemon: 2
+Masquerain (Lv. 40)  (Moves: Aqua Jet / Bug Buzz / Quiver Dance / Air Slash) IVs: All 18
+Vivillon (Lv. 40)  (Moves: Psychic / Bug Buzz / Energy Ball / Powder) IVs: All 18
+
+======
+255 - Marchioness Korrina
+======
+Pokemon: 2
+Hawlucha (Lv. 40)  (Moves: Flying Press / Hone Claws / High Jump Kick / X-Scissor) IVs: All 18
+Machamp (Lv. 40)  (Moves: Revenge / Cross Chop / Earthquake / Stone Edge) IVs: All 18
+
+======
+256 - Marquis Ramos
+======
+Pokemon: 2
+Jumpluff (Lv. 40)  (Moves: Sleep Powder / Stun Spore / Energy Ball / Dazzling Gleam) IVs: All 18
+Gogoat (Lv. 40)  (Moves: Horn Leech / Earthquake / Wild Charge / Brick Break) IVs: All 18
+
+======
+257 - Marquis Clemont
+======
+Pokemon: 2
+Magneton (Lv. 40)  (Moves: Thunderbolt / Electric Terrain / Flash Cannon / Reflect) IVs: All 18
+Heliolisk (Lv. 40)  (Moves: Thunderbolt / Quick Attack / Focus Blast / Dark Pulse) IVs: All 18
+
+======
+258 - Marchioness Valerie
+======
+Pokemon: 2
+Mawile (Lv. 40)  (Moves: Play Rough / Crunch / Iron Defense / Iron Head) IVs: All 18
+Sylveon (Lv. 40)  (Moves: Attract / Draining Kiss / Quick Attack / Charm) IVs: All 18
+
+======
+259 - Marchioness Olympia
+======
+Pokemon: 2
+Sigilyph (Lv. 40)  (Moves: Psychic / Air Slash / Reflect / Flash Cannon) IVs: All 18
+Meowstic (Lv. 40)  (Moves: Psychic / Thunderbolt / Energy Ball / Dark Pulse) IVs: All 30
+
+======
+260 - Marquis Wulfric
+======
+Pokemon: 2
+Cryogonal (Lv. 40)  (Moves: Ice Beam / Confuse Ray / Flash Cannon / Hail) IVs: All 18
+Avalugg (Lv. 40)  (Moves: Avalanche / Crunch / Curse / Gyro Ball) IVs: All 18
+
+======
+261 - Marquis Grant
+======
+Pokemon: 2
+Aurorus (Lv. 40)  (Moves: Rest / Sleep Talk / Avalanche / Stone Edge) IVs: All 18
+Tyrantrum (Lv. 40)  (Moves: Crunch / Earthquake / Dragon Claw / Stone Edge) IVs: All 18
+
+======
+262 - Marchioness Viola
+======
+Pokemon: 2
+Masquerain (Lv. 50)  (Moves: Aqua Jet / Bug Buzz / Quiver Dance / Air Slash) IVs: All 18
+Vivillon (Lv. 50)  (Moves: Psychic / Bug Buzz / Energy Ball / Powder) IVs: All 18
+
+======
+263 - Marchioness Korrina
+======
+Pokemon: 2
+Hawlucha (Lv. 50)  (Moves: Flying Press / Hone Claws / High Jump Kick / X-Scissor) IVs: All 18
+Lucario (Lv. 50) @Lucarionite (Ability: Steadfast) (Moves: Aura Sphere / Dragon Pulse / Extreme Speed / Dark Pulse) IVs: All 18
+
+======
+264 - Marquis Ramos
+======
+Pokemon: 2
+Victreebel (Lv. 50)  (Moves: Leaf Blade / Leaf Storm / Sleep Powder / Confide) IVs: All 18
+Gogoat (Lv. 50)  (Moves: Horn Leech / Earthquake / Wild Charge / Brick Break) IVs: All 18
+
+======
+265 - Marquis Clemont
+======
+Pokemon: 2
+Magnezone (Lv. 50)  (Moves: Thunderbolt / Electric Terrain / Flash Cannon / Reflect) IVs: All 18
+Heliolisk (Lv. 50)  (Moves: Thunderbolt / Quick Attack / Focus Blast / Dark Pulse) IVs: All 18
+
+======
+266 - Marchioness Valerie
+======
+Pokemon: 2
+Mawile (Lv. 50)  (Moves: Play Rough / Crunch / Stone Edge / Iron Head) IVs: All 18
+Sylveon (Lv. 50)  (Moves: Attract / Draining Kiss / Quick Attack / Charm) IVs: All 18
+
+======
+267 - Marchioness Olympia
+======
+Pokemon: 2
+Slowking (Lv. 50)  (Moves: Psychic / Flamethrower / Power Gem / Ice Beam) IVs: All 18
+Meowstic (Lv. 50)  (Moves: Psychic / Thunderbolt / Energy Ball / Dark Pulse) IVs: All 30
+
+======
+268 - Marquis Wulfric
+======
+Pokemon: 2
+Abomasnow (Lv. 50)  (Moves: Ice Beam / Ice Shard / Wood Hammer / Earthquake) IVs: All 18
+Avalugg (Lv. 50)  (Moves: Avalanche / Crunch / Curse / Gyro Ball) IVs: All 18
+
+======
+269 - Elite Four Malva
+======
+Pokemon: 4
+Pyroar (Lv. 63)  (Ability: Rivalry) (Moves: Hyper Voice / Flamethrower / Wild Charge / Noble Roar) IVs: All 18
+Torkoal (Lv. 63)  (Ability: White Smoke) (Moves: Curse / Earthquake / Stone Edge / Flame Wheel) IVs: All 18
+Chandelure (Lv. 63)  (Ability: Flame Body) (Moves: Flamethrower / Shadow Ball / Confuse Ray / Confide) IVs: All 18
+Talonflame (Lv. 65)  (Ability: Flame Body) (Moves: Brave Bird / Quick Attack / Flare Blitz / Flail) IVs: All 18
+
+======
+270 - Elite Four Drasna
+======
+Pokemon: 4
+Dragalge (Lv. 63)  (Ability: Poison Point) (Moves: Dragon Pulse / Surf / Sludge Bomb / Thunderbolt) IVs: All 18
+Druddigon (Lv. 63)  (Ability: Rough Skin) (Moves: Dragon Tail / Revenge / Retaliate / Chip Away) IVs: All 18
+Altaria (Lv. 63)  (Ability: Natural Cure) (Moves: Moonblast / Dragon Pulse / Cotton Guard / Sing) IVs: All 18
+Noivern (Lv. 65)  (Ability: Frisk) (Moves: Air Slash / Dragon Pulse / Flamethrower / Super Fang) IVs: All 18
+
+======
+271 - Elite Four Siebold
+======
+Pokemon: 4
+Clawitzer (Lv. 63)  (Ability: Mega Launcher) (Moves: Water Pulse / Dark Pulse / Dragon Pulse / Aura Sphere) IVs: All 18
+Gyarados (Lv. 63)  (Ability: Intimidate) (Moves: Waterfall / Ice Fang / Earthquake / Dragon Dance) IVs: All 18
+Starmie (Lv. 63)  (Ability: Illuminate) (Moves: Dazzling Gleam / Psychic / Surf / Light Screen) IVs: All 18
+Barbaracle (Lv. 65)  (Ability: Tough Claws) (Moves: Cross Chop / Stone Edge / Razor Shell / X-Scissor) IVs: All 18
+
+======
+272 - Duke Wikstrom
+======
+Pokemon: 3
+Scizor (Lv. 55)  (Ability: Technician) (Moves: Bullet Punch / X-Scissor / Iron Head / Night Slash) IVs: All 18
+Probopass (Lv. 55)  (Ability: Sturdy) (Moves: Earth Power / Power Gem / Discharge / Flash Cannon) IVs: All 18
+Aegislash (Lv. 55)  (Ability: Stance Change) (Moves: King’s Shield / Sacred Sword / Shadow Claw / Iron Head) IVs: All 18
+
+======
+273 - Duchess Malva
+======
+Pokemon: 3
+Pyroar (Lv. 55)  (Ability: Rivalry) (Moves: Hyper Voice / Flamethrower / Wild Charge / Noble Roar) IVs: All 18
+Chandelure (Lv. 55)  (Ability: Flame Body) (Moves: Flamethrower / Shadow Ball / Confuse Ray / Confide) IVs: All 18
+Talonflame (Lv. 55)  (Ability: Flame Body) (Moves: Brave Bird / Quick Attack / Flare Blitz / Flail) IVs: All 18
+
+======
+274 - Duchess Drasna
+======
+Pokemon: 3
+Dragalge (Lv. 55)  (Ability: Poison Point) (Moves: Dragon Pulse / Surf / Sludge Bomb / Thunderbolt) IVs: All 18
+Altaria (Lv. 55)  (Ability: Natural Cure) (Moves: Moonblast / Dragon Pulse / Cotton Guard / Sing) IVs: All 18
+Noivern (Lv. 55)  (Ability: Frisk) (Moves: Air Slash / Dragon Pulse / Flamethrower / Super Fang) IVs: All 18
+
+======
+275 - Duke Siebold
+======
+Pokemon: 3
+Clawitzer (Lv. 55)  (Ability: Mega Launcher) (Moves: Water Pulse / Dark Pulse / Dragon Pulse / Aura Sphere) IVs: All 18
+Starmie (Lv. 55)  (Ability: Illuminate) (Moves: Dazzling Gleam / Psychic / Surf / Light Screen) IVs: All 18
+Barbaracle (Lv. 55)  (Ability: Tough Claws) (Moves: Cross Chop / Stone Edge / Razor Shell / X-Scissor) IVs: All 18
+
+======
+276 - Champion Diantha
+======
+Pokemon: 6
+Hawlucha (Lv. 64)  (Ability: Limber) (Moves: Swords Dance / Flying Press / X-Scissor / Poison Jab) IVs: All 25
+Tyrantrum (Lv. 65)  (Ability: Strong Jaw) (Moves: Head Smash / Earthquake / Dragon Claw / Crunch) IVs: All 25
+Aurorus (Lv. 65)  (Ability: Refrigerate) (Moves: Thunder / Blizzard / Light Screen / Reflect) IVs: All 25
+Gourgeist (Lv. 65)  (Ability: Pickup) (Moves: Trick-or-Treat / Phantom Force / Seed Bomb / Shadow Sneak) IVs: All 25
+Goodra (Lv. 66)  (Ability: Sap Sipper) (Moves: Dragon Pulse / Muddy Water / Fire Blast / Focus Blast) IVs: All 25
+Gardevoir (Lv. 68) @Gardevoirite (Ability: Trace) (Moves: Moonblast / Psychic / Shadow Ball / Thunderbolt) IVs: All 25
+
+======
+277 - Grand Duchess Diantha
+======
+Pokemon: 4
+Hawlucha (Lv. 60)  (Ability: Limber) (Moves: Swords Dance / Flying Press / X-Scissor / Poison Jab) IVs: All 25
+Gourgeist (Lv. 60)  (Ability: Pickup) (Moves: Trick-or-Treat / Phantom Force / Seed Bomb / Shadow Sneak) IVs: All 25
+Goodra (Lv. 60)  (Ability: Sap Sipper) (Moves: Dragon Pulse / Muddy Water / Fire Blast / Focus Blast) IVs: All 25
+Gardevoir (Lv. 60) @Gardevoirite (Ability: Trace) (Moves: Moonblast / Psychic / Shadow Ball / Thunderbolt) IVs: All 25
+
+======
+278 - Duchess Nicolette
+======
+Pokemon: 3
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+Audino (Lv. 45)  IVs: All 0
+
+======
+279 - Marquis Grant
+======
+Pokemon: 2
+Aurorus (Lv. 50)  (Moves: Rest / Sleep Talk / Avalanche / Stone Edge) IVs: All 18
+Tyrantrum (Lv. 50)  (Moves: Crunch / Earthquake / Dragon Claw / Stone Edge) IVs: All 18
+
+======
+280 - Owner Yannick
+======
+Pokemon: 3
+Zangoose (Lv. 31)  (Moves: Thunder Punch / Quick Attack / Shadow Claw / Protect) IVs: All 6
+Zangoose (Lv. 31)  (Moves: Ice Punch / Quick Attack / X-Scissor / Poison Jab) IVs: All 6
+Zangoose (Lv. 31)  (Moves: Fire Punch / Quick Attack / Brick Break / Rock Slide) IVs: All 6
+
+======
+281 - Owner Kazu
+======
+Pokemon: 3
+Bronzong (Lv. 65)  (Moves: Trick Room / Extrasensory / Flash Cannon / Protect) IVs: All 12
+Slowking (Lv. 65)  (Moves: Trick Room / Zen Headbutt / Scald / Brick Break) IVs: All 12
+Cofagrigus (Lv. 65)  (Moves: Trick Room / Shadow Ball / Dark Pulse / Energy Ball) IVs: All 12
+
+======
+282 - Owner Christophe
+======
+Pokemon: 2
+Druddigon (Lv. 63)  (Ability: Rough Skin) (Moves: Dragon Claw / Revenge / Taunt / Confide) IVs: All 9
+Ferrothorn (Lv. 63)  (Ability: Iron Barbs) (Moves: Gyro Ball / Payback / Curse / Ingrain) IVs: All 9
+
+======
+283 - Owner Christophe
+======
+Pokemon: 2
+Alomomola (Lv. 63)  (Ability: Healer) (Moves: Heal Pulse / Aqua Ring / Psychic / Scald) IVs: All 9
+Amoonguss (Lv. 63)  (Ability: Effect Spore) (Moves: Giga Drain / Spore / Ingrain / Feint Attack) IVs: All 9
+
+======
+284 - Owner Christophe
+======
+Pokemon: 3
+Qwilfish (Lv. 63)  (Ability: Poison Point) (Moves: Aqua Tail / Venoshock / Confide / Protect) IVs: All 9
+Druddigon (Lv. 63)  (Ability: Rough Skin) (Moves: Dragon Claw / Revenge / Confide / Taunt) IVs: All 9
+Ferrothorn (Lv. 63)  (Ability: Iron Barbs) (Moves: Gyro Ball / Payback / Confide / Curse) IVs: All 9
+
+======
+285 - Owner Christophe
+======
+Pokemon: 3
+Audino (Lv. 63)  (Ability: Klutz) (Moves: Entrainment / Pain Split / Dazzling Gleam / Protect) IVs: All 9
+Alomomola (Lv. 63)  (Ability: Healer) (Moves: Heal Pulse / Aqua Ring / Psychic / Scald) IVs: All 9
+Amoonguss (Lv. 63)  (Ability: Effect Spore) (Moves: Giga Drain / Spore / Ingrain / Feint Attack) IVs: All 9
+
+======
+286 - Waitress Talia
+======
+Pokemon: 3
+Mantine (Lv. 31) @King’s Rock (Moves: Air Slash / Water Pulse / Protect / Wide Guard) IVs: All 6
+Emolga (Lv. 31) @King’s Rock (Moves: Air Slash / Spark) IVs: All 6
+Sigilyph (Lv. 31) @King’s Rock (Moves: Air Slash / Psybeam) IVs: All 6
+
+======
+287 - Waitress Paula
+======
+Pokemon: 2
+Exploud (Lv. 63)  (Ability: Scrappy) (Moves: Echoed Voice) IVs: All 9
+Aurorus (Lv. 63)  (Ability: Refrigerate) (Moves: Echoed Voice) IVs: All 9
+
+======
+288 - Waitress Paula
+======
+Pokemon: 3
+Chatot (Lv. 63)  (Ability: Keen Eye) (Moves: Echoed Voice) IVs: All 9
+Exploud (Lv. 63)  (Ability: Scrappy) (Moves: Echoed Voice) IVs: All 9
+Aurorus (Lv. 63)  (Ability: Refrigerate) (Moves: Echoed Voice) IVs: All 9
+
+======
+289 - Waitress Paula
+======
+Pokemon: 3
+Chatot (Lv. 63)  (Ability: Keen Eye) (Moves: Echoed Voice) IVs: All 9
+Exploud (Lv. 63)  (Ability: Scrappy) (Moves: Echoed Voice) IVs: All 9
+Aurorus (Lv. 63)  (Ability: Refrigerate) (Moves: Echoed Voice) IVs: All 9
+
+======
+290 - Garçon Morris
+======
+Pokemon: 2
+Floatzel (Lv. 63)  (Moves: Quick Attack / Aqua Jet / Protect) IVs: All 9
+Lucario (Lv. 63)  (Moves: Extreme Speed / Me First / Bullet Punch / Protect) IVs: All 9
+
+======
+291 - Garçon Morris
+======
+Pokemon: 2
+Wobbuffet (Lv. 63)  (Moves: Counter / Mirror Coat / Safeguard / Destiny Bond) IVs: All 9
+Milotic (Lv. 63)  (Moves: Mirror Coat / Hydro Pump / Blizzard / Dragon Pulse) IVs: All 9
+
+======
+292 - Garçon Morris
+======
+Pokemon: 3
+Shieldon (Lv. 63)  (Moves: Metal Burst / Iron Head / Taunt / Protect) IVs: All 9
+Wobbuffet (Lv. 63)  (Moves: Counter / Mirror Coat / Safeguard / Destiny Bond) IVs: All 9
+Milotic (Lv. 63)  (Moves: Mirror Coat / Hydro Pump / Blizzard / Dragon Pulse) IVs: All 9
+
+======
+293 - Garçon Morris
+======
+Pokemon: 3
+Togekiss (Lv. 63)  (Moves: Extreme Speed / Follow Me / Protect) IVs: All 9
+Floatzel (Lv. 63)  (Moves: Quick Attack / Aqua Jet / Protect) IVs: All 9
+Lucario (Lv. 63)  (Moves: Extreme Speed / Me First / Bullet Punch / Protect) IVs: All 9
+
+======
+294 - Furisode Girl Nerissa
+======
+Pokemon: 3
+Abomasnow (Lv. 65)  (Ability: Snow Warning) (Moves: Blizzard / Energy Ball / Protect / Focus Blast) IVs: All 12
+Froslass (Lv. 65)  (Ability: Snow Cloak) (Moves: Blizzard / Thunderbolt / Shadow Ball / Hail) IVs: All 12
+Mamoswine (Lv. 65)  (Ability: Snow Cloak) (Moves: Ice Fang / Stone Edge / Earthquake / Hail) IVs: All 12
+
+======
+295 - Furisode Girl Cliantha
+======
+Pokemon: 3
+Hippowdon (Lv. 65)  (Ability: Sand Stream) (Moves: Fire Fang / Thunder Fang / Protect / Crunch) IVs: All 12
+Scizor (Lv. 65)  (Ability: Technician) (Moves: Bullet Punch / Double Hit / X-Scissor / Sandstorm) IVs: All 12
+Gliscor (Lv. 65)  (Ability: Sand Veil) (Moves: Aerial Ace / Dig / Rock Slide / Sandstorm) IVs: All 12
+
+======
+296 - Furisode Girl Thalassa
+======
+Pokemon: 3
+Politoed (Lv. 65)  (Ability: Drizzle) (Moves: Hyper Voice / Scald / Protect / Ice Beam) IVs: All 12
+Ludicolo (Lv. 65)  (Ability: Rain Dish) (Moves: Giga Drain / Grass Knot / Protect / Rain Dance) IVs: All 12
+Beartic (Lv. 65)  (Ability: Swift Swim) (Moves: Icicle Crash / Rock Slide / Dive / Rain Dance) IVs: All 12
+
+======
+297 - Furisode Girl Gwyneth
+======
+Pokemon: 3
+Ninetales (Lv. 65)  (Ability: Drought) (Moves: Grudge / Heat Wave / Protect / Quick Attack) IVs: All 12
+Tropius (Lv. 65)  (Ability: Chlorophyll) (Moves: Tailwind / Air Slash / Solar Beam / Sunny Day) IVs: All 12
+Cherrim (Lv. 65)  (Ability: Flower Gift) (Moves: Seed Bomb / Return / Morning Sun / Sunny Day) IVs: All 12
+
+======
+298 - Chef Albern
+======
+Pokemon: 3
+Simisage (Lv. 31) @Liechi Berry (Ability: Gluttony) (Moves: Seed Bomb / Shadow Claw / Round / Crunch) IVs: All 6
+Simisear (Lv. 31) @Petaya Berry (Ability: Gluttony) (Moves: Flamethrower / Focus Blast / Round / Crunch) IVs: All 6
+Simipour (Lv. 31) @Salac Berry (Ability: Gluttony) (Moves: Waterfall / Rock Slide / Round / Crunch) IVs: All 6
+
+======
+299 - Chef Roger
+======
+Pokemon: 2
+Pansage (Lv. 10)  IVs: All 0
+Pansear (Lv. 10)  IVs: All 0
+
+======
+300 - Chef Roger
+======
+Pokemon: 2
+Pansear (Lv. 10)  IVs: All 0
+Panpour (Lv. 10)  IVs: All 0
+
+======
+301 - Chef Roger
+======
+Pokemon: 2
+Panpour (Lv. 10)  IVs: All 0
+Pansage (Lv. 10)  IVs: All 0
+
+======
+302 - Ace Trainer Robbie
+======
+Pokemon: 3
+Carbink (Lv. 56)  (Moves: Power Gem / Moonblast / Psychic / Stealth Rock) IVs: All 10
+Raichu (Lv. 56)  (Moves: Thunderbolt / Grass Knot / Quick Attack / Nuzzle) IVs: All 10
+Kingdra (Lv. 57)  (Moves: Scald / Dragon Pulse / Flash Cannon / Ice Beam) IVs: All 10
+
+======
+303 - Team Flare Lysandre
+======
+Pokemon: 4
+Mienfoo (Lv. 45)  (Moves: Swords Dance / High Jump Kick / Acrobatics) IVs: All 22
+Murkrow (Lv. 45)  (Moves: Foul Play / Aerial Ace / Retaliate / Steel Wing) IVs: All 22
+Pyroar (Lv. 47)  (Moves: Hyper Voice / Fire Blast / Dark Pulse) IVs: All 22
+Gyarados (Lv. 49)  (Moves: Aqua Tail / Earthquake / Iron Head / Outrage) IVs: All 22
+
+======
+304 - Team Flare Admin
+======
+Pokemon: 2
+Scraggy (Lv. 37)  IVs: All 0
+Houndoom (Lv. 38)  IVs: All 0
+
+======
+305 - Team Flare Grunt
+======
+Pokemon: 2
+Mightyena (Lv. 36)  IVs: All 0
+Golbat (Lv. 36)  IVs: All 0
+
+======
+306 - Team Flare Grunt
+======
+Pokemon: 1
+Toxicroak (Lv. 37)  IVs: All 0
+
+======
+307 - Team Flare Grunt
+======
+Pokemon: 1
+Scraggy (Lv. 24)  IVs: All 0
+
+======
+308 - Team Flare Grunt
+======
+Pokemon: 2
+Houndoom (Lv. 31)  (Ability: Early Bird) IVs: All 0
+Golbat (Lv. 33)  (Ability: Inner Focus) IVs: All 0
+
+======
+309 - Team Flare Grunt
+======
+Pokemon: 2
+Liepard (Lv. 44)  IVs: All 0
+Mightyena (Lv. 44)  IVs: All 0
+
+======
+310 - Team Flare Grunt
+======
+Pokemon: 2
+Swalot (Lv. 45)  IVs: All 0
+Liepard (Lv. 43)  IVs: All 0
+
+======
+311 - Team Flare Grunt
+======
+Pokemon: 1
+Golbat (Lv. 46)  IVs: All 0
+
+======
+312 - Team Flare Grunt
+======
+Pokemon: 2
+Mightyena (Lv. 43)  IVs: All 0
+Toxicroak (Lv. 45)  IVs: All 0
+
+======
+313 - Team Flare Grunt
+======
+Pokemon: 3
+Manectric (Lv. 45)  IVs: All 0
+Golbat (Lv. 45)  IVs: All 0
+Scrafty (Lv. 45)  IVs: All 0
+
+======
+314 - Team Flare Grunt
+======
+Pokemon: 1
+Houndoom (Lv. 48)  IVs: All 0
+
+======
+315 - Team Flare Grunt
+======
+Pokemon: 2
+Scraggy (Lv. 36)  IVs: All 0
+Mightyena (Lv. 36)  IVs: All 0
+
+======
+316 - Team Flare Grunt
+======
+Pokemon: 1
+Swalot (Lv. 37)  IVs: All 0
+
+======
+317 - Team Flare Grunt
+======
+Pokemon: 2
+Golbat (Lv. 42)  IVs: All 0
+Manectric (Lv. 42)  IVs: All 0
+
+======
+318 - Team Flare Grunt
+======
+Pokemon: 1
+Swalot (Lv. 46)  IVs: All 0
+
+======
+319 - Team Flare Grunt
+======
+Pokemon: 2
+Houndoom (Lv. 44)  IVs: All 0
+Toxicroak (Lv. 44)  IVs: All 0
+
+======
+320 - Team Flare Grunt
+======
+Pokemon: 2
+Manectric (Lv. 43)  IVs: All 0
+Scrafty (Lv. 45)  IVs: All 0
+
+======
+321 - Pokémon Trainer Shauna
+======
+Pokemon: 3
+Delcatty (Lv. 49)  (Ability: Cute Charm) (Moves: Charm / Play Rough / Feint Attack / Return) IVs: All 15
+Goodra (Lv. 49)  (Ability: Sap Sipper) (Moves: Dragon Pulse / Sludge Wave / Body Slam / Earthquake) IVs: All 15
+Greninja (Lv. 51)  (Ability: Torrent) (Moves: Water Shuriken / Extrasensory / Double Team) IVs: All 15
+
+======
+322 - Pokémon Trainer Shauna
+======
+Pokemon: 3
+Delcatty (Lv. 49)  (Ability: Cute Charm) (Moves: Charm / Play Rough / Feint Attack / Return) IVs: All 15
+Goodra (Lv. 49)  (Ability: Sap Sipper) (Moves: Dragon Pulse / Sludge Wave / Body Slam / Earthquake) IVs: All 15
+Chesnaught (Lv. 51)  (Ability: Overgrow) (Moves: Brick Break / Seed Bomb / Spiky Shield) IVs: All 15
+
+======
+323 - Pokémon Trainer Shauna
+======
+Pokemon: 3
+Delcatty (Lv. 49)  (Ability: Cute Charm) (Moves: Charm / Play Rough / Feint Attack / Return) IVs: All 15
+Goodra (Lv. 49)  (Ability: Sap Sipper) (Moves: Dragon Pulse / Sludge Wave / Body Slam / Earthquake) IVs: All 15
+Delphox (Lv. 51)  (Ability: Blaze) (Moves: Psychic / Mystical Fire / Calm Mind) IVs: All 15
+
+======
+324 - Pokémon Trainer Tierno
+======
+Pokemon: 3
+Talonflame (Lv. 48)  (Ability: Flame Body) (Moves: Swords Dance / Acrobatics / Quick Attack) IVs: All 15
+Roserade (Lv. 49)  (Ability: Poison Point) (Moves: Petal Dance) IVs: All 15
+Crawdaunt (Lv. 52)  (Ability: Shell Armor) (Moves: Swords Dance / Crabhammer / Night Slash) IVs: All 15
+
+======
+325 - Pokémon Trainer Trevor
+======
+Pokemon: 3
+Raichu (Lv. 49)  (Ability: Static) (Moves: Thunderbolt / Quick Attack / Nuzzle / Slam) IVs: All 15
+Aerodactyl (Lv. 49)  (Ability: Rock Head) (Moves: Crunch / Ancient Power / Sky Drop / Supersonic) IVs: All 15
+Florges (Lv. 51)  (Ability: Flower Veil) (Moves: Moonblast / Energy Ball / Confide / Misty Terrain) IVs: All 15
+
+======
+326 - Team Flare Grunt
+======
+Pokemon: 1
+Scrafty (Lv. 46)  IVs: All 0
+
+======
+327 - Pokémon Professor Sycamore
+======
+Pokemon: 3
+Bulbasaur (Lv. 10)  IVs: All 18
+Charmander (Lv. 10)  IVs: All 18
+Squirtle (Lv. 10)  IVs: All 18
+
+======
+328 - Pokémon Professor Sycamore
+======
+Pokemon: 3
+Venusaur (Lv. 50)  IVs: All 18
+Charizard (Lv. 50)  IVs: All 18
+Blastoise (Lv. 50)  IVs: All 18
+
+======
+329 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 28)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Light Screen / Disarming Voice) IVs: All 18
+Absol (Lv. 28)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Braixen (Lv. 30)  (Ability: Blaze) (Moves: Psybeam / Fire Spin) IVs: All 18
+
+======
+330 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 28)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Light Screen / Disarming Voice) IVs: All 18
+Absol (Lv. 28)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Frogadier (Lv. 30)  (Ability: Torrent) (Moves: Water Pulse / Quick Attack) IVs: All 18
+
+======
+331 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 28)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Light Screen / Disarming Voice) IVs: All 18
+Absol (Lv. 28)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Quilladin (Lv. 30)  (Ability: Overgrow) (Moves: Needle Arm / Bite) IVs: All 18
+
+======
+332 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 35)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 35)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Delphox (Lv. 37)  (Ability: Blaze) (Moves: Mystical Fire / Psybeam) IVs: All 18
+
+======
+333 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 35)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 35)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Greninja (Lv. 37)  (Ability: Torrent) (Moves: Water Shuriken / Quick Attack) IVs: All 18
+
+======
+334 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 35)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 35)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Chesnaught (Lv. 37)  (Ability: Overgrow) (Moves: Seed Bomb / Bite) IVs: All 18
+
+======
+335 - Pokémon Trainer Calem
+======
+Pokemon: 4
+Meowstic (Lv. 44)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 44)  (Ability: Volt Absorb) (Moves: Discharge / Double Kick / Quick Attack) IVs: All 18
+Absol (Lv. 44)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 46)  (Ability: Blaze) (Moves: Flamethrower / Psychic) IVs: All 18
+
+======
+336 - Pokémon Trainer Calem
+======
+Pokemon: 4
+Meowstic (Lv. 44)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 44)  (Ability: Flash Fire) (Moves: Lava Plume / Bite / Quick Attack) IVs: All 18
+Absol (Lv. 44)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 46)  (Ability: Torrent) (Moves: Water Shuriken / Dark Pulse) IVs: All 18
+
+======
+337 - Pokémon Trainer Calem
+======
+Pokemon: 4
+Meowstic (Lv. 44)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 44)  (Ability: Water Absorb) (Moves: Muddy Water / Aurora Beam / Quick Attack) IVs: All 18
+Absol (Lv. 44)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 46)  (Ability: Overgrow) (Moves: Seed Bomb / Brick Break) IVs: All 18
+
+======
+338 - Pokémon Trainer Calem
+======
+Pokemon: 4
+Meowstic (Lv. 45)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 46)  (Ability: Volt Absorb) (Moves: Discharge / Double Kick / Quick Attack) IVs: All 18
+Absol (Lv. 46)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 49)  (Ability: Blaze) (Moves: Flamethrower / Psychic) IVs: All 18
+
+======
+339 - Pokémon Trainer Calem
+======
+Pokemon: 4
+Meowstic (Lv. 45)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 46)  (Ability: Flash Fire) (Moves: Lava Plume / Bite / Quick Attack) IVs: All 18
+Absol (Lv. 46)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 49)  (Ability: Torrent) (Moves: Water Shuriken / Dark Pulse) IVs: All 18
+
+======
+340 - Pokémon Trainer Calem
+======
+Pokemon: 4
+Meowstic (Lv. 45)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 46)  (Ability: Water Absorb) (Moves: Muddy Water / Aurora Beam / Quick Attack) IVs: All 18
+Absol (Lv. 46)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 49)  (Ability: Overgrow) (Moves: Seed Bomb / Brick Break) IVs: All 18
+
+======
+341 - Pokémon Trainer Calem
+======
+Pokemon: 5
+Meowstic (Lv. 57)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 57)  (Ability: Volt Absorb) (Moves: Discharge / Double Kick / Quick Attack) IVs: All 18
+Altaria (Lv. 58)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Absol (Lv. 59)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 61)  (Ability: Blaze) (Moves: Psychic / Flamethrower / Shadow Ball) IVs: All 18
+
+======
+342 - Pokémon Trainer Calem
+======
+Pokemon: 5
+Meowstic (Lv. 57)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 57)  (Ability: Flash Fire) (Moves: Lava Plume / Bite / Quick Attack) IVs: All 18
+Altaria (Lv. 58)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Absol (Lv. 59)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 61)  (Ability: Torrent) (Moves: Water Shuriken / Dark Pulse / Ice Beam) IVs: All 18
+
+======
+343 - Pokémon Trainer Calem
+======
+Pokemon: 5
+Meowstic (Lv. 57)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 57)  (Ability: Water Absorb) (Moves: Muddy Water / Aurora Beam / Quick Attack) IVs: All 18
+Altaria (Lv. 58)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Absol (Lv. 59)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 61)  (Ability: Overgrow) (Moves: Seed Bomb / Brick Break / Body Slam) IVs: All 18
+
+======
+344 - Team Flare Aliana
+======
+Pokemon: 2
+Mightyena (Lv. 46)  (Moves: Taunt / Sucker Punch / Crunch / Embargo) IVs: All 12
+Druddigon (Lv. 48)  (Moves: Dragon Claw / Crunch / Shadow Claw / Surf) IVs: All 12
+
+======
+345 - Team Flare Xerosic
+======
+Pokemon: 2
+Crobat (Lv. 46)  (Ability: Inner Focus) (Moves: X-Scissor / Cross Poison / Steel Wing / Air Slash) IVs: All 17
+Malamar (Lv. 48)  (Ability: Contrary) (Moves: Superpower / Payback / Psycho Cut / Retaliate) IVs: All 17
+
+======
+346 - Team Flare Mable
+======
+Pokemon: 1
+Houndoom (Lv. 48)  IVs: All 16
+
+======
+347 - Team Flare Mable
+======
+Pokemon: 2
+Houndoom (Lv. 46)  (Moves: Snarl / Flamethrower / Sludge Bomb / Foul Play) IVs: All 16
+Weavile (Lv. 48)  (Moves: Night Slash / Quick Attack / Ice Shard / Low Sweep) IVs: All 16
+
+======
+348 - Team Flare Celosia
+======
+Pokemon: 1
+Manectric (Lv. 41)  IVs: All 15
+
+======
+349 - Team Flare Celosia
+======
+Pokemon: 2
+Manectric (Lv. 46)  (Moves: Thunderbolt / Quick Attack / Flamethrower / Thunder Wave) IVs: All 15
+Drapion (Lv. 48)  (Moves: Night Slash / X-Scissor / Poison Jab / Acupressure) IVs: All 15
+
+======
+350 - Team Flare Bryony
+======
+Pokemon: 1
+Liepard (Lv. 41)  IVs: All 13
+
+======
+351 - Team Flare Bryony
+======
+Pokemon: 2
+Liepard (Lv. 46)  (Moves: Fake Out / Sucker Punch / Taunt / Slash) IVs: All 13
+Bisharp (Lv. 48)  (Moves: Night Slash / Iron Head / X-Scissor / Shadow Claw) IVs: All 13
+
+======
+352 - Team Flare Grunt
+======
+Pokemon: 1
+Liepard (Lv. 46)  IVs: All 0
+
+======
+353 - Ace Trainer Cordelia
+======
+Pokemon: 1
+Doublade (Lv. 46)  IVs: All 10
+
+======
+354 - Ace Trainer [~ 354]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+355 - Ace Trainer [~ 355]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+356 - Ace Trainer Mireille
+======
+Pokemon: 2
+Sableye (Lv. 55)  IVs: All 10
+Crustle (Lv. 56)  IVs: All 10
+
+======
+357 - Ace Trainer Neil
+======
+Pokemon: 3
+Raichu (Lv. 42)  IVs: All 10
+Golduck (Lv. 42)  IVs: All 10
+Marowak (Lv. 43)  IVs: All 10
+
+======
+358 - Ace Trainer [~ 358]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+359 - Ace Trainer [~ 359]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+360 - Ace Trainer Evan
+======
+Pokemon: 1
+Chandelure (Lv. 58)  (Moves: Flamethrower / Shadow Ball / Confuse Ray) IVs: All 10
+
+======
+361 - Hex Maniac Josette
+======
+Pokemon: 2
+Pumpkaboo (Lv. 50)  IVs: All 0
+Pumpkaboo (Lv. 50)  IVs: All 0
+
+======
+362 - Hex Maniac Luna
+======
+Pokemon: 1
+Chimecho (Lv. 40)  IVs: All 0
+
+======
+363 - Hex Maniac Carrie
+======
+Pokemon: 2
+Litwick (Lv. 38)  IVs: All 0
+Duosion (Lv. 38)  IVs: All 0
+
+======
+364 - Hex Maniac Osanna
+======
+Pokemon: 1
+Pumpkaboo (Lv. 40)  IVs: All 0
+
+======
+365 - Hex Maniac Melanie
+======
+Pokemon: 1
+Gardevoir (Lv. 46)  IVs: All 1
+
+======
+366 - Hex Maniac Arachna
+======
+Pokemon: 1
+Jynx (Lv. 46)  IVs: All 1
+
+======
+367 - Black Belt Alonzo
+======
+Pokemon: 2
+Scrafty (Lv. 43)  (Moves: High Jump Kick / Dragon Tail / Feint Attack) IVs: All 7
+Throh (Lv. 44)  (Moves: Storm Throw / Revenge / Bulldoze / Rock Slide) IVs: All 7
+
+======
+368 - Black Belt Kenji
+======
+Pokemon: 1
+Gurdurr (Lv. 46)  (Moves: Rock Slide / Low Kick / Chip Away) IVs: All 7
+
+======
+369 - Black Belt Yanis
+======
+Pokemon: 2
+Sawk (Lv. 49)  (Moves: Low Sweep / Rock Slide / Poison Jab / Earthquake) IVs: All 7
+Pangoro (Lv. 50)  (Moves: Power-Up Punch) IVs: All 7
+
+======
+370 - Black Belt Ricardo
+======
+Pokemon: 1
+Hariyama (Lv. 52)  (Moves: Fake Out / Earthquake / Smack Down / Force Palm) IVs: All 7
+
+======
+371 - Black Belt Gunnar
+======
+Pokemon: 2
+Toxicroak (Lv. 49)  (Moves: Sludge Bomb / Focus Blast / Shadow Ball / Dark Pulse) IVs: All 7
+Sawk (Lv. 50)  (Moves: Retaliate / Close Combat / Counter / Poison Jab) IVs: All 7
+
+======
+372 - Artist Salvador
+======
+Pokemon: 1
+Smeargle (Lv. 44)  (Moves: Air Slash / Power Gem / Dazzling Gleam / Flash Cannon) IVs: All 12
+
+======
+373 - Psychic Ernest
+======
+Pokemon: 1
+Alakazam (Lv. 46)  IVs: All 1
+
+======
+374 - Psychic Archibald
+======
+Pokemon: 1
+Chimecho (Lv. 46)  IVs: All 1
+
+======
+375 - Psychic Andrew
+======
+Pokemon: 1
+Medicham (Lv. 46)  IVs: All 1
+
+======
+376 - Worker Dimitri
+======
+Pokemon: 1
+Octillery (Lv. 50)  IVs: All 0
+
+======
+377 - Worker Narek
+======
+Pokemon: 3
+Graveler (Lv. 46)  IVs: All 0
+Graveler (Lv. 47)  IVs: All 0
+Golem (Lv. 48)  IVs: All 0
+
+======
+378 - Worker Yusif
+======
+Pokemon: 1
+Probopass (Lv. 50)  IVs: All 0
+
+======
+379 - Brains & Brawn Eoin & Wolf
+======
+Pokemon: 2
+Grumpig (Lv. 44)  IVs: All 0
+Hariyama (Lv. 46)  IVs: All 0
+
+======
+380 - Sky Trainer Gavin
+======
+Pokemon: 3
+Chimecho (Lv. 37)  (Moves: Yawn / Psywave / Safeguard / Echoed Voice) IVs: All 10
+Vibrava (Lv. 37)  (Moves: Rock Slide / Supersonic / U-turn / Facade) IVs: All 10
+Talonflame (Lv. 39)  (Moves: Flame Charge / Aerial Ace / Swords Dance / Me First) IVs: All 10
+
+======
+381 - Sky Trainer Celso
+======
+Pokemon: 2
+Carnivine (Lv. 41)  (Moves: Leaf Tornado / Infestation / Payback / Toxic) IVs: All 10
+Swanna (Lv. 44)  (Moves: Air Slash / Scald / Ice Beam / Aqua Ring) IVs: All 10
+
+======
+382 - Sky Trainer Jeremy
+======
+Pokemon: 3
+Ninjask (Lv. 46)  (Moves: Baton Pass / Protect / X-Scissor / Slash) IVs: All 10
+Drifblim (Lv. 47)  (Moves: Shadow Ball / Amnesia / Thunderbolt / Baton Pass) IVs: All 10
+Flygon (Lv. 50)  (Moves: Dragon Claw / Stone Edge / Power-Up Punch / Steel Wing) IVs: All 10
+
+======
+383 - Sky Trainer Indra
+======
+Pokemon: 1
+Sigilyph (Lv. 31)  (Moves: Psybeam / Air Cutter / Charge Beam / Thunder Wave) IVs: All 10
+
+======
+384 - Sky Trainer Clara
+======
+Pokemon: 2
+Emolga (Lv. 38)  (Moves: Volt Switch / Nuzzle / Acrobatics / U-turn) IVs: All 10
+Swellow (Lv. 40)  (Moves: Aerial Ace / Double Team / Steel Wing / Return) IVs: All 10
+
+======
+385 - Sky Trainer Era
+======
+Pokemon: 1
+Cryogonal (Lv. 45)  (Moves: Ice Beam / Flash Cannon / Confuse Ray / Ice Shard) IVs: All 10
+
+======
+386 - Sky Trainer Anila
+======
+Pokemon: 2
+Rotom (Lv. 42)  (Moves: Discharge / Dark Pulse / Shadow Ball / Confuse Ray) IVs: All 10
+Butterfree (Lv. 44)  (Moves: Confide / Bug Buzz / Energy Ball / Psychic) IVs: All 10
+
+======
+387 - Sky Trainer Sera
+======
+Pokemon: 2
+Noctowl (Lv. 50)  (Moves: Extrasensory / Air Slash / Hypnosis / Reflect) IVs: All 10
+Aerodactyl (Lv. 52)  (Moves: Stone Edge / Ice Fang / Thunder Fang / Fire Fang) IVs: All 10
+
+======
+388 - Punk Girl Jeanne
+======
+Pokemon: 2
+Seviper (Lv. 40)  IVs: All 0
+Arbok (Lv. 40)  IVs: All 0
+
+======
+389 - Punk Guy Sid
+======
+Pokemon: 3
+Scrafty (Lv. 39)  IVs: All 0
+Pawniard (Lv. 39)  IVs: All 0
+Sharpedo (Lv. 39)  IVs: All 0
+
+======
+390 - Punk Guy Jacques
+======
+Pokemon: 2
+Skuntank (Lv. 40)  IVs: All 0
+Crawdaunt (Lv. 40)  IVs: All 0
+
+======
+391 - Punk Guy Slater
+======
+Pokemon: 1
+Dunsparce (Lv. 42)  (Moves: Drill Run / Glare / Screech / Pursuit) IVs: All 0
+
+======
+392 - Punk Girl Cecile
+======
+Pokemon: 2
+Liepard (Lv. 40)  (Moves: Assist / Fury Swipes / Torment / Sand Attack) IVs: All 0
+Liepard (Lv. 40)  (Moves: Fake Out / Pursuit / Slash / Growl) IVs: All 0
+
+======
+393 - Youngster Jayden
+======
+Pokemon: 2
+Scolipede (Lv. 48)  IVs: All 0
+Pinsir (Lv. 48)  IVs: All 0
+
+======
+394 - Fisherman Finn
+======
+Pokemon: 2
+Basculin (Lv. 38)  IVs: All 0
+Basculin (Lv. 38)  IVs: All 0
+
+======
+395 - Fisherman Seward
+======
+Pokemon: 1
+Whiscash (Lv. 40)  IVs: All 0
+
+======
+396 - Fisherman Wade
+======
+Pokemon: 2
+Poliwhirl (Lv. 37)  IVs: All 0
+Poliwhirl (Lv. 39)  IVs: All 0
+
+======
+397 - Battle Girl Kinsey
+======
+Pokemon: 2
+Sawk (Lv. 43)  (Moves: Counter / Low Sweep / Payback / Poison Jab) IVs: All 7
+Mienshao (Lv. 44)  (Moves: Drain Punch / Rock Slide / Fake Out / Retaliate) IVs: All 7
+
+======
+398 - Battle Girl Gabrielle
+======
+Pokemon: 1
+Medicham (Lv. 46)  (Moves: Energy Ball / Focus Blast / Psychic / Shadow Ball) IVs: All 7
+
+======
+399 - Battle Girl Justine
+======
+Pokemon: 1
+Mienshao (Lv. 52)  (Moves: Aura Sphere / Grass Knot / Fake Out / Bounce) IVs: All 7
+
+======
+400 - Battle Girl Andrea
+======
+Pokemon: 2
+Throh (Lv. 49)  (Moves: Body Slam / Bulldoze / Storm Throw / Rock Slide) IVs: All 7
+Conkeldurr (Lv. 50)  (Moves: Stone Edge / Hammer Arm / Poison Jab / Retaliate) IVs: All 7
+
+======
+401 - Battle Girl Hailey
+======
+Pokemon: 2
+Medicham (Lv. 48)  (Moves: Force Palm / Zen Headbutt) IVs: All 7
+Hawlucha (Lv. 51)  (Moves: Steel Wing / U-turn / Flying Press / Retaliate) IVs: All 7
+
+======
+402 - Swimmer  Coral
+======
+Pokemon: 1
+Stunfisk (Lv. 52)  IVs: All 0
+
+======
+403 - Mysterious Sisters Rune & Rime
+======
+Pokemon: 2
+Drifblim (Lv. 40)  IVs: All 0
+Floette (Lv. 40)  IVs: All 0
+
+======
+404 - Mysterious Sisters Achlys & Eos
+======
+Pokemon: 2
+Alakazam (Lv. 40)  IVs: All 0
+Gardevoir (Lv. 40)  IVs: All 0
+
+======
+405 - Veteran Guy
+======
+Pokemon: 3
+Drapion (Lv. 53)  (Moves: Night Slash / Toxic / Venoshock / X-Scissor) IVs: All 15
+Golurk (Lv. 54)  (Moves: Earthquake / Heavy Slam / Hammer Arm / Shadow Punch) IVs: All 15
+Staraptor (Lv. 57)  (Moves: Brave Bird / Quick Attack / Close Combat / U-turn) IVs: All 15
+
+======
+406 - Veteran Louis
+======
+Pokemon: 2
+Hippowdon (Lv. 55)  (Moves: Protect / Earthquake / Crunch / Yawn) IVs: All 15
+Aurorus (Lv. 57)  (Moves: Protect / Ice Beam / Flash Cannon / Thunderbolt) IVs: All 15
+
+======
+407 - Veteran [~ 407]
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+408 - Veteran Trisha
+======
+Pokemon: 1
+Tyrantrum (Lv. 59)  (Moves: Crunch / Dragon Claw / Aerial Ace / Brick Break) IVs: All 15
+
+======
+409 - Lass Sara
+======
+Pokemon: 2
+Granbull (Lv. 48)  IVs: All 0
+Dedenne (Lv. 48)  IVs: All 0
+
+======
+410 - Fairy Tale Girl Mahalyn
+======
+Pokemon: 2
+Dedenne (Lv. 37)  IVs: All 0
+Aromatisse (Lv. 39)  IVs: All 0
+
+======
+411 - Fairy Tale Girl Alice
+======
+Pokemon: 2
+Klefki (Lv. 37)  IVs: All 0
+Mawile (Lv. 39)  IVs: All 0
+
+======
+412 - Fairy Tale Girl Lovelyn
+======
+Pokemon: 3
+Mr. Mime (Lv. 49)  IVs: All 0
+Aromatisse (Lv. 49)  IVs: All 0
+Azumarill (Lv. 49)  IVs: All 0
+
+======
+413 - Hiker Alain
+======
+Pokemon: 3
+Graveler (Lv. 40)  IVs: All 0
+Graveler (Lv. 41)  IVs: All 0
+Carbink (Lv. 42)  IVs: All 0
+
+======
+414 - Hiker Delmon
+======
+Pokemon: 2
+Relicanth (Lv. 42)  IVs: All 0
+Rhydon (Lv. 42)  IVs: All 0
+
+======
+415 - Hiker Brent
+======
+Pokemon: 1
+Probopass (Lv. 44)  IVs: All 0
+
+======
+416 - Hiker Ross
+======
+Pokemon: 1
+Vibrava (Lv. 44)  IVs: All 0
+
+======
+417 - Hiker Mason
+======
+Pokemon: 2
+Boldore (Lv. 42)  IVs: All 0
+Dugtrio (Lv. 42)  IVs: All 0
+
+======
+418 - Hiker Lorenzo
+======
+Pokemon: 2
+Diggersby (Lv. 41)  IVs: All 0
+Onix (Lv. 43)  IVs: All 0
+
+======
+419 - Hiker Orestes
+======
+Pokemon: 1
+Stunfisk (Lv. 50)  IVs: All 0
+
+======
+420 - Hiker Aaron
+======
+Pokemon: 1
+Rhydon (Lv. 50)  IVs: All 0
+
+======
+421 - Hiker Bergin
+======
+Pokemon: 2
+Boldore (Lv. 48)  IVs: All 0
+Steelix (Lv. 48)  IVs: All 0
+
+======
+422 - Roller Skater Olle
+======
+Pokemon: 1
+Manectric (Lv. 40)  IVs: All 0
+
+======
+423 - Roller Skater Jet
+======
+Pokemon: 2
+Delcatty (Lv. 37)  IVs: All 0
+Swanna (Lv. 39)  IVs: All 0
+
+======
+424 - Ace Duo Elina & Sean
+======
+Pokemon: 2
+Wailord (Lv. 57)  IVs: All 10
+Vileplume (Lv. 57)  IVs: All 10
+
+======
+425 - Rangers Fern & Lee
+======
+Pokemon: 2
+Nidoking (Lv. 51)  IVs: All 10
+Nidoqueen (Lv. 51)  IVs: All 10
+
+======
+426 - Rangers Ivy & Orrick
+======
+Pokemon: 2
+Tauros (Lv. 53)  IVs: All 10
+Miltank (Lv. 53)  IVs: All 10
+
+======
+427 - Punk Couple Zoya & Asa
+======
+Pokemon: 2
+Pangoro (Lv. 42)  IVs: All 0
+Garbodor (Lv. 42)  IVs: All 0
+
+======
+428 - Pokémon Ranger Pedro
+======
+Pokemon: 1
+Vileplume (Lv. 41)  IVs: All 10
+
+======
+429 - Pokémon Ranger Dean
+======
+Pokemon: 3
+Watchog (Lv. 37)  IVs: All 10
+Swoobat (Lv. 38)  IVs: All 10
+Seadra (Lv. 39)  IVs: All 10
+
+======
+430 - Pokémon Ranger Silas
+======
+Pokemon: 2
+Quagsire (Lv. 39)  IVs: All 10
+Beartic (Lv. 39)  IVs: All 10
+
+======
+431 - Pokémon Ranger Keith
+======
+Pokemon: 1
+Gabite (Lv. 41)  IVs: All 10
+
+======
+432 - Pokémon Ranger Shinobu
+======
+Pokemon: 2
+Zangoose (Lv. 51)  IVs: All 10
+Beartic (Lv. 51)  IVs: All 10
+
+======
+433 - Pokémon Ranger Clementine
+======
+Pokemon: 1
+Alomomola (Lv. 54)  IVs: All 10
+
+======
+434 - Pokémon Ranger Ambre
+======
+Pokemon: 2
+Emolga (Lv. 51)  IVs: All 10
+Grumpig (Lv. 51)  IVs: All 10
+
+======
+435 - Pokémon Trainer Calem
+======
+Pokemon: 2
+Fletchling (Lv. 15)  (Ability: Gale Wings) (Moves: Peck / Quick Attack / Growl) IVs: All 18
+Braixen (Lv. 16)  (Ability: Blaze) (Moves: Ember / Scratch) IVs: All 18
+
+======
+436 - Pokémon Trainer Calem
+======
+Pokemon: 2
+Fletchling (Lv. 15)  (Ability: Gale Wings) (Moves: Peck / Quick Attack / Growl) IVs: All 18
+Frogadier (Lv. 16)  (Ability: Torrent) (Moves: Bubble / Quick Attack) IVs: All 18
+
+======
+437 - Pokémon Trainer Calem
+======
+Pokemon: 2
+Fletchling (Lv. 15)  (Ability: Gale Wings) (Moves: Peck / Quick Attack / Growl) IVs: All 18
+Quilladin (Lv. 16)  (Ability: Overgrow) (Moves: Vine Whip / Bite) IVs: All 18
+
+======
+438 - Pokémon Trainer Tierno
+======
+Pokemon: 1
+Corphish (Lv. 16)  (Ability: Shell Armor) (Moves: Swords Dance / Vice Grip) IVs: All 15
+
+======
+439 - Pokémon Trainer Trevor
+======
+Pokemon: 2
+Pikachu (Lv. 14)  (Ability: Static) (Moves: Thunder Shock / Quick Attack) IVs: All 15
+Flabébé (Lv. 14)  (Ability: Flower Veil) (Moves: Vine Whip / Fairy Wind) IVs: All 15
+
+======
+440 - Owner Kazu
+======
+Pokemon: 2
+Bronzong (Lv. 65)  (Moves: Trick Room / Extrasensory / Flash Cannon / Protect) IVs: All 12
+Cofagrigus (Lv. 65)  (Moves: Trick Room / Shadow Ball / Dark Pulse / Energy Ball) IVs: All 12
+
+======
+441 - Owner Kazu
+======
+Pokemon: 3
+Bronzong (Lv. 65)  (Moves: Trick Room / Extrasensory / Flash Cannon / Protect) IVs: All 12
+Slowking (Lv. 65)  (Moves: Trick Room / Zen Headbutt / Scald / Brick Break) IVs: All 12
+Cofagrigus (Lv. 65)  (Moves: Trick Room / Shadow Ball / Dark Pulse / Energy Ball) IVs: All 12
+
+======
+442 - Furisode Girl Gwyneth
+======
+Pokemon: 2
+Ninetales (Lv. 65)  (Ability: Drought) (Moves: Grudge / Heat Wave / Protect / Quick Attack) IVs: All 12
+Tropius (Lv. 65)  (Ability: Chlorophyll) (Moves: Tailwind / Air Slash / Solar Beam / Sunny Day) IVs: All 12
+
+======
+443 - Furisode Girl Gwyneth
+======
+Pokemon: 3
+Ninetales (Lv. 65)  (Ability: Drought) (Moves: Grudge / Heat Wave / Protect / Quick Attack) IVs: All 12
+Tropius (Lv. 65)  (Ability: Chlorophyll) (Moves: Tailwind / Air Slash / Solar Beam / Sunny Day) IVs: All 12
+Cherrim (Lv. 65)  (Ability: Flower Gift) (Moves: Seed Bomb / Return / Morning Sun / Sunny Day) IVs: All 12
+
+======
+444 - Furisode Girl Nerissa
+======
+Pokemon: 2
+Abomasnow (Lv. 65)  (Ability: Snow Warning) (Moves: Blizzard / Energy Ball / Protect / Focus Blast) IVs: All 12
+Mamoswine (Lv. 65)  (Ability: Snow Cloak) (Moves: Ice Fang / Stone Edge / Earthquake / Hail) IVs: All 12
+
+======
+445 - Furisode Girl Nerissa
+======
+Pokemon: 3
+Abomasnow (Lv. 65)  (Ability: Snow Warning) (Moves: Blizzard / Energy Ball / Protect / Focus Blast) IVs: All 12
+Froslass (Lv. 65)  (Ability: Snow Cloak) (Moves: Blizzard / Thunderbolt / Shadow Ball / Hail) IVs: All 12
+Mamoswine (Lv. 65)  (Ability: Snow Cloak) (Moves: Ice Fang / Stone Edge / Earthquake / Hail) IVs: All 12
+
+======
+446 - Furisode Girl Cliantha
+======
+Pokemon: 2
+Hippowdon (Lv. 65)  (Ability: Sand Stream) (Moves: Fire Fang / Thunder Fang / Protect / Crunch) IVs: All 12
+Gliscor (Lv. 65)  (Ability: Sand Veil) (Moves: Aerial Ace / Dig / Rock Slide / Sandstorm) IVs: All 12
+
+======
+447 - Furisode Girl Cliantha
+======
+Pokemon: 3
+Hippowdon (Lv. 65)  (Ability: Sand Stream) (Moves: Fire Fang / Thunder Fang / Protect / Crunch) IVs: All 12
+Scizor (Lv. 65)  (Ability: Technician) (Moves: Bullet Punch / Double Hit / X-Scissor / Sandstorm) IVs: All 12
+Gliscor (Lv. 65)  (Ability: Sand Veil) (Moves: Aerial Ace / Dig / Rock Slide / Sandstorm) IVs: All 12
+
+======
+448 - Furisode Girl Thalassa
+======
+Pokemon: 2
+Politoed (Lv. 65)  (Ability: Drizzle) (Moves: Hyper Voice / Scald / Protect / Ice Beam) IVs: All 12
+Beartic (Lv. 65)  (Ability: Swift Swim) (Moves: Icicle Crash / Rock Slide / Dive / Rain Dance) IVs: All 12
+
+======
+449 - Furisode Girl Thalassa
+======
+Pokemon: 3
+Politoed (Lv. 65)  (Ability: Drizzle) (Moves: Hyper Voice / Scald / Protect / Ice Beam) IVs: All 12
+Ludicolo (Lv. 65)  (Ability: Rain Dish) (Moves: Giga Drain / Grass Knot / Protect / Rain Dance) IVs: All 12
+Beartic (Lv. 65)  (Ability: Swift Swim) (Moves: Icicle Crash / Rock Slide / Dive / Rain Dance) IVs: All 12
+
+======
+450 - Garçon Morris
+======
+Pokemon: 3
+Shieldon (Lv. 63)  (Moves: Metal Burst / Iron Head / Taunt / Protect) IVs: All 9
+Wobbuffet (Lv. 63)  (Moves: Counter / Mirror Coat / Safeguard / Destiny Bond) IVs: All 9
+Milotic (Lv. 63)  (Moves: Mirror Coat / Hydro Pump / Blizzard / Dragon Pulse) IVs: All 9
+
+======
+451 - Garçon Morris
+======
+Pokemon: 3
+Togekiss (Lv. 63)  (Moves: Extreme Speed / Follow Me / Protect) IVs: All 9
+Floatzel (Lv. 63)  (Moves: Quick Attack / Aqua Jet / Protect) IVs: All 9
+Lucario (Lv. 63)  (Moves: Extreme Speed / Me First / Bullet Punch / Protect) IVs: All 9
+
+======
+452 - Owner Christophe
+======
+Pokemon: 3
+Qwilfish (Lv. 63)  (Ability: Poison Point) (Moves: Aqua Tail / Venoshock / Confide / Protect) IVs: All 9
+Druddigon (Lv. 63)  (Ability: Rough Skin) (Moves: Dragon Claw / Revenge / Confide / Taunt) IVs: All 9
+Ferrothorn (Lv. 63)  (Ability: Iron Barbs) (Moves: Gyro Ball / Payback / Confide / Curse) IVs: All 9
+
+======
+453 - Owner Christophe
+======
+Pokemon: 3
+Audino (Lv. 63)  (Ability: Klutz) (Moves: Entrainment / Pain Split / Dazzling Gleam / Protect) IVs: All 9
+Alomomola (Lv. 63)  (Ability: Healer) (Moves: Heal Pulse / Aqua Ring / Psychic / Scald) IVs: All 9
+Amoonguss (Lv. 63)  (Ability: Effect Spore) (Moves: Giga Drain / Spore / Ingrain / Feint Attack) IVs: All 9
+
+======
+454 - Owner Yannick
+======
+Pokemon: 3
+Zangoose (Lv. 31)  (Moves: Thunder Punch / Quick Attack / Shadow Claw / Protect) IVs: All 6
+Zangoose (Lv. 31)  (Moves: Ice Punch / Quick Attack / X-Scissor / Poison Jab) IVs: All 6
+Zangoose (Lv. 31)  (Moves: Fire Punch / Quick Attack / Brick Break / Rock Slide) IVs: All 6
+
+======
+455 - Waitress Talia
+======
+Pokemon: 3
+Mantine (Lv. 31) @King’s Rock (Moves: Air Slash / Water Pulse / Protect / Wide Guard) IVs: All 6
+Emolga (Lv. 31) @King’s Rock (Moves: Air Slash / Spark) IVs: All 6
+Sigilyph (Lv. 31) @King’s Rock (Moves: Air Slash / Psybeam) IVs: All 6
+
+======
+456 - Garçon Georges
+======
+Pokemon: 3
+Shuckle (Lv. 31)  (Ability: Sturdy) (Moves: Toxic / Bulldoze / Bide / Protect) IVs: All 6
+Pidgeot (Lv. 31)  (Ability: Keen Eye) (Moves: Toxic / Fly / Protect) IVs: All 6
+Dugtrio (Lv. 31)  (Ability: Arena Trap) (Moves: Toxic / Dig / Protect) IVs: All 6
+
+======
+457 - Garçon Georges
+======
+Pokemon: 3
+Shuckle (Lv. 31)  (Ability: Sturdy) (Moves: Toxic / Bulldoze / Bide / Protect) IVs: All 6
+Pidgeot (Lv. 31)  (Ability: Keen Eye) (Moves: Toxic / Fly / Protect) IVs: All 6
+Dugtrio (Lv. 31)  (Ability: Arena Trap) (Moves: Toxic / Dig / Protect) IVs: All 6
+
+======
+458 - Chef Albern
+======
+Pokemon: 3
+Simisage (Lv. 31) @Liechi Berry (Ability: Gluttony) (Moves: Seed Bomb / Shadow Claw / Round / Crunch) IVs: All 6
+Simisear (Lv. 31) @Petaya Berry (Ability: Gluttony) (Moves: Flamethrower / Focus Blast / Round / Crunch) IVs: All 6
+Simipour (Lv. 31) @Salac Berry (Ability: Gluttony) (Moves: Waterfall / Rock Slide / Round / Crunch) IVs: All 6
+
+======
+459 - Roller Skater Roland
+======
+Pokemon: 1
+Pidgey (Lv. 10)  IVs: All 0
+
+======
+460 - Roller Skater Calida
+======
+Pokemon: 1
+Fletchling (Lv. 10)  IVs: All 0
+
+======
+461 - Schoolboy Arno
+======
+Pokemon: 1
+Pachirisu (Lv. 34)  IVs: All 2
+
+======
+462 - Schoolboy Sherlock
+======
+Pokemon: 1
+Stunfisk (Lv. 34)  IVs: All 2
+
+======
+463 - Schoolboy Finnian
+======
+Pokemon: 1
+Dedenne (Lv. 34)  IVs: All 2
+
+======
+464 - Rising Star Estel
+======
+Pokemon: 1
+Raichu (Lv. 35)  IVs: All 5
+
+======
+465 - Rising Star Nelly
+======
+Pokemon: 1
+Magneton (Lv. 35)  IVs: All 5
+
+======
+466 - Rising Star Helene
+======
+Pokemon: 1
+Manectric (Lv. 35)  IVs: All 5
+
+======
+467 - Poké Fan Abigail
+======
+Pokemon: 1
+Minun (Lv. 34)  IVs: All 0
+
+======
+468 - Poké Fan Lydie
+======
+Pokemon: 1
+Plusle (Lv. 34)  IVs: All 0
+
+======
+469 - Poké Fan Tara
+======
+Pokemon: 1
+Pikachu (Lv. 34)  IVs: All 0
+
+======
+470 - Team Flare Admin
+======
+Pokemon: 1
+Toxicroak (Lv. 50)  IVs: All 2
+
+======
+471 - Team Flare Admin
+======
+Pokemon: 1
+Mightyena (Lv. 50)  IVs: All 2
+
+======
+472 - Team Flare Admin
+======
+Pokemon: 1
+Houndoom (Lv. 50)  IVs: All 2
+
+======
+473 - Team Flare Admin
+======
+Pokemon: 1
+Golbat (Lv. 50)  IVs: All 2
+
+======
+474 - Team Flare Admin
+======
+Pokemon: 1
+Scrafty (Lv. 50)  IVs: All 2
+
+======
+475 - Team Flare Admin
+======
+Pokemon: 1
+Liepard (Lv. 50)  IVs: All 2
+
+======
+476 - Team Flare Admin
+======
+Pokemon: 1
+Manectric (Lv. 50)  IVs: All 2
+
+======
+477 - Team Flare Admin
+======
+Pokemon: 1
+Swalot (Lv. 50)  IVs: All 2
+
+======
+478 - Team Flare Admin
+======
+Pokemon: 2
+Liepard (Lv. 47)  IVs: All 2
+Manectric (Lv. 48)  IVs: All 2
+
+======
+479 - Team Flare Admin
+======
+Pokemon: 2
+Mightyena (Lv. 47)  IVs: All 2
+Houndoom (Lv. 48)  IVs: All 2
+
+======
+480 - Rising Star Rhys
+======
+Pokemon: 3
+Pancham (Lv. 15)  (Moves: Arm Thrust / Tackle / Leer) IVs: All 5
+Skiddo (Lv. 16)  (Moves: Razor Leaf / Tackle / Growth) IVs: All 5
+Goldeen (Lv. 17)  (Moves: Water Pulse / Peck / Supersonic) IVs: All 5
+
+======
+481 - Rising Star Paulette
+======
+Pokemon: 1
+Axew (Lv. 19)  IVs: All 5
+
+======
+482 - Swimmer  Kieran
+======
+Pokemon: 3
+Remoraid (Lv. 27)  IVs: All 0
+Skrelp (Lv. 27)  IVs: All 0
+Wailmer (Lv. 27)  IVs: All 0
+
+======
+483 - Swimmer  Romy
+======
+Pokemon: 1
+Slowpoke (Lv. 30)  IVs: All 0
+
+======
+484 - Psychic Robert
+======
+Pokemon: 1
+Solosis (Lv. 22)  IVs: All 1
+
+======
+485 - Driver Coupe
+======
+Pokemon: 1
+Sandile (Lv. 33)  IVs: All 0
+
+======
+486 - Driver Clarence
+======
+Pokemon: 1
+Sandile (Lv. 33)  IVs: All 0
+
+======
+487 - Driver Hackney
+======
+Pokemon: 1
+Sandile (Lv. 33)  IVs: All 0
+
+======
+488 - Driver Hansom
+======
+Pokemon: 1
+Sandile (Lv. 33)  IVs: All 0
+
+======
+489 - Driver Wheeler
+======
+Pokemon: 1
+Sandile (Lv. 33)  IVs: All 0
+
+======
+490 - Driver Weaver
+======
+Pokemon: 1
+Krokorok (Lv. 55)  IVs: All 0
+
+======
+491 - Driver Schaffer
+======
+Pokemon: 1
+Krokorok (Lv. 55)  IVs: All 0
+
+======
+492 - Driver Wayne
+======
+Pokemon: 1
+Krokorok (Lv. 55)  IVs: All 0
+
+======
+493 - Driver Cormick
+======
+Pokemon: 1
+Krokorok (Lv. 55)  IVs: All 0
+
+======
+494 - Driver Cabot
+======
+Pokemon: 1
+Krokorok (Lv. 55)  IVs: All 0
+
+======
+495 - Driver Carter
+======
+Pokemon: 1
+Krookodile (Lv. 66)  IVs: All 0
+
+======
+496 - Preschooler Natalie
+======
+Pokemon: 2
+Swinub (Lv. 53)  IVs: All 18
+Bonsly (Lv. 53)  IVs: All 18
+
+======
+497 - Preschooler Lily
+======
+Pokemon: 1
+Igglybuff (Lv. 55)  IVs: All 18
+
+======
+498 - Schoolgirl Callie
+======
+Pokemon: 3
+Rapidash (Lv. 53)  IVs: All 18
+Kingler (Lv. 53)  IVs: All 18
+Leavanny (Lv. 53)  IVs: All 18
+
+======
+499 - Schoolboy Macon
+======
+Pokemon: 1
+Spiritomb (Lv. 56)  IVs: All 18
+
+======
+500 - Lumiose Gang Member Eris
+======
+Pokemon: 2
+Pangoro (Lv. 56)  (Ability: Iron Fist) IVs: All 18
+Bouffalant (Lv. 56)  (Ability: Reckless) IVs: All 18
+
+======
+501 - Lumiose Gang Member Sedna
+======
+Pokemon: 1
+Mandibuzz (Lv. 58)  (Ability: Big Pecks) IVs: All 18
+
+======
+502 - Lumiose Gang Member Nix
+======
+Pokemon: 2
+Druddigon (Lv. 56)  (Ability: Rough Skin) IVs: All 18
+Krookodile (Lv. 56)  (Ability: Intimidate) IVs: All 18
+
+======
+503 - Suspicious Woman “???”
+======
+Pokemon: 2
+Jellicent (Lv. 58)  (Ability: Water Absorb) IVs: All 18
+Volcarona (Lv. 60)  (Ability: Flame Body) IVs: All 18
+
+======
+504 - Suspicious Child “???”
+======
+Pokemon: 3
+Whimsicott (Lv. 57)  (Ability: Prankster) IVs: All 18
+Mawile (Lv. 57)  (Ability: Hyper Cutter) IVs: All 18
+Granbull (Lv. 57)  (Ability: Intimidate) IVs: All 18
+
+======
+505 - Suspicious Lady “???”
+======
+Pokemon: 1
+Persian (Lv. 60)  (Ability: Limber) IVs: All 18
+
+======
+506 - Butler Chalmers
+======
+Pokemon: 1
+Braviary (Lv. 62)  IVs: All 18
+
+======
+507 - Pokémon Trainer Malva
+======
+Pokemon: 1
+Pyroar (Lv. 63)  (Ability: Rivalry) (Moves: Hyper Voice / Flamethrower / Wild Charge / Noble Roar) IVs: All 18
+
+======
+508 - Scientist Justus
+======
+Pokemon: 1
+Muk (Lv. 62)  IVs: All 18
+
+======
+509 - Scientist Ernst
+======
+Pokemon: 2
+Weezing (Lv. 61)  IVs: All 18
+Heliolisk (Lv. 59)  IVs: All 18
+
+======
+510 - Scientist Sonia
+======
+Pokemon: 2
+Elgyem (Lv. 60)  IVs: All 18
+Klinklang (Lv. 60)  IVs: All 18
+
+======
+511 - Pokémon Trainer Essentia
+======
+Pokemon: 2
+Jellicent (Lv. 64)  (Ability: Water Absorb) IVs: All 18
+Volcarona (Lv. 66)  (Ability: Flame Body) IVs: All 18
+
+======
+512 - Pokémon Trainer Essentia
+======
+Pokemon: 3
+Whimsicott (Lv. 63)  (Ability: Prankster) IVs: All 18
+Mawile (Lv. 63)  (Ability: Hyper Cutter) IVs: All 18
+Granbull (Lv. 63)  (Ability: Intimidate) IVs: All 18
+
+======
+513 - Pokémon Trainer Essentia
+======
+Pokemon: 1
+Persian (Lv. 66)  (Ability: Limber) IVs: All 18
+
+======
+514 - Pokémon Trainer Essentia
+======
+Pokemon: 2
+Crobat (Lv. 68)  (Ability: Inner Focus) IVs: All 18
+Malamar (Lv. 70)  (Ability: Contrary) IVs: All 18
+
+======
+515 - Pokémon Trainer Essentia
+======
+Pokemon: 2
+Crobat (Lv. 73)  (Ability: Inner Focus) IVs: All 18
+Malamar (Lv. 75)  (Ability: Contrary) IVs: All 18
+
+======
+516 - Lumiose Gang Member Eris
+======
+Pokemon: 2
+Pangoro (Lv. 60)  (Ability: Iron Fist) IVs: All 18
+Bouffalant (Lv. 60)  (Ability: Reckless) IVs: All 18
+
+======
+517 - Lumiose Gang Member Sedna
+======
+Pokemon: 1
+Mandibuzz (Lv. 62)  (Ability: Big Pecks) IVs: All 18
+
+======
+518 - Lumiose Gang Member Nix
+======
+Pokemon: 2
+Druddigon (Lv. 59)  (Ability: Rough Skin) IVs: All 18
+Krookodile (Lv. 61)  (Ability: Intimidate) IVs: All 18
+
+======
+519 - Pokémon Trainer Calem
+======
+Pokemon: 6
+Meowstic (Lv. 66)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 66)  (Ability: Volt Absorb) (Moves: Thunder / Double Kick / Quick Attack) IVs: All 18
+Altaria (Lv. 67)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Clefable (Lv. 68)  (Ability: Magic Guard) (Moves: Moonblast / Meteor Mash / Focus Blast / Sing) IVs: All 18
+Absol (Lv. 68) @Absolite (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 70)  (Ability: Blaze) (Moves: Psychic / Fire Blast / Shadow Ball) IVs: All 18
+
+======
+520 - Pokémon Trainer Calem
+======
+Pokemon: 6
+Meowstic (Lv. 66)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 66)  (Ability: Flash Fire) (Moves: Fire Blast / Bite / Quick Attack) IVs: All 18
+Altaria (Lv. 67)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Clefable (Lv. 68)  (Ability: Magic Guard) (Moves: Moonblast / Meteor Mash / Focus Blast / Sing) IVs: All 18
+Absol (Lv. 68) @Absolite (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 70)  (Ability: Torrent) (Moves: Hydro Pump / Dark Pulse / Ice Beam) IVs: All 18
+
+======
+521 - Pokémon Trainer Calem
+======
+Pokemon: 6
+Meowstic (Lv. 66)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 66)  (Ability: Water Absorb) (Moves: Hydro Pump / Aurora Beam / Quick Attack) IVs: All 18
+Altaria (Lv. 67)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Clefable (Lv. 68)  (Ability: Magic Guard) (Moves: Moonblast / Meteor Mash / Focus Blast / Sing) IVs: All 18
+Absol (Lv. 68) @Absolite (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 70)  (Ability: Overgrow) (Moves: Wood Hammer / Brick Break / Body Slam) IVs: All 18
+
+======
+522 - Sky Trainer Elata
+======
+Pokemon: 2
+Fletchinder (Lv. 28)  (Moves: Flame Charge / Acrobatics / Steel Wing / Confide) IVs: All 10
+Pelipper (Lv. 29)  (Moves: Roost / Payback / Water Pulse / Double Team) IVs: All 10
+
+======
+523 - Swimmer  Dirk
+======
+Pokemon: 1
+Rattata (Lv. 5)  IVs: All 0
+
+======
+524 - Swimmer  Isla
+======
+Pokemon: 2
+Corsola (Lv. 28)  IVs: All 0
+Lanturn (Lv. 28)  IVs: All 0
+
+======
+525 - Team Flare Lysandre
+======
+Pokemon: 4
+Mienshao (Lv. 47)  (Moves: Swords Dance / High Jump Kick / Acrobatics) IVs: All 22
+Honchkrow (Lv. 47)  (Moves: Night Slash / Aerial Ace / Retaliate / Steel Wing) IVs: All 22
+Pyroar (Lv. 49)  (Moves: Hyper Voice / Fire Blast / Dark Pulse) IVs: All 22
+Gyarados (Lv. 51)  (Moves: Aqua Tail / Earthquake / Iron Head / Outrage) IVs: All 22
+
+======
+526 - Team Flare Boss Lysandre
+======
+Pokemon: 4
+Mienshao (Lv. 49)  (Moves: Swords Dance / High Jump Kick / Acrobatics) IVs: All 22
+Honchkrow (Lv. 49)  (Moves: Night Slash / Aerial Ace / Retaliate / Steel Wing) IVs: All 22
+Pyroar (Lv. 51)  (Moves: Hyper Voice / Fire Blast / Dark Pulse) IVs: All 22
+Gyarados (Lv. 53) @Gyaradosite (Moves: Aqua Tail / Earthquake / Iron Head / Outrage) IVs: All 22
+
+======
+527 - Ace Trainer Alanza
+======
+Pokemon: 1
+Weavile (Lv. 60)  (Moves: Night Slash / Quick Attack / Ice Punch / Low Kick) IVs: All 10
+
+======
+528 - Ace Trainer Bence
+======
+Pokemon: 3
+Steelix (Lv. 56)  (Moves: Earthquake / Iron Tail / Thunder Fang / Ice Fang) IVs: All 10
+Electrode (Lv. 56)  (Moves: Light Screen / Thunder / Eerie Impulse / Screech) IVs: All 10
+Kangaskhan (Lv. 57)  (Moves: Dizzy Punch / Crunch / Shadow Claw / Outrage) IVs: All 10
+
+======
+529 - Black Belt Markus
+======
+Pokemon: 1
+Machamp (Lv. 60)  (Moves: Cross Chop / Poison Jab / Earthquake / Stone Edge) IVs: All 7
+
+======
+530 - Black Belt Ander
+======
+Pokemon: 2
+Pangoro (Lv. 57)  (Moves: Hammer Arm / Crunch / Rock Slide / Shadow Claw) IVs: All 7
+Heracross (Lv. 58)  (Moves: Megahorn / Close Combat / Earthquake / Stone Edge) IVs: All 7
+
+======
+531 - Battle Girl Veronique
+======
+Pokemon: 2
+Hawlucha (Lv. 57)  (Moves: Acrobatics / Steel Wing / High Jump Kick / Poison Jab) IVs: All 7
+Mienshao (Lv. 58)  (Moves: High Jump Kick / U-turn / Bounce / Fake Out) IVs: All 7
+
+======
+532 - Battle Girl Sigrid
+======
+Pokemon: 1
+Medicham (Lv. 60)  (Moves: Fire Punch / Thunder Punch / Ice Punch / Zen Headbutt) IVs: All 7
+
+======
+533 - Backpacker Farid
+======
+Pokemon: 1
+Haxorus (Lv. 58)  (Moves: Guillotine / Dragon Claw / Slash / Assurance) IVs: All 0
+
+======
+534 - Psychic William
+======
+Pokemon: 1
+Espeon (Lv. 58)  (Moves: Psychic / Psyshock / Future Sight / Dazzling Gleam) IVs: All 1
+
+======
+535 - Hex Maniac Raziah
+======
+Pokemon: 1
+Gourgeist (Lv. 58)  (Moves: Phantom Force / Bullet Seed / Trick-or-Treat / Flamethrower) IVs: All 1
+
+======
+536 - Fairy Tale Girl Corinne
+======
+Pokemon: 2
+Azumarill (Lv. 56)  (Ability: Huge Power) (Moves: Aqua Tail / Play Rough / Rollout / Brick Break) IVs: All 0
+Florges (Lv. 56)  (Ability: Flower Veil) (Moves: Petal Dance / Moonblast / Misty Terrain / Flash) IVs: All 0
+
+======
+537 - Veteran Gerard
+======
+Pokemon: 2
+Banette (Lv. 57)  (Moves: Shadow Ball / Thunderbolt / Dark Pulse / Thunder Wave) IVs: All 15
+Leafeon (Lv. 59)  (Moves: Leaf Blade / Aerial Ace / Swords Dance / Double-Edge) IVs: All 15
+
+======
+538 - Veteran Timeo
+======
+Pokemon: 2
+Trevenant (Lv. 57)  (Moves: Shadow Claw / Wood Hammer / Will-O-Wisp / Curse) IVs: All 15
+Gigalith (Lv. 59)  (Moves: Stone Edge / Earthquake / Protect / Sandstorm) IVs: All 15
+
+======
+539 - Veteran Inga
+======
+Pokemon: 1
+Talonflame (Lv. 61)  (Moves: Brave Bird / Flare Blitz / Quick Attack / Me First) IVs: All 15
+
+======
+540 - Veteran Catrina
+======
+Pokemon: 2
+Glaceon (Lv. 57)  (Moves: Blizzard / Ice Shard / Mirror Coat / Quick Attack) IVs: All 15
+Snorlax (Lv. 59)  (Moves: Crunch / Body Slam / Power-Up Punch / Earthquake) IVs: All 15
+
+======
+541 - Veteran Gilles
+======
+Pokemon: 3
+Skarmory (Lv. 55)  (Moves: Steel Wing / Slash / Night Slash / X-Scissor) IVs: All 15
+Umbreon (Lv. 55)  (Moves: Quick Attack / Payback / Moonlight / Toxic) IVs: All 15
+Alakazam (Lv. 57)  (Moves: Psychic / Shadow Ball / Dazzling Gleam / Focus Blast) IVs: All 15
+
+======
+542 - Pokémon Ranger Ralf
+======
+Pokemon: 1
+Crobat (Lv. 59)  (Moves: Air Slash / Cross Poison / X-Scissor / Double Team) IVs: All 10
+
+======
+543 - Pokémon Ranger Petra
+======
+Pokemon: 2
+Slowbro (Lv. 57)  (Moves: Surf / Psychic / Flamethrower / Ice Beam) IVs: All 10
+Altaria (Lv. 57)  (Moves: Dazzling Gleam / Dragon Pulse / Roost / Sing) IVs: All 10
+
+======
+544 - Ace Trainer Michele
+======
+Pokemon: 2
+Magcargo (Lv. 57)  (Moves: Fire Blast / Earth Power / Ancient Power / Yawn) IVs: All 10
+Scizor (Lv. 58)  (Moves: Bullet Punch / X-Scissor / Night Slash / Swords Dance) IVs: All 10
+
+======
+545 - Hiker Corwin
+======
+Pokemon: 2
+Torkoal (Lv. 56)  (Moves: Lava Plume / Confide / Earthquake / Gyro Ball) IVs: All 0
+Golem (Lv. 56)  (Moves: Stone Edge / Steamroller / Earthquake / Heavy Slam) IVs: All 0
+
+======
+546 - Artist Vincent
+======
+Pokemon: 1
+Smeargle (Lv. 58)  (Moves: Thunder / Blizzard / Fire Blast / Hydro Pump) IVs: All 12
+
+======
+547 - Brains & Brawn Arman & Hugo
+======
+Pokemon: 2
+Medicham (Lv. 58)  (Moves: Brick Break / Zen Headbutt / Reflect / Light Screen) IVs: All 0
+Gallade (Lv. 60)  (Moves: Leaf Blade / Night Slash / Psycho Cut / Swords Dance) IVs: All 0
+
+======
+548 - Pokémon Ranger Bjorn
+======
+Pokemon: 1
+Sliggoo (Lv. 41)  IVs: All 10
+
+======
+549 - Pokémon Ranger Lee
+======
+Pokemon: 2
+Crawdaunt (Lv. 39)  IVs: All 10
+Sandslash (Lv. 39)  IVs: All 10
+
+======
+550 - Team Flare Grunt
+======
+Pokemon: 2
+Toxicroak (Lv. 44)  IVs: All 0
+Liepard (Lv. 44)  IVs: All 0
+
+======
+551 - Team Flare Grunt
+======
+Pokemon: 2
+Golbat (Lv. 45)  IVs: All 0
+Golbat (Lv. 47)  IVs: All 0
+
+======
+552 - Team Flare Grunt
+======
+Pokemon: 1
+Scrafty (Lv. 48)  IVs: All 0
+
+======
+553 - Team Flare Grunt
+======
+Pokemon: 1
+Golbat (Lv. 46)  IVs: All 0
+
+======
+554 - Twins Nana & Nina
+======
+Pokemon: 2
+Slurpuff (Lv. 53)  IVs: All 0
+Aromatisse (Lv. 53)  IVs: All 0
+
+======
+555 - Poké Fan Corey
+======
+Pokemon: 1
+Dedenne (Lv. 54)  IVs: All 0
+
+======
+556 - Poké Fan Roisin
+======
+Pokemon: 2
+Snubbull (Lv. 51)  IVs: All 0
+Granbull (Lv. 53)  IVs: All 0
+
+======
+557 - Fairy Tale Girl Wynne
+======
+Pokemon: 2
+Klefki (Lv. 52)  IVs: All 0
+Azumarill (Lv. 52)  IVs: All 0
+
+======
+558 - Hex Maniac Desdemona
+======
+Pokemon: 1
+Trevenant (Lv. 54)  IVs: All 1
+
+======
+559 - Battle Chatelaine Nita
+======
+Pokemon: 1
+Glameow (Lv. 50)  IVs: All 12
+
+======
+560 - Battle Chatelaine Evelyn
+======
+Pokemon: 2
+Finneon (Lv. 50)  IVs: All 12
+Mankey (Lv. 50)  IVs: All 12
+
+======
+561 - Battle Chatelaine Dana
+======
+Pokemon: 3
+Cottonee (Lv. 50)  IVs: All 12
+Magnemite (Lv. 50)  IVs: All 12
+Swinub (Lv. 50)  IVs: All 12
+
+======
+562 - Battle Chatelaine Morgan
+======
+Pokemon: 3
+Mantyke (Lv. 50)  IVs: All 12
+Gulpin (Lv. 50)  IVs: All 12
+Deerling (Lv. 50)  IVs: All 12
+
+======
+563 - Chef Kamaboko
+======
+Pokemon: 1
+Pidgeotto (Lv. 30)  IVs: All 1
+
+======
+564 - Garçon Jacopo
+======
+Pokemon: 1
+Gabite (Lv. 30)  IVs: All 1
+
+======
+565 - Waitress Paget
+======
+Pokemon: 1
+Kirlia (Lv. 30)  IVs: All 1
+
+======
+566 - Owner Toro
+======
+Pokemon: 1
+Diggersby (Lv. 30)  IVs: All 1
+
+======
+567 - Punk Guy Faust
+======
+Pokemon: 1
+Haunter (Lv. 30)  IVs: All 1
+
+======
+568 - Punk Girl Lillian
+======
+Pokemon: 1
+Krokorok (Lv. 30)  IVs: All 1
+
+======
+569 - Black Belt Killian
+======
+Pokemon: 1
+Machoke (Lv. 30)  (Moves: Karate Chop / Rock Tomb) IVs: All 1
+
+======
+570 - Beauty Anais
+======
+Pokemon: 1
+Seadra (Lv. 34)  (Ability: Sniper) (Moves: Brine / Twister / Focus Energy) IVs: All 5
+
+======
+571 - Beauty Cassandra
+======
+Pokemon: 1
+Roselia (Lv. 34)  (Ability: Poison Point) (Moves: Ingrain / Giga Drain / Leech Seed / Toxic) IVs: All 5
+
+======
+572 - Beauty Aimee
+======
+Pokemon: 1
+Fletchinder (Lv. 34)  (Ability: Flame Body) (Moves: Flame Charge / Quick Attack) IVs: All 5
+
+======
+573 - Pokémon Trainer Tierno
+======
+Pokemon: 1
+Corphish (Lv. 12)  (Ability: Shell Armor) (Moves: Swords Dance / Vice Grip) IVs: All 15
+
+======
+574 - Ace Trainer Anton
+======
+Pokemon: 3
+Weezing (Lv. 65) @Toxic Orb (Moves: Sludge Bomb / Dark Pulse / Shadow Ball / Protect) IVs: All 10
+Bronzong (Lv. 65)  (Ability: Levitate) (Moves: Gravity / Imprison / Psychic / Grass Knot) IVs: All 10
+Eelektross (Lv. 66)  (Moves: Gastro Acid / Thunderbolt / Flamethrower / Flash Cannon) IVs: All 10
+
+======
+575 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Espurr (Lv. 18)  (Ability: Keen Eye) IVs: All 18
+Absol (Lv. 18)  (Ability: Super Luck) IVs: All 18
+Braixen (Lv. 20)  (Ability: Blaze) IVs: All 18
+
+======
+576 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Espurr (Lv. 18)  (Ability: Keen Eye) IVs: All 18
+Absol (Lv. 18)  (Ability: Super Luck) IVs: All 18
+Frogadier (Lv. 20)  (Ability: Torrent) IVs: All 18
+
+======
+577 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Espurr (Lv. 18)  (Ability: Keen Eye) IVs: All 18
+Absol (Lv. 18)  (Ability: Super Luck) IVs: All 18
+Quilladin (Lv. 20)  (Ability: Overgrow) IVs: All 18
+
+======
+578 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 31)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 31)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Braixen (Lv. 33)  (Ability: Blaze) (Moves: Psybeam / Fire Spin) IVs: All 18
+
+======
+579 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 31)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 31)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Frogadier (Lv. 33)  (Ability: Torrent) (Moves: Water Pulse / Quick Attack) IVs: All 18
+
+======
+580 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 31)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 31)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Quilladin (Lv. 33)  (Ability: Overgrow) (Moves: Needle Arm / Bite) IVs: All 18
+
+======
+581 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 28)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Light Screen / Disarming Voice) IVs: All 18
+Absol (Lv. 28)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Braixen (Lv. 30)  (Ability: Blaze) (Moves: Psybeam / Fire Spin) IVs: All 18
+
+======
+582 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 28)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Light Screen / Disarming Voice) IVs: All 18
+Absol (Lv. 28)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Frogadier (Lv. 30)  (Ability: Torrent) (Moves: Water Pulse / Quick Attack) IVs: All 18
+
+======
+583 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 28)  (Ability: Keen Eye) (Moves: Psybeam / Fake Out / Light Screen / Disarming Voice) IVs: All 18
+Absol (Lv. 28)  (Ability: Super Luck) (Moves: Slash / Bite / Quick Attack) IVs: All 18
+Quilladin (Lv. 30)  (Ability: Overgrow) (Moves: Needle Arm / Bite) IVs: All 18
+
+======
+584 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 35)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 35)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Delphox (Lv. 37)  (Ability: Blaze) (Moves: Mystical Fire / Psybeam) IVs: All 18
+
+======
+585 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 35)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 35)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Greninja (Lv. 37)  (Ability: Torrent) (Moves: Water Shuriken / Quick Attack) IVs: All 18
+
+======
+586 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 35)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 35)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Chesnaught (Lv. 37)  (Ability: Overgrow) (Moves: Seed Bomb / Bite) IVs: All 18
+
+======
+587 - Pokémon Trainer Serena
+======
+Pokemon: 4
+Meowstic (Lv. 44)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 44)  (Ability: Volt Absorb) (Moves: Discharge / Double Kick / Quick Attack) IVs: All 18
+Absol (Lv. 44)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 46)  (Ability: Blaze) (Moves: Flamethrower / Psychic) IVs: All 18
+
+======
+588 - Pokémon Trainer Serena
+======
+Pokemon: 4
+Meowstic (Lv. 44)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 44)  (Ability: Flash Fire) (Moves: Lava Plume / Bite / Quick Attack) IVs: All 18
+Absol (Lv. 44)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 46)  (Ability: Torrent) (Moves: Water Shuriken / Dark Pulse) IVs: All 18
+
+======
+589 - Pokémon Trainer Serena
+======
+Pokemon: 4
+Meowstic (Lv. 44)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 44)  (Ability: Water Absorb) (Moves: Muddy Water / Aurora Beam / Quick Attack) IVs: All 18
+Absol (Lv. 44)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 46)  (Ability: Overgrow) (Moves: Seed Bomb / Brick Break) IVs: All 18
+
+======
+590 - Pokémon Trainer Serena
+======
+Pokemon: 4
+Meowstic (Lv. 45)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 46)  (Ability: Volt Absorb) (Moves: Discharge / Double Kick / Quick Attack) IVs: All 18
+Absol (Lv. 46)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 49)  (Ability: Blaze) (Moves: Flamethrower / Psychic) IVs: All 18
+
+======
+591 - Pokémon Trainer Serena
+======
+Pokemon: 4
+Meowstic (Lv. 45)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 46)  (Ability: Flash Fire) (Moves: Lava Plume / Bite / Quick Attack) IVs: All 18
+Absol (Lv. 46)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 49)  (Ability: Torrent) (Moves: Water Shuriken / Dark Pulse) IVs: All 18
+
+======
+592 - Pokémon Trainer Serena
+======
+Pokemon: 4
+Meowstic (Lv. 45)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 46)  (Ability: Water Absorb) (Moves: Muddy Water / Aurora Beam / Quick Attack) IVs: All 18
+Absol (Lv. 46)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 49)  (Ability: Overgrow) (Moves: Seed Bomb / Brick Break) IVs: All 18
+
+======
+593 - Pokémon Trainer Serena
+======
+Pokemon: 5
+Meowstic (Lv. 57)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 57)  (Ability: Volt Absorb) (Moves: Discharge / Double Kick / Quick Attack) IVs: All 18
+Altaria (Lv. 58)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Absol (Lv. 59)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 61)  (Ability: Blaze) (Moves: Psychic / Flamethrower / Shadow Ball) IVs: All 18
+
+======
+594 - Pokémon Trainer Serena
+======
+Pokemon: 5
+Meowstic (Lv. 57)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 57)  (Ability: Flash Fire) (Moves: Lava Plume / Bite / Quick Attack) IVs: All 18
+Altaria (Lv. 58)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Absol (Lv. 59)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 61)  (Ability: Torrent) (Moves: Water Shuriken / Dark Pulse / Ice Beam) IVs: All 18
+
+======
+595 - Pokémon Trainer Serena
+======
+Pokemon: 5
+Meowstic (Lv. 57)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 57)  (Ability: Water Absorb) (Moves: Muddy Water / Aurora Beam / Quick Attack) IVs: All 18
+Altaria (Lv. 58)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Absol (Lv. 59)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 61)  (Ability: Overgrow) (Moves: Seed Bomb / Brick Break / Body Slam) IVs: All 18
+
+======
+596 - Pokémon Trainer Serena
+======
+Pokemon: 2
+Fletchling (Lv. 15)  (Ability: Gale Wings) (Moves: Peck / Quick Attack / Growl) IVs: All 18
+Braixen (Lv. 16)  (Ability: Blaze) (Moves: Ember / Scratch) IVs: All 18
+
+======
+597 - Pokémon Trainer Serena
+======
+Pokemon: 2
+Fletchling (Lv. 15)  (Ability: Gale Wings) (Moves: Peck / Quick Attack / Growl) IVs: All 18
+Frogadier (Lv. 16)  (Ability: Torrent) (Moves: Bubble / Quick Attack) IVs: All 18
+
+======
+598 - Pokémon Trainer Serena
+======
+Pokemon: 2
+Fletchling (Lv. 15)  (Ability: Gale Wings) (Moves: Peck / Quick Attack / Growl) IVs: All 18
+Quilladin (Lv. 16)  (Ability: Overgrow) (Moves: Vine Whip / Bite) IVs: All 18
+
+======
+599 - Pokémon Trainer Serena
+======
+Pokemon: 6
+Meowstic (Lv. 66)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Jolteon (Lv. 66)  (Ability: Volt Absorb) (Moves: Thunder / Double Kick / Quick Attack) IVs: All 18
+Altaria (Lv. 67)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Clefable (Lv. 68)  (Ability: Magic Guard) (Moves: Moonblast / Meteor Mash / Focus Blast / Sing) IVs: All 18
+Absol (Lv. 68) @Absolite (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Delphox (Lv. 70)  (Ability: Blaze) (Moves: Psychic / Fire Blast / Shadow Ball) IVs: All 18
+
+======
+600 - Pokémon Trainer Serena
+======
+Pokemon: 6
+Meowstic (Lv. 66)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Flareon (Lv. 66)  (Ability: Flash Fire) (Moves: Fire Blast / Bite / Quick Attack) IVs: All 18
+Altaria (Lv. 67)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Clefable (Lv. 68)  (Ability: Magic Guard) (Moves: Moonblast / Meteor Mash / Focus Blast / Sing) IVs: All 18
+Absol (Lv. 68) @Absolite (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Greninja (Lv. 70)  (Ability: Torrent) (Moves: Hydro Pump / Dark Pulse / Ice Beam) IVs: All 18
+
+======
+601 - Pokémon Trainer Serena
+======
+Pokemon: 6
+Meowstic (Lv. 66)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Shadow Ball) IVs: All 18
+Vaporeon (Lv. 66)  (Ability: Water Absorb) (Moves: Hydro Pump / Aurora Beam / Quick Attack) IVs: All 18
+Altaria (Lv. 67)  (Ability: Natural Cure) (Moves: Dragon Pulse / Dazzling Gleam / Confide) IVs: All 18
+Clefable (Lv. 68)  (Ability: Magic Guard) (Moves: Moonblast / Meteor Mash / Focus Blast / Sing) IVs: All 18
+Absol (Lv. 68) @Absolite (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Night Slash) IVs: All 18
+Chesnaught (Lv. 70)  (Ability: Overgrow) (Moves: Wood Hammer / Brick Break / Body Slam) IVs: All 18
+
+======
+602 - Pokémon Trainer AZ
+======
+Pokemon: 3
+Torkoal (Lv. 60)  (Ability: White Smoke) (Moves: Lava Plume / Stone Edge / Body Slam / Return) IVs: All 25
+Sigilyph (Lv. 60)  (Ability: Magic Guard) (Moves: Air Slash / Psychic / Cosmic Power / Return) IVs: All 25
+Golurk (Lv. 60)  (Ability: Iron Fist) (Moves: Heavy Slam / Phantom Force / Mega Punch / Return) IVs: All 25
+
+======
+603 - Rising Star Tyson
+======
+Pokemon: 2
+Bidoof (Lv. 12)  IVs: All 5
+Oddish (Lv. 10)  IVs: All 5
+
+======
+604 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 37)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 37)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Delphox (Lv. 39)  (Ability: Blaze) (Moves: Mystical Fire / Psybeam) IVs: All 18
+
+======
+605 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 37)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 37)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Greninja (Lv. 39)  (Ability: Torrent) (Moves: Water Shuriken / Quick Attack) IVs: All 18
+
+======
+606 - Pokémon Trainer Calem
+======
+Pokemon: 3
+Meowstic (Lv. 37)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 37)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Chesnaught (Lv. 39)  (Ability: Overgrow) (Moves: Seed Bomb / Bite) IVs: All 18
+
+======
+607 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 37)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 37)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Delphox (Lv. 39)  (Ability: Blaze) (Moves: Mystical Fire / Psybeam) IVs: All 18
+
+======
+608 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 37)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 37)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Greninja (Lv. 39)  (Ability: Torrent) (Moves: Water Shuriken / Quick Attack) IVs: All 18
+
+======
+609 - Pokémon Trainer Serena
+======
+Pokemon: 3
+Meowstic (Lv. 37)  (Ability: Keen Eye) (Moves: Psychic / Fake Out / Disarming Voice / Light Screen) IVs: All 18
+Absol (Lv. 37)  (Ability: Super Luck) (Moves: Slash / Swords Dance / Quick Attack / Bite) IVs: All 18
+Chesnaught (Lv. 39)  (Ability: Overgrow) (Moves: Seed Bomb / Bite) IVs: All 18
+
+======
+610 - Team Flare Grunt
+======
+Pokemon: 1
+Scrafty (Lv. 48)  IVs: All 0
+
+======
+611 - Team Flare Grunt
+======
+Pokemon: 1
+Liepard (Lv. 48)  IVs: All 0
+
+======
+612 - Team Flare Grunt
+======
+Pokemon: 1
+Mightyena (Lv. 48)  IVs: All 0
+
+======
+613 - Leader Korrina
+======
+Pokemon: 2
+Lucario (Lv. 25)  (Ability: Steadfast) (Moves: Feint / Metal Sound / Swords Dance / Power-Up Punch) IVs: All 18
+Lucario (Lv. 25)  (Ability: Steadfast) (Moves: Feint / Metal Sound / Swords Dance / Power-Up Punch) IVs: All 18
+
+======
+614 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Liepard (Lv. 45)  IVs: All 0
+
+======
+615 - Team Flare UNKNOWN
+======
+Pokemon: 2
+Pignite (Lv. 20) @Charcoal IVs: All 31
+Pidove (Lv. 18)  (Ability: Big Pecks) IVs: All 31
+
+======
+616 - Team Flare UNKNOWN
+======
+Pokemon: 2
+Dewott (Lv. 20) @Mystic Water IVs: All 31
+Pidove (Lv. 18)  (Ability: Big Pecks) IVs: All 31
+
+======
+617 - Team Flare UNKNOWN
+======
+Pokemon: 2
+Servine (Lv. 20) @Miracle Seed IVs: All 31
+Pidove (Lv. 18)  (Ability: Big Pecks) IVs: All 31
+
+======
+618 - Viscount UNKNOWN
+======
+Pokemon: 6
+Clefable (Lv. 75)  (Moves: Pound) IVs: All 31
+Throh (Lv. 75)  (Moves: Pound) IVs: All 31
+Amoonguss (Lv. 75)  (Moves: Pound) IVs: All 31
+Alomomola (Lv. 75)  (Moves: Pound) IVs: All 31
+Seismitoad (Lv. 75)  (Moves: Pound) IVs: All 31
+Snorlax (Lv. 77) @Leftovers (Moves: Pound) IVs: All 31
+
+======
+619 - Tourist UNKNOWN
+======
+Pokemon: 2
+Purrloin (Lv. 15)  (Moves: Pursuit / Assist / Fury Swipes) IVs: All 0
+Swoobat (Lv. 15)  (Moves: Heart Stamp / Gust / Assurance / Odor Sleuth) IVs: All 0
+
+======
+620 - Lady UNKNOWN
+======
+Pokemon: 1
+Lillipup (Lv. 5)  IVs: All 0
+
+======
+621 - Viscountess UNKNOWN
+======
+Pokemon: 2
+Servine (Lv. 23) @Sitrus Berry IVs: All 31
+Tranquill (Lv. 21)  IVs: All 31
+
+======
+622 - Tourist UNKNOWN
+======
+Pokemon: 2
+Golurk (Lv. 55)  (Ability: Iron Fist) (Moves: Shadow Punch / Heavy Slam / Mega Punch / Bulldoze) IVs: All 0
+Sigilyph (Lv. 55)  (Moves: Air Slash / Psychic / Ice Beam / Cosmic Power) IVs: All 0
+
+======
+623 - Pokémon Trainer UNKNOWN
+======
+Pokemon: 1
+Cofagrigus (Lv. 55)  (Moves: Shadow Ball / Grass Knot / Psychic / Calm Mind) IVs: All 0
+
+======
+624 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Drifblim (Lv. 55)  (Ability: Aftermath) (Moves: Shadow Ball / Payback / Baton Pass / Stockpile) IVs: All 0
+Claydol (Lv. 55)  (Moves: Earth Power / Psychic / Shadow Ball / Cosmic Power) IVs: All 0
+
+======
+625 - Fisherman UNKNOWN
+======
+Pokemon: 1
+Reuniclus (Lv. 55)  (Ability: Magic Guard) (Moves: Psychic / Shadow Ball / Endeavor / Recover) IVs: All 0
+
+======
+626 - Tourist UNKNOWN
+======
+Pokemon: 2
+Whimsicott (Lv. 55)  (Ability: Prankster) (Moves: Giga Drain / Tailwind / Poison Powder / U-turn) IVs: All 0
+Unfezant (Lv. 55)  (Ability: Super Luck) (Moves: Air Slash / Quick Attack / Roost / Feather Dance) IVs: All 0
+
+======
+627 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Crobat (Lv. 55)  (Moves: Poison Fang / Acrobatics / Confuse Ray / Mean Look) IVs: All 0
+Lilligant (Lv. 55)  (Moves: Energy Ball / Quiver Dance / Teeter Dance) IVs: All 0
+
+======
+628 - Butler UNKNOWN
+======
+Pokemon: 2
+Sigilyph (Lv. 55)  (Ability: Magic Guard) (Moves: Psychic / Air Slash / Charge Beam / Hypnosis) IVs: All 0
+Altaria (Lv. 55)  (Moves: Dragon Claw / Aerial Ace / Take Down / Dragon Dance) IVs: All 0
+
+======
+629 - Poké Fan Family UNKNOWN
+======
+Pokemon: 1
+Clefable (Lv. 54)  IVs: All 0
+
+======
+630 - Tourist UNKNOWN
+======
+Pokemon: 2
+Durant (Lv. 55)  (Ability: Swarm) (Moves: Iron Head / Bug Bite / Crunch / Shadow Claw) IVs: All 0
+Ferrothorn (Lv. 55)  (Moves: Iron Head / Power Whip / Payback / Ingrain) IVs: All 0
+
+======
+631 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Heatmor (Lv. 55)  (Ability: Flash Fire) (Moves: Flame Burst / Slash / Bug Bite / Rock Tomb) IVs: All 0
+Galvantula (Lv. 55)  (Ability: Unnerve) (Moves: Charge Beam / Signal Beam / Slash / Thunder Wave) IVs: All 0
+
+======
+632 - Worker UNKNOWN
+======
+Pokemon: 2
+Beartic (Lv. 55)  (Moves: Icicle Crash / Slash / Brine / Brick Break) IVs: All 0
+Throh (Lv. 55)  (Ability: Guts) (Moves: Circle Throw / Rock Slide / Body Slam / Bulk Up) IVs: All 0
+
+======
+633 - Butler UNKNOWN
+======
+Pokemon: 2
+Zebstrika (Lv. 55)  (Ability: Lightning Rod) (Moves: Discharge / Flame Charge / Stomp / Pursuit) IVs: All 0
+Sawk (Lv. 55)  (Ability: Sturdy) (Moves: Brick Break / Rock Tomb / Retaliate / Bulk Up) IVs: All 0
+
+======
+634 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Fraxure (Lv. 55)  (Ability: Mold Breaker) (Moves: Dual Chop / Slash / Rock Smash / Dragon Dance) IVs: All 0
+Lapras (Lv. 55)  (Ability: Shell Armor) (Moves: Ice Beam / Brine / Body Slam / Bulldoze) IVs: All 0
+
+======
+635 - Leader UNKNOWN
+======
+Pokemon: 1
+Heracross (Lv. 55)  (Ability: Guts) (Moves: Storm Throw / Body Slam / Bulldoze / Endure) IVs: All 0
+
+======
+636 - Tourist UNKNOWN
+======
+Pokemon: 2
+Metang (Lv. 55)  (Moves: Metal Claw / Rock Slide / Take Down / Agility) IVs: All 0
+Pinsir (Lv. 55)  (Moves: X-Scissor / Submission / Thrash / Rock Tomb) IVs: All 0
+
+======
+637 - Leader UNKNOWN
+======
+Pokemon: 1
+Sawk (Lv. 55)  (Moves: Low Sweep / Retaliate / Payback / Endure) IVs: All 0
+
+======
+638 - Tourist UNKNOWN
+======
+Pokemon: 2
+Swanna (Lv. 55)  (Ability: Big Pecks) (Moves: Brave Bird / Scald / Roost / Rain Dance) IVs: All 0
+Ampharos (Lv. 55)  (Moves: Thunder / Bulldoze / Brick Break / Cotton Guard) IVs: All 0
+
+======
+639 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Galvantula (Lv. 55)  (Moves: Thunderbolt / Signal Beam / Energy Ball / Sucker Punch) IVs: All 0
+Darmanitan (Lv. 55)  (Moves: Flare Blitz / Superpower / Thrash / Rock Slide) IVs: All 0
+
+======
+640 - Worker UNKNOWN
+======
+Pokemon: 1
+Flygon (Lv. 56)  (Moves: Dragon Claw / Bulldoze / Flamethrower / Rock Slide) IVs: All 0
+
+======
+641 - Poké Fan UNKNOWN
+======
+Pokemon: 1
+Sawsbuck (Lv. 53)  IVs: All 0
+
+======
+642 - Worker UNKNOWN
+======
+Pokemon: 2
+Braviary (Lv. 55)  (Ability: Sheer Force) (Moves: Crush Claw / Superpower / Rock Slide / U-turn) IVs: All 0
+Carracosta (Lv. 55)  (Ability: Solid Rock) (Moves: Aqua Tail / Smack Down / Ice Beam / Shell Smash) IVs: All 0
+
+======
+643 - Butler UNKNOWN
+======
+Pokemon: 2
+Mandibuzz (Lv. 55)  (Ability: Big Pecks) (Moves: Punishment / Bone Rush / Swagger / U-turn) IVs: All 0
+Archeops (Lv. 55)  (Moves: Acrobatics / U-turn / Crunch / Sandstorm) IVs: All 0
+
+======
+644 - Countess UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 15)  IVs: All 0
+
+======
+645 - Countess UNKNOWN
+======
+Pokemon: 1
+Purrloin (Lv. 15)  IVs: All 0
+
+======
+646 - Countess UNKNOWN
+======
+Pokemon: 1
+Pansage (Lv. 15)  IVs: All 0
+
+======
+647 - Countess UNKNOWN
+======
+Pokemon: 1
+Pansear (Lv. 15)  IVs: All 0
+
+======
+648 - Countess UNKNOWN
+======
+Pokemon: 1
+Panpour (Lv. 15)  IVs: All 0
+
+======
+649 - Preschooler UNKNOWN
+======
+Pokemon: 1
+Blitzle (Lv. 24)  IVs: All 0
+
+======
+650 - Lady UNKNOWN
+======
+Pokemon: 2
+Pidove (Lv. 16)  IVs: All 0
+Patrat (Lv. 16)  IVs: All 0
+
+======
+651 - Rich Boy UNKNOWN
+======
+Pokemon: 2
+Venipede (Lv. 16)  IVs: All 0
+Psyduck (Lv. 16)  IVs: All 0
+
+======
+652 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Magnemite (Lv. 18)  IVs: All 0
+Basculin (Lv. 18)  IVs: All 0
+
+======
+653 - Tourist UNKNOWN
+======
+Pokemon: 2
+Herdier (Lv. 18)  IVs: All 0
+Marill (Lv. 18)  IVs: All 0
+
+======
+654 - Garçon UNKNOWN
+======
+Pokemon: 2
+Budew (Lv. 16)  IVs: All 0
+Sewaddle (Lv. 16)  IVs: All 0
+
+======
+655 - Preschooler UNKNOWN
+======
+Pokemon: 2
+Patrat (Lv. 16)  IVs: All 0
+Zubat (Lv. 16)  IVs: All 0
+
+======
+656 - Ace Trainer UNKNOWN
+======
+Pokemon: 2
+Purrloin (Lv. 16)  IVs: All 0
+Eevee (Lv. 16)  IVs: All 0
+
+======
+657 - Artist Family UNKNOWN
+======
+Pokemon: 1
+Purrloin (Lv. 17)  IVs: All 0
+
+======
+658 - Artist UNKNOWN
+======
+Pokemon: 1
+Lillipup (Lv. 17)  IVs: All 0
+
+======
+659 - Punk Girl UNKNOWN
+======
+Pokemon: 1
+Elekid (Lv. 17)  IVs: All 0
+
+======
+660 - Marquis UNKNOWN
+======
+Pokemon: 3
+Stoutland (Lv. 67)  (Ability: Intimidate) (Moves: Take Down / Crunch / Wild Charge / Superpower) IVs: All 31
+Unfezant (Lv. 65)  (Ability: Super Luck) (Moves: Return / Air Slash / U-turn / Hypnosis) IVs: All 31
+Cinccino (Lv. 65)  (Moves: Tail Slap / Rock Blast / Bullet Seed / Helping Hand) IVs: All 31
+
+======
+661 - Elite Four UNKNOWN
+======
+Pokemon: 3
+Venonat (Lv. 63)  (Ability: Compound Eyes) IVs: All 0
+Yanma (Lv. 63)  (Ability: Speed Boost) IVs: All 0
+Venomoth (Lv. 63)  (Ability: Tinted Lens) IVs: All 0
+
+======
+662 - Elite Four UNKNOWN
+======
+Pokemon: 3
+Oddish (Lv. 63)  IVs: All 0
+Tangela (Lv. 63)  IVs: All 0
+Bellossom (Lv. 63)  IVs: All 0
+
+======
+663 - Tourist UNKNOWN
+======
+Pokemon: 3
+Braviary (Lv. 66)  IVs: All 0
+Forretress (Lv. 66)  IVs: All 0
+Seismitoad (Lv. 66)  IVs: All 0
+
+======
+664 - Black Belt UNKNOWN
+======
+Pokemon: 3
+Mandibuzz (Lv. 66)  IVs: All 0
+Ferrothorn (Lv. 66)  IVs: All 0
+Toxicroak (Lv. 66)  IVs: All 0
+
+======
+665 - Leader UNKNOWN
+======
+Pokemon: 3
+Hitmonchan (Lv. 64)  IVs: All 0
+Machoke (Lv. 64)  IVs: All 0
+Scrafty (Lv. 64)  IVs: All 0
+
+======
+666 - Leader UNKNOWN
+======
+Pokemon: 3
+Hitmonlee (Lv. 64)  IVs: All 0
+Gurdurr (Lv. 64)  IVs: All 0
+Toxicroak (Lv. 64)  IVs: All 0
+
+======
+667 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Breloom (Lv. 65)  (Ability: Effect Spore) IVs: All 0
+Donphan (Lv. 65)  IVs: All 0
+Rapidash (Lv. 65)  IVs: All 0
+
+======
+668 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Exeggutor (Lv. 65)  (Ability: Chlorophyll) IVs: All 0
+Luxray (Lv. 65)  IVs: All 0
+Ursaring (Lv. 65)  IVs: All 0
+
+======
+669 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Tauros (Lv. 65)  IVs: All 0
+Ninetales (Lv. 65)  IVs: All 0
+Zebstrika (Lv. 65)  IVs: All 0
+
+======
+670 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Pidgeot (Lv. 65)  IVs: All 0
+Houndoom (Lv. 65)  IVs: All 0
+Beartic (Lv. 65)  IVs: All 0
+
+======
+671 - Worker UNKNOWN
+======
+Pokemon: 3
+Ludicolo (Lv. 67)  (Moves: Energy Ball / Ice Beam / Hydro Pump / Rain Dance) IVs: All 0
+Electivire (Lv. 67)  (Moves: Thunder / Earthquake / Rock Slide / Thunder Wave) IVs: All 0
+Scizor (Lv. 67)  (Ability: Technician) (Moves: Bullet Punch / Bug Bite / Aerial Ace / Swords Dance) IVs: All 0
+
+======
+672 - Butler UNKNOWN
+======
+Pokemon: 3
+Crobat (Lv. 67)  (Moves: Cross Poison / Acrobatics / U-turn / Sunny Day) IVs: All 0
+Magmortar (Lv. 67)  (Moves: Flare Blitz / Psychic / Thunderbolt / Will-O-Wisp) IVs: All 0
+Leafeon (Lv. 67)  (Moves: Leaf Blade / X-Scissor / Quick Attack / Swords Dance) IVs: All 0
+
+======
+673 - Lady UNKNOWN
+======
+Pokemon: 3
+Mankey (Lv. 63)  IVs: All 0
+Snubbull (Lv. 63)  IVs: All 0
+Crawdaunt (Lv. 63)  IVs: All 0
+
+======
+674 - Lady UNKNOWN
+======
+Pokemon: 3
+Meowth (Lv. 63)  IVs: All 0
+Poochyena (Lv. 63)  IVs: All 0
+Fearow (Lv. 63)  IVs: All 0
+
+======
+675 - Schoolgirl UNKNOWN
+======
+Pokemon: 3
+Exeggcute (Lv. 63)  IVs: All 0
+Miltank (Lv. 63)  IVs: All 0
+Leavanny (Lv. 63)  IVs: All 0
+
+======
+676 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 3
+Wooper (Lv. 62)  IVs: All 0
+Tympole (Lv. 62)  IVs: All 0
+Poliwhirl (Lv. 62)  IVs: All 0
+
+======
+677 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 3
+Burmy (Lv. 62)  IVs: All 0
+Paras (Lv. 62)  IVs: All 0
+Scyther (Lv. 62)  IVs: All 0
+
+======
+678 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 3
+Dratini (Lv. 62)  IVs: All 0
+Bagon (Lv. 62)  IVs: All 0
+Gible (Lv. 62)  IVs: All 0
+
+======
+679 - Team Flare UNKNOWN
+======
+Pokemon: 2
+Cherrim (Lv. 63)  IVs: All 0
+Cherrim (Lv. 63)  IVs: All 0
+
+======
+680 - Leader UNKNOWN
+======
+Pokemon: 4
+Growlithe (Lv. 62)  IVs: All 0
+Houndour (Lv. 62)  IVs: All 0
+Mightyena (Lv. 62)  IVs: All 0
+Stoutland (Lv. 62)  IVs: All 0
+
+======
+681 - Leader UNKNOWN
+======
+Pokemon: 4
+Meowth (Lv. 62)  IVs: All 0
+Glameow (Lv. 62)  IVs: All 0
+Delcatty (Lv. 62)  IVs: All 0
+Liepard (Lv. 62)  IVs: All 0
+
+======
+682 - Leader UNKNOWN
+======
+Pokemon: 3
+Gulpin (Lv. 63)  IVs: All 0
+Garbodor (Lv. 63)  IVs: All 0
+Magnezone (Lv. 63)  IVs: All 0
+
+======
+683 - Poké Fan UNKNOWN
+======
+Pokemon: 3
+Croagunk (Lv. 63)  IVs: All 0
+Cacnea (Lv. 63)  IVs: All 0
+Kecleon (Lv. 63)  IVs: All 0
+
+======
+684 - Poké Fan UNKNOWN
+======
+Pokemon: 3
+Cubone (Lv. 63)  IVs: All 0
+Stunky (Lv. 63)  IVs: All 0
+Torkoal (Lv. 63)  IVs: All 0
+
+======
+685 - Worker UNKNOWN
+======
+Pokemon: 2
+Gigalith (Lv. 55)  (Moves: Rock Blast / Bulldoze / Flash Cannon / Sandstorm) IVs: All 0
+Skarmory (Lv. 55)  (Ability: Sturdy) (Moves: Steel Wing / Night Slash / X-Scissor / Swords Dance) IVs: All 0
+
+======
+686 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Probopass (Lv. 55)  (Ability: Sturdy) (Moves: Flash Cannon / Discharge / Thunder Wave / Power Gem) IVs: All 0
+
+======
+687 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Camerupt (Lv. 55)  (Moves: Lava Plume / Rock Slide / Earthquake / Will-O-Wisp) IVs: All 0
+
+======
+688 - Schoolgirl UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 1)  IVs: All 0
+
+======
+689 - Artist UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 1)  IVs: All 0
+
+======
+690 - Poké Fan UNKNOWN
+======
+Pokemon: 1
+Darumaka (Lv. 22)  IVs: All 0
+
+======
+691 - Poké Fan UNKNOWN
+======
+Pokemon: 1
+Sandshrew (Lv. 22)  IVs: All 0
+
+======
+692 - Poké Fan UNKNOWN
+======
+Pokemon: 1
+Drilbur (Lv. 22)  IVs: All 0
+
+======
+693 - Poké Fan UNKNOWN
+======
+Pokemon: 1
+Sandile (Lv. 22)  IVs: All 0
+
+======
+694 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Darumaka (Lv. 23)  IVs: All 0
+
+======
+695 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Magby (Lv. 23)  IVs: All 0
+
+======
+696 - Fisherman UNKNOWN
+======
+Pokemon: 1
+Woobat (Lv. 23)  IVs: All 0
+
+======
+697 - Pokémon Trainer UNKNOWN
+======
+Pokemon: 1
+Woobat (Lv. 23)  IVs: All 0
+
+======
+698 - Champion UNKNOWN
+======
+Pokemon: 1
+Petilil (Lv. 22)  IVs: All 0
+
+======
+699 - Poké Fan Family UNKNOWN
+======
+Pokemon: 2
+Solosis (Lv. 32)  IVs: All 0
+Gothita (Lv. 32)  IVs: All 0
+
+======
+700 - Poké Fan Family UNKNOWN
+======
+Pokemon: 1
+Swoobat (Lv. 38)  IVs: All 0
+
+======
+701 - Champion UNKNOWN
+======
+Pokemon: 1
+Leavanny (Lv. 35)  IVs: All 0
+
+======
+702 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 3
+Marowak (Lv. 63)  IVs: All 0
+Rhydon (Lv. 63)  IVs: All 0
+Gigalith (Lv. 63)  IVs: All 0
+
+======
+703 - Leader UNKNOWN
+======
+Pokemon: 3
+Medicham (Lv. 64)  IVs: All 0
+Pinsir (Lv. 64)  IVs: All 0
+Mienshao (Lv. 64)  IVs: All 0
+
+======
+704 - Leader UNKNOWN
+======
+Pokemon: 3
+Primeape (Lv. 64)  IVs: All 0
+Heracross (Lv. 64)  IVs: All 0
+Scrafty (Lv. 64)  IVs: All 0
+
+======
+705 - Leader UNKNOWN
+======
+Pokemon: 3
+Throh (Lv. 64)  IVs: All 0
+Gurdurr (Lv. 64)  IVs: All 0
+Machamp (Lv. 64)  IVs: All 0
+
+======
+706 - Leader UNKNOWN
+======
+Pokemon: 3
+Sawk (Lv. 64)  IVs: All 0
+Machoke (Lv. 64)  IVs: All 0
+Conkeldurr (Lv. 64)  IVs: All 0
+
+======
+707 - Poké Fan Family UNKNOWN
+======
+Pokemon: 1
+Sewaddle (Lv. 17)  IVs: All 0
+
+======
+708 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 1
+Onix (Lv. 32)  IVs: All 0
+
+======
+709 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 1
+Boldore (Lv. 32)  IVs: All 0
+
+======
+710 - Tourist UNKNOWN
+======
+Pokemon: 2
+Tirtouga (Lv. 33)  IVs: All 0
+Axew (Lv. 33)  IVs: All 0
+
+======
+711 - Black Belt UNKNOWN
+======
+Pokemon: 2
+Archen (Lv. 33)  IVs: All 0
+Axew (Lv. 33)  IVs: All 0
+
+======
+712 - Team Flare UNKNOWN
+======
+Pokemon: 4
+Unfezant (Lv. 55) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simipour (Lv. 55) @Mystic Water IVs: All 25
+Flygon (Lv. 55)  IVs: All 25
+Emboar (Lv. 57) @Charcoal IVs: All 31
+
+======
+713 - Team Flare UNKNOWN
+======
+Pokemon: 4
+Unfezant (Lv. 55) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simisage (Lv. 55) @Miracle Seed IVs: All 25
+Flygon (Lv. 55)  IVs: All 25
+Samurott (Lv. 57) @Mystic Water IVs: All 31
+
+======
+714 - Team Flare UNKNOWN
+======
+Pokemon: 4
+Unfezant (Lv. 55) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simisear (Lv. 55) @Charcoal IVs: All 25
+Flygon (Lv. 55)  IVs: All 25
+Serperior (Lv. 57) @Miracle Seed IVs: All 31
+
+======
+715 - Duke UNKNOWN
+======
+Pokemon: 3
+Bisharp (Lv. 65)  (Ability: Defiant) (Moves: Night Slash / Iron Head / Low Sweep / Scary Face) IVs: All 0
+Bisharp (Lv. 65)  (Ability: Inner Focus) (Moves: Night Slash / X-Scissor / Guillotine / Swords Dance) IVs: All 0
+Absol (Lv. 67)  (Ability: Super Luck) (Moves: Sucker Punch / Psycho Cut / X-Scissor / Aerial Ace) IVs: All 0
+
+======
+716 - Duke UNKNOWN
+======
+Pokemon: 3
+Bisharp (Lv. 65)  (Ability: Defiant) (Moves: Night Slash / Iron Head / Low Sweep / Scary Face) IVs: All 0
+Accelgor (Lv. 67)  (Ability: Hydration) (Moves: Bug Buzz / Giga Drain / Focus Blast / Sludge Bomb) IVs: All 0
+Bisharp (Lv. 65)  (Ability: Inner Focus) (Moves: Night Slash / X-Scissor / Guillotine / Swords Dance) IVs: All 0
+
+======
+717 - Duke UNKNOWN
+======
+Pokemon: 3
+Banette (Lv. 67)  (Ability: Insomnia) (Moves: Shadow Claw / Sucker Punch / Psychic / Will-O-Wisp) IVs: All 0
+Bisharp (Lv. 65)  (Ability: Defiant) (Moves: Night Slash / Iron Head / Low Sweep / Scary Face) IVs: All 0
+Bisharp (Lv. 65)  (Ability: Inner Focus) (Moves: Night Slash / X-Scissor / Guillotine / Swords Dance) IVs: All 0
+
+======
+718 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 14)  IVs: All 0
+
+======
+719 - Waitress UNKNOWN
+======
+Pokemon: 1
+Sewaddle (Lv. 16)  IVs: All 0
+
+======
+720 - Swimmer  UNKNOWN
+======
+Pokemon: 1
+Pidove (Lv. 16)  IVs: All 0
+
+======
+721 - Team Flare UNKNOWN
+======
+Pokemon: 5
+Unfezant (Lv. 63) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simipour (Lv. 63) @Mystic Water IVs: All 25
+Durant (Lv. 63)  IVs: All 25
+Flygon (Lv. 63)  IVs: All 25
+Emboar (Lv. 65) @Charcoal IVs: All 31
+
+======
+722 - Team Flare UNKNOWN
+======
+Pokemon: 5
+Unfezant (Lv. 63) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simisage (Lv. 63) @Miracle Seed IVs: All 25
+Durant (Lv. 63)  IVs: All 25
+Flygon (Lv. 63)  IVs: All 25
+Samurott (Lv. 65) @Mystic Water IVs: All 31
+
+======
+723 - Team Flare UNKNOWN
+======
+Pokemon: 5
+Unfezant (Lv. 63) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simisear (Lv. 63) @Charcoal IVs: All 25
+Durant (Lv. 63)  IVs: All 25
+Flygon (Lv. 63)  IVs: All 25
+Serperior (Lv. 65) @Miracle Seed IVs: All 31
+
+======
+724 - Team Flare UNKNOWN
+======
+Pokemon: 6
+Unfezant (Lv. 65) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simipour (Lv. 65) @Mystic Water IVs: All 25
+Durant (Lv. 65)  IVs: All 25
+Flygon (Lv. 65)  IVs: All 25
+Espeon (Lv. 65)  IVs: All 25
+Emboar (Lv. 67) @Focus Sash IVs: All 31
+
+======
+725 - Team Flare UNKNOWN
+======
+Pokemon: 6
+Unfezant (Lv. 65) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simisage (Lv. 65) @Miracle Seed IVs: All 25
+Durant (Lv. 65)  IVs: All 25
+Flygon (Lv. 65)  IVs: All 25
+Espeon (Lv. 65)  IVs: All 25
+Samurott (Lv. 67) @Focus Sash IVs: All 31
+
+======
+726 - Team Flare UNKNOWN
+======
+Pokemon: 6
+Unfezant (Lv. 65) @Scope Lens (Ability: Big Pecks) IVs: All 25
+Simisear (Lv. 65) @Charcoal IVs: All 25
+Durant (Lv. 65)  IVs: All 25
+Flygon (Lv. 65)  IVs: All 25
+Espeon (Lv. 65)  IVs: All 25
+Serperior (Lv. 67) @Focus Sash IVs: All 31
+
+======
+727 - Garçon UNKNOWN
+======
+Pokemon: 1
+Beartic (Lv. 1)  IVs: All 0
+
+======
+728 - Garçon UNKNOWN
+======
+Pokemon: 2
+Abomasnow (Lv. 1)  IVs: All 0
+Beartic (Lv. 1)  IVs: All 0
+
+======
+729 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Emboar (Lv. 43) @Charcoal IVs: All 31
+Simipour (Lv. 41) @Mystic Water IVs: All 31
+Unfezant (Lv. 41) @Scope Lens (Ability: Big Pecks) IVs: All 31
+
+======
+730 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Samurott (Lv. 43) @Mystic Water IVs: All 31
+Simisage (Lv. 41) @Miracle Seed IVs: All 31
+Unfezant (Lv. 41) @Scope Lens (Ability: Big Pecks) IVs: All 31
+
+======
+731 - Team Flare UNKNOWN
+======
+Pokemon: 3
+Serperior (Lv. 43) @Miracle Seed IVs: All 31
+Simisear (Lv. 41) @Charcoal IVs: All 31
+Unfezant (Lv. 41) @Scope Lens (Ability: Big Pecks) IVs: All 31
+
+======
+732 - Marquis UNKNOWN
+======
+Pokemon: 2
+Cryogonal (Lv. 42)  IVs: All 0
+Sneasel (Lv. 44)  IVs: All 0
+
+======
+733 - Team Flare UNKNOWN
+======
+Pokemon: 2
+Golbat (Lv. 39)  IVs: All 0
+Garbodor (Lv. 39)  IVs: All 0
+
+======
+734 - Leader UNKNOWN
+======
+Pokemon: 6
+Stoutland (Lv. 63)  (Ability: Intimidate) (Moves: Pound) IVs: All 31
+Chandelure (Lv. 63)  (Moves: Pound) IVs: All 31
+Musharna (Lv. 63)  (Moves: Pound) IVs: All 31
+Mienshao (Lv. 63)  (Moves: Pound) IVs: All 31
+Simisear (Lv. 63)  (Moves: Pound) IVs: All 31
+Samurott (Lv. 65) @Focus Sash (Moves: Pound) IVs: All 31
+
+======
+735 - Leader UNKNOWN
+======
+Pokemon: 6
+Stoutland (Lv. 63)  (Ability: Intimidate) (Moves: Pound) IVs: All 25
+Chandelure (Lv. 63)  (Moves: Pound) IVs: All 25
+Musharna (Lv. 63)  (Moves: Pound) IVs: All 25
+Mienshao (Lv. 63)  (Moves: Pound) IVs: All 25
+Simipour (Lv. 63)  (Moves: Pound) IVs: All 25
+Serperior (Lv. 65) @Focus Sash (Moves: Pound) IVs: All 31
+
+======
+736 - Leader UNKNOWN
+======
+Pokemon: 6
+Stoutland (Lv. 63)  (Ability: Intimidate) (Moves: Pound) IVs: All 25
+Chandelure (Lv. 63)  (Moves: Pound) IVs: All 25
+Musharna (Lv. 63)  (Moves: Pound) IVs: All 25
+Mienshao (Lv. 63)  (Moves: Pound) IVs: All 25
+Simisage (Lv. 63)  (Moves: Pound) IVs: All 25
+Emboar (Lv. 65) @Focus Sash (Moves: Pound) IVs: All 31
+
+======
+737 - Marquis UNKNOWN
+======
+Pokemon: 6
+Liepard (Lv. 65)  (Moves: Pound) IVs: All 25
+Unfezant (Lv. 65)  (Moves: Pound) IVs: All 25
+Haxorus (Lv. 65)  (Moves: Pound) IVs: All 25
+Gigalith (Lv. 65)  (Moves: Pound) IVs: All 25
+Simipour (Lv. 65)  (Moves: Pound) IVs: All 25
+Emboar (Lv. 67) @Focus Sash (Moves: Pound) IVs: All 31
+
+======
+738 - Marquis UNKNOWN
+======
+Pokemon: 6
+Liepard (Lv. 65)  (Moves: Pound) IVs: All 25
+Unfezant (Lv. 65)  (Moves: Pound) IVs: All 25
+Haxorus (Lv. 65)  (Moves: Pound) IVs: All 25
+Gigalith (Lv. 65)  (Moves: Pound) IVs: All 25
+Simisage (Lv. 65)  (Moves: Pound) IVs: All 25
+Samurott (Lv. 67) @Focus Sash (Moves: Pound) IVs: All 31
+
+======
+739 - Marquis UNKNOWN
+======
+Pokemon: 6
+Liepard (Lv. 65)  (Moves: Pound) IVs: All 25
+Unfezant (Lv. 65)  (Moves: Pound) IVs: All 25
+Haxorus (Lv. 65)  (Moves: Pound) IVs: All 25
+Gigalith (Lv. 65)  (Moves: Pound) IVs: All 25
+Simisear (Lv. 65)  (Moves: Pound) IVs: All 25
+Serperior (Lv. 67) @Focus Sash (Moves: Pound) IVs: All 31
+
+======
+740 - Leader UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 5)  IVs: All 0
+
+======
+741 - Leader UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 5)  IVs: All 0
+
+======
+742 - Leader UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 5)  IVs: All 0
+
+======
+743 - Leader UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 5)  IVs: All 0
+
+======
+744 - Leader UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 5)  IVs: All 0
+
+======
+745 - Leader UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 5)  IVs: All 0
+
+======
+746 - Black Belt UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 10)  IVs: All 0
+
+======
+747 - Black Belt UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 10)  IVs: All 0
+
+======
+748 - Black Belt UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 10)  IVs: All 0
+
+======
+749 - Black Belt UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 10)  IVs: All 0
+
+======
+750 - Black Belt UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 10)  IVs: All 0
+
+======
+751 - Black Belt UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 10)  IVs: All 0
+
+======
+752 - Team Flare UNKNOWN
+======
+Pokemon: 2
+Weezing (Lv. 48)  (Moves: Sludge Bomb / Double Hit / Explosion / Haze) IVs: All 0
+Muk (Lv. 48)  (Moves: Sludge Wave / Acid Armor / Screech / Fling) IVs: All 0
+
+======
+753 - Champion UNKNOWN
+======
+Pokemon: 1
+Blissey (Lv. 65)  IVs: All 0
+
+======
+754 - Sky Trainer UNKNOWN
+======
+Pokemon: 3
+Elekid (Lv. 40)  IVs: All 0
+Electabuzz (Lv. 40)  IVs: All 0
+Elekid (Lv. 40)  IVs: All 0
+
+======
+755 - Youngster UNKNOWN
+======
+Pokemon: 1
+Whimsicott (Lv. 42)  IVs: All 0
+
+======
+756 - Youngster UNKNOWN
+======
+Pokemon: 1
+Lilligant (Lv. 42)  IVs: All 0
+
+======
+757 - Sky Trainer UNKNOWN
+======
+Pokemon: 3
+Magby (Lv. 40)  IVs: All 0
+Magmar (Lv. 40)  IVs: All 0
+Magby (Lv. 40)  IVs: All 0
+
+======
+758 - Battle Chatelaine UNKNOWN
+======
+Pokemon: 1
+Patrat (Lv. 1)  IVs: All 0
+
+======
+759 - Rich Boy UNKNOWN
+======
+Pokemon: 1
+Purrloin (Lv. 16)  IVs: All 0
+
+======
+760 - Waitress UNKNOWN
+======
+Pokemon: 1
+Mareep (Lv. 16)  IVs: All 0
+
+======
+761 - Leader UNKNOWN
+======
+Pokemon: 1
+Gurdurr (Lv. 41)  IVs: All 0
+
+======
+762 - Leader UNKNOWN
+======
+Pokemon: 1
+Scrafty (Lv. 41)  IVs: All 0
+
+======
+763 - Marchioness UNKNOWN
+======
+Pokemon: 2
+Trubbish (Lv. 23)  IVs: All 0
+Klink (Lv. 25)  IVs: All 0
+
+======
+764 - Duchess UNKNOWN
+======
+Pokemon: 2
+Klink (Lv. 23)  IVs: All 0
+Trubbish (Lv. 25)  IVs: All 0
+
+======
+765 - Baroness UNKNOWN
+======
+Pokemon: 2
+Sewaddle (Lv. 20)  IVs: All 0
+Sewaddle (Lv. 20)  IVs: All 0
+
+======
+766 - Baroness UNKNOWN
+======
+Pokemon: 2
+Sewaddle (Lv. 20)  IVs: All 0
+Swadloon (Lv. 20)  IVs: All 0
+
+======
+767 - Baroness UNKNOWN
+======
+Pokemon: 3
+Sewaddle (Lv. 19)  IVs: All 0
+Sewaddle (Lv. 19)  IVs: All 0
+Dwebble (Lv. 19)  IVs: All 0
+
+======
+768 - Baroness UNKNOWN
+======
+Pokemon: 2
+Dwebble (Lv. 20)  IVs: All 0
+Swadloon (Lv. 20)  IVs: All 0
+
+======
+769 - Garçon UNKNOWN
+======
+Pokemon: 1
+Magby (Lv. 13)  IVs: All 0
+
+======
+770 - Elite Four UNKNOWN
+======
+Pokemon: 2
+Watchog (Lv. 64)  (Ability: Illuminate) IVs: All 0
+Scolipede (Lv. 64)  (Ability: Poison Point) IVs: All 0
+
+======
+771 - Elite Four UNKNOWN
+======
+Pokemon: 2
+Liepard (Lv. 64)  IVs: All 0
+Leavanny (Lv. 64)  IVs: All 0
+
+======
+772 - Pokémon Trainer UNKNOWN
+======
+Pokemon: 3
+Gothorita (Lv. 64)  IVs: All 0
+Duosion (Lv. 64)  IVs: All 0
+Gothitelle (Lv. 64)  IVs: All 0
+
+======
+773 - Fisherman UNKNOWN
+======
+Pokemon: 3
+Duosion (Lv. 64)  IVs: All 0
+Gothorita (Lv. 64)  IVs: All 0
+Reuniclus (Lv. 64)  IVs: All 0
+
+======
+774 - Leader UNKNOWN
+======
+Pokemon: 2
+Weezing (Lv. 64)  IVs: All 0
+Muk (Lv. 64)  IVs: All 0
+
+======
+775 - Leader UNKNOWN
+======
+Pokemon: 2
+Klang (Lv. 64)  IVs: All 0
+Klinklang (Lv. 64)  IVs: All 0
+
+======
+776 - Lady UNKNOWN
+======
+Pokemon: 1
+Magnemite (Lv. 13)  IVs: All 0
+
+======
+777 - Lady UNKNOWN
+======
+Pokemon: 1
+Elekid (Lv. 13)  IVs: All 0
+
+======
+778 - Elite Four UNKNOWN
+======
+Pokemon: 1
+Pansage (Lv. 10)  IVs: All 0
+
+======
+779 - Elite Four UNKNOWN
+======
+Pokemon: 1
+Panpour (Lv. 10)  IVs: All 0
+
+======
+780 - Elite Four UNKNOWN
+======
+Pokemon: 1
+Pansear (Lv. 10)  IVs: All 0
+
+======
+781 - Elite Four UNKNOWN
+======
+Pokemon: 1
+Pansage (Lv. 10)  IVs: All 0
+
+======
+782 - Team Flare UNKNOWN
+======
+Pokemon: 1
+Watchog (Lv. 27)  IVs: All 0
+
+======
+783 - Elite Four UNKNOWN
+======
+Pokemon: 2
+Minccino (Lv. 27)  IVs: All 0
+Deerling (Lv. 27)  IVs: All 0
+
+======
+784 - Viscountess UNKNOWN
+======
+Pokemon: 1
+Hydreigon (Lv. 8)  IVs: All 0

@@ -5,17 +5,21 @@ import os
 sys.path.insert(0, os.path.abspath('BlackWhite'))
 sys.path.insert(0, os.path.abspath('ORAS'))
 sys.path.insert(0, os.path.abspath('Platinum'))
+sys.path.insert(0, os.path.abspath('XY'))
 
 import BlackWhite.getShowdownData as BW
 import ORAS.getShowdownData as ORS
 import Platinum.getShowdownData as Pt
+import XY.getShowdownData as XY
+
 
 class ShowdownWrapper():
     def __init__(self) -> None:
         self.gameVersions = {
             "Pt": Pt.PlatinumShowdown,
             "BW": BW.getShowdownData,
-            "ORAS": ORS.ORAShowdown
+            "ORAS": ORS.ORAShowdown,
+            "XY": XY.XYShowdown
         }
 
         self.parser = self.initParser()
