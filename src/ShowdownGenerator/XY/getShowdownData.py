@@ -79,10 +79,14 @@ class XYShowdown:
             # ivs
             iv_value = re.search(r"(?<=IVs: All )[0-9]+", pokemon_data).group(0).strip()
             pokemon.ivs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
+            
+            # ability
+            if "Ability" in pokemon_data:
+                pokemon.ability = re.search(r"(?<=Ability: )[a-zA-Z ']+", pokemon_data).group(0).strip()
+        
             # level
             # pokemon.level = 
             
-            # ability
             # moves
 
         pass
