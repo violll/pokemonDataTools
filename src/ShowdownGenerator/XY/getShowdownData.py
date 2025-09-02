@@ -1,6 +1,7 @@
 import sys
 import os
 import re
+import pandas as pd
 
 sys.path.insert(0, os.path.abspath('src/ShowdownGenerator'))
 import showdownPokemon, showdownTrainer
@@ -13,7 +14,8 @@ def get_trainer_n_input(text):
 class XYShowdown:
     def __init__(self, mode = "default") -> None:
         self.mode = mode
-        self.txt = self.readTrainerData()
+        self.txt, self.df = self.readTrainerData()
+        print(self.df)
         self.trainer = showdownTrainer.Trainer()
         
         if self.mode == "default":
@@ -23,8 +25,13 @@ class XYShowdown:
     def readTrainerData(self):
         with open(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\XY\TrainerData.txt", 
                  "r", encoding = 'utf-8') as f:
-            res = f.read().split("\n\n")[1:]
-        return res
+            res_text = f.read().split("\n\n")[1:]
+
+        df = pd.read_excel(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\XY\X_YSheet.xlsx",
+                           sheet_name="Trainer stats",
+                           index_col= [0, 1])
+        
+        return res_text, df
     
     def parseTrainer(self):
         possibleTrainers = []
@@ -66,6 +73,8 @@ class XYShowdown:
             pokemon = self.trainer.pokemon[i]
             pokemon_data = pokemon_list[i]
 
+            pokemon.trainer = self.trainer.name
+
             # name
             pokemon.name = re.match(r".+(?=\(Lv)", pokemon_data).group(0).strip()
 
@@ -87,7 +96,7 @@ class XYShowdown:
             # level
             pokemon.level = re.search(r"(?<=\(Lv. )[0-9]+", pokemon_data).group(0).strip()
             
-            # nature
+            # nature TODO, only present in the sheet
 
             # moves
             if "Moves" in pokemon_data:
@@ -97,3 +106,6 @@ class XYShowdown:
             # check the sheet afterwards to overwrite anything / fill in the blanks
 
         pass
+
+if __name__ == "__main__":
+    XYShowdown()
