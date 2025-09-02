@@ -74,14 +74,15 @@ class XYShowdown:
             # item
             if "@" in pokemon_data:
                 # checks for end of item as either parenthesis or IVs
-                pokemon.item = re.search(r"(?<=@)[a-zA-Z' ]+(?=\(|IVs)", pokemon_data).group(0).strip()
+                pokemon.item = "@ " + re.search(r"(?<=@)[a-zA-Z' ]+(?=\(|IVs)", pokemon_data).group(0).strip()
 
+            # ivs
+            iv_value = re.search(r"(?<=IVs: All )[0-9]+", pokemon_data).group(0).strip()
+            pokemon.ivs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
             # level
             # pokemon.level = 
             
             # ability
             # moves
-            # item
-            # ivs
 
         pass

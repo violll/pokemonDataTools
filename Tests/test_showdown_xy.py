@@ -29,6 +29,7 @@ def make_test_case(x):
             
             self.assertEqual([mon.name for mon in self.showdown.trainer.pokemon], x["pokemonNames"])
             self.assertEqual([mon.item for mon in self.showdown.trainer.pokemon], x["pokemonItems"])
+            self.assertEqual([mon.ivs for mon in self.showdown.trainer.pokemon], x["pokemonIVs"])
 
 
     return MyTestCase
@@ -41,6 +42,7 @@ inputs_to_test = {
                         "Vivillon (Lv. 12)  (Moves: Harden / Infestation / Tackle) IVs: All 18"],
         "pokemonNames": ["Surskit", "Vivillon"],
         "pokemonItems": ["" for _ in range(2)],
+        "pokemonIVs": [[f"18 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(2)],
         "pokemonLvls": ["10", "12"]
     },
     1: {
@@ -51,6 +53,7 @@ inputs_to_test = {
                         "Mothim (Lv. 27)  IVs: All 0"],
         "pokemonNames": ["Yanma", "Whirlipede", "Mothim"],
         "pokemonItems": ["" for _ in range(3)],
+        "pokemonIVs": [[f"0 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(3)],
         "pokemonLvls": ["27" for _ in range(3)]
     },
     2: {
@@ -58,7 +61,8 @@ inputs_to_test = {
         "trainer_name": "Successor Korrina",
         "pokemonList": ["Lucario (Lv. 32) @Lucarionite (Ability: Steadfast) (Moves: Power-Up Punch) IVs: All 22"],
         "pokemonNames": ["Lucario"],
-        "pokemonItems": ["Lucarionite"],
+        "pokemonItems": ["@ Lucarionite"],
+        "pokemonIVs": [[f"22 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]],
         "pokemonLvls": ["32"]
     }
 }
