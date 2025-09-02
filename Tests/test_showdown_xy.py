@@ -44,7 +44,7 @@ inputs_to_test = {
                         "Vivillon (Lv. 12)  (Moves: Harden / Infestation / Tackle) IVs: All 18"],
         "pokemonNames": ["Surskit", "Vivillon"],
         "pokemonItems": ["" for _ in range(2)],
-        "pokemonIVs": [[f"18 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(2)],
+        "pokemonIVs": [[f"22 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(2)],
         "pokemonAbilities": ["" for _ in range(2)],
         "pokemonLvls": ["10", "12"],
         "pokemonMoves": [["Quick Attack", "Bubble", "Water Sport"],
@@ -69,7 +69,7 @@ inputs_to_test = {
         "pokemonList": ["Lucario (Lv. 32) @Lucarionite (Ability: Steadfast) (Moves: Power-Up Punch) IVs: All 22"],
         "pokemonNames": ["Lucario"],
         "pokemonItems": ["@ Lucarionite"],
-        "pokemonIVs": [[f"22 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]],
+        "pokemonIVs": [[f"20 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]],
         "pokemonAbilities": ["Steadfast"],
         "pokemonLvls": ["32"],
         "pokemonMoves": [["Power-Up Punch"]]

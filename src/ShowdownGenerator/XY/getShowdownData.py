@@ -56,7 +56,6 @@ class XYShowdown:
             trainerI = trainer[0].split("-")[0]
         
         # updates trainer name to verify search accuracy
-        print(trainerI)
         desiredTrainer = trainer[0].split("- ")[-1]
         pokemonList = trainer[3:]
         self.trainer.name = desiredTrainer
@@ -82,7 +81,11 @@ class XYShowdown:
             # gender TODO skipping for now
 
             # check the sheet before checking the text as the sheet is more accurate (I think)
-
+            df_pokemon_data = self.df[(self.df.index.get_level_values(0) == int(self.trainer.number)) & (self.df["Pokémon"] == pokemon.name)]
+            if df_pokemon_data.shape[0] != 0:
+                # set flag to check for 
+                sheet = True
+            else: sheet = False
 
             # item
             if "@" in pokemon_data:
@@ -90,7 +93,11 @@ class XYShowdown:
                 pokemon.item = "@ " + re.search(r"(?<=@)[a-zA-Z' ]+(?=\(|IVs)", pokemon_data).group(0).strip()
 
             # ivs
-            iv_value = re.search(r"(?<=IVs: All )[0-9]+", pokemon_data).group(0).strip()
+            if sheet:
+                iv_value = df_pokemon_data.IV.values[0]
+            else:
+                iv_value = re.search(r"(?<=IVs: All )[0-9]+", pokemon_data).group(0).strip()
+            
             pokemon.ivs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
             
             # ability
