@@ -1,5 +1,6 @@
 import sys
 import os
+import re
 
 sys.path.insert(0, os.path.abspath('src/ShowdownGenerator'))
 import showdownPokemon, showdownTrainer
@@ -61,5 +62,21 @@ class XYShowdown:
         pokemon_list = self.parseTrainer()
 
         # get pokemon data
+        for i in range(len(pokemon_list)):
+            pokemon = self.trainer.pokemon[i]
+            pokemon_data = pokemon_list[i]
+
+            # name
+            pokemon.name = re.match(r".+(?=\(Lv)", pokemon_data).group(0).strip()
+
+            # gender TODO skipping for now
+
+            # level
+            pokemon.level = 
+            
+            # ability
+            # moves
+            # item
+            # ivs
 
         pass

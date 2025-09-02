@@ -22,6 +22,15 @@ def make_test_case(x):
         def test_parseTrainerNum(self, mock_trainer_n, mock_trainer_name):
             self.assertEqual(self.showdown.parseTrainer(), x["pokemonList"])
 
+        @patch("getShowdownData.get_trainer_input", return_value = x["trainer_name"], autospec=True)
+        @patch("getShowdownData.get_trainer_n_input", return_value = x["trainer_num"], autospec=True)
+        def test_parsePokemonData(self, mock_trainer_n, mock_trainer_name):
+            self.showdown.main()
+            
+            self.assertEqual([mon.name for mon in self.showdown.trainer.pokemon], x["pokemonNames"])
+
+
+
     return MyTestCase
 
 inputs_to_test = {
@@ -29,16 +38,16 @@ inputs_to_test = {
         "trainer_num": "6",
         "trainer_name": "Viola",
         "pokemonList": ["Surskit (Lv. 10)  (Moves: Quick Attack / Bubble / Water Sport) IVs: All 18",
-                        "Vivillon (Lv. 12)  (Moves: Harden / Infestation / Tackle) IVs: All 18"
-                        ]
+                        "Vivillon (Lv. 12)  (Moves: Harden / Infestation / Tackle) IVs: All 18"],
+        "pokemonNames": ["Surskit", "Vivillon"]
     },
     1: {
         "trainer_num": "1",
         "trainer_name": "Youngster Aidan",
         "pokemonList": ["Yanma (Lv. 27)  IVs: All 0",
                         "Whirlipede (Lv. 27)  IVs: All 0",
-                        "Mothim (Lv. 27)  IVs: All 0"
-                        ]
+                        "Mothim (Lv. 27)  IVs: All 0"],
+        "pokemonNames": ["Yanma", "Whirlipede", "Mothim"]
     }
 }
 
