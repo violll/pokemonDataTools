@@ -14,7 +14,9 @@ def getShowdownData():
     if "Cheren" in trainerName or "Bianca" in trainerName:
         sheetName = input("What was your starter pokemon?\n> ")
 
-    df = pd.read_excel("ShowdownGenerator/BlackWhite/Pokémon Black Trainer info (Lillipup).xlsx", sheet_name=sheetName, index_col=list(range(0,5)))
+    df = pd.read_excel(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\BlackWhite\Pokémon Black Trainer info (Lillipup).xlsx", 
+                       sheet_name=sheetName, 
+                       index_col=list(range(0,5)))
     df = df.loc[:, :"IVs"]
 
     trainerDf = df.loc[df.index.get_level_values(1).str.contains(trainerName)]
