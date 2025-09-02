@@ -90,6 +90,8 @@ class XYShowdown:
             # nature
 
             # moves
+            if "Moves" in pokemon_data:
+                pokemon.moves = re.search(r"(?<=Moves: )[a-zA-Z0-9' /-]+(?=\))", pokemon_data).group(0).strip().split(" / ")
 
 
             # check the sheet afterwards to overwrite anything / fill in the blanks

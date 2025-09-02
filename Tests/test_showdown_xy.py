@@ -32,6 +32,7 @@ def make_test_case(x):
             self.assertEqual([mon.ivs for mon in self.showdown.trainer.pokemon], x["pokemonIVs"])
             self.assertEqual([mon.ability for mon in self.showdown.trainer.pokemon], x["pokemonAbilities"])
             self.assertEqual([mon.level for mon in self.showdown.trainer.pokemon], x["pokemonLvls"])
+            self.assertEqual([mon.moves for mon in self.showdown.trainer.pokemon], x["pokemonMoves"])
 
 
     return MyTestCase
@@ -46,7 +47,9 @@ inputs_to_test = {
         "pokemonItems": ["" for _ in range(2)],
         "pokemonIVs": [[f"18 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(2)],
         "pokemonAbilities": ["" for _ in range(2)],
-        "pokemonLvls": ["10", "12"]
+        "pokemonLvls": ["10", "12"],
+        "pokemonMoves": [["Quick Attack", "Bubble", "Water Sport"],
+                         ["Harden", "Infestation", "Tackle"]]
     },
     1: {
         "trainer_num": "1",
@@ -58,7 +61,8 @@ inputs_to_test = {
         "pokemonItems": ["" for _ in range(3)],
         "pokemonIVs": [[f"0 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]] for _ in range(3)],
         "pokemonAbilities": ["" for _ in range(3)],
-        "pokemonLvls": ["27" for _ in range(3)]
+        "pokemonLvls": ["27" for _ in range(3)],
+        "pokemonMoves": [[] for _ in range(3)]
     },
     2: {
         "trainer_num": "188",
@@ -68,7 +72,8 @@ inputs_to_test = {
         "pokemonItems": ["@ Lucarionite"],
         "pokemonIVs": [[f"22 {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]],
         "pokemonAbilities": ["Steadfast"],
-        "pokemonLvls": ["32"]
+        "pokemonLvls": ["32"],
+        "pokemonMoves": [["Power-Up Punch"]]
     }
 }
 
