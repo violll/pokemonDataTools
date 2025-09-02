@@ -7,6 +7,7 @@ import showdown
 
 class showdownTestPt(unittest.TestCase):
     def setUp(self):
+        print("Testing Pt")
         mode = "unittest"
         test_param = {
             "game_version": "Pt"
@@ -22,6 +23,7 @@ class showdownTestPt(unittest.TestCase):
 
 class showdownTestBW(unittest.TestCase):
     def setUp(self):
+        print("Testing BW")
         mode = "unittest"
         test_param = {
             "game_version": "BW"
@@ -37,6 +39,7 @@ class showdownTestBW(unittest.TestCase):
 
 class showdownTestXY(unittest.TestCase):
     def setUp(self):
+        print("Testing XY")
         mode = "unittest"
         test_param = {
             "game_version": "XY"
@@ -52,6 +55,7 @@ class showdownTestXY(unittest.TestCase):
 
 class showdownTestORAS(unittest.TestCase):
     def setUp(self):
+        print("Testing ORAS")
         mode = "unittest"
         test_param = {
             "game_version": "ORAS"
