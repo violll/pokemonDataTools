@@ -85,8 +85,13 @@ class XYShowdown:
                 pokemon.ability = re.search(r"(?<=Ability: )[a-zA-Z ']+", pokemon_data).group(0).strip()
         
             # level
-            # pokemon.level = 
+            pokemon.level = re.search(r"(?<=\(Lv. )[0-9]+", pokemon_data).group(0).strip()
             
+            # nature
+
             # moves
+
+
+            # check the sheet afterwards to overwrite anything / fill in the blanks
 
         pass

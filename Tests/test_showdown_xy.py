@@ -31,6 +31,8 @@ def make_test_case(x):
             self.assertEqual([mon.item for mon in self.showdown.trainer.pokemon], x["pokemonItems"])
             self.assertEqual([mon.ivs for mon in self.showdown.trainer.pokemon], x["pokemonIVs"])
             self.assertEqual([mon.ability for mon in self.showdown.trainer.pokemon], x["pokemonAbilities"])
+            self.assertEqual([mon.level for mon in self.showdown.trainer.pokemon], x["pokemonLvls"])
+
 
     return MyTestCase
 
