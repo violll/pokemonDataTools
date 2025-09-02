@@ -7,7 +7,7 @@ import showdown
 
 class showdownTestPt(unittest.TestCase):
     def setUp(self):
-        print("Testing Pt")
+        print("\nTesting Pt")
         mode = "unittest"
         test_param = {
             "game_version": "Pt"
@@ -19,11 +19,11 @@ class showdownTestPt(unittest.TestCase):
         self.showdown
 
     def tearDown(self):
-        print("Testing Complete")
+        return super().tearDown()
 
 class showdownTestBW(unittest.TestCase):
     def setUp(self):
-        print("Testing BW")
+        print("\nTesting BW")
         mode = "unittest"
         test_param = {
             "game_version": "BW"
@@ -35,11 +35,11 @@ class showdownTestBW(unittest.TestCase):
         self.showdown
 
     def tearDown(self):
-        print("Testing Complete")
+        return super().tearDown()
 
 class showdownTestXY(unittest.TestCase):
     def setUp(self):
-        print("Testing XY")
+        print("\nTesting XY")
         mode = "unittest"
         test_param = {
             "game_version": "XY"
@@ -55,7 +55,7 @@ class showdownTestXY(unittest.TestCase):
 
 class showdownTestORAS(unittest.TestCase):
     def setUp(self):
-        print("Testing ORAS")
+        print("\nTesting ORAS")
         mode = "unittest"
         test_param = {
             "game_version": "ORAS"
@@ -67,8 +67,7 @@ class showdownTestORAS(unittest.TestCase):
         self.showdown
 
     def tearDown(self):
-        print("Testing Complete")
+        return super().tearDown()
     
-
 if __name__ == "__main__":
     unittest.main()
