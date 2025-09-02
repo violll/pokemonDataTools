@@ -10,7 +10,7 @@ class PlatinumShowdown:
         self.formatTrainer()
 
     def readTrainerData(self):
-        f = open("ShowdownGenerator/Platinum/Full Pokemon Platinum Trainer Data.txt", "r")
+        f = open(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\Platinum\Full Pokemon Platinum Trainer Data.txt", "r")
         return f.read().split("\n\n")
 
     def formatTrainer(self):
@@ -93,7 +93,9 @@ class PlatinumShowdown:
         elif genderRatio[0] == 1: return "(M)"
         elif genderRatio[1] == 1: return "(F)"
         else:
-            detailedTDocs = json.load(open("ShowdownGenerator/Platinum/platinumTrainers.json"))
+            with open(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\Platinum\platinumTrainers.json") as f:
+                detailedTDocs = json.load(f)
+            
             detailedTrainer = [t["pokemon"][pokemonI]["personality"] for t in detailedTDocs["trainers"] if t["trainer_name"] == trainer and t["rom_id"] == int(trainerI)][0]
 
             pGender = detailedTrainer % 256
@@ -106,8 +108,8 @@ class PlatinumShowdown:
     
     def getGenderRatio(self, pName):
         try: 
-            f = open("ShowdownGenerator/Platinum/PokemonData/genderRatios.json")
-            genderData = json.load(f)
+            with open(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\Platinum\PokemonData\genderRatios.json") as f:
+                genderData = json.load(f)
         except:
             # must make the file
             genderData = {}
