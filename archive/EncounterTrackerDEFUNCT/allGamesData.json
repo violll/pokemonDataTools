@@ -1,0 +1,66 @@
+{
+    "Black & White": {
+        "abbrevs": [
+            "B",
+            "W"
+        ],
+        "Generation": "V",
+        "Region": "Unova",
+        "headingDesignator": "Pokémon Black and White",
+        "Starters": [
+            "Snivy",
+            "Tepig",
+            "Oshawott"
+        ],
+        "Banned Mons": [
+            "Excadrill",
+            "Darmanitan",
+            "Hydreigon" 
+        ],
+        "Pinwheel Clause": {
+            "Dragonspiral Tower" : {
+                "Ext." : [
+                    "Outside",
+                    "Entrance"
+                    ],
+                "Int." : [
+                    "Inside"
+                    ]
+            },
+            "Victory Road" : {
+                "Ext." : [
+                    "Outside"
+                ],
+                "Int." : [
+                    "1F (middle and rightmost room)",
+                    "1F (leftmost room), 2F-3F",
+                    "4F (middle room)",
+                    "4F (leftmost and rightmost room), 5F-7F"
+                ]
+            },
+            "Trial Chamber": {
+                "None": [
+                "Trial Chamber"
+            ]}
+        }
+    },
+    "Platinum": {
+        "Generation": "IV", 
+        "Region": "Sinnoh",
+        "Starters": [
+            "Piplup",
+            "Chimchar",
+            "Turtwig"
+        ]
+    },
+    "Games": {
+        "Black": {
+            "gameGen": "Black & White",
+            "Abbreviation": "B"
+        },
+        "White": {
+            "gameGen": "Black & White",
+            "Abbreviation": "W"
+        }
+    }
+}
