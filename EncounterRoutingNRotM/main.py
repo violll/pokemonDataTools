@@ -70,13 +70,9 @@ class NRotMEncounterRouting():
         with open(self.args.config, "r") as f:
             self.run_config = yaml.safe_load(f)
         
-        self.run_data = self.run_config["data_folder"]
-        self.sheet_path = f"{self.run_data}/sheet.xlsx"
-        self.encounters_path = f"{self.run_data}/encounters.json"
-
         self.region = ["Johtonian", "Kantonian"]
 
-        self.gameData = Game(file_path = self.sheet_path)
+        self.gameData = Game(file_path = self.run_config["sheet_path"])
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -96,8 +92,8 @@ class NRotMEncounterRouting():
         self.assignedEncountersSlice = []
         
         # update assigned encounters if file exists
-        if os.path.exists(self.encounters_path):
-            self.importEncountersJSON(self.encounters_path)
+        if os.path.exists(self.run_config["encounters_path"]):
+            self.importEncountersJSON(self.run_config["encounters_path"])
 
         if self.args.route: self.route()
 
