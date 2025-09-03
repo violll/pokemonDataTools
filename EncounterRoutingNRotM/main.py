@@ -29,10 +29,9 @@ class GroupData():
         return json.dumps(self.assignMe, indent=4)
 
 class Game():
-    def __init__(self) -> None:
+    def __init__(self, file_path) -> None:
         # open NRotM spreadsheet
-        ss = helper.getAbsPath(__file__, 1) + "/NRotMAugust2024.xlsx"
-        self.wb = openpyxl.load_workbook(filename = ss)
+        self.wb = openpyxl.load_workbook(filename = file_path)
 
         self.ws = self.wb["Team & Encounters"]
         
@@ -61,9 +60,18 @@ class Game():
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
+        # user can include an optional argument to check for a json file of encounters
+        # config file is required
+        self.parser = self.initParser()
+        self.args = self.parser.parse_args()
+
+        # read config file
+        with open(self.args.config, "r") as f:
+            self.run_config = yaml.safe_load(f)
+
         self.region = ["Johtonian", "Kantonian"]
 
-        self.gameData = Game()
+        self.gameData = Game(file_path=self.run_config["sheet"])
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -74,14 +82,6 @@ class NRotMEncounterRouting():
 
         # update honey table encounters
         self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
-
-        # user can include an optional argument to check for a json file of encounters
-        self.parser = self.initParser()
-        self.args = self.parser.parse_args()
-
-        # read config file
-        with open(self.args.config, "r") as f:
-            self.run_config = yaml.safe_load(f)
 
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.encounterTable.index)}
