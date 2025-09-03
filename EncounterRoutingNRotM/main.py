@@ -4,6 +4,8 @@ import json
 import numpy as np
 import argparse
 import re
+import yaml
+import os
 
 # adds the path absolutely so the code can be run from anywhere
 import helper
@@ -28,10 +30,9 @@ class GroupData():
         return json.dumps(self.assignMe, indent=4)
 
 class Game():
-    def __init__(self) -> None:
+    def __init__(self, file_path) -> None:
         # open NRotM spreadsheet
-        ss = helper.getAbsPath(__file__, 1) + "/NRotMAugust2024.xlsx"
-        self.wb = openpyxl.load_workbook(filename = ss)
+        self.wb = openpyxl.load_workbook(filename = file_path)
 
         self.ws = self.wb["Team & Encounters"]
         
@@ -60,9 +61,18 @@ class Game():
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
+        # user can include an optional argument to check for a json file of encounters
+        # config file is required
+        self.parser = self.initParser()
+        self.args = self.parser.parse_args()
+
+        # read config file
+        with open(self.args.config, "r") as f:
+            self.run_config = yaml.safe_load(f)
+        
         self.region = ["Johtonian", "Kantonian"]
 
-        self.gameData = Game()
+        self.gameData = Game(file_path = self.run_config["sheet_path"])
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -72,11 +82,8 @@ class NRotMEncounterRouting():
         self.encounterTables = [self.encounterTable]
 
         # update honey table encounters
-        self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
-
-        # user can include an optional argument to check for a json file of encounters
-        self.parser = self.initParser()
-        self.args = self.parser.parse_args()
+        if self.gameData.gameName == "Platinum":
+            self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
 
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.encounterTable.index)}
@@ -85,18 +92,15 @@ class NRotMEncounterRouting():
         self.assignedEncounters = {}
         self.assignedEncountersSlice = []
         
-        # update assigned encounters if file is given as an argument
-        if self.args.encounters != None: self.importEncountersJSON()
+        # update assigned encounters if file exists
+        if os.path.exists(self.run_config["encounters_path"]):
+            self.importEncountersJSON(self.run_config["encounters_path"])
 
         if self.args.route: self.route()
 
-    def importEncountersJSON(self):
-        try: 
-            assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
-                            
-        except:
-            self.args.encounters = input("Type a valid filename!\n> ")
-            return self.importEncountersJSON()
+    def importEncountersJSON(self, encounters_path):
+        with open(encounters_path, "r") as f:
+            assignMe = json.loads(f.read())
                 
         routes = list(route for route in assignMe.keys() if assignMe[route] != "")
         failedRoutes = list(route for route in assignMe.keys() if assignMe[route] == "" )
@@ -110,9 +114,6 @@ class NRotMEncounterRouting():
 
     def initParser(self):
         parser = argparse.ArgumentParser()
-        parser.add_argument("--encounters", "-e",
-                            required = False,
-                            help = "the json file of the user's in-game found encounters")
         group = parser.add_mutually_exclusive_group(required = True)
         group.add_argument("--test", "-t",
                             required = False,
@@ -122,6 +123,9 @@ class NRotMEncounterRouting():
                             required = False,
                             help = "select to use the routing algorithm",
                             action = "store_true")
+        parser.add_argument("--config", "-c",
+                            required = True,
+                            help = ".yaml file for configuring run data")
         return parser
 
     def route(self):
@@ -314,7 +318,7 @@ class NRotMEncounterRouting():
         yellowFont = openpyxl.styles.Font(color="9C5700")
         yellowdxf = openpyxl.styles.differential.DifferentialStyle(font=yellowFont, fill=yellowFill)
 
-        with pd.ExcelWriter(helper.getAbsPath(__file__, 1) + "/encounters.xlsx") as writer:
+        with pd.ExcelWriter(self.run_config["output_sheet_path"]) as writer:
             # write each pass' slice as a worksheet
             for i in range(len(self.encounterTables)):
                 self.encounterTables[i].to_excel(writer, sheet_name="EncounterTable{}".format(str(i)), freeze_panes=(1, 1))
