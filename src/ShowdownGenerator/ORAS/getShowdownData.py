@@ -13,14 +13,19 @@ class ORAShowdown:
     def __init__(self) -> None:
         self.txt = self.readTrainerData()
         self.trainer = showdownTrainer.Trainer()
-        self.df = pd.read_excel("ShowdownGenerator/ORAS/ORASMandatoryTrainers.xlsx", sheet_name = "Stats", index_col = [0, 1, 2], usecols=[i for i in range(6)], nrows = 176).sort_index()
+        self.df = pd.read_excel(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\ORAS\ORASMandatoryTrainers.xlsx", 
+                                sheet_name = "Stats", 
+                                index_col = [0, 1, 2], 
+                                usecols=[i for i in range(6)], nrows = 176).sort_index()
         self.formatTrainer()
 
         self.trainer.export()
 
     def readTrainerData(self):
-        f = open("ShowdownGenerator/ORAS/ORASTrainers.txt", "r", encoding = 'utf-8')
-        return f.read().split("\n\n")
+        with open(r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\ORAS\ORASTrainers.txt", \
+                 "r", encoding = 'utf-8') as f:
+            res = f.read().split("\n\n")
+        return res
 
     def formatTrainer(self):
         possibleTrainers = []
