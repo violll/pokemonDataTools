@@ -82,7 +82,8 @@ class NRotMEncounterRouting():
         self.encounterTables = [self.encounterTable]
 
         # update honey table encounters
-        self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
+        if self.gameData.gameName == "Platinum":
+            self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
 
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.encounterTable.index)}

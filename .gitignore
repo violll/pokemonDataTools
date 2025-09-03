@@ -163,6 +163,7 @@ cython_debug/
 ShowdownGenerator/Platinum/PokemonData/*
 ShowdownGenerator/ORAS/PokemonData/*
 data/*
+config/*
 
 # Ignored files
 EncounterRoutingNRotM/encounters.xlsx
