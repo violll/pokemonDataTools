@@ -4,6 +4,7 @@ import json
 import numpy as np
 import argparse
 import re
+import yaml
 
 # adds the path absolutely so the code can be run from anywhere
 import helper
@@ -78,6 +79,10 @@ class NRotMEncounterRouting():
         self.parser = self.initParser()
         self.args = self.parser.parse_args()
 
+        # read config file
+        with open(self.args.config, "r") as f:
+            self.run_config = yaml.safe_load(f)
+
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.encounterTable.index)}
 
@@ -122,6 +127,9 @@ class NRotMEncounterRouting():
                             required = False,
                             help = "select to use the routing algorithm",
                             action = "store_true")
+        parser.add_argument("--config", "-c",
+                            required = True,
+                            help = ".yaml file for configuring run data")
         return parser
 
     def route(self):
