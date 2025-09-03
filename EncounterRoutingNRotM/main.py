@@ -5,6 +5,7 @@ import numpy as np
 import argparse
 import re
 import yaml
+import os
 
 # adds the path absolutely so the code can be run from anywhere
 import helper
@@ -68,10 +69,14 @@ class NRotMEncounterRouting():
         # read config file
         with open(self.args.config, "r") as f:
             self.run_config = yaml.safe_load(f)
+        
+        self.run_data = self.run_config["data_folder"]
+        self.sheet_path = f"{self.run_data}/sheet.xlsx"
+        self.encounters_path = f"{self.run_data}/encounters.json"
 
         self.region = ["Johtonian", "Kantonian"]
 
-        self.gameData = Game(file_path=self.run_config["sheet"])
+        self.gameData = Game(file_path = self.sheet_path)
 
         # get initial dataset of routes and encounters
         self.encounterData = self.getEncounterData()
@@ -90,18 +95,15 @@ class NRotMEncounterRouting():
         self.assignedEncounters = {}
         self.assignedEncountersSlice = []
         
-        # update assigned encounters if file is given as an argument
-        if self.args.encounters != None: self.importEncountersJSON()
+        # update assigned encounters if file exists
+        if os.path.exists(self.encounters_path):
+            self.importEncountersJSON(self.encounters_path)
 
         if self.args.route: self.route()
 
-    def importEncountersJSON(self):
-        try: 
-            assignMe = json.loads(open(helper.getAbsPath(__file__, 1) + "/" + self.args.encounters + ".json").read())
-                            
-        except:
-            self.args.encounters = input("Type a valid filename!\n> ")
-            return self.importEncountersJSON()
+    def importEncountersJSON(self, encounters_path):
+        with open(encounters_path, "r") as f:
+            assignMe = json.loads(f.read())
                 
         routes = list(route for route in assignMe.keys() if assignMe[route] != "")
         failedRoutes = list(route for route in assignMe.keys() if assignMe[route] == "" )
@@ -115,9 +117,6 @@ class NRotMEncounterRouting():
 
     def initParser(self):
         parser = argparse.ArgumentParser()
-        parser.add_argument("--encounters", "-e",
-                            required = False,
-                            help = "the json file of the user's in-game found encounters")
         group = parser.add_mutually_exclusive_group(required = True)
         group.add_argument("--test", "-t",
                             required = False,
