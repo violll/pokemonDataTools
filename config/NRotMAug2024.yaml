@@ -2,3 +2,4 @@
 data_folder: C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\data\runs\NRotMAug2024
 sheet_path: C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\data\runs\NRotMAug2024\sheet.xlsx
 encounters_path: C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\data\runs\NRotMAug2024\encounters.json
+output_sheet_path: C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\data\runs\NRotMAug2024\encounters.xlsx

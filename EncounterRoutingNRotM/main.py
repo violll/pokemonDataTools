@@ -317,7 +317,7 @@ class NRotMEncounterRouting():
         yellowFont = openpyxl.styles.Font(color="9C5700")
         yellowdxf = openpyxl.styles.differential.DifferentialStyle(font=yellowFont, fill=yellowFill)
 
-        with pd.ExcelWriter(helper.getAbsPath(__file__, 1) + "/encounters.xlsx") as writer:
+        with pd.ExcelWriter(self.run_config["output_sheet_path"]) as writer:
             # write each pass' slice as a worksheet
             for i in range(len(self.encounterTables)):
                 self.encounterTables[i].to_excel(writer, sheet_name="EncounterTable{}".format(str(i)), freeze_panes=(1, 1))
