@@ -23,60 +23,62 @@ from googleapiclient.errors import HttpError
 
 import json
 
-# If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
+class GoogleSheetsApi:
+  def __init__(self, spreadsheet_id, range_name, creds_path, token_path, output_path):
+    # If modifying these scopes, delete the file token.json.
+    self.SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
-# The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = "16VckpktZW7qaUzu0Mvz2tLvCh9eS97y-BBmQB6R_JME"
-SAMPLE_RANGE_NAME = "Team & Encounters!I5:J"
+    # The ID and range of a sample spreadsheet.
+    self.SAMPLE_SPREADSHEET_ID = "16VckpktZW7qaUzu0Mvz2tLvCh9eS97y-BBmQB6R_JME"
+    self.SAMPLE_RANGE_NAME = "Team & Encounters!I5:J"
 
-CREDS_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\credentials.json"
-TOKEN_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\token.json"
-OUTPUT_JSON_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\output.json"
+    self.CREDS_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\credentials.json"
+    self.TOKEN_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\token.json"
+    self.OUTPUT_JSON_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\output.json"
+    self.main()
 
-def main():
-  """Shows basic usage of the Sheets API.
-  Prints values from a sample spreadsheet.
-  """
-  creds = None
-  # The file token.json stores the user's access and refresh tokens, and is
-  # created automatically when the authorization flow completes for the first
-  # time.
-  if os.path.exists(TOKEN_PATH):
-    creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
-  # If there are no (valid) credentials available, let the user log in.
-  if not creds or not creds.valid:
-    if creds and creds.expired and creds.refresh_token:
-      creds.refresh(Request())
-    else:
-      flow = InstalledAppFlow.from_client_secrets_file(
-          CREDS_PATH, SCOPES
-      )
-      creds = flow.run_local_server(port=0)
-    # Save the credentials for the next run
-    with open(TOKEN_PATH, "w") as token:
-      token.write(creds.to_json())
+  def main(self):
+    """Shows basic usage of the Sheets API.
+    Prints values from a sample spreadsheet.
+    """
+    creds = None
+    # The file token.json stores the user's access and refresh tokens, and is
+    # created automatically when the authorization flow completes for the first
+    # time.
+    if os.path.exists(self.TOKEN_PATH):
+      creds = Credentials.from_authorized_user_file(self.TOKEN_PATH, self.SCOPES)
+    # If there are no (valid) credentials available, let the user log in.
+    if not creds or not creds.valid:
+      if creds and creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+      else:
+        flow = InstalledAppFlow.from_client_secrets_file(
+            self.CREDS_PATH, self.SCOPES
+        )
+        creds = flow.run_local_server(port=0)
+      # Save the credentials for the next run
+      with open(self.TOKEN_PATH, "w") as token:
+        token.write(creds.to_json())
 
-  try:
-    service = build("sheets", "v4", credentials=creds)
+    try:
+      service = build("sheets", "v4", credentials=creds)
 
-    # Call the Sheets API
-    sheet = service.spreadsheets()
+      # Call the Sheets API
+      sheet = service.spreadsheets()
 
-    r = sheet.get(spreadsheetId=SAMPLE_SPREADSHEET_ID, 
-                                   ranges =SAMPLE_RANGE_NAME, 
-                                   fields = "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue")
+      r = sheet.get(spreadsheetId=self.SAMPLE_SPREADSHEET_ID, 
+                                    ranges = self.SAMPLE_RANGE_NAME, 
+                                    fields = "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue")
 
-    response = r.execute()
-    print(response)
+      response = r.execute()
 
-    with open(OUTPUT_JSON_PATH, "w+") as f:
-      json.dump(response, f, indent=4)
+      with open(self.OUTPUT_JSON_PATH, "w+") as f:
+        json.dump(response, f, indent=4)
 
-  except HttpError as err:
-    print(err)
+    except HttpError as err:
+      print(err)
 
 
 if __name__ == "__main__":
-  main()
+  GoogleSheetsApi()
 # [END sheets_quickstart]
