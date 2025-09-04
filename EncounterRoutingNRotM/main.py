@@ -87,9 +87,9 @@ class LocalGame():
         for cell in cells:
             if ":" not in cell: res.append(cell)
             else:
-                start, stop = map(int, cell.replace(self.gameData.encounterCol, "").split(":"))
+                start, stop = map(int, cell.replace(self.encounterCol, "").split(":"))
                 while start <= stop:
-                    res.append(self.gameData.encounterCol + str(start))
+                    res.append(self.encounterCol + str(start))
                     start += 1
 
         return res
