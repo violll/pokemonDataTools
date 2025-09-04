@@ -117,16 +117,15 @@ class CloudGame():
     def __init__(self, run_config):
         self.run_config = run_config
 
-        # check if NRotM spreadsheet has been parsed yet
+        # read game name
         api_call_params = {
                 "spreadsheetId": self.run_config["spreadsheet_id"],
-                "ranges": self.run_config["spreadsheet_range"],
-                "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue"
+                "range": "Tracker!A1"
             }
-        google_sheets_api.GoogleSheetsApi(api_call_params,
-                                            self.run_config["creds_path"],
-                                            self.run_config["token_path"],
-                                            self.run_config["output_json_path"])
+        
+        api = google_sheets_api.GoogleSheetsApi(self.run_config["creds_path"],
+                                                self.run_config["token_path"])
+        self.gameName = api.main(api_call_params, "ss_values")["values"][0][0]
 
         # open NRotM spreadsheet
         # self.wb = openpyxl.load_workbook(filename = file_path)
