@@ -153,7 +153,8 @@ class NRotMEncounterRouting():
                                               self.run_config["spreadsheet_range"],
                                               self.run_config["creds_path"],
                                               self.run_config["token_path"],
-                                              self.run_config["output_json_path"])
+                                              self.run_config["output_json_path"],
+                                              "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue")
         else:         
             self.gameData = LocalGame(file_path = self.run_config["sheet_path"])
 
