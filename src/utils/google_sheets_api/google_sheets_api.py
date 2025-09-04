@@ -69,7 +69,7 @@ class GoogleSheetsApi:
     response = r.execute()
 
     if output_path:
-      with open(self.OUTPUT_JSON_PATH, "w+") as f:
+      with open(output_path, "w+") as f:
         json.dump(response, f, indent=4)
 
     return response
