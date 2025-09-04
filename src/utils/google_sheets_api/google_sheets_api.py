@@ -24,17 +24,17 @@ from googleapiclient.errors import HttpError
 import json
 
 class GoogleSheetsApi:
-  def __init__(self, spreadsheet_id, range_name, creds_path, token_path, output_path):
+  def __init__(self, ss_id, ss_range, creds_path, token_path, output_path):
     # If modifying these scopes, delete the file token.json.
     self.SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
     # The ID and range of a sample spreadsheet.
-    self.SAMPLE_SPREADSHEET_ID = "16VckpktZW7qaUzu0Mvz2tLvCh9eS97y-BBmQB6R_JME"
-    self.SAMPLE_RANGE_NAME = "Team & Encounters!I5:J"
+    self.SAMPLE_SPREADSHEET_ID = ss_id
+    self.SAMPLE_RANGE_NAME = ss_range
 
-    self.CREDS_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\credentials.json"
-    self.TOKEN_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\token.json"
-    self.OUTPUT_JSON_PATH = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\utils\google_sheets_api\output.json"
+    self.CREDS_PATH = creds_path
+    self.TOKEN_PATH = token_path
+    self.OUTPUT_JSON_PATH = output_path
     self.main()
 
   def main(self):
@@ -66,9 +66,9 @@ class GoogleSheetsApi:
       # Call the Sheets API
       sheet = service.spreadsheets()
 
-      r = sheet.get(spreadsheetId=self.SAMPLE_SPREADSHEET_ID, 
-                                    ranges = self.SAMPLE_RANGE_NAME, 
-                                    fields = "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue")
+      r = sheet.get(spreadsheetId = self.SAMPLE_SPREADSHEET_ID, 
+                    ranges = self.SAMPLE_RANGE_NAME, 
+                    fields = "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue")
 
       response = r.execute()
 

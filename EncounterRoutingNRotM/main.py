@@ -114,7 +114,7 @@ class LocalGame():
         return pd.concat(res, axis=1)
     
 class CloudGame():
-    def __init__(self, file_path):
+    def __init__(self):
         # check if NRotM spreadsheet has been parsed yet
 
         # open NRotM spreadsheet
@@ -148,7 +148,12 @@ class NRotMEncounterRouting():
         
         # get initial dataset of routes and encounters
         if self.args.cloud:
-            self.gameData = CloudGame() #TODO
+            # self.gameData = CloudGame() #TODO
+            google_sheets_api.GoogleSheetsApi(self.run_config["spreadsheet_id"],
+                                              self.run_config["spreadsheet_range"],
+                                              self.run_config["creds_path"],
+                                              self.run_config["token_path"],
+                                              self.run_config["output_json_path"])
         else:         
             self.gameData = LocalGame(file_path = self.run_config["sheet_path"])
 
