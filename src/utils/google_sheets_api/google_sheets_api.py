@@ -38,8 +38,6 @@ class GoogleSheetsApi:
 
     self.service = build("sheets", "v4", credentials=self.creds)
 
-    self.main()
-
   def authorize(self):
     creds = None
     # The file token.json stores the user's access and refresh tokens, and is
@@ -62,21 +60,22 @@ class GoogleSheetsApi:
 
     return creds
 
-  def main(self):
-    try:
-      # Call the Sheets API
+  def main(self, method):
+    # Call the Sheets API
+    if method == "ss":
       sheet = self.service.spreadsheets()
+    elif method == "ss_values":
+      sheet = self.service.spreadsheets().values()
 
-      r = sheet.get(**self.api_call_params)
+    r = sheet.get(**self.api_call_params)
 
-      response = r.execute()
+    response = r.execute()
 
-      if self.save:
-        with open(self.OUTPUT_JSON_PATH, "w+") as f:
-          json.dump(response, f, indent=4)
+    if self.save:
+      with open(self.OUTPUT_JSON_PATH, "w+") as f:
+        json.dump(response, f, indent=4)
 
-    except HttpError as err:
-      print(err)
+    return response
 
 
 if __name__ == "__main__":
