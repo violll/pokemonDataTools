@@ -149,12 +149,15 @@ class NRotMEncounterRouting():
         # get initial dataset of routes and encounters
         if self.args.cloud:
             # self.gameData = CloudGame() #TODO
-            google_sheets_api.GoogleSheetsApi(self.run_config["spreadsheet_id"],
-                                              self.run_config["spreadsheet_range"],
+            api_call_params = {
+                "spreadsheetId": self.run_config["spreadsheet_id"],
+                "ranges": self.run_config["spreadsheet_range"],
+                "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue"
+            }
+            google_sheets_api.GoogleSheetsApi(api_call_params,
                                               self.run_config["creds_path"],
                                               self.run_config["token_path"],
-                                              self.run_config["output_json_path"],
-                                              "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue")
+                                              self.run_config["output_json_path"])
         else:         
             self.gameData = LocalGame(file_path = self.run_config["sheet_path"])
 
