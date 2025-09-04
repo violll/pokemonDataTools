@@ -162,16 +162,27 @@ class NRotMEncounterRouting():
         # read config file
         with open(self.args.config, "r") as f:
             self.run_config = yaml.safe_load(f)
+
+        # initialize assigned encounters
+        self.assignedEncounters = {}
+        self.assignedEncountersSlice = []
         
         # get initial dataset of routes and encounters
         if self.args.cloud:
             self.gameData = CloudGame(self.run_config) #TODO
 
+            # initialize slice history of encounter assignment
+            self.encounterTables = [self.gameData.encounterTable]
+
         else:         
             self.gameData = LocalGame(file_path = self.run_config["sheet_path"])
+            
+            # initialize slice history of encounter assignment
+            self.encounterTables = [self.gameData.encounterTable]
 
-        # initialize slice history of encounter assignment
-        self.encounterTables = [self.gameData.encounterTable]
+            # update assigned encounters if file exists
+            if os.path.exists(self.run_config["encounters_path"]):
+                self.importEncountersJSON(self.run_config["encounters_path"])
 
         # update honey table encounters
         if self.gameData.gameName == "Platinum":
@@ -179,14 +190,6 @@ class NRotMEncounterRouting():
 
         # notes for encounter order on final spreadsheet
         self.notes = {route: {} for route in list(self.gameData.encounterTable.index)}
-
-        # initialize assigned encounters
-        self.assignedEncounters = {}
-        self.assignedEncountersSlice = []
-        
-        # update assigned encounters if file exists
-        if os.path.exists(self.run_config["encounters_path"]):
-            self.importEncountersJSON(self.run_config["encounters_path"])
 
         if self.args.route: self.route()
 
