@@ -127,13 +127,18 @@ class CloudGame():
                                                 self.run_config["token_path"])
         self.gameName = api.main(api_call_params, "ss_values")["values"][0][0]
 
-        # open NRotM spreadsheet
-        # self.wb = openpyxl.load_workbook(filename = file_path)
-        # self.ws = self.wb["Team & Encounters"]
-        # self.routeCol = self.getCol("Location")
-        # self.encounterCol = self.getCol("Encounter")
-        # self.routeOrder = [route.value for route in self.ws[self.routeCol] if route.value not in [None, "Location"]]
-        # self.gameName = self.wb["Tracker"]["A1"].value
+        # check if NRotM spreadsheet has been parsed yet
+        if not os.path.exists(self.run_config["output_json_path"]):
+            api_call_params = {
+                    "spreadsheetId": self.run_config["spreadsheet_id"],
+                    "ranges": self.run_config["spreadsheet_range"],
+                    "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue"
+                }
+            
+            api.main(api_call_params, "ss", self.run_config["output_json_path"])
+
+        if not os.path.exists(f"{self.run_config["data_folder"]}/possible_encounters.json"):
+            self.get_possible_encounters()
 
         # init pokeapi calls
         self.pokeapi = pokeapi.PokeapiAccess()
@@ -143,7 +148,9 @@ class CloudGame():
         # game specific information
         if self.gameName == "Platinum":
             self.honeyMons = ["Aipom", "Heracross", "Wurmple", "Burmy", "Combee", "Cherubi", "Munchlax"]
-
+    
+    def get_possible_encounters(self):
+        pass
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
