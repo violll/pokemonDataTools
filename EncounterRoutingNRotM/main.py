@@ -113,7 +113,7 @@ class LocalGame():
         
         return pd.concat(res, axis=1)
     
-class CloudGame():
+class CloudGame(LocalGame):
     def __init__(self, run_config):
         self.run_config = run_config
 
@@ -123,9 +123,9 @@ class CloudGame():
                 "range": "Tracker!A1"
             }
         
-        api = google_sheets_api.GoogleSheetsApi(self.run_config["creds_path"],
-                                                self.run_config["token_path"])
-        self.gameName = api.main(api_call_params, "ss_values")["values"][0][0]
+        self.api = google_sheets_api.GoogleSheetsApi(self.run_config["creds_path"],
+                                                     self.run_config["token_path"])
+        self.gameName = self.api.main(api_call_params, "ss_values")["values"][0][0]
 
         # check if NRotM spreadsheet has been parsed yet
         if not os.path.exists(self.run_config["output_json_path"]):
@@ -135,22 +135,64 @@ class CloudGame():
                     "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue"
                 }
             
-            api.main(api_call_params, "ss", self.run_config["output_json_path"])
+            self.api.main(api_call_params, "ss", self.run_config["output_json_path"])
 
-        if not os.path.exists(f"{self.run_config["data_folder"]}/possible_encounters.json"):
-            self.get_possible_encounters()
+        with open(self.run_config["output_json_path"], "r") as f:
+            self.sheet_data = json.load(f)
 
         # init pokeapi calls
         self.pokeapi = pokeapi.PokeapiAccess()
         self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
         self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
 
+        # get encounter status
+        n_routes = len(self.sheet_data["sheets"][0]["data"][0]["rowData"])
+
+        api_call_params = {
+            "spreadsheetId": self.run_config["spreadsheet_id"],
+            "range": f"Team & Encounters!N5:N{5+n_routes}"
+        }
+        self.encounter_status = self.api.main(api_call_params, "ss_values")["values"]
+
+        # initialize encounter info
+        self.encounterData, self.encounters, self.routeOrder, self.failed_routes = self.get_encounter_data()
+        self.encounterTable = self.getEncounterTable()
+
         # game specific information
         if self.gameName == "Platinum":
             self.honeyMons = ["Aipom", "Heracross", "Wurmple", "Burmy", "Combee", "Cherubi", "Munchlax"]
     
-    def get_possible_encounters(self):
-        pass
+    def get_encounter_data(self):
+        possible_encounters = []
+        received_encounters = {}
+        route_order = []
+        failed_routes = []
+
+        for i in range(len(self.encounter_status)):
+            encounter_status = self.encounter_status[i]
+            row = self.sheet_data["sheets"][0]["data"][0]["rowData"][i]
+
+            route_data, encounter_data = row["values"]
+
+            route_name = route_data["userEnteredValue"]["stringValue"]
+            encounter_name = encounter_data.get("userEnteredValue", {}) \
+                                           .get("stringValue", "")
+            
+            route_order.append(route_name)
+            
+            # add encounter to the dict
+            if encounter_name != "" and \
+                (encounter_status != [] and encounter_status[0] != "F"): received_encounters[route_name] = encounter_name
+
+            if encounter_status != [] and encounter_status[0] == "F":
+                failed_routes.append(route_name)
+
+            # get possible encounters for the route
+            possible_route_encounters = encounter_data["dataValidation"]["condition"]["values"]
+            
+            possible_encounters.extend((route_name, mon["userEnteredValue"], 1) for mon in possible_route_encounters)
+        return possible_encounters, received_encounters, route_order, failed_routes
+
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
@@ -169,10 +211,16 @@ class NRotMEncounterRouting():
         
         # get initial dataset of routes and encounters
         if self.args.cloud:
-            self.gameData = CloudGame(self.run_config) #TODO
+            self.gameData = CloudGame(self.run_config)
 
             # initialize slice history of encounter assignment
             self.encounterTables = [self.gameData.encounterTable]
+
+            # update assigned encounters
+            group_data = GroupData(assignMe=self.gameData.encounters, 
+                                   routes=list(self.gameData.encounters.keys()) + self.gameData.failed_routes,
+                                   encounters=list(self.gameData.encounters.values()))
+            self.update(group_data, self.gameData.encounterTable, isJSON=True)
 
         else:         
             self.gameData = LocalGame(file_path = self.run_config["sheet_path"])
