@@ -24,15 +24,12 @@ from googleapiclient.errors import HttpError
 import json
 
 class GoogleSheetsApi:
-  def __init__(self, api_call_params, creds_path, token_path, output_path, save=False):
+  def __init__(self, creds_path, token_path):
     # If modifying these scopes, delete the file token.json.
     self.SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
-    self.api_call_params = api_call_params
     self.CREDS_PATH = creds_path
     self.TOKEN_PATH = token_path
-    self.OUTPUT_JSON_PATH = output_path
-    self.save = save
 
     self.creds = self.authorize()
 
@@ -60,18 +57,18 @@ class GoogleSheetsApi:
 
     return creds
 
-  def main(self, method):
+  def main(self, api_call_params, method, output_path = None):
     # Call the Sheets API
     if method == "ss":
       sheet = self.service.spreadsheets()
     elif method == "ss_values":
       sheet = self.service.spreadsheets().values()
 
-    r = sheet.get(**self.api_call_params)
+    r = sheet.get(**api_call_params)
 
     response = r.execute()
 
-    if self.save:
+    if output_path:
       with open(self.OUTPUT_JSON_PATH, "w+") as f:
         json.dump(response, f, indent=4)
 
