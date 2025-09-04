@@ -28,21 +28,19 @@ class GoogleSheetsApi:
     # If modifying these scopes, delete the file token.json.
     self.SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
-    # The ID and range of a sample spreadsheet.
     self.api_call_params = api_call_params
-
     self.CREDS_PATH = creds_path
     self.TOKEN_PATH = token_path
     self.OUTPUT_JSON_PATH = output_path
-
     self.save = save
+
+    self.creds = self.authorize()
+
+    self.service = build("sheets", "v4", credentials=self.creds)
 
     self.main()
 
-  def main(self):
-    """Shows basic usage of the Sheets API.
-    Prints values from a sample spreadsheet.
-    """
+  def authorize(self):
     creds = None
     # The file token.json stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -62,11 +60,12 @@ class GoogleSheetsApi:
       with open(self.TOKEN_PATH, "w") as token:
         token.write(creds.to_json())
 
-    try:
-      service = build("sheets", "v4", credentials=creds)
+    return creds
 
+  def main(self):
+    try:
       # Call the Sheets API
-      sheet = service.spreadsheets()
+      sheet = self.service.spreadsheets()
 
       r = sheet.get(**self.api_call_params)
 
