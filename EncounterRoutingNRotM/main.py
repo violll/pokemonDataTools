@@ -14,6 +14,7 @@ import sys
 sys.path.insert(0, helper.getAbsPath(__file__, 2))
 
 from src.pokeapi import main as pokeapi
+from src.utils.google_sheets_api import google_sheets_api
 
 
 class GroupData():
@@ -29,7 +30,7 @@ class GroupData():
     def __repr__(self) -> str:
         return json.dumps(self.assignMe, indent=4)
 
-class Game():
+class LocalGame():
     def __init__(self, file_path) -> None:
         # open NRotM spreadsheet
         self.wb = openpyxl.load_workbook(filename = file_path)
@@ -39,17 +40,20 @@ class Game():
         self.routeCol = self.getCol("Location")
         self.encounterCol = self.getCol("Encounter")
         self.routeOrder = [route.value for route in self.ws[self.routeCol] if route.value not in [None, "Location"]]
+        self.gameName = self.wb["Tracker"]["A1"].value
 
         # init pokeapi calls
         self.pokeapi = pokeapi.PokeapiAccess()
-        self.gameName = self.wb["Tracker"]["A1"].value
         self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
         self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+
+        # initialize encounter info
+        self.encounterData = self.getEncounterData()
+        self.encounterTable = self.getEncounterTable()
 
         # game specific information
         if self.gameName == "Platinum":
             self.honeyMons = ["Aipom", "Heracross", "Wurmple", "Burmy", "Combee", "Cherubi", "Munchlax"]
-
     
     def getCol(self, value):
         ws = self.wb["Team & Encounters"]
@@ -58,6 +62,136 @@ class Game():
                 if col.value == value: return col.column_letter
 
         return None
+    
+    def getEncounterData(self):
+        res = []
+
+        dvList = self.ws.data_validations.dataValidation
+        for dv in dvList: 
+            cells = [str(c) for c in list(dv.sqref.ranges) if self.encounterCol in str(c)]   # a list of CellRange elements
+            
+            if cells == []: continue 
+
+            encounters = dv.formula1.replace('"', "").split(",")                            # a list of encounters
+
+            cells = self.expandColon(cells)
+            for c in cells: 
+                loc = c.replace(self.encounterCol, chr(ord(self.encounterCol)-1))
+                route = self.ws[loc].value
+                res.extend([route, enc, 1] for enc in encounters)
+
+        return res
+    
+    def expandColon(self, cells):
+        res = []
+        for cell in cells:
+            if ":" not in cell: res.append(cell)
+            else:
+                start, stop = map(int, cell.replace(self.encounterCol, "").split(":"))
+                while start <= stop:
+                    res.append(self.encounterCol + str(start))
+                    start += 1
+
+        return res
+    
+    def getEncounterTable(self):
+        # initial df without manipulation
+        df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
+                         .pivot(index="Route", columns="Encounter", values="Value") 
+
+        return self.consolidateEvoLines(df.reindex([route for route in self.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
+    
+    def consolidateEvoLines(self, df):
+        res = []
+
+        for line in self.evoLines:
+            relevantLine = [re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M).group() for mon in line if re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M)]
+            if len(relevantLine) != 0:
+                dfFiltered = pd.DataFrame(df[relevantLine].agg("max", axis="columns"))
+                dfFiltered.columns = ["/".join(relevantLine)]
+                res.append(dfFiltered)
+        
+        return pd.concat(res, axis=1)
+    
+class CloudGame(LocalGame):
+    def __init__(self, run_config):
+        self.run_config = run_config
+
+        # read game name
+        api_call_params = {
+                "spreadsheetId": self.run_config["spreadsheet_id"],
+                "range": "Tracker!A1"
+            }
+        
+        self.api = google_sheets_api.GoogleSheetsApi(self.run_config["creds_path"],
+                                                     self.run_config["token_path"])
+        self.gameName = self.api.main(api_call_params, "ss_values")["values"][0][0]
+
+        # check if NRotM spreadsheet has been parsed yet
+        if not os.path.exists(self.run_config["output_json_path"]):
+            api_call_params = {
+                    "spreadsheetId": self.run_config["spreadsheet_id"],
+                    "ranges": self.run_config["spreadsheet_range"],
+                    "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue"
+                }
+            
+            self.api.main(api_call_params, "ss", self.run_config["output_json_path"])
+
+        with open(self.run_config["output_json_path"], "r") as f:
+            self.sheet_data = json.load(f)
+
+        # init pokeapi calls
+        self.pokeapi = pokeapi.PokeapiAccess()
+        self.pokedex = self.pokeapi.getPokedexFromRegion(self.gameName)
+        self.evoLines = self.pokeapi.getEvoLinesFromPokedex(self.pokedex)
+
+        # get encounter status
+        n_routes = len(self.sheet_data["sheets"][0]["data"][0]["rowData"])
+
+        api_call_params = {
+            "spreadsheetId": self.run_config["spreadsheet_id"],
+            "range": f"Team & Encounters!N5:N{5+n_routes}"
+        }
+        self.encounter_status = self.api.main(api_call_params, "ss_values")["values"]
+
+        # initialize encounter info
+        self.encounterData, self.encounters, self.routeOrder, self.failed_routes = self.get_encounter_data()
+        self.encounterTable = self.getEncounterTable()
+
+        # game specific information
+        if self.gameName == "Platinum":
+            self.honeyMons = ["Aipom", "Heracross", "Wurmple", "Burmy", "Combee", "Cherubi", "Munchlax"]
+    
+    def get_encounter_data(self):
+        possible_encounters = []
+        received_encounters = {}
+        route_order = []
+        failed_routes = []
+
+        for i in range(len(self.encounter_status)):
+            encounter_status = self.encounter_status[i]
+            row = self.sheet_data["sheets"][0]["data"][0]["rowData"][i]
+
+            route_data, encounter_data = row["values"]
+
+            route_name = route_data["userEnteredValue"]["stringValue"]
+            encounter_name = encounter_data.get("userEnteredValue", {}) \
+                                           .get("stringValue", "")
+            
+            route_order.append(route_name)
+            
+            # add encounter to the dict
+            if encounter_name != "" and \
+                (encounter_status != [] and encounter_status[0] != "F"): received_encounters[route_name] = encounter_name
+
+            if encounter_status != [] and encounter_status[0] == "F":
+                failed_routes.append(route_name)
+
+            # get possible encounters for the route
+            possible_route_encounters = encounter_data["dataValidation"]["condition"]["values"]
+            
+            possible_encounters.extend((route_name, mon["userEnteredValue"], 1) for mon in possible_route_encounters)
+        return possible_encounters, received_encounters, route_order, failed_routes
 
 class NRotMEncounterRouting():
     def __init__(self) -> None:
@@ -69,32 +203,40 @@ class NRotMEncounterRouting():
         # read config file
         with open(self.args.config, "r") as f:
             self.run_config = yaml.safe_load(f)
-        
-        self.region = ["Johtonian", "Kantonian"]
-
-        self.gameData = Game(file_path = self.run_config["sheet_path"])
-
-        # get initial dataset of routes and encounters
-        self.encounterData = self.getEncounterData()
-        self.encounterTable = self.getEncounterTable()
-
-        # initialize slice history of encounter assignment
-        self.encounterTables = [self.encounterTable]
-
-        # update honey table encounters
-        if self.gameData.gameName == "Platinum":
-            self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.encounterTable]
-
-        # notes for encounter order on final spreadsheet
-        self.notes = {route: {} for route in list(self.encounterTable.index)}
 
         # initialize assigned encounters
         self.assignedEncounters = {}
         self.assignedEncountersSlice = []
         
-        # update assigned encounters if file exists
-        if os.path.exists(self.run_config["encounters_path"]):
-            self.importEncountersJSON(self.run_config["encounters_path"])
+        # get initial dataset of routes and encounters
+        if self.args.cloud:
+            self.gameData = CloudGame(self.run_config)
+
+            # initialize slice history of encounter assignment
+            self.encounterTables = [self.gameData.encounterTable]
+
+            # update assigned encounters
+            group_data = GroupData(assignMe=self.gameData.encounters, 
+                                   routes=list(self.gameData.encounters.keys()) + self.gameData.failed_routes,
+                                   encounters=list(self.gameData.encounters.values()))
+            self.update(group_data, self.gameData.encounterTable, isJSON=True)
+
+        else:         
+            self.gameData = LocalGame(file_path = self.run_config["sheet_path"])
+            
+            # initialize slice history of encounter assignment
+            self.encounterTables = [self.gameData.encounterTable]
+
+            # update assigned encounters if file exists
+            if os.path.exists(self.run_config["encounters_path"]):
+                self.importEncountersJSON(self.run_config["encounters_path"])
+
+        # update honey table encounters
+        if self.gameData.gameName == "Platinum":
+            self.gameData.honeyMons = [mon for mon in self.gameData.honeyMons if mon in self.gameData.encounterTable]
+
+        # notes for encounter order on final spreadsheet
+        self.notes = {route: {} for route in list(self.gameData.encounterTable.index)}
 
         if self.args.route: self.route()
 
@@ -104,13 +246,13 @@ class NRotMEncounterRouting():
                 
         routes = list(route for route in assignMe.keys() if assignMe[route] != "")
         failedRoutes = list(route for route in assignMe.keys() if assignMe[route] == "" )
-        encounters = [list(self.encounterTable.filter(like=encounter, axis=1).columns)[0] for encounter in assignMe.values() if encounter != "" and list(self.encounterTable.filter(like=encounter, axis=1).columns) != []]
+        encounters = [list(self.gameData.encounterTable.filter(like=encounter, axis=1).columns)[0] for encounter in assignMe.values() if encounter != "" and list(self.gameData.encounterTable.filter(like=encounter, axis=1).columns) != []]
                 
         assignMe = {routes[i]: encounters[i] for i in range(len(routes))}
         routes = routes + failedRoutes
 
         groupData = GroupData(assignMe=assignMe, routes=routes, encounters=encounters) 
-        self.update(groupData=groupData, df=self.encounterTable, isJSON=True) 
+        self.update(groupData=groupData, df=self.gameData.encounterTable, isJSON=True) 
 
     def initParser(self):
         parser = argparse.ArgumentParser()
@@ -126,6 +268,10 @@ class NRotMEncounterRouting():
         parser.add_argument("--config", "-c",
                             required = True,
                             help = ".yaml file for configuring run data")
+        parser.add_argument("--cloud", "-cl", 
+                            required = False,
+                            help = "toggle loading encounter data from google sheet",
+                            action = "store_true")
         return parser
 
     def route(self):
@@ -139,56 +285,6 @@ class NRotMEncounterRouting():
         # ask user about unique encounters before finishing?
         self.printProgress(pd.DataFrame.from_dict({"Encounter": self.assignedEncounters}), "*==")
         self.exportTable()
-
-    def getEncounterData(self):
-        res = []
-
-        dvList = self.gameData.ws.data_validations.dataValidation
-        for dv in dvList: 
-            cells = [str(c) for c in list(dv.sqref.ranges) if self.gameData.encounterCol in str(c)]   # a list of CellRange elements
-            
-            if cells == []: continue 
-
-            encounters = dv.formula1.replace('"', "").split(",")                            # a list of encounters
-
-            cells = self.expandColon(cells)
-            for c in cells: 
-                loc = c.replace(self.gameData.encounterCol, chr(ord(self.gameData.encounterCol)-1))
-                route = self.gameData.ws[loc].value
-                res.extend([route, enc, 1] for enc in encounters)
-
-        return res
-
-    def expandColon(self, cells):
-        res = []
-        for cell in cells:
-            if ":" not in cell: res.append(cell)
-            else:
-                start, stop = map(int, cell.replace(self.gameData.encounterCol, "").split(":"))
-                while start <= stop:
-                    res.append(self.gameData.encounterCol + str(start))
-                    start += 1
-
-        return res
-
-    def getEncounterTable(self):
-        # initial df without manipulation
-        df = pd.DataFrame.from_records(self.encounterData, columns=["Route", "Encounter", "Value"]) \
-                         .pivot(index="Route", columns="Encounter", values="Value") 
-
-        return self.consolidateEvoLines(df.reindex([route for route in self.gameData.routeOrder if route in list(df.index)])).dropna(axis=0, how="all")
-    
-    def consolidateEvoLines(self, df):
-        res = []
-
-        for line in self.gameData.evoLines:
-            relevantLine = [re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M).group() for mon in line if re.search(r"^{}".format(mon), "\n".join(df.columns), flags=re.I|re.M)]
-            if len(relevantLine) != 0:
-                dfFiltered = pd.DataFrame(df[relevantLine].agg("max", axis="columns"))
-                dfFiltered.columns = ["/".join(relevantLine)]
-                res.append(dfFiltered)
-        
-        return pd.concat(res, axis=1)
 
     def assignOneToOne(self):
         assigned = False
