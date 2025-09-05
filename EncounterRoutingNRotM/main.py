@@ -163,7 +163,9 @@ class CloudGame(LocalGame):
             "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue",
         }
 
-        self.sheet_data = self.api.main(api_call_params, "ss", self.run_config["output_json_path"])
+        self.sheet_data = self.api.main(
+            api_call_params, "ss", self.run_config["output_json_path"]
+        )
 
         # init pokeapi calls
         self.pokeapi = pokeapi.PokeapiAccess()
@@ -178,7 +180,12 @@ class CloudGame(LocalGame):
             "range": f"Team & Encounters!N5:N{5 + n_routes}",
         }
         self.encounter_status_response = self.api.main(api_call_params, "ss_values")
-        self.encounter_status = self.encounter_status_response.get("values", []) + [[] for _ in range(n_routes-len(self.encounter_status_response.get("values", [])))]
+        self.encounter_status = self.encounter_status_response.get("values", []) + [
+            []
+            for _ in range(
+                n_routes - len(self.encounter_status_response.get("values", []))
+            )
+        ]
 
         # initialize encounter info
         self.encounter_data, self.encounters, self.route_order, self.failed_routes = (
@@ -505,7 +512,9 @@ class NRotMEncounterRouting:
                 and sum(row[self.GameData.honey_mons]) == row.sum()
                 and index not in group_data.routes
             ]
-            flag_group_data = GroupData(remaining_honey_routes, self.GameData.honey_mons)
+            flag_group_data = GroupData(
+                remaining_honey_routes, self.GameData.honey_mons
+            )
             flag_group_data.assign_me = {
                 route: " or ".join(flag_group_data.encounters)
                 for route in flag_group_data.routes
