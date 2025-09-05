@@ -156,18 +156,14 @@ class CloudGame(LocalGame):
         )
         self.game_name = self.api.main(api_call_params, "ss_values")["values"][0][0]
 
-        # check if NRotM spreadsheet has been parsed yet
-        if not os.path.exists(self.run_config["output_json_path"]):
-            api_call_params = {
-                "spreadsheetId": self.run_config["spreadsheet_id"],
-                "ranges": self.run_config["spreadsheet_range"],
-                "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue",
-            }
+        # get current encounters and options from NRotM spreadsheet
+        api_call_params = {
+            "spreadsheetId": self.run_config["spreadsheet_id"],
+            "ranges": self.run_config["spreadsheet_range"],
+            "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue",
+        }
 
-            self.api.main(api_call_params, "ss", self.run_config["output_json_path"])
-
-        with open(self.run_config["output_json_path"], "r") as f:
-            self.sheet_data = json.load(f)
+        self.sheet_data = self.api.main(api_call_params, "ss", self.run_config["output_json_path"])
 
         # init pokeapi calls
         self.pokeapi = pokeapi.PokeapiAccess()
@@ -181,7 +177,8 @@ class CloudGame(LocalGame):
             "spreadsheetId": self.run_config["spreadsheet_id"],
             "range": f"Team & Encounters!N5:N{5 + n_routes}",
         }
-        self.encounter_status = self.api.main(api_call_params, "ss_values")["values"]
+        self.encounter_status_response = self.api.main(api_call_params, "ss_values")
+        self.encounter_status = self.encounter_status_response.get("values", []) + [[] for _ in range(n_routes-len(self.encounter_status_response.get("values", [])))]
 
         # initialize encounter info
         self.encounter_data, self.encounters, self.route_order, self.failed_routes = (
