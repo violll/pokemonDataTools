@@ -19,46 +19,46 @@ BASE_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id or name}/"
 class PokeapiAccess():
     def __init__(self) -> None:
         # initialize the session
-        self.session = requests_cache.CachedSession()
-        self.placeholder = "{id or name}"   # placeholder to substitute data for api calls in the BASE_ global variables
+        self.Session = requests_cache.CachedSession()
+        self.placeholder = "{id or name}"   # placeholder to substitute data for api calls in the base_ global variables
 
-        self.versions = self.getVersions()  # list of valid game versions to call
+        self.versions = self.get_versions()  # list of valid game versions to call
 
-    def getVersions(self):
-        versionsResponse = self.get(BASE_VERSIONS + "?limit=none").json()
-        res = [entry["name"] for entry in versionsResponse["results"]]
-        while versionsResponse["next"]:
-            versionsResponse = self.get(versionsResponse["next"]).json()
-            res.extend([entry["name"] for entry in versionsResponse["results"]])
+    def get_versions(self):
+        versions_response = self.get(BASE_VERSIONS + "?limit=none").json()
+        res = [entry["name"] for entry in versions_response["results"]]
+        while versions_response["next"]:
+            versions_response = self.get(versions_response["next"]).json()
+            res.extend([entry["name"] for entry in versions_response["results"]])
         return res
     
     def get(self, url, modifier=""):
-        response = self.session.get(url.replace(self.placeholder, modifier))
+        response = self.Session.get(url.replace(self.placeholder, modifier))
         return response
     
     def pprint(self, data):
         print(json.dumps(data, indent=4))
 
     # ensure version name is formatted correctly by checking against self.versions
-    def verifyVersion(self, version):
+    def verify_version(self, version):
         pattern = re.compile("^" + version.replace(" ", ".*"), flags=re.I|re.M)
-        versionName = re.search(pattern, "\n".join(self.versions))
+        version_name = re.search(pattern, "\n".join(self.versions))
 
-        try:
-            versionName = versionName.group()
-        except:
+        if version_name:
+            version_name = version_name.group()
+        else:
             print("invalid version name! select from the following: \n{}".format(self.versions))
-            return self.verifyVersion(input("> "))
+            return self.verify_version(input("> "))
         
-        return versionName
+        return version_name
 
     # get regional pokedex from game name 
-    # IMPORTANT this does not identify regional variants at present
-    def getPokedexFromRegion(self, version) -> list[dict]:
-        version = self.verifyVersion(version)
-        # get the pokedex via versionGroup
-        versionGroup = self.get(BASE_VERSIONS, version).json()["version_group"]
-        pokedex = self.get(versionGroup["url"]).json()["pokedexes"]
+    # important this does not identify regional variants at present
+    def get_pokedex_from_region(self, version) -> list[dict]:
+        version = self.verify_version(version)
+        # get the pokedex via version_group
+        version_group = self.get(BASE_VERSIONS, version).json()["version_group"]
+        pokedex = self.get(version_group["url"]).json()["pokedexes"]
 
         if len(pokedex) == 1:
             res = self.get(pokedex[0]["url"]).json()["pokemon_entries"]
@@ -71,28 +71,29 @@ class PokeapiAccess():
             
         return res
     
-    def getEvoLinesFromPokedex(self, pokedex):
+    def get_evo_lines_from_pokedex(self, pokedex):
         visited = set()
-        evoLines = []
+        evo_lines = []
         for mon in pokedex:
             if mon["pokemon_species"]["name"] not in visited:
-                evoLineChain = self.get(self.get(mon["pokemon_species"]["url"]) 
+                evo_line_chain = self.get(self.get(mon["pokemon_species"]["url"]) 
                                     .json()["evolution_chain"]["url"]).json()["chain"]
-                evoLine = self.recurseEvoLines(evoLineChain)
-                visited.update(evoLine)
-                evoLines.append(evoLine)
+                evo_line = self.recurse_evo_lines(evo_line_chain)
+                visited.update(evo_line)
+                evo_lines.append(evo_line)
                 
-        return evoLines
+        return evo_lines
 
-    def recurseEvoLines(self, evoLineChain):
-        monName = evoLineChain["species"]["name"]
-        if evoLineChain["evolves_to"] == []:
-            return [monName]
+    def recurse_evo_lines(self, evo_line_chain):
+        mon_name = evo_line_chain["species"]["name"]
+        if evo_line_chain["evolves_to"] == []:
+            return [mon_name]
         else:
             res = []
-            for evo in evoLineChain["evolves_to"]:
-                if monName not in res: res.append(monName)
-                res.extend(self.recurseEvoLines(evo))
+            for evo in evo_line_chain["evolves_to"]:
+                if mon_name not in res: 
+                    res.append(mon_name)
+                res.extend(self.recurse_evo_lines(evo))
             return res
 
 
