@@ -364,7 +364,7 @@ class NRotMEncounterRouting:
 
         # ask user about unique encounters before finishing?
         self.print_progress(
-            pd.DataFrame.from_dict({"Encounter": self.assigned_encounters}), "*=="
+            pd.DataFrame.from_dict({"Encounter": self.assigned_encounters}), "*=*=*"
         )
         self.export_table()
 
