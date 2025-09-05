@@ -292,6 +292,8 @@ class NRotMEncounterRouting:
 
         if self.args.route:
             self.route()
+        if self.args.test:
+            self.test()
 
     def import_encounters_json(self, encounters_path):
         with open(encounters_path, "r") as f:
@@ -351,6 +353,40 @@ class NRotMEncounterRouting:
             action="store_true",
         )
         return parser
+
+    def test(self):
+        working_df = self.encounter_tables[-1].copy()
+        route, encounter = input(
+            "What pair would you like to test? \n\tformat as (route):(encounter)\n> "
+        ).split(":")
+
+        # validate encounter, route, and pair
+        valid_encounter = re.search(
+            r"(?:(?<=\n)|.*){}.*(?=\n|$)".format(encounter),
+            "\n".join(working_df.columns),
+            flags=re.I | re.M,
+        )
+
+        if not valid_encounter:
+            print("Type a valid encounter!")
+            self.test()
+
+        valid_route = route in working_df.index
+        if not valid_route:
+            print("Type a valid route!")
+            self.test()
+
+        valid_pair = working_df.loc[route, encounter]
+        if False not in [valid_encounter, valid_route, valid_pair]:
+            # test the pair
+
+            group_data = GroupData(
+                routes=[route],
+                encounters=[encounter],
+                assign_me={route: encounter},
+            )
+
+            working_df = self.update(group_data, working_df)
 
     def route(self):
         methods = {self.assign_one_to_one: True, self.check_duplicates: True}
