@@ -1,21 +1,20 @@
+import argparse
+import json
+import os
+import re
+import sys
+
+import helper
+import numpy as np
 import openpyxl
 import pandas as pd
-import json
-import numpy as np
-import argparse
-import re
 import yaml
-import os
-
-# adds the path absolutely so the code can be run from anywhere
-import helper
-
-import sys
-sys.path.insert(0, helper.getAbsPath(__file__, 2))
 
 from src.pokeapi import main as pokeapi
 from src.utils.google_sheets_api import google_sheets_api
 
+# adds the path absolutely so the code can be run from anywhere
+sys.path.insert(0, helper.getAbsPath(__file__, 2))
 
 class GroupData():
     def __init__(self, routes=[], encounters=[], assignMe = {}) -> None:
