@@ -193,7 +193,6 @@ class CloudGame(LocalGame):
             possible_encounters.extend((route_name, mon["userEnteredValue"], 1) for mon in possible_route_encounters)
         return possible_encounters, received_encounters, route_order, failed_routes
 
-
 class NRotMEncounterRouting():
     def __init__(self) -> None:
         # user can include an optional argument to check for a json file of encounters
