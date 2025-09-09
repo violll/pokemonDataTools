@@ -36,14 +36,22 @@ class PokeapiAccess():
         version = self.verify_version(version)
 
         # get region from version
-        region = self.get_region_from_version(version)
+        regions = self.get_region_from_version(version)
 
-        # reformat route
-        location_area = f"{region}-{route}".lower().replace(" ", "-")
+        # loop through regions
+        # for most games there should only be one but in the case there are
+        # multiple (ex: gold) the loop checks each region
+        for region in regions:
+            # reformat route
+            location_area = f"{region}-{route}".lower().replace(" ", "-")
 
-        # make the request
-        location_area_encounters_response = self.get(BASE_LOCATION_ENCOUNTERS, location_area).json()
-        self.pprint(location_area_encounters_response)
+            # make the request
+            location_area_encounters_response = self.get(BASE_LOCATION_ENCOUNTERS, location_area)
+
+            if location_area_encounters_response.ok:
+                location_area_encounters = location_area_encounters_response.json()
+                self.pprint(location_area_encounters)
+
         return None
 
     def get_versions(self):
