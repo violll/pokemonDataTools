@@ -25,14 +25,23 @@ class PokeapiAccess():
 
         self.versions = self.get_versions()  # list of valid game versions to call
 
+    def get_region_from_version(self, version):
+        version = self.verify_version(version)
+        version_group = self.get(BASE_VERSIONS, version).json()["version_group"]
+        regions = self.get(version_group["url"]).json()["regions"]
+
+        return [r["name"] for r in regions]
+
     def get_location_area_encounters(self, route, version):
         version = self.verify_version(version)
 
         # get region from version
-        region = "Kalos"
+        region = self.get_region_from_version(version)
 
         # reformat route
         location_area = f"{region}-{route}".lower().replace(" ", "-")
+
+        # make the request
         location_area_encounters_response = self.get(BASE_LOCATION_ENCOUNTERS, location_area).json()
         self.pprint(location_area_encounters_response)
         return None
@@ -112,4 +121,4 @@ class PokeapiAccess():
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
-    print(PokeAPI.get_location_area_encounters("Route 8", "X"))
+    PokeAPI.get_location_area_encounters("Route 8", "X")
