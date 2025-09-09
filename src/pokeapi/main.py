@@ -15,6 +15,7 @@ BASE_LOCATIONS = "https://pokeapi.co/api/v2/pokemon/{id or name}/encounters"
 BASE_VERSIONS = "https://pokeapi.co/api/v2/version/{id or name}/"
 BASE_VERSION_GROUPS = "https://pokeapi.co/api/v2/version-group/{id or name}"
 BASE_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id or name}/"
+BASE_LOCATION_ENCOUNTERS = "https://pokeapi.co/api/v2/location-area/{id or name}-area/"
 
 class PokeapiAccess():
     def __init__(self) -> None:
@@ -23,6 +24,18 @@ class PokeapiAccess():
         self.placeholder = "{id or name}"   # placeholder to substitute data for api calls in the base_ global variables
 
         self.versions = self.get_versions()  # list of valid game versions to call
+
+    def get_location_area_encounters(self, route, version):
+        version = self.verify_version(version)
+
+        # get region from version
+        region = "Kalos"
+
+        # reformat route
+        location_area = f"{region}-{route}".lower().replace(" ", "-")
+        location_area_encounters_response = self.get(BASE_LOCATION_ENCOUNTERS, location_area).json()
+        self.pprint(location_area_encounters_response)
+        return None
 
     def get_versions(self):
         versions_response = self.get(BASE_VERSIONS + "?limit=none").json()
@@ -98,4 +111,5 @@ class PokeapiAccess():
 
 
 if __name__ == "__main__":
-    PokeapiAccess()
+    PokeAPI = PokeapiAccess()
+    print(PokeAPI.get_location_area_encounters("Route 8", "X"))
