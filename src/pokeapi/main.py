@@ -2,6 +2,8 @@ import requests_cache
 import json
 import re
 
+import pandas as pd
+
 # adds the path absolutely so the code can be run from anywhere
 from pathlib import Path
 import sys
@@ -16,6 +18,16 @@ BASE_VERSIONS = "https://pokeapi.co/api/v2/version/{id or name}/"
 BASE_VERSION_GROUPS = "https://pokeapi.co/api/v2/version-group/{id or name}"
 BASE_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id or name}/"
 BASE_LOCATION_ENCOUNTERS = "https://pokeapi.co/api/v2/location-area/{id or name}-area/"
+
+VALID_CONDITION_VALUES = {
+    "sinnoh": {
+        "separators": ["time-morning", "time-day", "time-night"],
+        "applied_to_all": ["swarm-no", None, "radar-off", "slot2-none"]
+    }
+}
+
+def set_union(sets):
+    return set().union(*sets)
 
 class PokeapiAccess():
     def __init__(self) -> None:
@@ -32,7 +44,7 @@ class PokeapiAccess():
 
         return [r["name"] for r in regions]
 
-    def get_location_area_encounters(self, route, version):
+    def get_location_area_encounters(self, route, version, additional_ruleset_encounters=False):
         version = self.verify_version(version)
 
         # get region from version
@@ -42,6 +54,8 @@ class PokeapiAccess():
         # for most games there should only be one but in the case there are
         # multiple (ex: gold) the loop checks each region
         for region in regions:
+            valid_condition_values = VALID_CONDITION_VALUES[region]
+            
             # reformat route
             location_area = f"{region}-{route}".lower().replace(" ", "-")
 
@@ -49,9 +63,76 @@ class PokeapiAccess():
             location_area_encounters_response = self.get(BASE_LOCATION_ENCOUNTERS, location_area)
 
             if location_area_encounters_response.ok:
+                encounters = []
                 location_area_encounters = location_area_encounters_response.json()
-                self.pprint(location_area_encounters)
 
+                for pokemon in location_area_encounters["pokemon_encounters"]:
+                    pokemon_name = pokemon["pokemon"]["name"]
+
+                    # check if a special ruleset is being used
+                    # if so, encounters will be passed into additional_ruleset_encounters
+                    # only these encounters should be parsed
+                    if additional_ruleset_encounters and pokemon_name not in additional_ruleset_encounters: 
+                        continue
+
+                    # loop through versions and select the correct one
+                    for pokemon_version in pokemon["version_details"]:
+                        if pokemon_version["version"]["name"] == version:
+                            df = pd.DataFrame.from_dict(pokemon_version["encounter_details"], 
+                                                        orient="columns")
+                            df["method"] = df["method"].apply(lambda x: x["name"])
+                            df["pokemon"] = pokemon_name
+
+                            # do something with condition values here
+                            if df["condition_values"].apply(lambda x: len(x)).sum() > 0:
+                                # print(f"{pokemon_name} has conditions")
+                                # separate each condition into its own row
+                                df = df.explode("condition_values")
+
+                                # extract the name of the condition value
+                                df["condition_values"] = df["condition_values"].apply(
+                                    lambda x: x["name"] if isinstance(x, dict) else None
+                                    )
+                                                                
+                                # check if there are any valid condition values
+                                if len(set(df["condition_values"]).intersection(set(valid_condition_values["separators"] + valid_condition_values["applied_to_all"]))) > 0:
+                                    # print(f"{pokemon_name} has valid conditions")
+                                    # extract the valid condition values                                
+                                    separators = df[df["condition_values"].isin(valid_condition_values["separators"])]
+                                    applied_to_all = df[df["condition_values"].isin(valid_condition_values["applied_to_all"])]
+
+                                    # modify the condition value to match each separator
+                                    applying_to_all = []
+                                    for i in range(len(valid_condition_values["separators"])):
+                                        applying_to_sep = applied_to_all.copy(deep=True)
+                                        applying_to_sep["condition_values"] = valid_condition_values["separators"][i]
+                                        applying_to_all.append(applying_to_sep)
+
+                                    df = pd.concat([separators] + applying_to_all)
+
+                                    # print(df.groupby(["pokemon", "method", "condition_values"]).agg(
+                                    #     chance=("chance", "sum")
+                                    # ))
+                                else: 
+                                    # if there are no valid conditions, the pokemon cannot be encountered
+                                    continue
+                            else:
+                                df["condition_values"] = ""
+                            encounters.append(df)
+                            break
+
+                df = pd.concat(encounters)
+
+                # set the level range by the minimum and maximum level values
+                df["level_range"] = df.apply(lambda x: set(range(x["min_level"], x["max_level"]+1)), axis=1)
+
+                # group by method and pokemon 
+                return df.groupby(by=["method", "condition_values", "pokemon"]).agg(
+                    chance=("chance", "sum"),
+                    level_range=("level_range", set_union)
+                )
+                    
+        # if you make it down here, there's something wrong with your input 
         return None
 
     def get_versions(self):
@@ -129,4 +210,5 @@ class PokeapiAccess():
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
-    PokeAPI.get_location_area_encounters("Route 8", "X")
+    # PokeAPI.get_location_area_encounters("Route 8", "X")
+    print(PokeAPI.get_location_area_encounters("Route 201", "Platinum"))
