@@ -156,18 +156,16 @@ class CloudGame(LocalGame):
         )
         self.game_name = self.api.main(api_call_params, "ss_values")["values"][0][0]
 
-        # check if NRotM spreadsheet has been parsed yet
-        if not os.path.exists(self.run_config["output_json_path"]):
-            api_call_params = {
-                "spreadsheetId": self.run_config["spreadsheet_id"],
-                "ranges": self.run_config["spreadsheet_range"],
-                "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue",
-            }
+        # get current encounters and options from NRotM spreadsheet
+        api_call_params = {
+            "spreadsheetId": self.run_config["spreadsheet_id"],
+            "ranges": self.run_config["spreadsheet_range"],
+            "fields": "sheets.data.rowData.values.dataValidation,sheets.data.rowData.values.userEnteredValue.stringValue",
+        }
 
-            self.api.main(api_call_params, "ss", self.run_config["output_json_path"])
-
-        with open(self.run_config["output_json_path"], "r") as f:
-            self.sheet_data = json.load(f)
+        self.sheet_data = self.api.main(
+            api_call_params, "ss", self.run_config["output_json_path"]
+        )
 
         # init pokeapi calls
         self.pokeapi = pokeapi.PokeapiAccess()
@@ -181,7 +179,13 @@ class CloudGame(LocalGame):
             "spreadsheetId": self.run_config["spreadsheet_id"],
             "range": f"Team & Encounters!N5:N{5 + n_routes}",
         }
-        self.encounter_status = self.api.main(api_call_params, "ss_values")["values"]
+        self.encounter_status_response = self.api.main(api_call_params, "ss_values")
+        self.encounter_status = self.encounter_status_response.get("values", []) + [
+            []
+            for _ in range(
+                n_routes - len(self.encounter_status_response.get("values", []))
+            )
+        ]
 
         # initialize encounter info
         self.encounter_data, self.encounters, self.route_order, self.failed_routes = (
@@ -295,6 +299,8 @@ class NRotMEncounterRouting:
 
         if self.args.route:
             self.route()
+        if self.args.test:
+            self.test()
 
     def import_encounters_json(self, encounters_path):
         with open(encounters_path, "r") as f:
@@ -355,6 +361,40 @@ class NRotMEncounterRouting:
         )
         return parser
 
+    def test(self):
+        working_df = self.encounter_tables[-1].copy()
+        route, encounter = input(
+            "What pair would you like to test? \n\tformat as (route):(encounter)\n> "
+        ).split(":")
+
+        # validate encounter, route, and pair
+        valid_encounter = re.search(
+            r"(?:(?<=\n)|.*){}.*(?=\n|$)".format(encounter),
+            "\n".join(working_df.columns),
+            flags=re.I | re.M,
+        )
+
+        if not valid_encounter:
+            print("Type a valid encounter!")
+            self.test()
+
+        valid_route = route in working_df.index
+        if not valid_route:
+            print("Type a valid route!")
+            self.test()
+
+        valid_pair = working_df.loc[route, encounter]
+        if False not in [valid_encounter, valid_route, valid_pair]:
+            # test the pair
+
+            group_data = GroupData(
+                routes=[route],
+                encounters=[encounter],
+                assign_me={route: encounter},
+            )
+
+            working_df = self.update(group_data, working_df)
+
     def route(self):
         methods = {self.assign_one_to_one: True, self.check_duplicates: True}
 
@@ -364,7 +404,7 @@ class NRotMEncounterRouting:
 
         # ask user about unique encounters before finishing?
         self.print_progress(
-            pd.DataFrame.from_dict({"Encounter": self.assigned_encounters}), "*=="
+            pd.DataFrame.from_dict({"Encounter": self.assigned_encounters}), "*=*=*"
         )
         self.export_table()
 
@@ -472,7 +512,9 @@ class NRotMEncounterRouting:
                 and sum(row[self.GameData.honey_mons]) == row.sum()
                 and index not in group_data.routes
             ]
-            flag_group_data = GroupData(remaining_honey_routes, self.GameData.honey_mons)
+            flag_group_data = GroupData(
+                remaining_honey_routes, self.GameData.honey_mons
+            )
             flag_group_data.assign_me = {
                 route: " or ".join(flag_group_data.encounters)
                 for route in flag_group_data.routes
