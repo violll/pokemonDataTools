@@ -22,6 +22,11 @@ BASE_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id or name}/"
 BASE_LOCATION_ENCOUNTERS = "https://pokeapi.co/api/v2/location-area/{id or name}-area/"
 
 VALID_CONDITION_VALUES = {
+    "kanto": {"separators": ["time-morning", "time-day", "time-night"], "applied_to_all": []},
+    "johto": {
+        "separators": ["time-morning", "time-day", "time-night"], 
+        "applied_to_all": []},
+    "hoenn": {"separators": [], "applied_to_all": []},
     "sinnoh": {
         "separators": ["time-morning", "time-day", "time-night"],
         "applied_to_all": ["swarm-no", None, "radar-off", "slot2-none"],
@@ -106,6 +111,11 @@ class PokeapiAccess:
                                     lambda x: x["name"] if isinstance(x, dict) else None
                                 )
 
+                                print(df)
+                                print(set(df["condition_values"]).intersection(
+                                            set(valid_condition_values["separators"]
+                                                + valid_condition_values["applied_to_all"])))
+
                                 # check if there are any valid condition values
                                 if (
                                     len(
@@ -152,18 +162,23 @@ class PokeapiAccess:
                                 df["condition_values"] = ""
                             encounters.append(df)
                             break
+                
+                # check to see if extraction was successful
+                if len(encounters) > 0:
+                    df = pd.concat(encounters)
 
-                df = pd.concat(encounters)
+                    # set the level range by the minimum and maximum level values
+                    df["level_range"] = df.apply(
+                        lambda x: set(range(x["min_level"], x["max_level"] + 1)), axis=1
+                    )
 
-                # set the level range by the minimum and maximum level values
-                df["level_range"] = df.apply(
-                    lambda x: set(range(x["min_level"], x["max_level"] + 1)), axis=1
-                )
-
-                # group by method and pokemon
-                return df.groupby(by=["method", "condition_values", "pokemon"]).agg(
-                    chance=("chance", "sum"), level_range=("level_range", set_union)
-                )
+                    # group by method and pokemon
+                    return df.groupby(by=["method", "condition_values", "pokemon"]).agg(
+                        chance=("chance", "sum"), level_range=("level_range", set_union)
+                    )
+                else: 
+                    print(f"{version} - {region} - {route} has no valid encounters. Check your input. Does PokeAPI have this data?")
+                    return None
 
         # if you make it down here, there's something wrong with your input
         return None
@@ -250,3 +265,4 @@ class PokeapiAccess:
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
+    print(PokeAPI.get_location_area_encounters("Route 1", "silver"))
