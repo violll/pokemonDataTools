@@ -23,6 +23,10 @@ VALID_CONDITION_VALUES = {
     "sinnoh": {
         "separators": ["time-morning", "time-day", "time-night"],
         "applied_to_all": ["swarm-no", None, "radar-off", "slot2-none"]
+    },
+    "kalos": {
+        "separators": [],
+        "applied_to_all": []
     }
 }
 
@@ -210,5 +214,3 @@ class PokeapiAccess():
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
-    # PokeAPI.get_location_area_encounters("Route 8", "X")
-    print(PokeAPI.get_location_area_encounters("Route 201", "Platinum"))
