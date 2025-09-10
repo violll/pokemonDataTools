@@ -35,6 +35,7 @@ VALID_CONDITION_VALUES = {
         "separators": ["season-spring", "season-summer", "season-autumn", "season-winter"], 
         "applied_to_all": []},
     "kalos": {"separators": [], "applied_to_all": []},
+    "alola": {"separators": [], "applied_to_all": []}
 }
 
 
@@ -286,4 +287,4 @@ class PokeapiAccess:
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
-    print(PokeAPI.get_location_area_encounters("route 6", "black"))
+    print(PokeAPI.get_location_area_encounters("route 1", "sword"))
