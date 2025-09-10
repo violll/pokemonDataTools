@@ -31,6 +31,9 @@ VALID_CONDITION_VALUES = {
         "separators": ["time-morning", "time-day", "time-night"],
         "applied_to_all": ["swarm-no", None, "radar-off", "slot2-none"],
     },
+    "unova": {
+        "separators": ["season-spring", "season-summer", "season-autumn", "season-winter"], 
+        "applied_to_all": []},
     "kalos": {"separators": [], "applied_to_all": []},
 }
 
@@ -179,9 +182,11 @@ class PokeapiAccess:
 
         # check to see if the location-area is actually an location
         if re.search("route", route, flags=re.I):
+            # loop to find the correct region
             for region in regions:
                 location = self.get(BASE_LOCATION, f"{region}-{route}".lower().replace(" ", "-"))
-                if location.ok: break
+                if location.ok: 
+                    break
         else:
             location = self.get(BASE_LOCATION, route.lower().replace(" ", "-"))
 
@@ -281,4 +286,4 @@ class PokeapiAccess:
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
-    print(PokeAPI.get_location_area_encounters("route 1", "black"))
+    print(PokeAPI.get_location_area_encounters("route 6", "black"))
