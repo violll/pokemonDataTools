@@ -15,11 +15,11 @@ sys.path.insert(0, path)
 BASE_URL = "https://pokeapi.co/api/v2/"
 BASE_POKEMON = "https://pokeapi.co/api/v2/pokemon/{id or name}/"
 BASE_FORMS = "https://pokeapi.co/api/v2/pokemon-form/{id or name}/"
-BASE_LOCATIONS = "https://pokeapi.co/api/v2/pokemon/{id or name}/encounters"
+BASE_LOCATION = "https://pokeapi.co/api/v2/location/{id or name}/"
 BASE_VERSIONS = "https://pokeapi.co/api/v2/version/{id or name}/"
 BASE_VERSION_GROUPS = "https://pokeapi.co/api/v2/version-group/{id or name}"
 BASE_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id or name}/"
-BASE_LOCATION_ENCOUNTERS = "https://pokeapi.co/api/v2/location-area/{id or name}-area/"
+BASE_LOCATION_ENCOUNTERS = "https://pokeapi.co/api/v2/location-area/{id or name}/"
 
 VALID_CONDITION_VALUES = {
     "kanto": {"separators": ["time-morning", "time-day", "time-night"], "applied_to_all": []},
@@ -54,9 +54,7 @@ class PokeapiAccess:
 
         return [r["name"] for r in regions]
 
-    def get_location_area_encounters(
-        self, route, version, additional_ruleset_encounters=False
-    ):
+    def get_location_area_encounters(self, route, version, additional_ruleset_encounters=False):
         version = self.verify_version(version)
 
         # get region from version
@@ -69,7 +67,10 @@ class PokeapiAccess:
             valid_condition_values = VALID_CONDITION_VALUES[region]
 
             # reformat route
-            location_area = f"{region}-{route}".lower().replace(" ", "-")
+            if re.search(r"(?<!-)route", route, flags=re.I):
+                location_area = f"{region}-{route}-area".lower().replace(" ", "-")
+            else:
+                location_area = route
 
             # make the request
             location_area_encounters_response = self.get(
@@ -110,11 +111,6 @@ class PokeapiAccess:
                                 df["condition_values"] = df["condition_values"].apply(
                                     lambda x: x["name"] if isinstance(x, dict) else None
                                 )
-
-                                print(df)
-                                print(set(df["condition_values"]).intersection(
-                                            set(valid_condition_values["separators"]
-                                                + valid_condition_values["applied_to_all"])))
 
                                 # check if there are any valid condition values
                                 if (
@@ -173,13 +169,33 @@ class PokeapiAccess:
                     )
 
                     # group by method and pokemon
-                    return df.groupby(by=["method", "condition_values", "pokemon"]).agg(
+                    df["subzone"] = ""
+                    return df.groupby(by=["method", "subzone", "condition_values", "pokemon"]).agg(
                         chance=("chance", "sum"), level_range=("level_range", set_union)
                     )
                 else: 
                     print(f"{version} - {region} - {route} has no valid encounters. Check your input. Does PokeAPI have this data?")
                     return None
 
+        # check to see if the location-area is actually an location
+        if re.search("route", route, flags=re.I):
+            for region in regions:
+                location = self.get(BASE_LOCATION, f"{region}-{route}".lower().replace(" ", "-"))
+                if location.ok: break
+        else:
+            location = self.get(BASE_LOCATION, route.lower().replace(" ", "-"))
+
+        if location.ok:
+            location_areas = location.json()["areas"]
+            res = []
+            for location_area in location_areas:
+                location_area_encounters = self.get_location_area_encounters(location_area["name"], version, additional_ruleset_encounters)
+                if isinstance(location_area_encounters, pd.DataFrame):
+                    location_area_encounters.index = location_area_encounters.index.set_levels([location_area["name"]], level=1)
+                    res.append(location_area_encounters)
+            df = pd.concat(res)
+            return df
+        
         # if you make it down here, there's something wrong with your input
         return None
 
@@ -265,4 +281,4 @@ class PokeapiAccess:
 
 if __name__ == "__main__":
     PokeAPI = PokeapiAccess()
-    print(PokeAPI.get_location_area_encounters("Route 1", "silver"))
+    print(PokeAPI.get_location_area_encounters("route 1", "black"))
