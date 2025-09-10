@@ -35,7 +35,9 @@ VALID_CONDITION_VALUES = {
         "separators": ["season-spring", "season-summer", "season-autumn", "season-winter"], 
         "applied_to_all": []},
     "kalos": {"separators": [], "applied_to_all": []},
-    "alola": {"separators": [], "applied_to_all": []}
+    "alola": {"separators": [], "applied_to_all": []},
+    "galar": {"separators": [], "applied_to_all": []},
+    "paldea": {"separators": [], "applied_to_all": []}
 }
 
 
