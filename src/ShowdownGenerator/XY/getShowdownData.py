@@ -117,7 +117,7 @@ class XYShowdown:
             else:
                 iv_value = re.search(r"(?<=IVs: All )[0-9]+", pokemon_data).group(0).strip()
             
-            pokemon.ivs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
+            pokemon.IVs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
             
             # ability
             if sheet:
