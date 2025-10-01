@@ -126,11 +126,11 @@ class LocalGame:
         for line in self.evo_lines:
             relevant_line = [
                 re.search(
-                    r"^{}".format(mon), "\n".join(df.columns), flags=re.I | re.M
+                    r"^{}-Alolan|^{}".format(mon, mon), "\n".join(df.columns), flags=re.I | re.M
                 ).group()
                 for mon in line
                 if re.search(
-                    r"^{}".format(mon), "\n".join(df.columns), flags=re.I | re.M
+                    r"^{}-Alolan|^{}".format(mon, mon), "\n".join(df.columns), flags=re.I | re.M
                 )
             ]
             if len(relevant_line) != 0:
