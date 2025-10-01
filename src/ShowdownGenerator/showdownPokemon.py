@@ -4,6 +4,7 @@ class Pokemon:
         self.gender = ""    # "(M)", "(F)", or ""
         self.item = ""      # "@ Sitrus Berry" or ""
         self.IVs = ["0 {}".format(stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]       # [0 HP, 0 Atk...]
+        self.EVs = ["0 {}".format(stat) for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]       # [0 HP, 0 Atk...]
         self.ability = ""
         self.level = -1
         self.nature = ""
@@ -13,11 +14,14 @@ class Pokemon:
 
     def showdownExport(self):
         res = " ".join("{} ({}) {} {}".format(self.trainer, self.name, self.gender, self.item).split()) + "\n"
+        res += "EVs: " + " / ".join(self.EVs) + "\n"
         res += "IVs: " + " / ".join(self.IVs) + "\n"
         res += "Ability: {}".format(self.ability) + "\n"
         res += "Level: {}".format(self.level) + "\n"
-        if self.nature != "": res += "{} Nature".format(self.nature) + "\n"
-        for move in self.moves: res += "- {}".format(move) + "\n"
+        if self.nature != "": 
+            res += "{} Nature".format(self.nature) + "\n"
+        for move in self.moves: 
+            res += "- {}".format(move) + "\n"
 
         return res
     
