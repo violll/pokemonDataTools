@@ -78,7 +78,7 @@ class SMShowdown:
         
         # updates trainer name to verify search accuracy
         desiredTrainer = trainer[0].split("- ")[-1]
-        pokemonList = trainer[3:]
+        pokemonList = trainer[2:]
         self.trainer.name = desiredTrainer
         self.trainer.number = str(int(trainerI))
         self.trainer.pokemon = [showdownPokemon.Pokemon() for _ in range(len(pokemonList))]
@@ -86,11 +86,11 @@ class SMShowdown:
         return pokemonList
     
     def getLevelUpMoveset(self, pokemon):
-        path = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\XY\learnsets.json"
+        path = r"C:\Users\Gil\OneDrive\Documents\Programming\pokemonDataTools\src\ShowdownGenerator\SM\learnsets.json"
         # check to see if json file exists
         if not os.path.exists(path):
             # scrape all the necessary data
-            scrape_learnsets("x-y", path)
+            scrape_learnsets("sun-moon", path)
         
         # load the four most recent moves from there
         with open(path, "r") as f:
@@ -125,36 +125,27 @@ class SMShowdown:
             iv_values = re.search(r"(?<=IVs: ).+(?= EVs)", pokemon_data).group().strip().split("/")
             pokemon.IVs = [f"{iv_value} {stat}" for iv_value, stat in zip(iv_values, ["HP", "Atk", "Def", "SpA", "SpD", "Spe"])]
 
+            # evs
+            ev_values = re.search(r"(?<=EVs: ).+$", pokemon_data).group().strip().split("/")
+            pokemon.EVs = [f"{ev_value} {stat}" for ev_value, stat in zip(ev_values, ["HP", "Atk", "Def", "SpA", "SpD", "Spe"])]
+
             # ability
-            if sheet:
-                ability = df_pokemon_data.Ability
-                if not ability.isna().values[0]:
-                    pokemon.ability = ability.values[0]
-            elif "Ability" in pokemon_data:
+            if "Ability" in pokemon_data:
                 pokemon.ability = re.search(r"(?<=Ability: )[a-zA-Z ']+", pokemon_data).group(0).strip()
         
             # level - don't need to check the sheet for this
             pokemon.level = re.search(r"(?<=\(Lv. )[0-9]+", pokemon_data).group(0).strip()
             
             # nature - only present in sheet
-            if sheet:
-                nature = df_pokemon_data.Nature
-                if not nature.isna().values[0]:
-                    pokemon.nature = nature.values[0]
+            pokemon.nature = re.search(r"(?<=Nature: )\w+(?=\))", pokemon_data).group().strip()
 
-            # moves
-            if sheet:
-                moves = df_pokemon_data.loc[:,["Move 1", "Move 2", "Move 3", "Move 4"]].dropna(axis=1).values[0].tolist()
-                if moves != []: 
-                    pokemon.moves = moves
-                    continue
-            
-            # moves in sheet are unspecified or trainer is not in sheet
-            if "Moves" in pokemon_data:
-                pokemon.moves = re.search(r"(?<=Moves: )[a-zA-Z0-9' /-]+(?=\))", pokemon_data).group(0).strip().split(" / ")
-            else:
-                # if moves are unspecified, they are the levelup learnset
-                pokemon.moves = self.getLevelUpMoveset(pokemon)
+            # moves            
+            moves = [m for m in re.search(r"(?<=Moves: ).+(?=\) )", pokemon_data).group(0).strip().split("/") if m != "(None)"]
+                            
+            if moves == []:
+                moves = self.getLevelUpMoveset(pokemon)
+
+            pokemon.moves = moves
 
 if __name__ == "__main__":
     SMShowdown()
