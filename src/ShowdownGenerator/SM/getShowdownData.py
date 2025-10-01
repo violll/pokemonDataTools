@@ -116,27 +116,15 @@ class SMShowdown:
 
             # gender TODO skipping for now
 
-            # check the sheet before checking the text as the sheet is more accurate (I think)
-            df_pokemon_data = self.df[(self.df.index.get_level_values(0) == int(self.trainer.number)) & (self.df["Pokémon"] == pokemon.name)]
-            if df_pokemon_data.shape[0] != 0:
-                # set flag to check for 
-                sheet = True
-            else: 
-                sheet = False
-
             # item
             if "@" in pokemon_data:
                 # checks for end of item as either parenthesis or IVs
                 pokemon.item = "@ " + re.search(r"(?<=@)[a-zA-Z' ]+(?=\(|IVs)", pokemon_data).group(0).strip()
 
             # ivs
-            if sheet:
-                iv_value = df_pokemon_data.IV.values[0]
-            else:
-                iv_value = re.search(r"(?<=IVs: All )[0-9]+", pokemon_data).group(0).strip()
-            
-            pokemon.IVs = [f"{iv_value} {stat}" for stat in ["HP", "Atk", "Def", "SpA", "SpD", "Spe"]]
-            
+            iv_values = re.search(r"(?<=IVs: ).+(?= EVs)", pokemon_data).group().strip().split("/")
+            pokemon.IVs = [f"{iv_value} {stat}" for iv_value, stat in zip(iv_values, ["HP", "Atk", "Def", "SpA", "SpD", "Spe"])]
+
             # ability
             if sheet:
                 ability = df_pokemon_data.Ability
