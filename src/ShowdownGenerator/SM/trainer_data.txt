@@ -1,0 +1,2792 @@
+0 - Pokémon Trainer 
+======
+Pokemon: 0
+======
+1 - Lass Madison
+======
+Pokemon: 1
+Wingull (Lv. 6)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+2 - Lass Isabella
+======
+Pokemon: 1
+Misdreavus (Lv. 9)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+3 - Lass [~ 3]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+4 - Lass [~ 4]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+5 - Lass [~ 5]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+6 - Pokémon Trainer Hau
+======
+Pokemon: 1
+Popplio (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+7 - Pokémon Trainer Hau
+======
+Pokemon: 1
+Rowlet (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+8 - Pokémon Trainer Hau
+======
+Pokemon: 1
+Litten (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+9 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pichu (Lv. 6)  (Nature: Serious) (Moves: Thunder Shock/Charm/Tail Whip/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Popplio (Lv. 7)  (Nature: Serious) (Moves: Pound/Water Gun/Growl/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+10 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pichu (Lv. 6)  (Nature: Serious) (Moves: Thunder Shock/Charm/Tail Whip/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Rowlet (Lv. 7)  (Nature: Serious) (Moves: Tackle/Leafage/Growl/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+11 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pichu (Lv. 6)  (Nature: Serious) (Moves: Thunder Shock/Charm/Tail Whip/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Litten (Lv. 7)  (Nature: Serious) (Moves: Scratch/Ember/Growl/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+12 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pikachu (Lv. 13)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Popplio (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+13 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pikachu (Lv. 13)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Rowlet (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+14 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pikachu (Lv. 13)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Litten (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+15 - Teacher Emily
+======
+Pokemon: 2
+Magnemite (Lv. 8)  (Nature: Serious) (Moves: Tackle/Thunder Shock/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Meowth (Lv. 9)  (Nature: Serious) (Moves: Scratch/Bite/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+16 - Ace Trainer Makana
+======
+Pokemon: 2
+Rockruff (Lv. 13) @Red Card (Nature: Jolly) (Moves: Stealth Rock/Bite/(None)/(None)) IVs: 31/31/15/15/15/31 EVs: 252/0/0/0/0/252
+Slowpoke (Lv. 14) @Red Card (Nature: Calm) (Moves: Yawn/Confusion/Water Gun/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+======
+17 - Black Belt ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+18 - Punk Guy [~ 18]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+19 - Team Skull Grunt
+======
+Pokemon: 1
+Drowzee (Lv. 10)  (Nature: Serious) (Moves: Pound/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+20 - Team Skull [~ 20]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+21 - Youth Athlete Hiromi
+======
+Pokemon: 1
+Pikipek (Lv. 8)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 5/5/5/5/5/5 EVs: 0/0/0/0/0/0
+======
+22 - Youngster Joey
+======
+Pokemon: 1
+Metapod (Lv. 7)  (Nature: Serious) (Moves: Tackle/Harden/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+23 - Island Kahuna Hala
+======
+Pokemon: 3
+Mankey (Lv. 14)  (Nature: Adamant) (Moves: Karate Chop/Pursuit/Focus Energy/(None)) IVs: 31/31/15/15/15/31 EVs: 252/0/0/0/0/252
+Makuhita (Lv. 14)  (Nature: Adamant) (Moves: Arm Thrust/Sand Attack/Fake Out/(None)) IVs: 31/31/15/15/31/15 EVs: 252/0/0/0/252/0
+Crabrawler (Lv. 15) @Fightinium Z (Nature: Adamant) (Moves: Pursuit/Power-Up Punch/Leer/(None)) IVs: 31/31/31/15/15/15 EVs: 252/0/252/0/0/0
+======
+24 - Preschooler Mia
+======
+Pokemon: 1
+Bonsly (Lv. 7)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+25 - Youngster Jimmy
+======
+Pokemon: 1
+Rattata (Lv. 3)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+26 - Youngster Kevin
+======
+Pokemon: 1
+Grubbin (Lv. 6)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+27 - Preschooler [~ 27]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+28 - Preschooler Oliver
+======
+Pokemon: 1
+Yungoos (Lv. 4)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+29 - Backpacker Ashley
+======
+Pokemon: 1
+Cottonee (Lv. 10)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+30 - Pokémon Breeder Jay
+======
+Pokemon: 1
+Butterfree (Lv. 10)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 5/5/5/5/5/5 EVs: 0/0/0/0/0/0
+======
+31 - Rising Star Ian
+======
+Pokemon: 1
+Psyduck (Lv. 13)  (Nature: Modest) (Moves: Water Gun/(None)/(None)/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+======
+32 - Rising Star Joshua
+======
+Pokemon: 1
+Growlithe (Lv. 13)  (Nature: Modest) (Moves: Ember/(None)/(None)/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+======
+33 - Rising Star Tatiana
+======
+Pokemon: 1
+Petilil (Lv. 13)  (Nature: Modest) (Moves: Mega Drain/(None)/(None)/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+======
+34 - Swimmer Yasu
+======
+Pokemon: 1
+Tentacool (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+35 - Swimmer Kalani
+======
+Pokemon: 2
+Wishiwashi (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Barboach (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+36 - Swimmer Kelsie
+======
+Pokemon: 1
+Finneon (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+37 - Swimmer Portia
+======
+Pokemon: 2
+Luvdisc (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Luvdisc (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+38 - Swimmer Shelby
+======
+Pokemon: 1
+Corsola (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+39 - Swimmer Jade
+======
+Pokemon: 1
+Goldeen (Lv. 13)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+40 - Office Worker Jeremy
+======
+Pokemon: 1
+Diglett (Lv. 9)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+41 - Pokémon Breeder Ikue
+======
+Pokemon: 1
+Pikachu (Lv. 9)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 5/5/5/5/5/5 EVs: 0/0/0/0/0/0
+======
+42 - Gentleman Stanley
+======
+Pokemon: 1
+Makuhita (Lv. 9)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+43 - Team Skull Grunt
+======
+Pokemon: 1
+Drowzee (Lv. 11)  (Nature: Serious) (Moves: Pound/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+44 - Team Skull ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+45 - Team Skull [~ 45]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+46 - Team Skull [~ 46]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+47 - Team Skull Grunt
+======
+Pokemon: 1
+Zubat (Lv. 8)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+48 - Punk Guy [~ 48]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+49 - Punk Girl [~ 49]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+50 - Pokémon Trainer [~ 50]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+51 - Pokémon Trainer [~ 51]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+52 - Captain Ilima
+======
+Pokemon: 2
+Yungoos (Lv. 9)  (Nature: Adamant) (Moves: Tackle/Pursuit/Leer/(None)) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Smeargle (Lv. 10)  (Nature: Hasty) (Moves: Ember/Tackle/(None)/(None)) IVs: 15/31/15/31/15/31 EVs: 0/252/0/252/0/0
+======
+53 - Trial Guide [~ 53]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+54 - Fisherman Hal
+======
+Pokemon: 1
+Tentacool (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+55 - Fisherman Herbert
+======
+Pokemon: 1
+Poliwag (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+56 - Fisherman Carl
+======
+Pokemon: 2
+Magikarp (Lv. 16)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Magikarp (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+57 - Black Belt [~ 57]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+58 - Backpacker Mikiko
+======
+Pokemon: 1
+Fletchling (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+59 - Trial Guide Ben
+======
+Pokemon: 1
+Sableye (Lv. 13)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 10/10/10/10/10/10 EVs: 0/0/0/0/0/0
+======
+60 - Fisherman Ernest
+======
+Pokemon: 2
+Barboach (Lv. 16)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Goldeen (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+61 - Collector Bryan
+======
+Pokemon: 2
+Munchlax (Lv. 13)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Bagon (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+62 - Hiker [~ 62]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+63 - Backpacker [~ 63]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+64 - Sightseer Scotty
+======
+Pokemon: 1
+Rattata (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+65 - Beauty Brittney
+======
+Pokemon: 1
+Cubone (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+66 - Youngster Anthony
+======
+Pokemon: 2
+Magby (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Yungoos (Lv. 16)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+67 - Rising Star [~ 67]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+68 - Pokémon Breeder William
+======
+Pokemon: 1
+Sudowoodo (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+69 - Pokémon Breeder [~ 69]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+70 - Swimmer Dakota
+======
+Pokemon: 2
+Surskit (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Dewpider (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+71 - Swimmer Casey
+======
+Pokemon: 1
+Mareanie (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+72 - Swimmer Vanessa
+======
+Pokemon: 2
+Shellder (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Corsola (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+73 - Swimmer Tiare
+======
+Pokemon: 1
+Alomomola (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+74 - Pokémon Trainer Dexio
+======
+Pokemon: 2
+Slowpoke (Lv. 15)  (Nature: Serious) (Moves: Confusion/Water Gun/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Espeon (Lv. 16)  (Nature: Serious) (Moves: Confusion/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+75 - Pokémon Trainer Sina
+======
+Pokemon: 2
+Delibird (Lv. 15)  (Nature: Serious) (Moves: Present/(None)/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Glaceon (Lv. 16)  (Nature: Serious) (Moves: Icy Wind/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+76 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pikachu (Lv. 16)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/252
+Brionne (Lv. 17) @Normalium Z (Nature: Serious) (Moves: Aqua Jet/Disarming Voice/Pound/(None)) IVs: 15/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+77 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pikachu (Lv. 16)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/252
+Dartrix (Lv. 17) @Normalium Z (Nature: Serious) (Moves: Razor Leaf/Peck/Tackle/(None)) IVs: 15/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+78 - Pokémon Trainer Hau
+======
+Pokemon: 2
+Pikachu (Lv. 16)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/252
+Torracat (Lv. 17) @Normalium Z (Nature: Serious) (Moves: Fire Fang/Lick/Scratch/(None)) IVs: 15/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+79 - Team Skull Gladion
+======
+Pokemon: 2
+Zubat (Lv. 17)  (Nature: Serious) (Moves: Bite/Wing Attack/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Type: Null (Lv. 18)  (Nature: Serious) (Moves: Tackle/Pursuit/(None)/(None)) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/0
+======
+80 - Team Skull Grunt
+======
+Pokemon: 1
+Drowzee (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+81 - Pro Wrestler The Royal
+======
+Pokemon: 1
+Rockruff (Lv. 19)  (Nature: Serious) (Moves: Rock Throw/Bite/Protect/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+82 - Pokémon Trainer Hau
+======
+Pokemon: 1
+Brionne (Lv. 19) @Normalium Z (Nature: Serious) (Moves: Aqua Jet/Disarming Voice/Pound/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+83 - Pokémon Trainer Hau
+======
+Pokemon: 1
+Dartrix (Lv. 19) @Normalium Z (Nature: Serious) (Moves: Razor Leaf/Peck/Tackle/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+84 - Pokémon Trainer Hau
+======
+Pokemon: 1
+Torracat (Lv. 19) @Normalium Z (Nature: Serious) (Moves: Fire Fang/Lick/Scratch/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+85 - Pokémon Trainer [~ 85]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+86 - Captain ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+87 - Pokémon Trainer [~ 87]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+88 - Team Skull Grunt
+======
+Pokemon: 1
+Raticate (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+89 - Team Skull Admin Plumeria
+======
+Pokemon: 2
+Golbat (Lv. 25)  (Nature: Jolly) (Moves: Air Cutter/Confuse Ray/(None)/(None)) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Salandit (Lv. 26)  (Nature: Hasty) (Moves: Flame Burst/Double Slap/Poison Gas/(None)) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+90 - Island Kahuna Olivia
+======
+Pokemon: 3
+Nosepass (Lv. 26)  (Nature: Careful) (Moves: Rock Slide/Spark/Thunder Wave/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Boldore (Lv. 26)  (Nature: Impish) (Moves: Rock Blast/Mud-Slap/Headbutt/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/252/0/0/0
+Lycanroc (Lv. 27) @Rockium Z (Nature: Adamant) (Moves: Bite/Rock Throw/(None)/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+91 - Captain [~ 91]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+92 - Rising Star Justin
+======
+Pokemon: 1
+Rufflet (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+93 - Rising Star Lauren
+======
+Pokemon: 1
+Vullaby (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+94 - Pokémon Breeder Cory
+======
+Pokemon: 2
+Paras (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Spinarak (Lv. 16)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+95 - Pokémon Breeder Yuka
+======
+Pokemon: 2
+Morelull (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Ledyba (Lv. 16)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+96 - Youngster Caleb
+======
+Pokemon: 1
+Charjabug (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+97 - Preschooler Isa
+======
+Pokemon: 1
+Happiny (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+98 - Preschooler Nico
+======
+Pokemon: 1
+Igglybuff (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+99 - Rising Star Mikey
+======
+Pokemon: 2
+Bounsweet (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Trumbeak (Lv. 21)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+100 - Rising Star Nicki
+======
+Pokemon: 1
+Miltank (Lv. 21)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+101 - Backpacker Kiana
+======
+Pokemon: 1
+Eevee (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+102 - Hiker Gabriel
+======
+Pokemon: 1
+Mudbray (Lv. 21)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+103 - Ace Trainer [~ 103]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+104 - Ace Trainer Alexis
+======
+Pokemon: 2
+Goomy (Lv. 22)  (Nature: Serious) (Moves: Dragon Breath/Bide/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Sylveon (Lv. 23)  (Nature: Serious) (Moves: Draining Kiss/Swift/(None)/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+======
+105 - Scientist Tyrone
+======
+Pokemon: 2
+Archen (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Shieldon (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+106 - Lass [~ 106]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+107 - Swimmer Logan
+======
+Pokemon: 1
+Wishiwashi (Lv. 25)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+108 - Swimmer Lawrence
+======
+Pokemon: 2
+Wingull (Lv. 24)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Barboach (Lv. 25)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+109 - Swimmer Roddy
+======
+Pokemon: 1
+Gyarados (Lv. 25)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+110 - Swimmer Alicia
+======
+Pokemon: 1
+Psyduck (Lv. 25)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+111 - Swimmer Laura
+======
+Pokemon: 2
+Finneon (Lv. 24)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Shellder (Lv. 25)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+112 - Swimmer Chelsea
+======
+Pokemon: 1
+Pyukumuku (Lv. 25)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+113 - Gentleman Smith
+======
+Pokemon: 1
+Umbreon (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+114 - Madame Sayuri
+======
+Pokemon: 1
+Comfey (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+115 - Preschooler Liam
+======
+Pokemon: 2
+Jigglypuff (Lv. 21)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 10/10/10/10/10/10 EVs: 0/0/0/0/0/0
+Ledian (Lv. 22)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 10/10/10/10/10/10 EVs: 0/0/0/0/0/0
+======
+116 - Punk Girl Melissa
+======
+Pokemon: 1
+Ariados (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+117 - Worker Vaclav
+======
+Pokemon: 1
+Machop (Lv. 22)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+118 - Worker Jeff
+======
+Pokemon: 2
+Roggenrola (Lv. 21)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Mudbray (Lv. 22)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+119 - Worker Frank
+======
+Pokemon: 1
+Diglett (Lv. 22)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+120 - Black Belt Kenji
+======
+Pokemon: 1
+Hariyama (Lv. 24)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+121 - Fisherman Vernon
+======
+Pokemon: 2
+Staryu (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Gyarados (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+122 - Pokémon Breeder Glenn
+======
+Pokemon: 1
+Mudbray (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+123 - Pokémon Breeder Amanda
+======
+Pokemon: 2
+Lillipup (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Growlithe (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+124 - Gentleman Gerald
+======
+Pokemon: 1
+Sableye (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+125 - Madame Elizabeth
+======
+Pokemon: 1
+Carbink (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+126 - Fisherman Mike
+======
+Pokemon: 1
+Chinchou (Lv. 23)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+127 - Pokémon Trainer [~ 127]
+======
+Pokemon: 1
+Yungoos (Lv. 8)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+128 - Pokémon Trainer [~ 128]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+129 - Pokémon Professor Kukui
+======
+Pokemon: 6
+Lycanroc (Lv. 57)  (Nature: Serious) (Moves: Stone Edge/Accelerock/Crunch/Stealth Rock) IVs: 31/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Ninetales (Lv. 56)  (Nature: Serious) (Moves: Dazzling Gleam/Blizzard/Ice Shard/Safeguard) IVs: 31/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Braviary (Lv. 56)  (Nature: Serious) (Moves: Crush Claw/Brave Bird/Whirlwind/Tailwind) IVs: 31/15/31/15/31/31 EVs: 252/0/0/0/0/252
+Magnezone (Lv. 56)  (Nature: Serious) (Moves: Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat) IVs: 31/15/31/31/31/15 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 56)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/High Horsepower) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Incineroar (Lv. 58) @Firium Z (Nature: Serious) (Moves: Flare Blitz/Darkest Lariat/Outrage/Cross Chop) IVs: 31/31/31/31/31/31 EVs: 252/252/0/0/0/0
+======
+130 - Pokémon Trainer [~ 130]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+131 - Aether President Lusamine
+======
+Pokemon: 5
+Clefable (Lv. 41)  (Nature: Calm) (Moves: Moonblast/Cosmic Power/Metronome/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Lilligant (Lv. 41)  (Nature: Modest) (Moves: Petal Dance/Teeter Dance/Stun Spore/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Mismagius (Lv. 41)  (Nature: Modest) (Moves: Shadow Ball/Mystical Fire/Power Gem/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Milotic (Lv. 41)  (Nature: Modest) (Moves: Hydro Pump/Safeguard/Flail/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Bewear (Lv. 41)  (Nature: Adamant) (Moves: Baby-Doll Eyes/Hammer Arm/Take Down/(None)) IVs: 31/31/31/15/15/15 EVs: 252/252/0/0/0/0
+======
+132 - Aether Branch Chief Faba
+======
+Pokemon: 1
+Hypno (Lv. 39)  (Nature: Timid) (Moves: Psychic/Hypnosis/Disable/Nightmare) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+======
+133 - Aether Foundation [~ 133]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+134 - Aether Foundation Employee
+======
+Pokemon: 1
+Machoke (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+135 - Aether Foundation [~ 135]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+136 - Aether Foundation Employee
+======
+Pokemon: 1
+Vanillish (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+137 - Aether Foundation Employee
+======
+Pokemon: 1
+Muk (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+138 - Team Skull Boss Guzma
+======
+Pokemon: 2
+Golisopod (Lv. 31)  (Nature: Adamant) (Moves: Swords Dance/Razor Shell/First Impression/(None)) IVs: 31/31/15/15/15/31 EVs: 0/0/0/0/0/0
+Ariados (Lv. 30)  (Nature: Adamant) (Moves: Fell Stinger/Sucker Punch/Shadow Sneak/Infestation) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+139 - Pokémon Trainer [~ 139]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+140 - Pokémon Trainer [~ 140]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+141 - Team Skull Grunt
+======
+Pokemon: 1
+Haunter (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+142 - Pokémon Trainer [~ 142]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+143 - Pokémon Trainer [~ 143]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+144 - Captain Lana
+======
+Pokemon: 3
+Chinchou (Lv. 26)  (Nature: Serious) (Moves: Electro Ball/Bubble Beam/Thunder Wave/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Shellder (Lv. 26)  (Nature: Serious) (Moves: Supersonic/Icicle Spear/Water Gun/(None)) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Araquanid (Lv. 27) @Waterium Z (Nature: Serious) (Moves: Bubble Beam/Bug Bite/Bite/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+145 - Pokémon Trainer [~ 145]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+146 - Captain Mallow
+======
+Pokemon: 3
+Phantump (Lv. 26)  (Nature: Serious) (Moves: Leech Seed/Feint Attack/Confuse Ray/Astonish) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Shiinotic (Lv. 26)  (Nature: Serious) (Moves: Ingrain/Mega Drain/Sleep Powder/Astonish) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Steenee (Lv. 27)  (Nature: Serious) (Moves: Teeter Dance/Magical Leaf/Double Slap/Rapid Spin) IVs: 15/31/15/31/15/31 EVs: 0/252/0/252/0/0
+======
+147 - Captain ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+148 - Pokémon Trainer [~ 148]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+149 - Elite Four Acerola
+======
+Pokemon: 5
+Sableye (Lv. 54)  (Nature: Serious) (Moves: Shadow Claw/Zen Headbutt/Confuse Ray/Fake Out) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Drifblim (Lv. 54)  (Nature: Serious) (Moves: Ominous Wind/Focus Energy/Amnesia/Baton Pass) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Dhelmise (Lv. 54)  (Nature: Serious) (Moves: Slam/Shadow Ball/Energy Ball/Whirlpool) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Froslass (Lv. 54)  (Nature: Serious) (Moves: Blizzard/Shadow Ball/Confuse Ray/Ice Shard) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Palossand (Lv. 55) @Ghostium Z (Nature: Serious) (Moves: Shadow Ball/Earth Power/Giga Drain/Iron Defense) IVs: 31/31/31/31/31/31 EVs: 252/0/0/252/0/0
+======
+150 - Captain [~ 150]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+151 - Pokémon Trainer [~ 151]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+152 - Elite Four Hala
+======
+Pokemon: 5
+Hariyama (Lv. 54)  (Nature: Adamant) (Moves: Fake Out/Close Combat/Knock Off/(None)) IVs: 31/31/15/15/31/15 EVs: 0/252/0/0/252/0
+Primeape (Lv. 54)  (Nature: Adamant) (Moves: Cross Chop/Outrage/Punishment/Pursuit) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Bewear (Lv. 54)  (Nature: Adamant) (Moves: Hammer Arm/Brutal Swing/(None)/(None)) IVs: 31/31/31/15/15/15 EVs: 0/252/252/0/0/0
+Poliwrath (Lv. 54)  (Nature: Adamant) (Moves: Waterfall/Submission/(None)/(None)) IVs: 31/31/15/15/31/15 EVs: 0/252/0/0/252/0
+Crabominable (Lv. 55) @Fightinium Z (Nature: Adamant) (Moves: Ice Hammer/Close Combat/(None)/(None)) IVs: 31/31/31/31/31/31 EVs: 0/252/252/0/0/0
+======
+153 - Elite Four Olivia
+======
+Pokemon: 5
+Relicanth (Lv. 54)  (Nature: Serious) (Moves: Hydro Pump/Ancient Power/Yawn/(None)) IVs: 31/31/15/15/15/31 EVs: 0/0/0/252/0/252
+Carbink (Lv. 54)  (Nature: Serious) (Moves: Power Gem/Moonblast/Reflect/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Golem (Lv. 54)  (Nature: Serious) (Moves: Thunder Punch/Rock Blast/Steamroller/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/252/0/0/0
+Probopass (Lv. 54)  (Nature: Serious) (Moves: Earth Power/Power Gem/Thunder Wave/Sandstorm) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Lycanroc (Lv. 55) @Rockium Z (Nature: Serious) (Moves: Crunch/Stone Edge/Counter/Rock Climb) IVs: 31/31/31/31/31/31 EVs: 252/0/252/0/0/0
+======
+154 - Island Kahuna Nanu
+======
+Pokemon: 3
+Sableye (Lv. 38)  (Nature: Impish) (Moves: Power Gem/Shadow Ball/Fake Out/(None)) IVs: 31/15/15/31/31/15 EVs: 0/0/0/252/252/0
+Krokorok (Lv. 38)  (Nature: Jolly) (Moves: Crunch/Assurance/Swagger/Earthquake) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Persian (Lv. 39) @Darkinium Z (Nature: Timid) (Moves: Power Gem/Fake Out/Dark Pulse/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+155 - Island Kahuna Hapu
+======
+Pokemon: 4
+Dugtrio (Lv. 47)  (Nature: Serious) (Moves: Iron Head/Earthquake/Sucker Punch/Sandstorm) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Gastrodon (Lv. 47)  (Nature: Serious) (Moves: Muddy Water/Mud Bomb/Recover/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/252/0/0/0
+Flygon (Lv. 47)  (Nature: Serious) (Moves: Earth Power/Dragon Breath/(None)/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Mudsdale (Lv. 48) @Groundium Z (Nature: Serious) (Moves: Heavy Slam/Earthquake/Double Kick/Counter) IVs: 31/31/31/15/15/15 EVs: 0/252/252/0/0/0
+======
+156 - Elite Four Kahili
+======
+Pokemon: 5
+Skarmory (Lv. 54)  (Nature: Serious) (Moves: Slash/Steel Wing/Feint/Spikes) IVs: 15/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Crobat (Lv. 54)  (Nature: Serious) (Moves: Air Slash/Swift/Supersonic/Poison Fang) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Oricorio (Lv. 54)  (Nature: Serious) (Moves: Revelation Dance/Teeter Dance/Air Slash/Feather Dance) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Mandibuzz (Lv. 54)  (Nature: Serious) (Moves: Bone Rush/Brave Bird/Punishment/Flatter) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Toucannon (Lv. 55) @Flyinium Z (Nature: Serious) (Moves: Bullet Seed/Rock Blast/Beak Blast/Screech) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+157 - Pokémon Trainer [~ 157]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+158 - Aether President Lusamine
+======
+Pokemon: 5
+Clefable (Lv. 50)  (Nature: Calm) (Moves: Moonblast/Cosmic Power/Metronome/Moonlight) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Lilligant (Lv. 50)  (Nature: Modest) (Moves: Petal Dance/Teeter Dance/Stun Spore/Leech Seed) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Mismagius (Lv. 50)  (Nature: Modest) (Moves: Shadow Ball/Mystical Fire/Power Gem/Pain Split) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Milotic (Lv. 50)  (Nature: Modest) (Moves: Hydro Pump/Safeguard/Flail/Recover) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Bewear (Lv. 50)  (Nature: Adamant) (Moves: Baby-Doll Eyes/Hammer Arm/Take Down/Pain Split) IVs: 31/31/31/15/15/15 EVs: 252/252/0/0/0/0
+======
+159 - Pokémon Trainer Red
+======
+Pokemon: 6
+Pikachu (Lv. 70) @Light Ball (Nature: Serious) (Moves: Volt Tackle/Quick Attack/Light Screen/Nuzzle) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+Lapras (Lv. 65)  (Nature: Serious) (Moves: Surf/Blizzard/Ice Shard/Psychic) IVs: 31/31/31/31/31/31 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 65)  (Nature: Serious) (Moves: Body Slam/Heavy Slam/Crunch/High Horsepower) IVs: 31/31/31/31/31/31 EVs: 252/252/0/0/0/0
+Venusaur (Lv. 66)  (Nature: Serious) (Moves: Leaf Storm/Leech Seed/Sludge Bomb/Bulldoze) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/252/0
+Charizard (Lv. 66)  (Nature: Serious) (Moves: Fire Blast/Air Slash/Focus Blast/Will-O-Wisp) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/0/252
+Blastoise (Lv. 66)  (Nature: Serious) (Moves: Hydro Pump/Flash Cannon/Dark Pulse/Ice Beam) IVs: 31/31/31/31/31/31 EVs: 0/0/252/0/252/0
+======
+160 - Pokémon Trainer Blue
+======
+Pokemon: 6
+Alakazam (Lv. 65)  (Nature: Serious) (Moves: Psychic/Future Sight/Shadow Ball/Reflect) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/0/252
+Machamp (Lv. 65)  (Nature: Serious) (Moves: Cross Chop/Bulk Up/Knock Off/Poison Jab) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+Aerodactyl (Lv. 65)  (Nature: Serious) (Moves: Rock Slide/Crunch/Iron Head/Sky Drop) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+Exeggutor (Lv. 65)  (Nature: Serious) (Moves: Leaf Storm/Psychic/Sludge Bomb/Hypnosis) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/0/252
+Arcanine (Lv. 65)  (Nature: Serious) (Moves: Extreme Speed/Flare Blitz/Thunder Fang/Bulldoze) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+Gyarados (Lv. 65)  (Nature: Serious) (Moves: Aqua Tail/Crunch/Ice Fang/Dragon Dance) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+161 - Pokémon Trainer [~ 161]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+162 - Pokémon Trainer [~ 162]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+163 - Pokémon Trainer [~ 163]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+164 - Pokémon Trainer Anabel
+======
+Pokemon: 5
+Alakazam (Lv. 61)  (Nature: Serious) (Moves: Psychic/Focus Blast/Psyshock/Disable) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Weavile (Lv. 61)  (Nature: Serious) (Moves: Night Slash/Quick Attack/X-Scissor/Brick Break) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Mismagius (Lv. 61)  (Nature: Serious) (Moves: Shadow Ball/Dazzling Gleam/Energy Ball/Thunderbolt) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Salamence (Lv. 61)  (Nature: Serious) (Moves: Dragon Claw/Zen Headbutt/Fire Fang/Thunder Fang) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Snorlax (Lv. 61)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/Yawn) IVs: 31/31/15/15/31/15 EVs: 252/0/0/0/252/0
+======
+165 - Pokémon Trainer [~ 165]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+166 - Pokémon Trainer [~ 166]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+167 - Pokémon Trainer Molayne
+======
+Pokemon: 3
+Skarmory (Lv. 29)  (Nature: Serious) (Moves: Air Cutter/Metal Claw/(None)/(None)) IVs: 15/15/31/15/31/31 EVs: 0/0/252/0/252/0
+Metang (Lv. 29)  (Nature: Serious) (Moves: Zen Headbutt/Bullet Punch/Pursuit/(None)) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Dugtrio (Lv. 30)  (Nature: Serious) (Moves: Metal Claw/Mud Bomb/Sucker Punch/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+168 - Pokémon Trainer [~ 168]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+169 - Pokémon Center Lady [~ 169]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+170 - Golfer Alan
+======
+Pokemon: 1
+Rockruff (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+171 - Golfer Maile
+======
+Pokemon: 1
+Meowth (Lv. 20)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+172 - Office Worker Kristen
+======
+Pokemon: 1
+Carbink (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+173 - Police Officer Mitchell
+======
+Pokemon: 1
+Growlithe (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+174 - Sightseer Mariah
+======
+Pokemon: 1
+Meowth (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+175 - Cook Carver
+======
+Pokemon: 1
+Psyduck (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+176 - Youth Athlete [~ 176]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+177 - Janitor Melvin
+======
+Pokemon: 2
+Trubbish (Lv. 26)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/31/15 EVs: 0/0/0/0/0/0
+Trubbish (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/31/15/15/15 EVs: 0/0/0/0/0/0
+======
+178 - Dancer Cara
+======
+Pokemon: 1
+Oricorio (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+179 - Firefighter [~ 179]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+180 - Veteran Leon
+======
+Pokemon: 3
+Skarmory (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Gyarados (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Vikavolt (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+181 - Veteran Sheri
+======
+Pokemon: 4
+Weavile (Lv. 61)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Trevenant (Lv. 61)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Magmortar (Lv. 61)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Kommo-o (Lv. 61)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+182 - Bellhop Jody
+======
+Pokemon: 1
+Drifloon (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+183 - Rising Star ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+184 - Rising Star ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+185 - Team Skull Gladion
+======
+Pokemon: 1
+Type: Null (Lv. 19)  (Nature: Serious) (Moves: Tackle/Pursuit/(None)/(None)) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/0
+======
+186 - Hiker David
+======
+Pokemon: 1
+Magmar (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+187 - Ace Trainer Tori
+======
+Pokemon: 1
+Growlithe (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+188 - Ace Trainer Tori
+======
+Pokemon: 1
+Arcanine (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+189 - Gentleman Ronald
+======
+Pokemon: 1
+Pikipek (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+190 - Gentleman Ronald
+======
+Pokemon: 1
+Toucannon (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+191 - Cook Carver
+======
+Pokemon: 1
+Golduck (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+192 - Madame Kathleen
+======
+Pokemon: 1
+Delibird (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+193 - Madame Kathleen
+======
+Pokemon: 1
+Delibird (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+194 - Black Belt Walter
+======
+Pokemon: 1
+Makuhita (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+195 - Black Belt Walter
+======
+Pokemon: 1
+Hariyama (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+196 - Pokémon Breeder Savannah
+======
+Pokemon: 1
+Pikachu (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+197 - Pokémon Breeder Savannah
+======
+Pokemon: 1
+Raichu (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+198 - Office Worker Cody
+======
+Pokemon: 1
+Magnemite (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+199 - Office Worker Cody
+======
+Pokemon: 1
+Magnezone (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+200 - Office Worker Kristen
+======
+Pokemon: 1
+Carbink (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+201 - Punk Guy [~ 201]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+202 - Punk Guy [~ 202]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+203 - Punk Girl [~ 203]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+204 - Punk Girl [~ 204]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+205 - Youngster Kai
+======
+Pokemon: 1
+Charjabug (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+206 - Youngster Kai
+======
+Pokemon: 1
+Vikavolt (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+207 - Preschooler Hannah
+======
+Pokemon: 1
+Drifloon (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+208 - Preschooler Hannah
+======
+Pokemon: 1
+Drifblim (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+209 - Rising Star Kainoa
+======
+Pokemon: 1
+Bagon (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+210 - Rising Star Kainoa
+======
+Pokemon: 1
+Salamence (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+211 - Beauty Carolyn
+======
+Pokemon: 1
+Cutiefly (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+212 - Beauty Carolyn
+======
+Pokemon: 1
+Ribombee (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+213 - Lass Salla
+======
+Pokemon: 1
+Petilil (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+214 - Lass Salla
+======
+Pokemon: 1
+Lilligant (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+215 - Captain Ilima
+======
+Pokemon: 2
+Yungoos (Lv. 9)  (Nature: Adamant) (Moves: Tackle/Pursuit/Leer/(None)) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Smeargle (Lv. 10)  (Nature: Hasty) (Moves: Water Gun/Tackle/(None)/(None)) IVs: 15/31/15/31/15/31 EVs: 0/252/0/252/0/0
+======
+216 - Captain Ilima
+======
+Pokemon: 2
+Yungoos (Lv. 9)  (Nature: Adamant) (Moves: Tackle/Pursuit/Leer/(None)) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Smeargle (Lv. 10)  (Nature: Hasty) (Moves: Leafage/Tackle/(None)/(None)) IVs: 15/31/15/31/15/31 EVs: 0/252/0/252/0/0
+======
+217 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 28)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Flareon (Lv. 28)  (Nature: Serious) (Moves: Fire Fang/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Brionne (Lv. 29) @Waterium Z (Nature: Serious) (Moves: Bubble Beam/Disarming Voice/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+218 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 28)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Vaporeon (Lv. 28)  (Nature: Serious) (Moves: Water Pulse/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Dartrix (Lv. 29) @Grassium Z (Nature: Serious) (Moves: Razor Leaf/Pluck/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+219 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 28)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Leafeon (Lv. 28)  (Nature: Serious) (Moves: Giga Drain/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Torracat (Lv. 29) @Firium Z (Nature: Serious) (Moves: Fire Fang/Bite/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+220 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Flareon (Lv. 38)  (Nature: Serious) (Moves: Fire Fang/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Primarina (Lv. 39) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Disarming Voice/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+221 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Vaporeon (Lv. 38)  (Nature: Serious) (Moves: Water Pulse/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Decidueye (Lv. 39) @Grassium Z (Nature: Serious) (Moves: Razor Leaf/Spirit Shackle/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+222 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Leafeon (Lv. 38)  (Nature: Serious) (Moves: Giga Drain/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Incineroar (Lv. 39) @Firium Z (Nature: Serious) (Moves: Fire Fang/Darkest Lariat/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+223 - Team Skull Grunt
+======
+Pokemon: 1
+Golbat (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+224 - Team Skull Grunt
+======
+Pokemon: 1
+Raticate (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+225 - Team Skull [~ 225]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+226 - Team Skull [~ 226]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+227 - Team Skull Grunt
+======
+Pokemon: 1
+Drowzee (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+228 - Team Skull Grunt
+======
+Pokemon: 1
+Golbat (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+229 - Team Skull Grunt
+======
+Pokemon: 1
+Raticate (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+230 - Team Skull Grunt
+======
+Pokemon: 5
+Salandit (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Mareanie (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Haunter (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Golbat (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Raticate (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+231 - Team Skull Grunt
+======
+Pokemon: 1
+Spinarak (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+232 - Team Skull Grunt
+======
+Pokemon: 1
+Grimer (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+233 - Team Skull Grunt
+======
+Pokemon: 1
+Fomantis (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+234 - Team Skull [~ 234]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+235 - Team Skull Boss Guzma
+======
+Pokemon: 2
+Golisopod (Lv. 37)  (Nature: Adamant) (Moves: Swords Dance/Razor Shell/First Impression/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Ariados (Lv. 36)  (Nature: Adamant) (Moves: Fell Stinger/Sucker Punch/Shadow Sneak/Infestation) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+236 - Team Skull Boss Guzma
+======
+Pokemon: 4
+Golisopod (Lv. 41)  (Nature: Adamant) (Moves: Swords Dance/Razor Shell/First Impression/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Ariados (Lv. 40)  (Nature: Adamant) (Moves: Fell Stinger/Sucker Punch/Shadow Sneak/(None)) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+Masquerain (Lv. 40)  (Nature: Modest) (Moves: Air Slash/Bug Buzz/(None)/(None)) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/0/252
+Pinsir (Lv. 40)  (Nature: Adamant) (Moves: Double Hit/Brick Break/X-Scissor/(None)) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/0
+======
+237 - Preschooler Hunter
+======
+Pokemon: 1
+Elekid (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+238 - Team Skull Admin Plumeria
+======
+Pokemon: 2
+Golbat (Lv. 34)  (Nature: Jolly) (Moves: Air Cutter/Confuse Ray/Poison Fang/(None)) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Salazzle (Lv. 35)  (Nature: Hasty) (Moves: Flame Burst/Double Slap/Toxic/Dragon Rage) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+239 - Team Skull Gladion
+======
+Pokemon: 3
+Golbat (Lv. 37)  (Nature: Serious) (Moves: Acrobatics/Poison Fang/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Sneasel (Lv. 37)  (Nature: Serious) (Moves: Icy Wind/Metal Claw/Feint Attack/Quick Attack) IVs: 15/31/15/15/15/31 EVs: 0/0/0/0/0/0
+Type: Null (Lv. 38)  (Nature: Serious) (Moves: Pursuit/Crush Claw/X-Scissor/(None)) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/0
+======
+240 - Pokémon Trainer Gladion
+======
+Pokemon: 4
+Crobat (Lv. 52)  (Nature: Serious) (Moves: Acrobatics/Cross Poison/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Weavile (Lv. 52)  (Nature: Serious) (Moves: Ice Shard/Night Slash/Metal Claw/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Lucario (Lv. 52) @Steelium Z (Nature: Serious) (Moves: Aura Sphere/Metal Claw/Quick Attack/(None)) IVs: 15/31/15/31/15/31 EVs: 0/0/0/0/0/252
+Silvally (Lv. 53) @Fire Memory (Nature: Serious) (Moves: Crunch/Crush Claw/X-Scissor/Multi-Attack) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/252
+======
+241 - Aether Branch Chief Faba
+======
+Pokemon: 3
+Slowbro (Lv. 39)  (Nature: Relaxed) (Moves: Yawn/Psychic/Amnesia/Headbutt) IVs: 31/15/31/15/15/15 EVs: 252/0/0/0/0/0
+Bruxish (Lv. 39)  (Nature: Adamant) (Moves: Aqua Jet/Crunch/Psychic Fangs/(None)) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Hypno (Lv. 40)  (Nature: Timid) (Moves: Psychic/Hypnosis/Disable/Nightmare) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/252
+======
+242 - Aether Foundation Employee
+======
+Pokemon: 1
+Magneton (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+243 - Aether Foundation Employee
+======
+Pokemon: 1
+Porygon2 (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+244 - Worker [~ 244]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+245 - Hiker Calhoun
+======
+Pokemon: 2
+Roggenrola (Lv. 18)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Machop (Lv. 19)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+246 - Ace Trainer Jim
+======
+Pokemon: 1
+Kadabra (Lv. 21)  (Nature: Serious) (Moves: Psybeam/Disable/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+247 - Collector [~ 247]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+248 - Beauty Andrea
+======
+Pokemon: 1
+Steenee (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+249 - Scientist [~ 249]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+250 - Gentleman [~ 250]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+251 - Ace Trainer Karla
+======
+Pokemon: 3
+Vulpix (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+Haunter (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Wigglytuff (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+252 - Youngster [~ 252]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+253 - Ace Trainer Yuki
+======
+Pokemon: 2
+Sandshrew (Lv. 32)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/31/15/15/15 EVs: 0/0/0/0/0/0
+Marowak (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+254 - Scientist Jayson
+======
+Pokemon: 2
+Porygon (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Magneton (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+255 - Lass [~ 255]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+256 - Preschooler [~ 256]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+257 - Fisherman Hisato
+======
+Pokemon: 2
+Feebas (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Gyarados (Lv. 31)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+258 - Aether Foundation Employee
+======
+Pokemon: 2
+Dugtrio (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Sliggoo (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+259 - Aether Foundation Employee
+======
+Pokemon: 2
+Shelgon (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Trumbeak (Lv. 36)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+260 - Ace Trainer Angela
+======
+Pokemon: 2
+Cloyster (Lv. 58)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/31/15/15/15 EVs: 0/0/0/0/0/0
+Lurantis (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+261 - Ace Trainer Junko
+======
+Pokemon: 2
+Lilligant (Lv. 45)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/31/15 EVs: 0/0/0/0/0/0
+Weavile (Lv. 46)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+262 - Ace Trainer Aimee
+======
+Pokemon: 1
+Ninetales (Lv. 46)  (Nature: Serious) (Moves: Dazzling Gleam/Ice Beam/Ice Shard/Hail) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+======
+263 - Ace Trainer Jackson
+======
+Pokemon: 3
+Bruxish (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+Marowak (Lv. 56)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+Braviary (Lv. 56)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+264 - Ace Trainer Hiroshi
+======
+Pokemon: 2
+Absol (Lv. 46)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+Lapras (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/31/15 EVs: 0/0/0/0/0/0
+======
+265 - Ace Trainer Kent
+======
+Pokemon: 1
+Sandslash (Lv. 46)  (Nature: Serious) (Moves: Icicle Spear/Metal Claw/Slash/Hail) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+266 - Preschooler Ailey
+======
+Pokemon: 1
+Cleffa (Lv. 26)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+267 - Beauty [~ 267]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+268 - Beauty [~ 268]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+269 - Swimmer Keoni
+======
+Pokemon: 1
+Pyukumuku (Lv. 31)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+270 - Swimmer Jake
+======
+Pokemon: 1
+Golduck (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+271 - Swimmer Jared
+======
+Pokemon: 1
+Tentacruel (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+272 - Black Belt Roy
+======
+Pokemon: 1
+Crabominable (Lv. 56)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+273 - Black Belt Tracy
+======
+Pokemon: 2
+Pangoro (Lv. 60)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+Machamp (Lv. 60)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+274 - Black Belt Earl
+======
+Pokemon: 1
+Poliwrath (Lv. 46)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+275 - Black Belt Terry
+======
+Pokemon: 1
+Machamp (Lv. 46)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+276 - Sightseer Akali
+======
+Pokemon: 2
+Raticate (Lv. 26)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Raichu (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+277 - Sightseer Jamie
+======
+Pokemon: 4
+Sandshrew (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Geodude (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Vulpix (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Graveler (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+278 - Sightseer Noriko
+======
+Pokemon: 2
+Ninetales (Lv. 58)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Exeggutor (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+279 - Sightseer Mitch
+======
+Pokemon: 2
+Persian (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Marowak (Lv. 26)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+280 - Sightseer Devin
+======
+Pokemon: 2
+Sandslash (Lv. 58)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Golem (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+281 - Scientist [~ 281]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+282 - Scientist Kyle
+======
+Pokemon: 2
+Ditto (Lv. 58)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Porygon-Z (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+283 - Scientist Ikaika
+======
+Pokemon: 2
+Muk (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Magnezone (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+284 - Collector Todd
+======
+Pokemon: 2
+Passimian (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Oranguru (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+285 - Collector Raymond
+======
+Pokemon: 2
+Turtonator (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Drampa (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+286 - Hiker Thomas
+======
+Pokemon: 2
+Boldore (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Geodude (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+287 - Hiker [~ 287]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+288 - Hiker Ryan
+======
+Pokemon: 2
+Lycanroc (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Gigalith (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+289 - Hiker Zachary
+======
+Pokemon: 2
+Archeops (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Rampardos (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+290 - Hiker Travis
+======
+Pokemon: 2
+Dugtrio (Lv. 56)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Mudsdale (Lv. 57)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+291 - Lass Rylee
+======
+Pokemon: 2
+Sneasel (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Komala (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+292 - Lass [~ 292]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+293 - Youngster [~ 293]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+294 - Backpacker [~ 294]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+295 - Backpacker [~ 295]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+296 - Backpacker Yuho
+======
+Pokemon: 1
+Mimikyu (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+297 - Backpacker Perdy
+======
+Pokemon: 1
+Whimsicott (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+298 - Backpacker Maria
+======
+Pokemon: 1
+Emolga (Lv. 57)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+299 - Swimmer Yumi
+======
+Pokemon: 1
+Slowbro (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+300 - Swimmer Alexandria
+======
+Pokemon: 3
+Luvdisc (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Corsola (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Alomomola (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+301 - Punk Guy Adam
+======
+Pokemon: 1
+Pangoro (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+302 - Punk Girl Anna
+======
+Pokemon: 2
+Persian (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Honchkrow (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+303 - Veteran Tsunekazu
+======
+Pokemon: 3
+Wishiwashi (Lv. 61)  (Nature: Serious) (Moves: Hydro Pump/Ice Beam/Return/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Electivire (Lv. 61)  (Nature: Serious) (Moves: Thunder Punch/Fire Punch/Quick Attack/Brick Break) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Turtonator (Lv. 61)  (Nature: Serious) (Moves: Fire Blast/Dragon Pulse/Focus Blast/Flash Cannon) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+304 - Veteran [~ 304]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+305 - Veteran Eric
+======
+Pokemon: 4
+Granbull (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Cloyster (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Golem (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Gengar (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+306 - Veteran Harry
+======
+Pokemon: 2
+Torkoal (Lv. 46)  (Nature: Serious) (Moves: Heat Wave/Body Slam/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Arcanine (Lv. 46)  (Nature: Serious) (Moves: Fire Fang/Extreme Speed/Retaliate/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+307 - Veteran Nobuko
+======
+Pokemon: 3
+Comfey (Lv. 61)  (Nature: Serious) (Moves: Floral Healing/Light Screen/Flower Shield/Draining Kiss) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Alomomola (Lv. 61)  (Nature: Serious) (Moves: Helping Hand/Aqua Jet/Heal Pulse/Soak) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Lilligant (Lv. 61)  (Nature: Serious) (Moves: Sunny Day/Helping Hand/After You/Leaf Storm) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+308 - Veteran Heather
+======
+Pokemon: 3
+Stoutland (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Klefki (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Tsareena (Lv. 47)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+309 - Veteran Lynn
+======
+Pokemon: 3
+Starmie (Lv. 46)  (Nature: Serious) (Moves: Psychic/Power Gem/Brine/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Shiinotic (Lv. 46)  (Nature: Serious) (Moves: Moonblast/Spore/Giga Drain/Ingrain) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Talonflame (Lv. 46)  (Nature: Serious) (Moves: Flame Charge/Acrobatics/Quick Attack/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+310 - Team Skull Grunt
+======
+Pokemon: 2
+Rattata (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Raticate (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+311 - Team Skull Grunt
+======
+Pokemon: 2
+Mareanie (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Fomantis (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+312 - Team Skull Grunt
+======
+Pokemon: 1
+Mareanie (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+313 - Team Skull Grunt
+======
+Pokemon: 1
+Haunter (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+314 - Team Skull Grunt
+======
+Pokemon: 1
+Golbat (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+315 - Team Skull Grunt
+======
+Pokemon: 1
+Golbat (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+316 - Team Skull Grunt
+======
+Pokemon: 1
+Raticate (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+317 - Team Skull [~ 317]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+318 - Team Skull Grunt
+======
+Pokemon: 1
+Wimpod (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+319 - Team Skull Grunt
+======
+Pokemon: 1
+Salandit (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+320 - Team Skull Grunt
+======
+Pokemon: 1
+Golbat (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+321 - Team Skull Grunt
+======
+Pokemon: 3
+Zubat (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Gastly (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Salandit (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+322 - Team Skull Grunt
+======
+Pokemon: 2
+Wimpod (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Drowzee (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+323 - Team Skull Grunt
+======
+Pokemon: 1
+Fomantis (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+324 - Team Skull Grunt
+======
+Pokemon: 2
+Fomantis (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Salandit (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+325 - Team Skull [~ 325]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+326 - Rising Star Leilani
+======
+Pokemon: 1
+Tirtouga (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+327 - Rising Star Matthew
+======
+Pokemon: 1
+Cranidos (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+328 - Punk Guy [~ 328]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+329 - Punk Girl [~ 329]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+330 - Cook Fil
+======
+Pokemon: 2
+Parasect (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Ribombee (Lv. 43)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+331 - Black Belt Guy
+======
+Pokemon: 1
+Machop (Lv. 21)  (Nature: Serious) (Moves: Karate Chop/Leer/(None)/(None)) IVs: 31/0/0/0/0/0 EVs: 252/0/0/0/0/0
+======
+332 - Preschooler Samuel
+======
+Pokemon: 1
+Machop (Lv. 19)  (Nature: Adamant) (Moves: Karate Chop/Foresight/(None)/(None)) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+333 - Cook Ernie
+======
+Pokemon: 1
+Cutiefly (Lv. 14)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+334 - Dancer Maika
+======
+Pokemon: 1
+Oricorio (Lv. 17)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+335 - Police Officer Haruki
+======
+Pokemon: 1
+Growlithe (Lv. 24)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+336 - Office Worker [~ 336]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+337 - Office Worker [~ 337]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+338 - Black Belt [~ 338]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+339 - Swimmer Robert
+======
+Pokemon: 2
+Whiscash (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Sandygast (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+340 - Swimmer Sara
+======
+Pokemon: 1
+Alomomola (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+341 - Collector Kawika
+======
+Pokemon: 2
+Togedemaru (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Gabite (Lv. 31)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+342 - Scientist Reid
+======
+Pokemon: 2
+Charjabug (Lv. 32)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Muk (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+343 - Dancer Mireille
+======
+Pokemon: 1
+Oricorio (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+344 - Office Worker Jessica
+======
+Pokemon: 1
+Clefairy (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+345 - Worker [~ 345]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+346 - Aether Foundation Employee
+======
+Pokemon: 3
+Parasect (Lv. 36)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Drifblim (Lv. 36)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Vibrava (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+347 - Aether Foundation Employee
+======
+Pokemon: 1
+Primeape (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+348 - Aether Foundation Employee
+======
+Pokemon: 2
+Herdier (Lv. 36)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Lumineon (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+349 - Elite Four Hala
+======
+Pokemon: 5
+Hariyama (Lv. 63)  (Nature: Adamant) (Moves: Fake Out/Close Combat/Knock Off/Heavy Slam) IVs: 31/31/15/15/31/15 EVs: 0/252/0/0/252/0
+Primeape (Lv. 63)  (Nature: Adamant) (Moves: Cross Chop/Rock Slide/Punishment/Stomping Tantrum) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Bewear (Lv. 63)  (Nature: Adamant) (Moves: Hammer Arm/Brutal Swing/Dragon Claw/Shadow Claw) IVs: 31/31/31/15/15/15 EVs: 0/252/252/0/0/0
+Poliwrath (Lv. 63)  (Nature: Adamant) (Moves: Waterfall/Brick Break/Poison Jab/Payback) IVs: 31/31/15/15/31/15 EVs: 0/252/0/0/252/0
+Crabominable (Lv. 63) @Fightinium Z (Nature: Adamant) (Moves: Ice Hammer/Close Combat/Stone Edge/Earthquake) IVs: 31/31/31/31/31/31 EVs: 0/252/252/0/0/0
+======
+350 - Elite Four Acerola
+======
+Pokemon: 5
+Sableye (Lv. 63)  (Nature: Serious) (Moves: Shadow Claw/Zen Headbutt/Brick Break/Fake Out) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Drifblim (Lv. 63)  (Nature: Serious) (Moves: Shadow Ball/Thunderbolt/Psychic/Will-O-Wisp) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Dhelmise (Lv. 63)  (Nature: Serious) (Moves: Phantom Force/Heavy Slam/Earthquake/Brutal Swing) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Froslass (Lv. 63)  (Nature: Serious) (Moves: Blizzard/Shadow Ball/Thunderbolt/Ice Shard) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Palossand (Lv. 63) @Ghostium Z (Nature: Serious) (Moves: Shadow Ball/Earth Power/Sludge Bomb/Giga Drain) IVs: 31/31/31/31/31/31 EVs: 252/0/0/252/0/0
+======
+351 - Elite Four Olivia
+======
+Pokemon: 5
+Relicanth (Lv. 63)  (Nature: Serious) (Moves: Head Smash/Waterfall/Yawn/Earthquake) IVs: 31/31/15/15/15/31 EVs: 0/0/0/252/0/252
+Carbink (Lv. 63)  (Nature: Serious) (Moves: Power Gem/Moonblast/Reflect/Stealth Rock) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Golem (Lv. 63)  (Nature: Serious) (Moves: Thunder Punch/Stone Edge/Earthquake/Heavy Slam) IVs: 31/15/31/15/31/15 EVs: 252/0/252/0/0/0
+Probopass (Lv. 63)  (Nature: Serious) (Moves: Earth Power/Power Gem/Dazzling Gleam/Flash Cannon) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Lycanroc (Lv. 63) @Rockium Z (Nature: Serious) (Moves: Crunch/Stone Edge/Brick Break/Rock Climb) IVs: 31/31/31/31/31/31 EVs: 252/0/252/0/0/0
+======
+352 - Elite Four Kahili
+======
+Pokemon: 5
+Skarmory (Lv. 63)  (Nature: Serious) (Moves: Steel Wing/Night Slash/Rock Slide/Spikes) IVs: 15/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Crobat (Lv. 63)  (Nature: Serious) (Moves: Air Slash/Shadow Ball/Dark Pulse/Sludge Bomb) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Oricorio (Lv. 63)  (Nature: Serious) (Moves: Revelation Dance/Teeter Dance/Air Slash/Feather Dance) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Mandibuzz (Lv. 63)  (Nature: Serious) (Moves: Snarl/Air Slash/Roost/Toxic) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Toucannon (Lv. 63) @Flyinium Z (Nature: Serious) (Moves: Bullet Seed/Rock Blast/Beak Blast/Brick Break) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+353 - Pokémon Trainer ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+354 - Pokémon Trainer ●●●
+======
+Pokemon: 1
+Raichu (Lv. 63)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+355 - Pokémon Trainer ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+356 - Pokémon Trainer Hau
+======
+Pokemon: 5
+Raichu (Lv. 63)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/Focus Blast) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Flareon (Lv. 63)  (Nature: Serious) (Moves: Flare Blitz/Quick Attack/Charm/Baby-Doll Eyes) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/252
+Komala (Lv. 63)  (Nature: Serious) (Moves: Wood Hammer/Sucker Punch/Earthquake/Shadow Claw) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+Crabominable (Lv. 63)  (Nature: Serious) (Moves: Close Combat/Ice Hammer/Stone Edge/Brutal Swing) IVs: 15/31/15/15/15/15 EVs: 252/252/0/0/0/0
+Primarina (Lv. 63) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Moonblast/Hyper Voice/(None)) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+======
+357 - Pokémon Trainer Hau
+======
+Pokemon: 5
+Raichu (Lv. 63)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/Focus Blast) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Vaporeon (Lv. 63)  (Nature: Serious) (Moves: Hydro Pump/Quick Attack/Charm/Baby-Doll Eyes) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/252
+Komala (Lv. 63)  (Nature: Serious) (Moves: Wood Hammer/Sucker Punch/Earthquake/Shadow Claw) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+Crabominable (Lv. 63)  (Nature: Serious) (Moves: Close Combat/Ice Hammer/Stone Edge/Brutal Swing) IVs: 15/31/15/15/15/15 EVs: 252/252/0/0/0/0
+Decidueye (Lv. 63) @Grassium Z (Nature: Serious) (Moves: Spirit Shackle/Leaf Blade/Smack Down/(None)) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+======
+358 - Pokémon Trainer Hau
+======
+Pokemon: 5
+Raichu (Lv. 63)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/Focus Blast) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Leafeon (Lv. 63)  (Nature: Serious) (Moves: Leaf Blade/Quick Attack/Charm/Baby-Doll Eyes) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/252
+Komala (Lv. 63)  (Nature: Serious) (Moves: Wood Hammer/Sucker Punch/Earthquake/Shadow Claw) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+Crabominable (Lv. 63)  (Nature: Serious) (Moves: Close Combat/Ice Hammer/Stone Edge/Brutal Swing) IVs: 15/31/15/15/15/15 EVs: 252/252/0/0/0/0
+Incineroar (Lv. 63) @Firium Z (Nature: Serious) (Moves: Darkest Lariat/Flare Blitz/Earthquake/(None)) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+======
+359 - Island Kahuna Hapu
+======
+Pokemon: 5
+Dugtrio (Lv. 63)  (Nature: Serious) (Moves: Iron Head/Earthquake/Sandstorm/Rock Slide) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Gastrodon (Lv. 63)  (Nature: Serious) (Moves: Muddy Water/Mud Bomb/Sludge Wave/Ice Beam) IVs: 31/15/31/15/31/15 EVs: 252/0/252/0/0/0
+Krookodile (Lv. 63)  (Nature: Serious) (Moves: Earthquake/Crunch/Dragon Claw/Aerial Ace) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Flygon (Lv. 63)  (Nature: Serious) (Moves: Dragon Rush/Earthquake/Stone Edge/Steel Wing) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Mudsdale (Lv. 63) @Groundium Z (Nature: Serious) (Moves: Heavy Slam/Earthquake/Payback/Rock Slide) IVs: 31/31/31/15/15/15 EVs: 0/252/252/0/0/0
+======
+360 - Aether Foundation Faba
+======
+Pokemon: 5
+Slowbro (Lv. 61)  (Nature: Relaxed) (Moves: Yawn/Psychic/Amnesia/Ice Beam) IVs: 31/15/31/15/15/15 EVs: 0/0/0/0/0/0
+Bruxish (Lv. 61)  (Nature: Adamant) (Moves: Aqua Jet/Crunch/Psychic Fangs/Screech) IVs: 15/31/15/15/15/31 EVs: 0/0/0/0/0/0
+Raichu (Lv. 61)  (Nature: Modest) (Moves: Psychic/Thunderbolt/Quick Attack/Nuzzle) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+Alakazam (Lv. 61)  (Nature: Modest) (Moves: Psychic/Psyshock/Disable/Dazzling Gleam) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+Hypno (Lv. 61)  (Nature: Timid) (Moves: Psychic/Hypnosis/Focus Blast/Dream Eater) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+======
+361 - Vaporeon User Polly
+======
+Pokemon: 1
+Vaporeon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+362 - Jolteon User Jane
+======
+Pokemon: 1
+Jolteon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+363 - Glaceon User Rea
+======
+Pokemon: 1
+Glaceon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+364 - Flareon User Chad
+======
+Pokemon: 1
+Flareon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/31/15 EVs: 0/0/0/0/0/0
+======
+365 - Espeon User Ishaan
+======
+Pokemon: 1
+Espeon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/31/15 EVs: 0/0/0/0/0/0
+======
+366 - Janitor Shawn
+======
+Pokemon: 1
+Muk (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/31/15/31/15 EVs: 0/0/0/0/0/0
+======
+367 - Umbreon User Braiden
+======
+Pokemon: 1
+Umbreon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+368 - Leafeon User Linnea
+======
+Pokemon: 1
+Leafeon (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+369 - Sylveon User Kira
+======
+Pokemon: 1
+Sylveon (Lv. 54)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+370 - Preschooler ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+371 - Preschooler Harper
+======
+Pokemon: 1
+Luvdisc (Lv. 24)  (Nature: Serious) (Moves: Draining Kiss/Water Pulse/Charm/(None)) IVs: 31/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+372 - Preschooler Sarah
+======
+Pokemon: 1
+Corsola (Lv. 24)  (Nature: Serious) (Moves: Ancient Power/Bubble Beam/Recover/(None)) IVs: 31/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+373 - Swimmer Ashlyn
+======
+Pokemon: 1
+Lanturn (Lv. 45)  (Nature: Serious) (Moves: Waterfall/(None)/(None)/(None)) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+374 - Swimmer Kylie
+======
+Pokemon: 1
+Lumineon (Lv. 45)  (Nature: Serious) (Moves: Surf/(None)/(None)/(None)) IVs: 15/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+375 - Golfer Tara
+======
+Pokemon: 1
+Oricorio (Lv. 25)  (Nature: Serious) (Moves: Feather Dance/Double Slap/Air Cutter/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+376 - Golfer Tina
+======
+Pokemon: 1
+Oricorio (Lv. 25)  (Nature: Serious) (Moves: Feather Dance/Double Slap/Air Cutter/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+377 - Golfer [~ 377]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+378 - Golfer [~ 378]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+379 - Eevee User Kagetora
+======
+Pokemon: 1
+Eevee (Lv. 57)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+380 - Principal Asuka
+======
+Pokemon: 3
+Granbull (Lv. 57)  (Nature: Adamant) (Moves: Play Rough/Crunch/Charm/Payback) IVs: 31/31/15/15/15/15 EVs: 0/252/0/0/0/0
+Stoutland (Lv. 57)  (Nature: Adamant) (Moves: Ice Fang/Thunder Fang/Fire Fang/Retaliate) IVs: 31/31/15/15/15/15 EVs: 0/252/0/0/0/0
+Arcanine (Lv. 57)  (Nature: Adamant) (Moves: Reversal/Extreme Speed/Outrage/Flare Blitz) IVs: 31/31/15/15/18/15 EVs: 0/252/0/0/0/0
+======
+381 - Punk Guy [~ 381]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+382 - Cook [~ 382]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+383 - Ace Trainer Chase
+======
+Pokemon: 1
+Grimer (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/31/15/31/15 EVs: 0/0/0/0/0/0
+======
+384 - Ace Trainer [~ 384]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+385 - Ace Trainer [~ 385]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+386 - Black Belt Duane
+======
+Pokemon: 2
+Primeape (Lv. 55)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+Lucario (Lv. 56)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+387 - Black Belt Greg
+======
+Pokemon: 1
+Hariyama (Lv. 23) @Fightinium Z (Nature: Adamant) (Moves: Force Palm/Knock Off/(None)/(None)) IVs: 31/31/31/15/15/15 EVs: 252/252/0/0/0/0
+======
+388 - Sightseer Marcus
+======
+Pokemon: 1
+Shiny Exeggcute (Lv. 55)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+389 - Rising Star ●●●
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+390 - Pokémon Breeder Wesley
+======
+Pokemon: 1
+Tauros (Lv. 15)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+391 - Veteran Roger
+======
+Pokemon: 1
+Trumbeak (Lv. 27)  (Nature: Modest) (Moves: Echoed Voice/Supersonic/Screech/Growl) IVs: 31/0/15/31/15/31 EVs: 0/0/0/252/0/0
+======
+392 - GAME FREAK Morimoto
+======
+Pokemon: 6
+Kangaskhan (Lv. 62)  (Nature: Adamant) (Moves: Fake Out/Dizzy Punch/Sucker Punch/Earthquake) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Jolteon (Lv. 62)  (Nature: Timid) (Moves: Quick Attack/Thunder/Baby-Doll Eyes/Thunder Wave) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Flareon (Lv. 62)  (Nature: Adamant) (Moves: Quick Attack/Flare Blitz/Baby-Doll Eyes/Will-O-Wisp) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Vaporeon (Lv. 62)  (Nature: Modest) (Moves: Quick Attack/Hydro Pump/Baby-Doll Eyes/Toxic) IVs: 31/15/31/31/15/15 EVs: 252/0/0/252/0/0
+Machamp (Lv. 62)  (Nature: Adamant) (Moves: Dynamic Punch/Stone Edge/Poison Jab/Dual Chop) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Dragonite (Lv. 62)  (Nature: Modest) (Moves: Hurricane/Draco Meteor/Thunder/Blizzard) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+393 - Collector Andrew
+======
+Pokemon: 2
+Ledian (Lv. 28)  (Nature: Adamant) (Moves: Silver Wind/Light Screen/Reflect/Mach Punch) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/252/252
+Pinsir (Lv. 29) @Buginium Z (Nature: Adamant) (Moves: X-Scissor/Brick Break/Swords Dance/(None)) IVs: 31/31/31/15/15/15 EVs: 0/252/252/0/0/0
+======
+394 - Trial Guide Katrina
+======
+Pokemon: 2
+Klefki (Lv. 34)  (Nature: Bold) (Moves: Mirror Shot/Draining Kiss/Spikes/(None)) IVs: 15/15/31/31/31/15 EVs: 0/0/252/0/252/0
+Skarmory (Lv. 34) @Steelium Z (Nature: Adamant) (Moves: Steel Wing/Feint/Fury Attack/(None)) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+395 - Trial Guide Bronson
+======
+Pokemon: 1
+Slowpoke (Lv. 22) @Psychium Z (Nature: Modest) (Moves: Confusion/Water Gun/(None)/(None)) IVs: 31/15/15/31/31/15 EVs: 0/0/0/252/252/0
+======
+396 - Captain Ilima
+======
+Pokemon: 2
+Gumshoos (Lv. 15) @Normalium Z (Nature: Adamant) (Moves: Tackle/Pursuit/Leer/(None)) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Smeargle (Lv. 14)  (Nature: Hasty) (Moves: Quick Attack/Ember/Water Gun/Leafage) IVs: 15/31/15/31/15/31 EVs: 0/252/0/252/0/0
+======
+397 - Captain [~ 397]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+398 - Captain Kiawe
+======
+Pokemon: 3
+Growlithe (Lv. 26)  (Nature: Serious) (Moves: Bite/Fire Fang/(None)/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/0/0
+Fletchinder (Lv. 26)  (Nature: Serious) (Moves: Ember/Quick Attack/Peck/(None)) IVs: 15/31/15/31/15/31 EVs: 0/0/0/0/0/252
+Marowak (Lv. 27)  (Nature: Serious) (Moves: Flame Wheel/Hex/Bonemerang/Will-O-Wisp) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/0
+======
+399 - Pokémon Trainer [~ 399]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+400 - Pokémon Trainer Guzma
+======
+Pokemon: 5
+Golisopod (Lv. 63)  (Nature: Adamant) (Moves: Sucker Punch/Waterfall/First Impression/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Ariados (Lv. 63)  (Nature: Adamant) (Moves: Fell Stinger/Sucker Punch/Toxic Thread/Cross Poison) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+Pinsir (Lv. 63)  (Nature: Adamant) (Moves: Guillotine/Storm Throw/X-Scissor/Stone Edge) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Masquerain (Lv. 63)  (Nature: Modest) (Moves: Air Slash/Bug Buzz/Ice Beam/Energy Ball) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/0/252
+Scizor (Lv. 63)  (Nature: Adamant) (Moves: X-Scissor/Iron Head/Night Slash/Bullet Punch) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+401 - Pokémon Trainer Plumeria
+======
+Pokemon: 5
+Gengar (Lv. 61)  (Nature: Modest) (Moves: Shadow Ball/Dark Pulse/Sludge Bomb/Dazzling Gleam) IVs: 15/15/15/31/15/31 EVs: 0/0/0/252/0/0
+Muk (Lv. 61)  (Nature: Careful) (Moves: Venoshock/Brick Break/Toxic/Rock Slide) IVs: 31/15/15/15/31/15 EVs: 0/0/0/0/252/0
+Crobat (Lv. 61)  (Nature: Jolly) (Moves: Leech Life/Fly/Poison Fang/Protect) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Toxapex (Lv. 61)  (Nature: Impish) (Moves: Liquidation/Baneful Bunker/Recover/Poison Jab) IVs: 15/15/31/15/31/15 EVs: 0/0/252/0/0/0
+Salazzle (Lv. 61) @Poisonium Z (Nature: Hasty) (Moves: Sludge Bomb/Flamethrower/Dragon Pulse/Protect) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/252
+======
+402 - Pokémon Trainer [~ 402]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+403 - Island Kahuna Nanu
+======
+Pokemon: 5
+Sableye (Lv. 63)  (Nature: Impish) (Moves: Power Gem/Dark Pulse/Shadow Ball/Toxic) IVs: 31/15/15/31/31/15 EVs: 0/0/0/252/252/0
+Absol (Lv. 63)  (Nature: Jolly) (Moves: Night Slash/Psycho Cut/Sucker Punch/Aerial Ace) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Honchkrow (Lv. 63)  (Nature: Serious) (Moves: Aerial Ace/Sucker Punch/Snarl/Psychic) IVs: 31/31/15/31/15/15 EVs: 0/252/0/252/0/0
+Krookodile (Lv. 63)  (Nature: Jolly) (Moves: Crunch/Dragon Claw/Aerial Ace/Earthquake) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Persian (Lv. 63) @Darkinium Z (Nature: Timid) (Moves: Power Gem/Fake Out/Dark Pulse/Thunderbolt) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+404 - Captain [~ 404]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+405 - Captain Sophocles
+======
+Pokemon: 5
+Togedemaru (Lv. 61)  (Nature: Serious) (Moves: Electric Terrain/Zing Zap/Spiky Shield/Fell Stinger) IVs: 15/31/15/15/15/31 EVs: 0/0/0/0/0/252
+Magnezone (Lv. 61)  (Nature: Serious) (Moves: Flash Cannon/Discharge/Tri Attack/Reflect) IVs: 15/15/31/15/31/15 EVs: 0/0/252/0/0/0
+Electivire (Lv. 61)  (Nature: Serious) (Moves: Thunder Punch/Giga Impact/Fire Punch/Quick Attack) IVs: 15/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Vikavolt (Lv. 61)  (Nature: Serious) (Moves: Bug Buzz/Thunderbolt/Air Slash/Guillotine) IVs: 15/15/15/31/15/31 EVs: 0/0/0/252/0/0
+Golem (Lv. 61)  (Nature: Serious) (Moves: Stone Edge/Steamroller/Thunder Punch/Heavy Slam) IVs: 15/31/31/15/15/15 EVs: 0/0/252/0/0/0
+======
+406 - Pokémon Trainer [~ 406]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+407 - Pokémon Trainer [~ 407]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+408 - Captain [~ 408]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+409 - Pokémon Trainer Ryuki
+======
+Pokemon: 5
+Garchomp (Lv. 61)  (Nature: Serious) (Moves: Dragon Claw/Crunch/Earthquake/Poison Jab) IVs: 15/31/15/15/15/31 EVs: 0/0/0/0/0/0
+Drampa (Lv. 61)  (Nature: Serious) (Moves: Dragon Pulse/Hyper Voice/Blizzard/Thunder) IVs: 31/15/15/31/15/15 EVs: 0/0/0/0/0/0
+Turtonator (Lv. 61)  (Nature: Serious) (Moves: Overheat/Dragon Pulse/Fire Blast/Focus Blast) IVs: 15/15/31/15/31/15 EVs: 0/0/0/0/0/0
+Dragonite (Lv. 61)  (Nature: Serious) (Moves: Hurricane/Dragon Rush/Fire Punch/Thunder Punch) IVs: 15/31/15/31/15/15 EVs: 0/0/0/0/0/0
+Kommo-o (Lv. 61)  (Nature: Serious) (Moves: Clanging Scales/Focus Blast/Flash Cannon/Flamethrower) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+======
+410 - Aether Foundation Faba
+======
+Pokemon: 5
+Slowbro (Lv. 61)  (Nature: Relaxed) (Moves: Yawn/Psychic/Amnesia/Ice Beam) IVs: 31/15/31/15/15/15 EVs: 0/0/0/0/0/0
+Bruxish (Lv. 61)  (Nature: Adamant) (Moves: Aqua Jet/Crunch/Psychic Fangs/Screech) IVs: 15/31/15/15/15/31 EVs: 0/0/0/0/0/0
+Raichu (Lv. 61)  (Nature: Modest) (Moves: Psychic/Thunderbolt/Quick Attack/Nuzzle) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+Alakazam (Lv. 61)  (Nature: Modest) (Moves: Psychic/Psyshock/Disable/Dazzling Gleam) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+Hypno (Lv. 61)  (Nature: Timid) (Moves: Psychic/Hypnosis/Focus Blast/Dream Eater) IVs: 15/15/15/31/15/31 EVs: 0/0/0/0/0/0
+======
+411 - Pokémon Trainer [~ 411]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+412 - Pokémon Trainer Dexio
+======
+Pokemon: 5
+Espeon (Lv. 61)  (Nature: Serious) (Moves: Psychic/Shadow Ball/Dazzling Gleam/Power Swap) IVs: 31/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Raichu (Lv. 61)  (Nature: Serious) (Moves: Psychic/Thunderbolt/Light Screen/Reflect) IVs: 15/15/15/31/15/31 EVs: 0/0/0/252/0/252
+Slowking (Lv. 61)  (Nature: Serious) (Moves: Psychic/Power Gem/Ice Beam/Flamethrower) IVs: 31/15/15/15/15/15 EVs: 252/0/0/252/0/0
+Metagross (Lv. 61)  (Nature: Serious) (Moves: Meteor Mash/Zen Headbutt/Bullet Punch/Brick Break) IVs: 15/31/31/15/15/15 EVs: 0/252/252/0/0/0
+Alakazam (Lv. 61) @Alakazite (Nature: Serious) (Moves: Psychic/Psyshock/Focus Blast/Energy Ball) IVs: 15/15/15/31/31/31 EVs: 0/0/0/252/0/252
+======
+413 - Pokémon Professor Kukui
+======
+Pokemon: 6
+Lycanroc (Lv. 57)  (Nature: Serious) (Moves: Stone Edge/Accelerock/Crunch/Stealth Rock) IVs: 31/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Ninetales (Lv. 56)  (Nature: Serious) (Moves: Dazzling Gleam/Blizzard/Ice Shard/Safeguard) IVs: 31/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Braviary (Lv. 56)  (Nature: Serious) (Moves: Crush Claw/Brave Bird/Whirlwind/Tailwind) IVs: 31/15/31/15/31/31 EVs: 252/0/0/0/0/252
+Magnezone (Lv. 56)  (Nature: Serious) (Moves: Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat) IVs: 31/15/31/31/31/15 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 56)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/High Horsepower) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Primarina (Lv. 58) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Moonblast/Aqua Jet/Hyper Voice) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/252/0
+======
+414 - Pokémon Professor Kukui
+======
+Pokemon: 6
+Lycanroc (Lv. 57)  (Nature: Serious) (Moves: Stone Edge/Accelerock/Crunch/Stealth Rock) IVs: 31/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Ninetales (Lv. 56)  (Nature: Serious) (Moves: Dazzling Gleam/Blizzard/Ice Shard/Safeguard) IVs: 31/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Braviary (Lv. 56)  (Nature: Serious) (Moves: Crush Claw/Brave Bird/Whirlwind/Tailwind) IVs: 31/15/31/15/31/31 EVs: 252/0/0/0/0/252
+Magnezone (Lv. 56)  (Nature: Serious) (Moves: Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat) IVs: 31/15/31/31/31/15 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 56)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/High Horsepower) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Decidueye (Lv. 58) @Grassium Z (Nature: Serious) (Moves: Leaf Blade/Spirit Shackle/Brave Bird/Sucker Punch) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+415 - Pokémon Trainer Gladion
+======
+Pokemon: 4
+Crobat (Lv. 52)  (Nature: Serious) (Moves: Acrobatics/Cross Poison/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Weavile (Lv. 52)  (Nature: Serious) (Moves: Ice Shard/Night Slash/Metal Claw/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Lucario (Lv. 52) @Steelium Z (Nature: Serious) (Moves: Aura Sphere/Metal Claw/Quick Attack/(None)) IVs: 15/31/15/31/15/31 EVs: 0/0/0/0/0/252
+Silvally (Lv. 53) @Water Memory (Nature: Serious) (Moves: Crunch/Crush Claw/X-Scissor/Multi-Attack) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/252
+======
+416 - Pokémon Trainer Gladion
+======
+Pokemon: 4
+Crobat (Lv. 52)  (Nature: Serious) (Moves: Acrobatics/Cross Poison/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Weavile (Lv. 52)  (Nature: Serious) (Moves: Ice Shard/Night Slash/Metal Claw/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/0
+Lucario (Lv. 52) @Steelium Z (Nature: Serious) (Moves: Aura Sphere/Metal Claw/Quick Attack/(None)) IVs: 15/31/15/31/15/31 EVs: 0/0/0/0/0/252
+Silvally (Lv. 53) @Grass Memory (Nature: Serious) (Moves: Crunch/Crush Claw/X-Scissor/Multi-Attack) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/252
+======
+417 - Pokémon Trainer Gladion
+======
+Pokemon: 5
+Crobat (Lv. 63)  (Nature: Serious) (Moves: Acrobatics/Cross Poison/X-Scissor/Steel Wing) IVs: 15/15/15/15/15/31 EVs: 0/252/0/0/0/252
+Weavile (Lv. 63)  (Nature: Serious) (Moves: Ice Shard/Night Slash/Brick Break/Shadow Claw) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Porygon-Z (Lv. 63)  (Nature: Serious) (Moves: Tri Attack/Dark Pulse/Ice Beam/Thunderbolt) IVs: 15/15/31/31/15/31 EVs: 0/0/0/252/0/252
+Lucario (Lv. 63) @Steelium Z (Nature: Serious) (Moves: Aura Sphere/Flash Cannon/Extreme Speed/Psychic) IVs: 15/31/15/31/15/31 EVs: 0/252/0/0/0/252
+Silvally (Lv. 63) @Fire Memory (Nature: Serious) (Moves: Crunch/Crush Claw/X-Scissor/Multi-Attack) IVs: 30/30/30/30/30/30 EVs: 0/252/0/0/0/252
+======
+418 - Pokémon Trainer Gladion
+======
+Pokemon: 5
+Crobat (Lv. 63)  (Nature: Serious) (Moves: Acrobatics/Cross Poison/X-Scissor/Steel Wing) IVs: 15/15/15/15/15/31 EVs: 0/252/0/0/0/252
+Weavile (Lv. 63)  (Nature: Serious) (Moves: Ice Shard/Night Slash/Brick Break/Shadow Claw) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Porygon-Z (Lv. 63)  (Nature: Serious) (Moves: Tri Attack/Dark Pulse/Ice Beam/Thunderbolt) IVs: 15/15/31/31/15/31 EVs: 0/0/0/252/0/252
+Lucario (Lv. 63) @Steelium Z (Nature: Serious) (Moves: Aura Sphere/Flash Cannon/Extreme Speed/Psychic) IVs: 15/31/15/31/15/31 EVs: 0/252/0/0/0/252
+Silvally (Lv. 63) @Water Memory (Nature: Serious) (Moves: Crunch/Crush Claw/X-Scissor/Multi-Attack) IVs: 30/30/30/30/30/30 EVs: 0/252/0/0/0/252
+======
+419 - Pokémon Trainer Gladion
+======
+Pokemon: 5
+Crobat (Lv. 63)  (Nature: Serious) (Moves: Acrobatics/Cross Poison/X-Scissor/Steel Wing) IVs: 15/15/15/15/15/31 EVs: 0/252/0/0/0/252
+Weavile (Lv. 63)  (Nature: Serious) (Moves: Ice Shard/Night Slash/Brick Break/Shadow Claw) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Porygon-Z (Lv. 63)  (Nature: Serious) (Moves: Tri Attack/Dark Pulse/Ice Beam/Thunderbolt) IVs: 15/15/31/31/15/31 EVs: 0/0/0/252/0/252
+Lucario (Lv. 63) @Steelium Z (Nature: Serious) (Moves: Aura Sphere/Flash Cannon/Extreme Speed/Psychic) IVs: 15/31/15/31/15/31 EVs: 0/252/0/0/0/252
+Silvally (Lv. 63) @Grass Memory (Nature: Serious) (Moves: Crunch/Crush Claw/X-Scissor/Multi-Attack) IVs: 30/30/30/30/30/30 EVs: 0/252/0/0/0/252
+======
+420 - Firefighter Alex
+======
+Pokemon: 1
+Poliwhirl (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+421 - Youth Athlete Alyssa
+======
+Pokemon: 1
+Herdier (Lv. 27)  (Nature: Serious) (Moves: Helping Hand/Take Down/Crunch/(None)) IVs: 20/20/20/20/20/20 EVs: 0/0/0/0/0/0
+======
+422 - Youth Athlete Sho
+======
+Pokemon: 1
+Fletchinder (Lv. 27)  (Nature: Serious) (Moves: Ember/Peck/Quick Attack/(None)) IVs: 20/20/20/20/20/20 EVs: 0/0/0/0/0/0
+======
+423 - Preschooler [~ 423]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+424 - Black Belt Clayton
+======
+Pokemon: 1
+Hariyama (Lv. 28)  (Nature: Adamant) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/252/0/0/0/0
+======
+425 - Punk Guy Lane
+======
+Pokemon: 1
+Krokorok (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+426 - Punk Girl Yoko
+======
+Pokemon: 1
+Pancham (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+427 - Office Worker Shane
+======
+Pokemon: 2
+Psyduck (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Fearow (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+428 - Office Worker Michelle
+======
+Pokemon: 3
+Torkoal (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Seaking (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Leafeon (Lv. 34)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+429 - Punk Guy Troy
+======
+Pokemon: 1
+Honchkrow (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+430 - Punk Girl Marie
+======
+Pokemon: 1
+Lycanroc (Lv. 59)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+431 - Sightseer Amy
+======
+Pokemon: 1
+Diglett (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+432 - Sightseer Amy
+======
+Pokemon: 1
+Dugtrio (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+433 - Sightseer George
+======
+Pokemon: 1
+Grimer (Lv. 13)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+434 - Sightseer George
+======
+Pokemon: 1
+Muk (Lv. 55)  (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+435 - Captain Mina
+======
+Pokemon: 5
+Klefki (Lv. 61)  (Nature: Serious) (Moves: Dazzling Gleam/Flash Cannon/Light Screen/Reflect) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Granbull (Lv. 61)  (Nature: Serious) (Moves: Crunch/Play Rough/Earthquake/Stone Edge) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Shiinotic (Lv. 61)  (Nature: Serious) (Moves: Spore/Moonblast/Dream Eater/Giga Drain) IVs: 31/15/15/31/31/15 EVs: 0/0/0/252/252/0
+Wigglytuff (Lv. 61)  (Nature: Serious) (Moves: Dazzling Gleam/Hyper Voice/Flamethrower/Ice Beam) IVs: 31/15/31/31/15/15 EVs: 252/0/0/252/0/0
+Ribombee (Lv. 61)  (Nature: Serious) (Moves: Pollen Puff/Dazzling Gleam/Psychic/Energy Ball) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+436 - Rising Star Joseph
+======
+Pokemon: 1
+Grimer (Lv. 8)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 10/10/10/10/10/10 EVs: 0/0/0/0/0/0
+======
+437 - Preschooler Hayden
+======
+Pokemon: 1
+Stufful (Lv. 26)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+438 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Pikachu (Lv. 23)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Eevee (Lv. 23)  (Nature: Serious) (Moves: Quick Attack/Bite/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Brionne (Lv. 24) @Waterium Z (Nature: Serious) (Moves: Bubble Beam/Disarming Voice/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+439 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Pikachu (Lv. 23)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Eevee (Lv. 23)  (Nature: Serious) (Moves: Quick Attack/Bite/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Dartrix (Lv. 24) @Grassium Z (Nature: Serious) (Moves: Razor Leaf/Pluck/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+440 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Pikachu (Lv. 23)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Eevee (Lv. 23)  (Nature: Serious) (Moves: Quick Attack/Bite/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Torracat (Lv. 24) @Firium Z (Nature: Serious) (Moves: Fire Fang/Bite/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+441 - Team Skull Gladion
+======
+Pokemon: 2
+Golbat (Lv. 38)  (Nature: Serious) (Moves: Acrobatics/Poison Fang/(None)/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Type: Null (Lv. 39)  (Nature: Serious) (Moves: Pursuit/Crush Claw/X-Scissor/(None)) IVs: 30/30/30/30/30/30 EVs: 0/0/0/0/0/0
+======
+442 - Aether Foundation Employee
+======
+Pokemon: 1
+Ledian (Lv. 38)  (Nature: Timid) (Moves: Light Screen/Reflect/Bug Buzz/Air Slash) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+======
+443 - Team Skull Grunt
+======
+Pokemon: 1
+Fomantis (Lv. 22)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+444 - Team Skull Grunt
+======
+Pokemon: 1
+Salandit (Lv. 22)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+445 - Ace Trainer Kekoa
+======
+Pokemon: 2
+Skarmory (Lv. 44)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/31/15/15/15 EVs: 0/0/0/0/0/0
+Sharpedo (Lv. 45)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/31/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+446 - Ace Trainer Lindsey
+======
+Pokemon: 2
+Garbodor (Lv. 44)  (Nature: Serious) (Moves: Toxic/Gunk Shot/Protect/Body Slam) IVs: 31/31/31/15/15/15 EVs: 0/252/252/0/0/0
+Toxapex (Lv. 45) @Poisonium Z (Nature: Serious) (Moves: Poison Jab/Liquidation/Pin Missile/(None)) IVs: 15/31/31/15/31/15 EVs: 0/0/252/0/252/0
+======
+447 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Flareon (Lv. 38)  (Nature: Serious) (Moves: Fire Fang/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Primarina (Lv. 39) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Disarming Voice/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+448 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Vaporeon (Lv. 38)  (Nature: Serious) (Moves: Water Pulse/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Decidueye (Lv. 39) @Grassium Z (Nature: Serious) (Moves: Razor Leaf/Spirit Shackle/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+449 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Leafeon (Lv. 38)  (Nature: Serious) (Moves: Giga Drain/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Incineroar (Lv. 39) @Firium Z (Nature: Serious) (Moves: Fire Fang/Darkest Lariat/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+450 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Flareon (Lv. 38)  (Nature: Serious) (Moves: Fire Fang/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Primarina (Lv. 39) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Disarming Voice/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+451 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Vaporeon (Lv. 38)  (Nature: Serious) (Moves: Water Pulse/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Decidueye (Lv. 39) @Grassium Z (Nature: Serious) (Moves: Razor Leaf/Spirit Shackle/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+452 - Pokémon Trainer Hau
+======
+Pokemon: 3
+Raichu (Lv. 38)  (Nature: Serious) (Moves: Electro Ball/Quick Attack/Psychic/(None)) IVs: 15/15/15/15/15/31 EVs: 0/0/0/0/0/252
+Leafeon (Lv. 38)  (Nature: Serious) (Moves: Giga Drain/Quick Attack/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+Incineroar (Lv. 39) @Firium Z (Nature: Serious) (Moves: Fire Fang/Darkest Lariat/(None)/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/0
+======
+453 - Aether Foundation Employee
+======
+Pokemon: 1
+Mudsdale (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+454 - Aether Foundation Employee
+======
+Pokemon: 1
+Pelipper (Lv. 37)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+455 - Aether Foundation Employee
+======
+Pokemon: 1
+Magmar (Lv. 38)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+456 - Aether Foundation Employee
+======
+Pokemon: 1
+Electabuzz (Lv. 38)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+457 - Team Skull Grunt
+======
+Pokemon: 1
+Rattata (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+458 - Team Skull Grunt
+======
+Pokemon: 1
+Raticate (Lv. 35)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+459 - Lass Audrey
+======
+Pokemon: 1
+Caterpie (Lv. 3)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+460 - Rising Star Elijah
+======
+Pokemon: 2
+Caterpie (Lv. 29)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Weedle (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+461 - Lass Rika
+======
+Pokemon: 2
+Pidgey (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Nidoran♀ (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+462 - Lass Emmy
+======
+Pokemon: 2
+Pidgey (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Nidoran♀ (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+463 - Youngster Tyler
+======
+Pokemon: 3
+Rattata (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Ekans (Lv. 27)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Zubat (Lv. 28)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+464 - Veteran Don
+======
+Pokemon: 2
+Ekans (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+Zubat (Lv. 31)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 31/15/15/15/15/31 EVs: 0/0/0/0/0/0
+======
+465 - Golfer Dean
+======
+Pokemon: 2
+Hariyama (Lv. 34) @Flame Orb (Nature: Serious) (Moves: Knock Off/Fake Out/Arm Thrust/(None)) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Alakazam (Lv. 34) @Flame Orb (Nature: Serious) (Moves: Recover/Psybeam/Trick/(None)) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+466 - Dancer Julia
+======
+Pokemon: 4
+Oricorio (Lv. 43) @Focus Sash (Nature: Serious) (Moves: Air Slash/Revelation Dance/Teeter Dance/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+Oricorio (Lv. 43) @Focus Sash (Nature: Serious) (Moves: Air Slash/Revelation Dance/Teeter Dance/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+Oricorio (Lv. 43) @Focus Sash (Nature: Serious) (Moves: Air Slash/Revelation Dance/Teeter Dance/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+Oricorio (Lv. 43) @Focus Sash (Nature: Serious) (Moves: Air Slash/Revelation Dance/Teeter Dance/(None)) IVs: 15/15/15/31/15/15 EVs: 0/0/0/0/0/0
+======
+467 - Captain Mina
+======
+Pokemon: 5
+Klefki (Lv. 61)  (Nature: Serious) (Moves: Dazzling Gleam/Flash Cannon/Light Screen/Reflect) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Granbull (Lv. 61)  (Nature: Serious) (Moves: Crunch/Play Rough/Earthquake/Stone Edge) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+Shiinotic (Lv. 61)  (Nature: Serious) (Moves: Spore/Moonblast/Dream Eater/Giga Drain) IVs: 31/15/15/31/31/15 EVs: 0/0/0/252/252/0
+Wigglytuff (Lv. 61)  (Nature: Serious) (Moves: Dazzling Gleam/Hyper Voice/Flamethrower/Ice Beam) IVs: 31/15/31/31/15/15 EVs: 252/0/0/252/0/0
+Ribombee (Lv. 61) @Fairium Z (Nature: Serious) (Moves: Pollen Puff/Dazzling Gleam/Psychic/Energy Ball) IVs: 31/15/15/31/15/31 EVs: 0/0/0/252/0/252
+======
+468 - Preschooler Malia
+======
+Pokemon: 1
+Cutiefly (Lv. 9)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+469 - Preschooler Kaleb
+======
+Pokemon: 1
+Spearow (Lv. 8)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+470 - Punk Guy [~ 470]
+======
+Pokemon: 1
+Yungoos (Lv. 5)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+471 - Rising Star Sean
+======
+Pokemon: 1
+Mankey (Lv. 30)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+472 - Beauty Krystal
+======
+Pokemon: 1
+Gastly (Lv. 9)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 0/0/0/0/0/0 EVs: 0/0/0/0/0/0
+======
+473 - Team Skull Grunt
+======
+Pokemon: 1
+Drowzee (Lv. 33)  (Nature: Serious) (Moves: (None)/(None)/(None)/(None)) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+474 - Ace Trainer Eileen
+======
+Pokemon: 2
+Wingull (Lv. 21)  (Nature: Timid) (Moves: Air Cutter/Water Pulse/Quick Attack/(None)) IVs: 15/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Fearow (Lv. 22) @Flyinium Z (Nature: Jolly) (Moves: Aerial Ace/Pursuit/Fury Attack/(None)) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+475 - Ace Trainer Cole
+======
+Pokemon: 2
+Drampa (Lv. 56)  (Nature: Modest) (Moves: Dragon Pulse/Hyper Voice/Extrasensory/Light Screen) IVs: 15/15/31/31/31/15 EVs: 0/0/0/252/252/0
+Goodra (Lv. 57) @Dragonium Z (Nature: Modest) (Moves: Dragon Pulse/Muddy Water/Feint/(None)) IVs: 31/15/15/31/31/15 EVs: 0/0/0/252/252/0
+======
+476 - Veteran Akira
+======
+Pokemon: 1
+Absol (Lv. 30) @Darkinium Z (Nature: Adamant) (Moves: Night Slash/Slash/Quick Attack/(None)) IVs: 31/31/15/15/15/31 EVs: 170/170/0/0/0/170
+======
+477 - Pokémon Professor Kukui
+======
+Pokemon: 6
+Lycanroc (Lv. 65)  (Nature: Serious) (Moves: Stone Edge/Accelerock/Crunch/Stealth Rock) IVs: 31/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Ninetales (Lv. 65)  (Nature: Serious) (Moves: Dazzling Gleam/Blizzard/Ice Shard/Safeguard) IVs: 31/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Braviary (Lv. 65)  (Nature: Serious) (Moves: Crush Claw/Brave Bird/Whirlwind/Tailwind) IVs: 31/15/31/15/31/31 EVs: 252/0/0/0/0/252
+Magnezone (Lv. 65)  (Nature: Serious) (Moves: Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat) IVs: 31/15/31/31/31/15 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 65)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/High Horsepower) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Incineroar (Lv. 65) @Firium Z (Nature: Serious) (Moves: Flare Blitz/Darkest Lariat/Outrage/Cross Chop) IVs: 31/31/31/31/31/31 EVs: 252/252/0/0/0/0
+======
+478 - Pokémon Professor Kukui
+======
+Pokemon: 6
+Lycanroc (Lv. 65)  (Nature: Serious) (Moves: Stone Edge/Accelerock/Crunch/Stealth Rock) IVs: 31/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Ninetales (Lv. 65)  (Nature: Serious) (Moves: Dazzling Gleam/Blizzard/Ice Shard/Safeguard) IVs: 31/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Braviary (Lv. 65)  (Nature: Serious) (Moves: Crush Claw/Brave Bird/Whirlwind/Tailwind) IVs: 31/15/31/15/31/31 EVs: 252/0/0/0/0/252
+Magnezone (Lv. 65)  (Nature: Serious) (Moves: Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat) IVs: 31/15/31/31/31/15 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 65)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/High Horsepower) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Primarina (Lv. 65) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Moonblast/Aqua Jet/Hyper Voice) IVs: 31/31/31/31/31/31 EVs: 0/0/0/252/252/0
+======
+479 - Pokémon Professor Kukui
+======
+Pokemon: 6
+Lycanroc (Lv. 65)  (Nature: Serious) (Moves: Stone Edge/Accelerock/Crunch/Stealth Rock) IVs: 31/31/31/15/15/31 EVs: 0/252/0/0/0/252
+Ninetales (Lv. 65)  (Nature: Serious) (Moves: Dazzling Gleam/Blizzard/Ice Shard/Safeguard) IVs: 31/15/15/31/31/31 EVs: 0/0/0/252/0/252
+Braviary (Lv. 65)  (Nature: Serious) (Moves: Crush Claw/Brave Bird/Whirlwind/Tailwind) IVs: 31/15/31/15/31/31 EVs: 252/0/0/0/0/252
+Magnezone (Lv. 65)  (Nature: Serious) (Moves: Thunderbolt/Flash Cannon/Thunder Wave/Mirror Coat) IVs: 31/15/31/31/31/15 EVs: 252/0/0/252/0/0
+Snorlax (Lv. 65)  (Nature: Serious) (Moves: Body Slam/Crunch/Heavy Slam/High Horsepower) IVs: 31/15/31/15/31/15 EVs: 252/0/0/0/252/0
+Decidueye (Lv. 65) @Grassium Z (Nature: Serious) (Moves: Leaf Blade/Spirit Shackle/Brave Bird/Sucker Punch) IVs: 31/31/31/31/31/31 EVs: 0/252/0/0/0/252
+======
+480 - Youngster Tristan
+======
+Pokemon: 5
+Emolga (Lv. 59)  (Nature: Serious) (Moves: Volt Switch/Quick Attack/Acrobatics/Thunder Wave) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Sharpedo (Lv. 59)  (Nature: Serious) (Moves: Aqua Jet/Night Slash/Waterfall/Ice Fang) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Exeggutor (Lv. 59)  (Nature: Serious) (Moves: Wood Hammer/Dragon Hammer/Earthquake/Brutal Swing) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Magmortar (Lv. 59)  (Nature: Serious) (Moves: Flamethrower/Focus Blast/Thunderbolt/Will-O-Wisp) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+Tauros (Lv. 59) @Normalium Z (Nature: Serious) (Moves: Giga Impact/Rock Slide/Earthquake/Pursuit) IVs: 15/15/15/15/15/15 EVs: 0/0/0/0/0/0
+======
+481 - Pokémon Trainer Molayne
+======
+Pokemon: 5
+Skarmory (Lv. 61)  (Nature: Serious) (Moves: Night Slash/Steel Wing/Aerial Ace/Spikes) IVs: 15/15/31/15/31/31 EVs: 0/0/252/0/252/0
+Sandslash (Lv. 61)  (Nature: Serious) (Moves: Icicle Crash/Gyro Ball/Earthquake/Shadow Claw) IVs: 31/31/31/15/15/0 EVs: 0/170/170/0/0/170
+Magnezone (Lv. 61)  (Nature: Serious) (Moves: Flash Cannon/Thunderbolt/Tri Attack/Screech) IVs: 31/15/31/31/15/15 EVs: 0/0/252/252/0/0
+Metagross (Lv. 61)  (Nature: Serious) (Moves: Hammer Arm/Meteor Mash/Bullet Punch/Zen Headbutt) IVs: 31/15/31/15/31/15 EVs: 0/0/252/0/252/0
+Dugtrio (Lv. 61)  (Nature: Serious) (Moves: Earthquake/Iron Head/Sucker Punch/Fissure) IVs: 31/31/15/15/15/31 EVs: 0/252/0/0/0/252
+======
+482 - Pokémon Trainer Hau
+======
+Pokemon: 4
+Raichu (Lv. 53)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/Focus Blast) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Flareon (Lv. 53)  (Nature: Serious) (Moves: Flare Blitz/Quick Attack/Charm/Baby-Doll Eyes) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/252
+Komala (Lv. 53)  (Nature: Serious) (Moves: Wood Hammer/Sucker Punch/Earthquake/Shadow Claw) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+Primarina (Lv. 54) @Waterium Z (Nature: Serious) (Moves: Sparkling Aria/Moonblast/Hyper Voice/(None)) IVs: 31/15/15/15/15/15 EVs: 252/0/0/252/0/0
+======
+483 - Pokémon Trainer Hau
+======
+Pokemon: 4
+Raichu (Lv. 53)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/Focus Blast) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Vaporeon (Lv. 53)  (Nature: Serious) (Moves: Hydro Pump/Quick Attack/Charm/Baby-Doll Eyes) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/252
+Komala (Lv. 53)  (Nature: Serious) (Moves: Wood Hammer/Sucker Punch/Earthquake/Shadow Claw) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+Decidueye (Lv. 54) @Grassium Z (Nature: Serious) (Moves: Spirit Shackle/Leaf Blade/Smack Down/(None)) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+======
+484 - Pokémon Trainer Hau
+======
+Pokemon: 4
+Raichu (Lv. 53)  (Nature: Serious) (Moves: Thunderbolt/Quick Attack/Psychic/Focus Blast) IVs: 15/15/15/15/15/31 EVs: 0/0/0/252/0/252
+Leafeon (Lv. 53)  (Nature: Serious) (Moves: Leaf Blade/Quick Attack/Charm/Baby-Doll Eyes) IVs: 31/15/15/15/15/15 EVs: 252/0/0/0/0/252
+Komala (Lv. 53)  (Nature: Serious) (Moves: Wood Hammer/Sucker Punch/Earthquake/Shadow Claw) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
+Incineroar (Lv. 54) @Firium Z (Nature: Serious) (Moves: Darkest Lariat/Flare Blitz/Earthquake/(None)) IVs: 31/15/15/15/15/15 EVs: 252/252/0/0/0/0
