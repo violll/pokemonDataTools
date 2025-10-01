@@ -8,7 +8,13 @@ from tqdm import tqdm
 BASEURL = "https://pokemondb.net" 
 DIV_IDS = {
     "x-y": "tab-moves-13",
-    "omega-ruby-alpha-sapphire": "tab-moves-14"
+    "omega-ruby-alpha-sapphire": "tab-moves-14",
+    "sun-moon": "tab-moves-15"
+}
+GEN_IDS = {
+    "x-y": 6,
+    "omega-ruby-alpha-sapphire": 6,
+    "sun-moon": 7
 }
 
 
@@ -29,7 +35,7 @@ def scrape_learnsets(game, output_path=r"C:\Users\Gil\OneDrive\Documents\Program
     res = {}
 
     for link in tqdm(all_links):
-        url = f"{BASEURL}{link}/moves/6"
+        url = f"{BASEURL}{link}/moves/{GEN_IDS[game]}"
         name = link.split("/")[-1]
         r = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0"})
         soup = BeautifulSoup(r.content, features="lxml")
